@@ -14,7 +14,9 @@
 </section>
 
 <section class="lowersection">lower-section</section>
-<footer>footer</footer>
+<footer>footer
+    <button @onclick="playGameSecurityIDM">PLAY</button>
+</footer>
 
 <style>
      body {
@@ -53,3 +55,10 @@
         height: 100px;
     }
 </style>
+
+@code {
+    private void playGameSecurityIDM()
+    {
+        NavigationManager.NavigateTo("SecurityIDM");
+    }
+}

@@ -1,0 +1,85 @@
+@page "/SecurityIDM"
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+
+<title>Security IDM
+</title>
+<h1>Welcome</h1>
+<p>@player</p>
+<button class="button_left" @onclick="playLeft">left</button>
+<button class="button_right" @onclick="playRight">Right</button>
+<section>
+    <p>@player1</p>
+<button class="button_left" @onclick="playLeft1">left</button>
+<button class="button_right" @onclick="playRight1">Right</button>
+</section>
+
+@code {
+    private string player = "--*--";
+    private string player1 = "-*-";
+
+    private void playLeft()
+    {
+        if (player == "----*")
+        {
+            player = "---*-";
+        }
+        else if (player == "---*-")
+        {
+            player = "--*--";
+        }
+        else if (player == "--*--")
+        {
+            player = "-*---";
+        }
+        else if (player == "-*---")
+        {
+            player = "*----";
+        }
+    }
+
+    private void playRight()
+    {
+        if (player == "*----")
+        {
+            player = "-*---";
+        }
+        else if (player == "-*---")
+        {
+            player = "--*--";
+        }
+        else if (player == "--*--")
+        {
+            player = "---*-";
+        }
+        else if (player == "---*-")
+        {
+            player = "----*";
+        }
+    }
+
+    private void playLeft1()
+    {
+        if (player1 == "-*-")
+        {
+            player1 = "*--";
+        }
+        else if (player1 == "--*")
+        {
+            player1 = "-*-";
+        }
+    }
+    private void playRight1()
+    {
+        if (player1 == "*--")
+        {
+            player1 = "-*-";
+        }
+        else
+        {
+            player1 = "--*";
+        }
+    }
+
+
+}
