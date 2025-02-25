@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\AllGames\\Allgem01\\Allgem01.csproj": {}
+    "C:\\Users\\janlu\\allgem\\Allgem01\\Allgem01.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\AllGames\\Allgem01\\Allgem01.csproj": {
+    "C:\\Users\\janlu\\allgem\\Allgem01\\Allgem01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\AllGames\\Allgem01\\Allgem01.csproj",
+        "projectUniqueName": "C:\\Users\\janlu\\allgem\\Allgem01\\Allgem01.csproj",
         "projectName": "Allgem01",
-        "projectPath": "C:\\Projects\\AllGames\\Allgem01\\Allgem01.csproj",
-        "packagesPath": "C:\\Users\\sqenz\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\AllGames\\Allgem01\\obj\\",
+        "projectPath": "C:\\Users\\janlu\\allgem\\Allgem01\\Allgem01.csproj",
+        "packagesPath": "C:\\Users\\janlu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\janlu\\allgem\\Allgem01\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\sqenz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\janlu\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
