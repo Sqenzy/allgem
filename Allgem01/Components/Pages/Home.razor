@@ -1,0 +1,55 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+
+<!--test-->
+
+<title>Allgem</title>
+
+<header>header</header>
+<section>
+        <div><a>a</a></div>
+        <div><a>b</a></div>
+        <div><a>c</a></div>
+</section>
+
+<section class="lowersection">lower-section</section>
+<footer>footer</footer>
+
+<style>
+     body {
+        background: gray;
+        color:  white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    header {
+        background: black;
+        color:  white;
+        padding: 20px 40px 10px 50px;
+        
+    }
+    section {
+        background: white;
+        color: gray;
+        height: 860px;
+    }
+    section div {
+        padding: 0px;
+        margin: 0px;
+        background: lightgray;
+        display: inline-block;
+        width: 100px;
+    }
+    .lowersection {
+        background: blue;
+    }
+    footer{
+        background: black;
+        color:  white;
+        padding: 10px 20px;
+        height: 100px;
+    }
+</style>
