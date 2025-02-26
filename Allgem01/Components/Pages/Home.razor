@@ -8,8 +8,8 @@
 
 <header>header</header>
 <section>
-        <li><a @onklick="home">homeł</a><li>
-         <li><a>b</a></li>
+        <li><a @onclick="homeFf">home</a></li>
+        <li><a>b</a></li>
         <li><a>c</a></li>
 </section>
 
@@ -60,5 +60,9 @@
     private void playGameSecurityIDM()
     {
         NavigationManager.NavigateTo("SecurityIDM");
+    }
+    private void homeFf()
+    {
+        NavigationManager.NavigateTo("/");
     }
 }
