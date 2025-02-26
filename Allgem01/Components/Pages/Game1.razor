@@ -4,6 +4,13 @@
 
 <title>Security IDM
 </title>
+
+<header>ALLGEM
+    <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
+    <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
+    <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
+</header>
+
 <h1>Welcome</h1>
 <p>@player</p>
 <button class="button_left" @onclick="playLeft">left</button>
@@ -14,7 +21,78 @@
 <button class="button_right" @onclick="playRight1">Right</button>
 </section>
 
+
+<style>
+
+    header {
+        background: linear-gradient(90deg, rgb(0, 174, 255), blue, rgb(0, 2, 102));
+        background-size: 300% 300%;
+        color: white;
+        font-size: 16px;
+        padding: 20px 40px 10px 50px;
+        border: none;
+        border-radius: none;
+        
+    }
+    li{
+        display: inline-block;
+        list-style-type: none;
+        padding-right: 30px;
+
+    }
+    .home{
+        background: none;
+        background-size: 300% 300%;
+        color: white;
+        font-size: 16px;
+        padding: none;
+        border: none;
+        border-radius: 8px;
+        width: 70px;
+        height: 35px;
+        margin-left: 900px;
+    }
+    .aboutus{
+        background: none;
+        background-size: 300% 300%;
+        color: white;
+        font-size: 16px;
+        padding: none;
+        border: none;
+        border-radius: 8px;
+        width: 90px;
+        height: 35px;
+    }
+    .contactus{
+        background: none;
+        background-size: 300% 300%;
+        color: white;
+        font-size: 16px;
+        padding: none;
+        border: none;
+        border-radius: 8px;
+        width: 103px;
+        height: 35px;
+    }
+</style>
+
 @code {
+    private void playGameSecurityIDM()
+    {
+        NavigationManager.NavigateTo("SecurityIDM");
+    }
+    private void homeFf()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+    private void aboutusFf()
+    {
+        NavigationManager.NavigateTo("/about-us");
+    }
+    private void contactusFf()
+    {
+        NavigationManager.NavigateTo("/contact-us");
+    }
     private string player = "--*--";
     private string player1 = "-*-";
 
