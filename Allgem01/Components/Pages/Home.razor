@@ -6,11 +6,11 @@
 
 <title>Allgem</title>
 
-<header>header</header>
+<header>welcome to ALLGEM
+    <button class="home" type="button" @onclick="homeFf">About us</button>
+</header>
 <section>
-        <li><a @onclick="homeFf">home</a></li>
-        <li><a>b</a></li>
-        <li><a>c</a></li>
+
 </section>
 
 <section class="lowersection">lower-section</section>
@@ -63,6 +63,6 @@
     }
     private void homeFf()
     {
-        NavigationManager.NavigateTo("/");
+        NavigationManager.NavigateTo("/about-us");
     }
 }
