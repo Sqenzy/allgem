@@ -77,6 +77,8 @@
 </style>
 
 @code {
+
+    //Navigation between pages
     private void playGameSecurityIDM()
     {
         NavigationManager.NavigateTo("SecurityIDM");
@@ -94,46 +96,21 @@
         NavigationManager.NavigateTo("/contact-us");
     }
     private string player = "--*--";
-    private string player1 = "-*-";
+
+    private readonly string[] playerStates = new string[] { "----*", "---*-", "--*--", "-*---", "*----" };
 
     private void playLeft()
     {
-        if (player == "----*")
-        {
-            player = "---*-";
-        }
-        else if (player == "---*-")
-        {
-            player = "--*--";
-        }
-        else if (player == "--*--")
-        {
-            player = "-*---";
-        }
-        else if (player == "-*---")
-        {
-            player = "*----";
-        }
+        int currentIndex = Array.IndexOf(playerStates, player);
+        currentIndex = (currentIndex + 1) % playerStates.Length;
+        player = playerStates[currentIndex];
     }
 
     private void playRight()
     {
-        if (player == "*----")
-        {
-            player = "-*---";
-        }
-        else if (player == "-*---")
-        {
-            player = "--*--";
-        }
-        else if (player == "--*--")
-        {
-            player = "---*-";
-        }
-        else if (player == "---*-")
-        {
-            player = "----*";
-        }
+        int currentIndex = Array.IndexOf(playerStates, player);
+        currentIndex = (currentIndex - 1 + playerStates.Length) % playerStates.Length;  // Circular decrement
+        player = playerStates[currentIndex];
     }
 
 
