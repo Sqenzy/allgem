@@ -1,4 +1,4 @@
-@page "/SecurityIDM"
+@page "/game2"
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
 
