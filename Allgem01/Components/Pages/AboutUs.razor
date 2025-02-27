@@ -1,4 +1,6 @@
 @page "/about-us"
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +9,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
 </head>
-<body>
-    <h1>About Us</h1>
-</body>
 </html>
+
+
+<header><strong>ALLGEM</strong>
+    <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
+    <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
+    <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
+</header>
+
+<style>
+    header {
+        background: linear-gradient(90deg, rgb(0, 174, 255), blue, rgb(0, 2, 102));
+        background-size: 300% 300%;
+        color: white;
+        font-size: 16px;
+        padding: 20px 40px 10px 50px;
+        border: none;
+        border-radius: none;
+    }
+</style>
