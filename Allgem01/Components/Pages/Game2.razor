@@ -23,9 +23,6 @@
 <button class="button_left" @onclick="playLeft">left</button>
 <button class="button_right" @onclick="playRight">Right</button>
 <section>
-    <p>@player1</p>
-<button class="button_left" @onclick="playLeft1">left</button>
-<button class="button_right" @onclick="playRight1">Right</button>
 </section>
 
 
@@ -103,6 +100,10 @@
         NavigationManager.NavigateTo("/contact-us");
     }
     private string player = "--*--";
+
+
+
+
 
     private readonly string[] playerStates = new string[] { "----*", "---*-", "--*--", "-*---", "*----" };
 

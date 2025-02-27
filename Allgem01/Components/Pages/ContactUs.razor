@@ -69,3 +69,23 @@
         height: 35px;
     }
 </style>
+
+@code {
+
+    //Navigation between pages
+    private void playGameSecurityIDM()
+    {
+        NavigationManager.NavigateTo("SecurityIDM");
+    }
+    private void homeFf()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+    private void aboutusFf()
+    {
+        NavigationManager.NavigateTo("/about-us");
+    }
+    private void contactusFf()
+    {
+        NavigationManager.NavigateTo("/contact-us");
+    }

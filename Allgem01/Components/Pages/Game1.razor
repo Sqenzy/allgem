@@ -71,3 +71,28 @@
         height: 35px;
     }
 </style>
+
+@code {
+
+    //Navigation between pages
+    private void playGameSecurityIDM()
+    {
+        NavigationManager.NavigateTo("/game2");
+    }
+    private void playGameParkour()
+    {
+        NavigationManager.NavigateTo("/game1");
+    }
+    private void homeFf()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+    private void aboutusFf()
+    {
+        NavigationManager.NavigateTo("/about-us");
+    }
+    private void contactusFf()
+    {
+        NavigationManager.NavigateTo("/contact-us");
+    }
+}
