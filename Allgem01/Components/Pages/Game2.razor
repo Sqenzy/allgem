@@ -12,16 +12,11 @@
 </html>
 
 
-<header>ALLGEM
+<header><strong>ALLGEM</strong>
     <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 </header>
-
-<h1>Welcome</h1>
-<p>@player</p>
-<button class="button_left" @onclick="playLeft">left</button>
-<button class="button_right" @onclick="playRight">Right</button>
 <section>
 </section>
 
@@ -41,7 +36,7 @@
     li{
         display: inline-block;
         list-style-type: none;
-        padding-right: 30px;
+        padding-right: 40px;
 
     }
     .home{
@@ -99,27 +94,4 @@
     {
         NavigationManager.NavigateTo("/contact-us");
     }
-    private string player = "--*--";
-
-
-
-
-
-    private readonly string[] playerStates = new string[] { "----*", "---*-", "--*--", "-*---", "*----" };
-
-    private void playLeft()
-    {
-        int currentIndex = Array.IndexOf(playerStates, player);
-        currentIndex = (currentIndex + 1) % playerStates.Length;
-        player = playerStates[currentIndex];
-    }
-
-    private void playRight()
-    {
-        int currentIndex = Array.IndexOf(playerStates, player);
-        currentIndex = (currentIndex - 1 + playerStates.Length) % playerStates.Length;  // Circular decrement
-        player = playerStates[currentIndex];
-    }
-
-
 }
