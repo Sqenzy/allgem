@@ -1,4 +1,4 @@
-﻿@page "/"
+@page "/contact-us/discord"
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
 
@@ -7,11 +7,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allgem</title>
+    <title>Contact Us</title>
 </head>
 </html>
 
-<!--test-->
 
 <header><strong>ALLGEM</strong>
     <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
@@ -19,23 +18,30 @@
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 </header>
 <section>
-    <ul><button class="parkour" type="button" @onclick="playGameParkour">parkour</button></ul>
-    <ul><button class="security" type="button" @onclick="playGameSecurityIDM">SecurityIDM</button></ul>
-</section>
+    <button class="discordinvite" @onclick="DiscordInvite">Discord</button>
+    <button class="email" @onclick="Emailus">Email</button>
 
-<section class="lowersection">lower-section</section>
-<footer>footer
-</footer>
+</section>
+@code {
+    private void DiscordInvite()
+    {
+        var url = "https://discord.gg/nmNGCyFsZp";
+        if (JS != null)
+        {
+            JS.InvokeVoidAsync("window.open", url, "_blank");
+        }
+    }
+
+    [Inject]
+    private IJSRuntime? JS { get; set; }
+
+    private void Emailus()
+    {
+        NavigationManager.NavigateTo("/contact-us/email");
+    }
+}
 
 <style>
-     body {
-        background: rgb(88, 88, 88);
-        color:  rgb(255, 255, 255);
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 0px;
-        margin: 0px;
-    }
-    
     header {
         background: linear-gradient(90deg, rgb(0, 174, 255), blue, rgb(0, 2, 102));
         background-size: 300% 300%;
@@ -44,31 +50,6 @@
         padding: 20px 40px 10px 50px;
         border: none;
         border-radius: none;
-
-        
-        
-        
-    }
-    section {
-        background: white;
-        color: gray;
-        height: 860px;
-    }
-    section div {
-        padding: 0px;
-        margin: 0px;
-        background: lightgray;
-        display: inline-block;
-        width: 100px;
-    }
-    .lowersection {
-        background: blue;
-    }
-    footer{
-        background: black;
-        color:  white;
-        padding: 10px 20px;
-        height: 100px;
     }
     li{
         display: inline-block;
@@ -110,26 +91,26 @@
         width: 103px;
         height: 35px;
     }
-    .logo{ 
-     width: 150px; 
-     height: 150px;
-     background-image: url("/images/imaginasie.png"); 
-     background-size: contain; 
-     background-repeat: no-repeat;
-     background-position: center;
+    .discordinvite{
+        background: none;
+        background-size: 300% 300%;
+        color: rgb(0, 60, 255);
+        font-size: 16px;
+        padding: none;
+        border: none;
+        border-radius: 8px;
+        width: 90px;
+        height: 35px;
+        margin-left: 600px;
     }
-
-
 </style>
 
 @code {
+
+    //Navigation between pages
     private void playGameSecurityIDM()
     {
-        NavigationManager.NavigateTo("/game2");
-    }
-    private void playGameParkour()
-    {
-        NavigationManager.NavigateTo("/game1");
+        NavigationManager.NavigateTo("SecurityIDM");
     }
     private void homeFf()
     {
@@ -141,6 +122,6 @@
     }
     private void contactusFf()
     {
-        NavigationManager.NavigateTo("/contact-us/email");
+        NavigationManager.NavigateTo("/contact-us");
     }
 }

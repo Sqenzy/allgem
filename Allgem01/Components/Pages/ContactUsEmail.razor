@@ -1,4 +1,4 @@
-@page "/contact-us"
+@page "/contact-us/email"
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
 
@@ -17,6 +17,11 @@
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 </header>
+<section>
+    <button class="discordinvite" @onclick="DiscordInvite">Discord</button>
+    <button class="email">Email</button>
+
+</section>
 
 <style>
     header {
@@ -88,5 +93,9 @@
     private void contactusFf()
     {
         NavigationManager.NavigateTo("/contact-us");
+    }
+    private void DiscordInvite()
+    {
+        NavigationManager.NavigateTo("/contact-us/discord");
     }
 }
