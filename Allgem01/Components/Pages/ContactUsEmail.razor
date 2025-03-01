@@ -1,7 +1,6 @@
 @page "/contact-us/email"
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
-@inject IJSRuntime JSRuntime
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,36 +23,30 @@
 
 <!--email automatization-->
 
-@code {
-}
-
 
 
 <!--discord invite autmatization-->
 <section>
     <button class="discordinvite" @onclick="DiscordInvite">Discord</button>
-    <button class="email">Email</button>
+    <button class="email" @onclick="OpenMailClient">Email</button>
 </section>
 
+@inject IJSRuntime JSRuntime
 
 
+<button @onclick="OpenMailClient">Email</button>
 
-<!--email form-->
-<form>
-    <div class="from-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-    <div class="from-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <div class="from-group">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-    </div>
-    <button type="submit">Send</button>
-</form>
+@code {
+    private void OpenMailClient()
+    {
+        var url = "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWtDnGmKzPzPLcPKblqLXJQQTXQmgZxqpSjTDdFBCQCxBKscKRqbxMddkdWrtzCwNBCHBrCml";
+        if (JSRuntime != null)
+        {
+            JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
+        }
+    }
+}
+
 
 
 
