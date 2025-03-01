@@ -59,11 +59,11 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
     </div>
-    <button type="submit">Send</button>
+    <button type="submit" @onclick="sendMail">Send</button>
 </form>
 
 @code {
-    private void sendMail()
+    private async Task sendMail()
     {
         let parms = {
         name: document.getElementById("name").value,
