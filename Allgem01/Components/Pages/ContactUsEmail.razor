@@ -23,18 +23,9 @@
 
 
 <!--email automatization-->
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">  
-</script>
 
-<script src="js/email.js"></script>
-
-
-<script type="text/javascript">
-   document.addEventListener('DOMContentLoaded', function() {
-      emailjs.init("z1A3H3jP6cEQpB65Z");
-   });
-</script>
+@code {
+}
 
 
 
@@ -61,15 +52,9 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
     </div>
-    <button type="submit" @onclick="sendMail">Send</button>
+    <button type="submit">Send</button>
 </form>
 
-@code {
-    private async Task sendMail()
-    {
-        await JSRuntime.InvokeVoidAsync("sendEmail");
-    }
-}
 
 
 <style>
@@ -93,7 +78,7 @@
         background-size: 300% 300%;
         color: white;
         font-size: 16px;
-        padding: none;
+        padding: 0;
         border: none;
         border-radius: 8px;
         width: 70px;
@@ -105,7 +90,7 @@
         background-size: 300% 300%;
         color: white;
         font-size: 16px;
-        padding: none;
+        padding: 0;
         border: none;
         border-radius: 8px;
         width: 90px;
@@ -116,7 +101,7 @@
         background-size: 300% 300%;
         color: white;
         font-size: 16px;
-        padding: none;
+        padding: 0;
         border: none;
         border-radius: 8px;
         width: 103px;
@@ -127,7 +112,7 @@
         background-size: 300% 300%;
         color: rgb(0, 60, 255);
         font-size: 16px;
-        padding: none;
+        padding: 0;
         border: none;
         border-radius: 8px;
         width: 90px;
@@ -153,7 +138,7 @@
     }
     private void contactusFf()
     {
-        NavigationManager.NavigateTo("/contact-us");
+        NavigationManager.NavigateTo("/contact-us/mail");
     }
     private void DiscordInvite()
     {
