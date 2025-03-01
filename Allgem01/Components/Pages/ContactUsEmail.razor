@@ -1,6 +1,7 @@
 @page "/contact-us/email"
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,12 +27,13 @@
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">  
 </script>
 
+<script src="js/email.js"></script>
+
+
 <script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "z1A3H3jP6cEQpB65Z",
-      });
-   })();
+   document.addEventListener('DOMContentLoaded', function() {
+      emailjs.init("z1A3H3jP6cEQpB65Z");
+   });
 </script>
 
 
