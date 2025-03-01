@@ -65,13 +65,7 @@
 @code {
     private async Task sendMail()
     {
-        let parms = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value
-        };
-        
-        emailjs.send('service_kxsv50d', 'template_bdgs15l', parms).then(alert("Your message has ben send to us"));
+        await JSRuntime.InvokeVoidAsync("sendEmail");
     }
 }
 
