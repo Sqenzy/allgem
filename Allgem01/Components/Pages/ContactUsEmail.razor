@@ -33,9 +33,6 @@
 
 @inject IJSRuntime JSRuntime
 
-
-<button @onclick="OpenMailClient">Email</button>
-
 @code {
     private void OpenMailClient()
     {
@@ -131,7 +128,7 @@
     }
     private void contactusFf()
     {
-        NavigationManager.NavigateTo("/contact-us/mail");
+        NavigationManager.NavigateTo("/contact-us/email");
     }
     private void DiscordInvite()
     {
