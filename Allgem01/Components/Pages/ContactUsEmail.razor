@@ -19,24 +19,34 @@
 </header>
 
 
-
-
-<!--email automatization-->
-
-
-
-<!--discord invite autmatization-->
 <section>
     <button class="discordinvite" @onclick="DiscordInvite">Discord</button>
     <button class="email" @onclick="OpenMailClient">Email</button>
 </section>
 
+<!--email automatization-->
 @inject IJSRuntime JSRuntime
 
 @code {
     private void OpenMailClient()
     {
         var url = "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWtDnGmKzPzPLcPKblqLXJQQTXQmgZxqpSjTDdFBCQCxBKscKRqbxMddkdWrtzCwNBCHBrCml";
+        if (JSRuntime != null)
+        {
+            JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
+        }
+    }
+}
+
+
+<!--discord invite autmatization-->
+
+@inject IJSRuntime JSRuntime
+
+@code {
+    private void DiscordInvite()
+    {
+        var url = "https://discord.gg/nmNGCyFsZp";
         if (JSRuntime != null)
         {
             JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
@@ -129,9 +139,5 @@
     private void contactusFf()
     {
         NavigationManager.NavigateTo("/contact-us/email");
-    }
-    private void DiscordInvite()
-    {
-        NavigationManager.NavigateTo("/contact-us/discord");
     }
 }
