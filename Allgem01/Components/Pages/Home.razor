@@ -19,13 +19,17 @@
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 </header>
-<section>
-    <ul><button class="parkour" type="button" @onclick="playGameParkour">parkour</button></ul>
-    <ul><button class="security" type="button" @onclick="playGameSecurityIDM">SecurityIDM</button></ul>
-    <ul><button class="u1" type="button">Upcoming Event</button></ul>
-    <ul><button class="u2" type="button">Upcoming Event</button></ul>
-    <ul><button class="u3" type="button">Upcoming Event</button></ul>
-    <ul><button class="u4" type="button">Upcoming Event</button></ul>
+
+<section class="gamessection">
+    <button class="parkour" type="button" @onclick="playGameParkour">Parkour</button>
+    <button class="security" type="button" @onclick="playGameSecurityIDM">Security IDM</button>
+    <button class="u1" type="button">Upcoming Event</button>
+</section>
+
+<section class="secondgamessection">
+    <button class="u2" type="button">Upcoming Event</button>
+    <button class="u3" type="button">Upcoming Event</button>
+    <button class="u4" type="button">Upcoming Event</button>
 </section>
 
 <section class="lowersection">Upcoming Events</section>
@@ -33,13 +37,6 @@
 </footer>
 
 <style>
-     body {
-        background: rgb(88, 88, 88);
-        color:  rgb(255, 255, 255);
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 0px;
-        margin: 0px;
-    }
     
     header {
         background: linear-gradient(90deg, rgb(0, 174, 255), blue, rgb(0, 2, 102));
@@ -49,25 +46,9 @@
         padding: 20px 40px 10px 50px;
         border: none;
         border-radius: none;
-
-        
-        
-        
-    }
-    section {
-        background: white;
-        color: gray;
-        height: 860px;
-    }
-    section div {
-        padding: 0px;
-        margin: 0px;
-        background: lightgray;
-        display: inline-block;
-        width: 100px;
     }
     .lowersection {
-        background: blue;
+        background: rgb(255, 0, 0);
     }
     footer{
         background: black;
@@ -123,86 +104,46 @@
      background-repeat: no-repeat;
      background-position: center;
     }
-    .parkour {
-    display: inline-block;
-    padding: 15px 30px;
-    background: linear-gradient(to right, #003366, #0066cc);
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    cursor: pointer;
-    }
-    .security {
-    display: inline-block;
-    padding: 15px 30px;
-    background: linear-gradient(to right, #003366, #0066cc);
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    cursor: pointer;
-    }
-     .u1 {
-    display: inline-block;
-    padding: 15px 30px;
-    background: linear-gradient(to right, #003366, #0066cc);
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    cursor: pointer;
-    }
-     .u2 {
-    display: inline-block;
-    padding: 15px 30px;
-    background: linear-gradient(to right, #003366, #0066cc);
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    cursor: pointer;
-    }
-     .u3 {
-    display: inline-block;
-    padding: 15px 30px;
-    background: linear-gradient(to right, #003366, #0066cc);
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    cursor: pointer;
-    }
-     .u4 {
-    display: inline-block;
-    padding: 15px 30px;
-    background: linear-gradient(to right, #003366, #0066cc);
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    cursor: pointer;
-    }
-    
-   
+    .gamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    justify-content: center; /* Center align */
+    gap: 30px; /* Add space between buttons */
+    background: blue; /* Example background */
+    padding-top: 200px;
+    min-height: 100px;
+}
+    .secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    justify-content: center; /* Center align */
+    gap: 30px; /* Add space between buttons */
+    background: blue; /* Example background */
+    padding-top: 300px;
+    min-height: 800px;
+}  
 
 
-
-
-
-
+.gamessection button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 60px 80px;
+    border-radius: 12px;
+    font-size: 32px;
+    cursor: pointer;
+    height: 50px;
+}
+.secondgamessection button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 50px;
+}
 </style>
 
 @code {
