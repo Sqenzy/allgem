@@ -18,11 +18,28 @@
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 </header>
 
+<section class="downheader">
+    <a>Mailing Us is currently in development</a>
+    <a>For now, please contact us via Discord or on this email address</a>
+    <h6>allgemgames@gmail.com</h6>
+</section>
 
 <section>
     <button class="discordinvite" @onclick="DiscordInvite">Discord</button>
     <button class="email" @onclick="OpenMailClient">Email</button>
 </section>
+
+<style>
+    a{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    h6{
+        font-size: 50px;
+        margin-left: 20px;
+        color: red;
+    }
+</style>
 
 <!--email automatization-->
 @inject IJSRuntime JSRuntime
