@@ -12,17 +12,14 @@
 </html>
 
 
+
 <header><strong>ALLGEM</strong>
     <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 </header>
 
-<section class="downheader">
-    <a>Mailing Us is currently in development</a>
-    <a>For now, please contact us via Discord or on this email address</a>
-    <h6>allgemgames@gmail.com</h6>
-</section>
+<div class="blue-box"></div>
 
 <section>
     <button class="discordinvite" @onclick="DiscordInvite">Discord</button>
@@ -30,15 +27,16 @@
 </section>
 
 <style>
-    a{
-        font-size: 20px;
-        margin-left: 20px;
-    }
-    h6{
-        font-size: 50px;
-        margin-left: 20px;
-        color: red;
-    }
+    .blue-box {
+    width: 600px; /* Set width */
+    height: 400px; /* Set height */
+    background-color: #0047AB; /* Blue color */
+    position: fixed;
+    padding: 20px;
+    left: 50%;
+    top: 50%;
+}
+
 </style>
 
 <!--email automatization-->
