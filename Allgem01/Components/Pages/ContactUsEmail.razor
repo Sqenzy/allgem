@@ -19,15 +19,7 @@
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 </header>
 
-<div class="blue-box">
-   
-</div>
-
-<section class="downheader">
-    <a>Mailing Us is currently in development</a>
-    <a>For now, please contact us via Discord or on this email address</a>
-    <h6>allgemgames@gmail.com</h6>
-</section>
+<div class="blue-box"></div>
 
 <section>
     <button class="discordinvite" @onclick="DiscordInvite">Discord</button>
@@ -35,27 +27,14 @@
 </section>
 
 <style>
-    a{
-        font-size: 20px;
-        margin-left: 20px;
-    }
-    h6{
-        font-size: 50px;
-        margin-left: 20px;
-        color: red;
-    }
     .blue-box {
     width: 600px; /* Set width */
     height: 400px; /* Set height */
     background-color: #0047AB; /* Blue color */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Space inside the box */
-    color: white; /* Text color */
-    text-align: center; /* Center text */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow effect */
-    position: relative;
-    left: 660px;
-    top: 200px;
+    position: fixed;
+    padding: 20px;
+    left: 50%;
+    top: 50%;
 }
 
 </style>
