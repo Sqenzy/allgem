@@ -1,6 +1,7 @@
 @page "/contact-us/email"
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,57 +20,14 @@
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 </header>
 
+<section class="downheader"></section>
+
 <div class="blue-box"></div>
 
 <section>
     <button class="discordinvite" @onclick="DiscordInvite">Discord</button>
     <button class="email" @onclick="OpenMailClient">Email</button>
 </section>
-
-<style>
-    .blue-box {
-    width: 600px; /* Set width */
-    height: 400px; /* Set height */
-    background-color: #0047AB; /* Blue color */
-    position: fixed;
-    padding: 20px;
-    left: 50%;
-    top: 50%;
-}
-
-</style>
-
-<!--email automatization-->
-@inject IJSRuntime JSRuntime
-
-@code {
-    private void OpenMailClient()
-    {
-        var url = "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWtDnGmKzPzPLcPKblqLXJQQTXQmgZxqpSjTDdFBCQCxBKscKRqbxMddkdWrtzCwNBCHBrCml";
-        if (JSRuntime != null)
-        {
-            JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
-        }
-    }
-}
-
-
-<!--discord invite autmatization-->
-
-@inject IJSRuntime JSRuntime
-
-@code {
-    private void DiscordInvite()
-    {
-        var url = "https://discord.gg/nmNGCyFsZp";
-        if (JSRuntime != null)
-        {
-            JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
-        }
-    }
-}
-
-
 
 
 <style>
@@ -134,6 +92,16 @@
         height: 35px;
         margin-left: 700px;
     }
+
+    .blue-box {
+    width: 600px; /* Set width */
+    height: 400px; /* Set height */
+    background-color: #0047AB; /* Blue color */
+    position: fixed;
+    padding: 20px;
+    left: 50%;
+    top: 50%;
+    }
 </style>
 
 @code {
@@ -154,5 +122,26 @@
     private void contactusFf()
     {
         NavigationManager.NavigateTo("/contact-us/email");
+    }
+<!--email automatization-->
+
+    private void OpenMailClient()
+    {
+        var url = "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWtDnGmKzPzPLcPKblqLXJQQTXQmgZxqpSjTDdFBCQCxBKscKRqbxMddkdWrtzCwNBCHBrCml";
+        if (JSRuntime != null)
+        {
+            JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
+        }
+    }
+
+
+<!--discord invite autmatization-->
+    private void DiscordInvite()
+    {
+        var url = "https://discord.gg/nmNGCyFsZp";
+        if (JSRuntime != null)
+        {
+            JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
+        }
     }
 }
