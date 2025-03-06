@@ -22,11 +22,10 @@
 
 <section class="downheader"></section>
 
-<div class="blue-box"></div>
-
-<section>
+<section class="lowersection">
     <button class="discordinvite" @onclick="DiscordInvite">Discord</button>
     <button class="email" @onclick="OpenMailClient">Email</button>
+    <div class="blue-box"></div>
 </section>
 
 
@@ -39,6 +38,13 @@
         padding: 20px 40px 10px 50px;
         border: none;
         border-radius: none;
+    }
+    .downheader {
+        background: linear-gradient(90deg,  rgb(12, 15, 160), rgb(0, 80, 133), rgb(0, 80, 133), rgb(1, 100, 146), rgb(0, 80, 133), rgb(0, 80, 133), rgb(12, 15, 160));
+        height: 2px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     li {
         display: inline-block;
@@ -90,22 +96,34 @@
         border-radius: 8px;
         width: 90px;
         height: 35px;
-        margin-left: 700px;
+        margin-left: 0px;
+    }
+    .email{
+        background: none;
+        background-size: 300% 300%;
+        color: rgb(0, 60, 255);
+        font-size: 16px;
+        padding: 0;
+        border: none;
+        border-radius: 8px;
+        width: 90px;
+        height: 35px;
     }
     .blue-box {
     width: 600px; /* Set width */
     height: 400px; /* Set height */
     background-color: #0047AB; /* Blue color */
-    position: fixed;
-    padding: 20px;
-    left: 50%;
+    position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     }
-    section{
+    .lowersection {
         display: flex;
         justify-content: center;
-        height: max-content;
+        height: 1000px;
         width: 100%;
+        background: linear-gradient(90deg, rgb(0, 1, 61), rgb(0, 75, 145), rgb(0, 100, 146), rgb(2, 132, 192), rgb(0, 100, 146), rgb(0, 75, 145), rgb(0, 1, 61));
     }
 </style>
 
