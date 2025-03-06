@@ -17,7 +17,14 @@
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 </header>
-about us
+
+
+<section class="downheader"></section>
+
+<section class="lowersection">
+
+</section>
+
 
 <style>
     header {
@@ -29,7 +36,14 @@ about us
         border: none;
         border-radius: none;
     }
-    li{
+    .downheader {
+        background: linear-gradient(90deg,  rgb(12, 15, 160), rgb(0, 80, 133), rgb(0, 80, 133), rgb(1, 100, 146), rgb(0, 80, 133), rgb(0, 80, 133), rgb(12, 15, 160));
+        height: 2px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    li {
         display: inline-block;
         list-style-type: none;
         padding-right: 40px;
@@ -40,7 +54,7 @@ about us
         background-size: 300% 300%;
         color: white;
         font-size: 16px;
-        padding: none;
+        padding: 0;
         border: none;
         border-radius: 8px;
         width: 70px;
@@ -52,7 +66,7 @@ about us
         background-size: 300% 300%;
         color: white;
         font-size: 16px;
-        padding: none;
+        padding: 0;
         border: none;
         border-radius: 8px;
         width: 90px;
@@ -63,21 +77,24 @@ about us
         background-size: 300% 300%;
         color: white;
         font-size: 16px;
-        padding: none;
+        padding: 0;
         border: none;
         border-radius: 8px;
         width: 103px;
         height: 35px;
+    }
+    .lowersection {
+        display: flex;
+        justify-content: center;
+        height: 1000px;
+        width: 100%;
+        background: linear-gradient(90deg, rgb(0, 1, 61), rgb(0, 75, 145), rgb(0, 100, 146), rgb(2, 132, 192), rgb(0, 100, 146), rgb(0, 75, 145), rgb(0, 1, 61));
     }
 </style>
 
 @code {
 
     //Navigation between pages
-    private void playGameSecurityIDM()
-    {
-        NavigationManager.NavigateTo("SecurityIDM");
-    }
     private void homeFf()
     {
         NavigationManager.NavigateTo("/");
