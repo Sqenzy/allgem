@@ -31,9 +31,9 @@
             <input type="email" name="email" required placeholder="Email">
             <textarea name="message" required placeholder="Message"></textarea>
             <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_cc" value="janlukavsky65@gmail.com">
-            <input type="hidden" name="_next" value="https://sqenzy.github.io/gametest/">
-            <button type="submit">Submit</button>
+            <!--<input type="hidden" name="_cc" value="janlukavsky65@gmail.com"> >-->
+            <input type="hidden" name="_next" value="http://localhost:5224/">
+            <button type="submit" @onclick="thanks">Submit</button>
         </form>
     </div>
 </section>
@@ -106,7 +106,7 @@
         border-radius: 48px;
         width: 270px;
         height: 65px;
-        margin-top: 200px;
+        margin-top: 160px;
         margin-right: 10px;
     }
     .email{
@@ -119,7 +119,7 @@
         border-radius: 48px;
         width: 270px;
         height: 65px;
-        margin-top: 200px;
+        margin-top: 160px;
     }
     .blue-box {
     width: 600px; /* Set width */
@@ -158,6 +158,10 @@
     private void contactusFf()
     {
         NavigationManager.NavigateTo("/contact-us");
+    }
+    private void thanks()
+    {
+        NavigationManager.NavigateTo("/thanks");
     }
 <!--email automatization-->
 
