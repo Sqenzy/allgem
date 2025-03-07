@@ -25,7 +25,17 @@
 <section class="lowersection">
     <button class="discordinvite" @onclick="DiscordInvite">Discord</button>
     <button class="email" @onclick="OpenMailClient">Email</button>
-    <div class="blue-box"></div>
+    <div class="blue-box">
+        <form action="https://formsubmit.co/allgemgames@gmail.com" method="POST">
+            <input type="text" name="name" requiredplaceholder="Name">
+            <input type="email" name="email" required placeholder="Email">
+            <textarea name="message" required placeholder="Message"></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_cc" value="janlukavsky65@gmail.com">
+            <input type="hidden" name="_next" value="https://sqenzy.github.io/gametest/">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </section>
 
 
