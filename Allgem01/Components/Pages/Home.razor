@@ -183,7 +183,12 @@
 @code {
     private void playGameSecurityIDM()
     {
-        NavigationManager.NavigateTo("/security-idm");
+        //NavigationManager.NavigateTo("/security-idm");
+        var url = "https://sqenzy.github.io/multyplayergametest/";
+        if (JSRuntime != null)
+        {
+            JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
+        }
     }
     private void playGameParkour()
     {
