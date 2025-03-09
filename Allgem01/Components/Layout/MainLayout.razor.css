@@ -1,7 +1,5 @@
-@media (min-width: 1457px) {
-    .home {
-        margin-left: 20%;
-    }
+@media (max-width: 1457px) {
+    
 }
 @keyframes fly-1 {
     from {
