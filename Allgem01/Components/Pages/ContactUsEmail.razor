@@ -25,15 +25,16 @@
 <section class="downheader1"></section>
 
 <section class="lowersection">
-    <button class="discordinvite" @onclick="DiscordInvite">Discord</button>
+    <button class="discordinvite" @onclick="DiscordInvite">
+        <img src="discord-icon.png" class="discordicon"></button>
     <button class="email" @onclick="OpenMailClient">Email</button>
 </section>
 <section class="formsection">
     <div class="blue-box"></div>
         <form class="from" action="https://formsubmit.co/36e6b93cb26f8ec08611000a741650f4" method="POST">
-            <input class="name" type="text" name="name" required placeholder="Name">
-            <input class="emaill" type="email" name="email" required placeholder="Email">
-            <input type="text" class="message" name="message" required placeholder="Message">
+            <input class="name" type="text" name="name" required placeholder="Name" @bind-value="name" TValue="string">
+            <input class="emaill" type="email" name="email" required placeholder="Email"@bind-value="email" TValue="string">
+            <input type="text" class="message" name="message" required placeholder="Message"@bind-value="message" TValue="string">
             <input type="hidden" name="_captcha" value="false">
             <!--<input type="hidden" name="_cc" value="janlukavsky65@gmail.com"> >-->
             <input type="hidden" name="_next" value="http://localhost:5224/">
@@ -60,7 +61,11 @@
 
 
 <style>
-    /* From Uiverse.io by adamgiebl */ 
+    .discordicon {
+        width: 60px;
+        height: 60px;
+        margin-top: 0px;
+    }
 .submit {
   font-family: inherit;
   font-size: 20px;
@@ -99,10 +104,6 @@
 
 .submit:hover span {
   transform: translateX(5em);
-}
-
-.submit:active {
-  transform: scale(0.95);
 }
 
     header {
@@ -169,15 +170,24 @@
         height: 35px;
     }
     .email,.discordinvite{
-        background: rgb(255, 255, 255);
         background-size: 300% 300%;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         font-size: 33px;
         padding: 0;
         border: none;
         border-radius: 48px;
         width: 230px;
         height: 60px;
+    }
+    .discordinvite {
+        background: rgba(88, 101, 242, 1);
+        outline: rgb(61, 75, 177);
+        outline-style: solid;
+        outline-width: 2px;
+    }
+    .discordinvite:hover {
+        background: rgba(88, 101, 242, 1);
+        width: 240px;
     }
     .lowersection {
         display: flex;
@@ -242,7 +252,9 @@
     }
 </style>
 @code {
-
+    private string name = string.Empty;
+    private string email = string.Empty;
+    private string message = string.Empty;
     //Navigation between pages
     private void playGameSecurityIDM()
     {
@@ -262,7 +274,14 @@
     }
     private void thanks()
     {
-        NavigationManager.NavigateTo("/thanks");
+        if (name=="" || email=="" || message=="")
+        {
+            JSRuntime.InvokeVoidAsync("alert", "Please fill all the fields.");
+        }
+        else
+        {
+            NavigationManager.NavigateTo("/thanks");
+        }
     }
 <!--email automatization-->
 
