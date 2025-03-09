@@ -31,13 +31,13 @@
 <section class="formsection">
     <div class="blue-box">
         <form action="https://formsubmit.co/36e6b93cb26f8ec08611000a741650f4" method="POST">
-            <input type="text" name="name" requiredplaceholder="Name">
-            <input type="email" name="email" required placeholder="Email">
-            <textarea name="message" required placeholder="Message"></textarea>
+            <input class="name" type="text" name="name" required placeholder="Name">
+            <input class="email" type="email" name="email" required placeholder="Email">
+            <input type="text" class="message" name="message" required placeholder="Message">
             <input type="hidden" name="_captcha" value="false">
             <!--<input type="hidden" name="_cc" value="janlukavsky65@gmail.com"> >-->
             <input type="hidden" name="_next" value="http://localhost:5224/">
-            <button type="submit" @onclick="thanks">Submit</button>
+            <button class="submit" type="submit" @onclick="thanks">Submit</button>
         </form>
     </div>
 </section>
@@ -118,8 +118,6 @@
         width: 230px;
         height: 60px;
     }
-    .email {
-    }
     .discordinvite {
         background-color: (rgb(255, 0, 0));
     }
@@ -139,12 +137,31 @@
         background: linear-gradient(90deg, rgb(0, 1, 61), rgb(0, 75, 145), rgb(0, 100, 146), rgb(2, 132, 192), rgb(0, 100, 146), rgb(0, 75, 145), rgb(0, 1, 61));
     }
     .blue-box {
-    width: 600px; /* Set width */
-    height: 400px; /* Set height */
-    background-color: #0047AB; /* Blue color */
-    position: static;
-    top: 20px;
-    border-radius: 48px;
+        width: 600px; /* Set width */
+        height: 400px; /* Set height */
+        background-color: #0047AB; /* Blue color */
+        position: static;
+        top: 20px;
+        border-radius: 48px;
+    }
+    .name {
+        border-radius: 12px;
+        width: 500px;
+        height: 75px;     
+        
+
+    }
+    .email {
+        border-radius: 24px;
+        
+    }
+    .message {
+        border-radius: 24px;
+        
+    }
+    .submit {
+        border-radius: 24px;
+        
     }
 </style>
 
