@@ -54,9 +54,6 @@ h1:focus {
     color: var(--bs-secondary-color);
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-}
-
 body {
     background-image: url('/images/gay.jpg'); /* Adjust path accordingly */
     background-size: cover; /* Ensures the image covers the whole screen */
