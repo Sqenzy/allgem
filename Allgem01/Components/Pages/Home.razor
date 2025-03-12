@@ -24,15 +24,39 @@
 <section class="downheader"></section>
 
 <section class="gamessection">
-    <button class="parkour" type="button" @onclick="playGameParkour">Test Game</button>
-    <button class="security" type="button" @onclick="playGameSecurityIDM">Penguin Parkour</button>
-    <button class="u1" type="button">Upcoming Event</button>
+<div class="cards">
+    <div class="cards">
+    <button class="card game1" @onclick="playGameParkour">
+        <p class="tip">Test Game</p>
+        <p class="second-text"></p>
+    </button>
+    <button class="card game2" @onclick="playGameSecurityIDM">
+        <p class="tip">Multiplayer</p>
+        <p class="second-text"></p>
+    </button>
+    <button class="card game3">
+        <p class="tip">Upcoming Game</p>
+        <p class="second-text"></p>
+    </button>
+</div>
+</div>
 </section>
 
 <section class="secondgamessection">
-    <button class="u2" type="button">Upcoming Event</button>
-    <button class="u3" type="button">Upcoming Event</button>
-    <button class="u4" type="button">Upcoming Event</button>
+    <div class="cards">
+    <button class="card game1">
+        <p class="tip">Upcoming Game</p>
+        <p class="second-text">.......</p>
+    </button>
+    <button class="card game2">
+        <p class="tip">Upcoming Game</p>
+        <p class="second-text">.......</p>
+    </button>
+    <button class="card game3">
+        <p class="tip">Upcoming Game</p>
+        <p class="second-text">.......</p>
+    </button>
+</div>
 </section>
 
 <section class="lowersection">Upcoming Events</section>
@@ -42,7 +66,7 @@
 <style>
     
     header {
-        background: linear-gradient(90deg, rgb(0, 195, 255), blue, rgb(0, 2, 102));
+        background: rgb(10, 13, 20);
         background-size: 300% 300%;
         color: white;
         font-size: 16px;
@@ -55,14 +79,14 @@
         z-index: 1000;
     }
     .downheader {
-        background: linear-gradient(90deg,  rgb(12, 15, 160), rgb(0, 80, 133), rgb(0, 80, 133), rgb(1, 100, 146), rgb(0, 80, 133), rgb(0, 80, 133), rgb(12, 15, 160));
+        background: rgb(31, 33, 48);
         height: 2px;
         width: 100%;
         display: flex;
         justify-content: center;
     }
     footer{
-        background: linear-gradient(90deg, rgb(2, 132, 192), blue, rgb(0, 2, 102));
+        background: rgb(10, 13, 20);
         color:  white;
         padding: 10px 20px;
         height: 100px;
@@ -120,7 +144,7 @@
     flex-wrap: wrap; /* Wrap if screen is too small */
     justify-content: center; /* Center align */
     gap: 30px; /* Add space between buttons */
-    background: linear-gradient(90deg, rgb(0, 1, 61), rgb(0, 75, 145), rgb(0, 100, 146), rgb(2, 132, 192), rgb(0, 100, 146), rgb(0, 75, 145), rgb(0, 1, 61));
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
     }
     .gamessection {
     min-height: 100px;
@@ -130,73 +154,75 @@
     padding-top: 200px;
     min-height: 800px;
 }  
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  
+}
 
+.cards .game1 {
+  background-color: rgb(55, 56, 82);
+}
 
-.gamessection button {
-    background: white;
-    color: black;
-    border: none;
-    padding: 60px 60px;
-    border-radius: 40px;
-    font-size: 32px;
-    cursor: pointer;
-    height: 20px;
-    priority: 1;
+.cards .game2 {
+  background-color: rgb(55, 56, 82);
 }
-.secondgamessection button {
-    background: white;
-    color: black;
-    border: none;
-    padding: 60px 60px;
-    border-radius: 40px;
-    font-size: 32px;
-    cursor: pointer;
-    height: 20px;
+
+.cards .game3 {
+  background-color: rgb(55, 56, 82);
 }
-.parkour {
-    height: 40px;
-    width: 360px;
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  height: 240px;
+  width: 450px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
 }
-.security {
-    height: 40px;
-    width: 360px;
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
 }
-.u1 {
-    height: 40px;
-    width: 360px;
+
+.cards .card p.second-text {
+  font-size: .7em;
 }
-.u2 {
-    height: 40px;
-    width: 360px;
-}
-.u3 {
-    height: 40px;
-    width: 360px;
-}
-.u4 {
-    height: 40px;
-    width: 360px;
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
 }
 </style>
 
 @code {
     private void playGameSecurityIDM()
     {
-        //NavigationManager.NavigateTo("/security-idm");
-        var url = "https://sqenzy.github.io/multyplayergametest/";
-        if (JSRuntime != null)
-        {
-            JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
-        }
+        NavigationManager.NavigateTo("/security-idm");
+        //var url = "https://sqenzy.github.io/multyplayergametest/";
+        //if (JSRuntime != null)
+        //{
+          //  JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
+        //}
     }
     private void playGameParkour()
     {
-        //NavigationManager.NavigateTo("/parkour");
-        var url = "https://sqenzy.github.io/gametest/";
-        if (JSRuntime != null)
-        {
-            JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
-        }
+        NavigationManager.NavigateTo("/parkour");
+        //var url = "https://sqenzy.github.io/gametest/";
+        //if (JSRuntime != null)
+        //{
+          //  JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
+        //}
     }
     private void homeFf()
     {

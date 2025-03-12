@@ -18,7 +18,9 @@
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 </header>
 
-<img src="/ulteros.jpg" />
+<section class="downheader"></section>
+
+<section class="lowersection"></section>
 
 <style>
 
@@ -31,6 +33,13 @@
         border: none;
         border-radius: none;
         
+    }
+    .downheader {
+        background: rgb(31, 33, 48);
+        height: 2px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     li{
         display: inline-block;
@@ -72,9 +81,10 @@
         width: 103px;
         height: 35px;
     }
-    img{
+    .lowersection {
         width: 100%;
         height: 100%;
+        background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
     }
 </style>
 

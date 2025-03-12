@@ -1,6 +1,7 @@
 @page "/security-idm"
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,18 +14,28 @@
 
 
 <header><strong>ALLGEM</strong>
-    <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
-    <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
-    <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
+    <li><button class="home" type=".button" @onclick="homeFf">Home</button></li>
+    <li><button class="aboutus" type=".button" @onclick="aboutusFf">About Us</button></li>
+    <li><button class="contactus" type=".button" @onclick="contactusFf">Contact Us</button></li>
 </header>
-<section>
+
+<section class="downheader"></section>
+
+<section class="lowersection">
+    <div class="cards">
+    <button class="play" type=".button" @onclick="game2Ff">
+<button class="start">
+  START
+</button>
+        <p class="tip"></p>
+        </button>
+    </div>
 </section>
 
 
 <style>
-
     header {
-        background: linear-gradient(90deg, rgb(0, 174, 255), blue, rgb(0, 2, 102));
+        background: rgb(10, 13, 20);
         background-size: 300% 300%;
         color: white;
         font-size: 16px;
@@ -32,6 +43,13 @@
         border: none;
         border-radius: none;
         
+    }
+    .downheader {
+        background: rgb(31, 33, 48);
+        height: 2px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     li{
         display: inline-block;
@@ -73,6 +91,64 @@
         width: 103px;
         height: 35px;
     }
+    .lowersection {
+        display: flex;
+        justify-content: center;
+        height: 761px;
+        width: 100%;
+        background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 213px
+}
+.play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 250px;
+  width: 500px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+  background-color: rgb(36, 32, 33);
+  transition: color, 500ms;
+  transition: transform,border-radius, 3s;
+  transition: border-radius,box-shadow, 2s;
+}
+
+.play p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+.play:hover {
+  transform: scale(1.01, 1.01);
+  box-shadow: 0px 0px 30px 1px rgba(0, 78, 247, 0.493);
+  border-radius: 20px;
+}
+.play:focus {
+    transform: scale(3.55,3.45 );
+    color: rgb(36, 32, 33);
+    border-radius: 10px;
+}
+.start {
+  background-color: #004fece7;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 2em;
+  cursor: pointer;
+  transition: 0.1s ease;
+  border-width: 0;
+  box-shadow: 1px 5px 0 0 #0e285d;
+  pointer-events: none;
+}
 </style>
 
 @code {
@@ -89,5 +165,14 @@
     private void contactusFf()
     {
         NavigationManager.NavigateTo("/contact-us");
+    }
+    private void game2Ff()
+    {
+        Thread.Sleep(1500);
+        var url = "https://sqenzy.github.io/multyplayergametest/";
+        if (JSRuntime != null)
+        {
+            JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
+        }
     }
 }
