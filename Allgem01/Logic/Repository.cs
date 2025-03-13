@@ -10,6 +10,8 @@ public class Repository
 
     private string _connectionString = "Data Source=database.sqlite";
     
+    // abys mohl zobrazit ty data, tak si stahni DbBrowser for sqlite
+    
     public Repository()
     {
         InitDb();
