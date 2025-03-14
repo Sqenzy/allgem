@@ -92,6 +92,8 @@ public class Repository
     {
         byte[] bytes = Encoding.UTF8.GetBytes(password); // konvertuje string na byty ve formatu UTF-8 ASCII
         byte[] hashedPasswordBytes = SHA256.HashData(bytes);
-        return Encoding.UTF8.GetString(hashedPasswordBytes);
+        //return Encoding.UTF8.GetString(hashedPasswordBytes);
+        string hashedPassword = Encoding.UTF8.GetString(hashedPasswordBytes);
+        return hashedPassword;
     }
 }

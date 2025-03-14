@@ -19,6 +19,7 @@
     <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
+    <li><button class="account" type="button" @onclick="accountFf">Account</button></li>
 </header>
 
 <section class="downheader"></section>
@@ -206,6 +207,10 @@ body {
 </style>
 
 @code {
+    private void accountFf()
+    {
+        NavigationManager.NavigateTo("/login");
+    }
     private void playGameSecurityIDM()
     {
         NavigationManager.NavigateTo("/security-idm");
@@ -217,7 +222,7 @@ body {
     }
     private void playGameParkour()
     {
-        NavigationManager.NavigateTo("/parkour");
+        NavigationManager.NavigateTo("/signup");
         //var url = "https://sqenzy.github.io/gametest/";
         //if (JSRuntime != null)
         //{

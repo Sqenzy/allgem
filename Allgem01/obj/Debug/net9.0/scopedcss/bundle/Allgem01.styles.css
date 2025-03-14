@@ -1,1 +1,13 @@
 /* _content/Allgem01/Components/Layout/MainLayout.razor.rz.scp.css */
+@media (max-width: 1457px) {
+    
+}
+@keyframes fly-1-b-dx101ap9fh {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }

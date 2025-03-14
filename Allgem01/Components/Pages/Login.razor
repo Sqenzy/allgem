@@ -2,6 +2,7 @@
 @using Allgem01.Logic
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
+@inject Repository Repository
 
 <!doctype html>
 <html lang="en">
@@ -10,24 +11,46 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Allgem - Login</title>
+    <title>Allgem | Login</title>
 </head>
 <body>
 <div>
     <input id="email-input" placeholder="Enter your email" type="email" @bind="email">
     <input id="password-input" placeholder="Enter your password" type="password" @bind="password">
-    <button @onclick="login"></button>
+    <button @onclick="login">login</button>
+    <a></a> 
 </div>
 </body>
 </html>
 
 @code {
-    private string email;
-    private string password;
-    private Repository repository = new();
+    private string? email;
+    private string? password;
 
     private void login()
     {
-        bool success = repository.Login(email, password);
+        if (string.IsNullOrEmpty(email))
+        {
+            // Handle the case where email is null or empty
+            return;
+        }
+
+        if (string.IsNullOrEmpty(password))
+        {
+            // Handle the case where password is null or empty
+            return;
+        }
+
+        bool success = Repository.Login(email, password);
+
+        if (success == true)
+        {
+            NavigationManager.NavigateTo("/");
+        }
+        else
+        {
+            // Handle the case where login failed
+        }
     }
+
 }

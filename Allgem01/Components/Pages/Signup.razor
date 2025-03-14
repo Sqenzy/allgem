@@ -1,0 +1,33 @@
+@page "/signup"
+@using Allgem01.Logic
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+@inject Repository repository
+
+<div>
+    <input id="email-input" placeholder="Enter your email" type="email" @bind="email">
+    <input id="password-input" placeholder="Enter your password" type="password" @bind="password">
+    <button @onclick="signUp">Sign Up</button>
+</div>
+
+@code {
+    private string? email;
+    private string? password;
+
+    private void signUp()
+    {
+        if (string.IsNullOrEmpty(email))
+        {
+            // Handle the case where email is null or empty
+            return;
+        }
+
+        if (string.IsNullOrEmpty(password))
+        {
+            // Handle the case where password is null or empty
+            return;
+        }
+
+        repository.SignUp(email, password);
+    }
+}

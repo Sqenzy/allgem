@@ -1,0 +1,12 @@
+@media (max-width: 1457px) {
+    
+}
+@keyframes fly-1-b-dx101ap9fh {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }

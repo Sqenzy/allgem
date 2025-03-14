@@ -1,10 +1,11 @@
 using Allgem01.Components;
-
+using Allgem01.Logic;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+    builder.Services.AddScoped<Repository>();
 
 var app = builder.Build();
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\AllGames\\Allgem01\\Allgem01.csproj": {}
+    "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\Allgem01.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\AllGames\\Allgem01\\Allgem01.csproj": {
+    "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\Allgem01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\AllGames\\Allgem01\\Allgem01.csproj",
+        "projectUniqueName": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\Allgem01.csproj",
         "projectName": "Allgem01",
-        "projectPath": "C:\\Projects\\AllGames\\Allgem01\\Allgem01.csproj",
+        "projectPath": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\Allgem01.csproj",
         "packagesPath": "C:\\Users\\sqenz\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\AllGames\\Allgem01\\obj\\",
+        "outputPath": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,16 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.119, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
