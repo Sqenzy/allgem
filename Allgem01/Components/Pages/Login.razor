@@ -2,32 +2,61 @@
 @using Allgem01.Logic
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
-@inject Repository Repository
+@inject Repository repository
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Allgem | Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
 </head>
 <body>
-<div>
-    <input id="email-input" placeholder="Enter your email" type="email" @bind="email">
-    <input id="password-input" placeholder="Enter your password" type="password" @bind="password">
-    <button @onclick="login">login</button>
-    <a></a> 
-</div>
+    
 </body>
 </html>
 
+<section class="boxsection">
+        <input id="email-input" placeholder="Enter your email" type="email" @bind="email">
+        <input id="password-input" placeholder="Enter your password" type="password" @bind="password">
+        <button @onclick="logIn">Log In</button>
+</section>
+
+
+
+<style>
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    .boxsection {
+        height: 300px;
+        width: 300px;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+    }
+
+    input {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    button {
+        margin: 10px;
+        padding: 5px;
+    }
+</style>
 @code {
     private string? email;
     private string? password;
 
-    private void login()
+    private void logIn()
     {
         if (string.IsNullOrEmpty(email))
         {
@@ -41,16 +70,6 @@
             return;
         }
 
-        bool success = Repository.Login(email, password);
-
-        if (success == true)
-        {
-            NavigationManager.NavigateTo("/");
-        }
-        else
-        {
-            // Handle the case where login failed
-        }
+        repository.Login(email, password);
     }
-
 }
