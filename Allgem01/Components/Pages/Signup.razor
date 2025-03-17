@@ -17,9 +17,15 @@
 </html>
 
 <section class="boxsection">
-        <input id="email-input" placeholder="Enter your email" type="email" @bind="email">
-        <input id="password-input" placeholder="Enter your password" type="password" @bind="password">
-        <button @onclick="SignUp">Sign Up</button>
+        <input id="p1" placeholder="Enter your email" type="email" @bind="email">
+        <input id="p2" placeholder="Enter your password" type="password" @bind="password">
+        <button>
+    Sign Up
+    <div class="arrow-wrapper">
+        <div class="arrow"></div>
+
+    </div>
+</button
 </section>
 
 
@@ -35,28 +41,99 @@
         background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
     }
     .boxsection {
-        height: 300px;
-        width: 300px;
-        flex-direction: column;
-        align-items: center;
-        background-color: white;
+        width: 550px; /* Set width */
+        height: 400px; /* Set height */
+        background-color: rgb(55, 56, 82);
+        position: absolute;
+        top: 260px;
+        border-radius: 48px;
+        left: 700px;
     }
-
-    input {
-        margin: 10px;
-        padding: 5px;
+    #p1{
+         border-radius: 12px;
+        width: 470px;
+        height: 50px;     
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 80px;
     }
-
+    #p2{
+        border-radius: 12px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 180px;
+        width: 470px;
+        height: 50px; 
+    }
     button {
-        margin: 10px;
-        padding: 5px;
-    }
+  --primary-color: rgb(10, 13, 20);
+  --secondary-color: #fff;
+  --hover-color: rgb(10, 13, 20);
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  margin-top: 290px;
+  margin-left: 200px;
+}
+
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+  right: 0;
+}
 </style>
 @code {
     private string? email;
     private string? password;
 
-    private void SignUp()
+    private void logIn()
     {
         if (string.IsNullOrEmpty(email))
         {
@@ -70,6 +147,6 @@
             return;
         }
 
-        repository.SignUp(email, password);
+        repository.Login(email, password);
     }
 }
