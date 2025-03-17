@@ -19,13 +19,13 @@
 <section class="boxsection">
         <input id="p1" placeholder="Enter your email" type="email" @bind="email">
         <input id="p2" placeholder="Enter your password" type="password" @bind="password">
-        <button>
+        <button @onclick="signUp">
     Sign Up
     <div class="arrow-wrapper">
         <div class="arrow"></div>
 
     </div>
-</button
+</button>
 </section>
 
 
@@ -133,7 +133,7 @@ button:hover .arrow:before {
     private string? email;
     private string? password;
 
-    private void logIn()
+    private void signUp()
     {
         if (string.IsNullOrEmpty(email))
         {
@@ -147,6 +147,6 @@ button:hover .arrow:before {
             return;
         }
 
-        repository.Login(email, password);
+        repository.SignUp(email, password);
     }
 }
