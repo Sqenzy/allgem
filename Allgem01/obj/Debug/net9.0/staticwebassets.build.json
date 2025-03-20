@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wCgkDHmQRv1J2lXf/72jpiP82gj470G9GiekD6FXico=",
+  "Hash": "03xp1SNhMb2tKDvc/X95yf1FcWFQC25WFgPcBnPjndk=",
   "Source": "Allgem01",
   "BasePath": "_content/Allgem01",
   "Mode": "Default",
@@ -416,12 +416,12 @@
       "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\cfrcn2prdi-6i77y8ejls.gz",
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\cfrcn2prdi-58d2ehzx87.gz",
       "SourceId": "Allgem01",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Allgem01",
-      "RelativePath": "Allgem01#[.{fingerprint=6i77y8ejls}]!.bundle.scp.css.gz",
+      "RelativePath": "Allgem01#[.{fingerprint=58d2ehzx87}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -430,8 +430,8 @@
       "RelatedAsset": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Allgem01.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "krafivu46t",
-      "Integrity": "wA3XcLfnXYKHgfmozrx+TKmLf+3r3f8BLWCfUPrDBqI=",
+      "Fingerprint": "kxcwd4zsbe",
+      "Integrity": "ePZ/HPPmaGAdLC5+CHSPVHX4Ly1+QHrg6L09beJYcJ8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Allgem01.bundle.scp.css"
@@ -962,12 +962,12 @@
       "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\ydx0d74kao-6i77y8ejls.gz",
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\ydx0d74kao-58d2ehzx87.gz",
       "SourceId": "Allgem01",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Allgem01",
-      "RelativePath": "Allgem01#[.{fingerprint=6i77y8ejls}]?.styles.css.gz",
+      "RelativePath": "Allgem01#[.{fingerprint=58d2ehzx87}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -976,8 +976,8 @@
       "RelatedAsset": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Allgem01.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "krafivu46t",
-      "Integrity": "wA3XcLfnXYKHgfmozrx+TKmLf+3r3f8BLWCfUPrDBqI=",
+      "Fingerprint": "kxcwd4zsbe",
+      "Integrity": "ePZ/HPPmaGAdLC5+CHSPVHX4Ly1+QHrg6L09beJYcJ8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Allgem01.styles.css"
@@ -1018,8 +1018,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "6i77y8ejls",
-      "Integrity": "Qrznvnx/5ryaQnQ/0Nqu/GAweOeKxRiJSUmJckBaGVw=",
+      "Fingerprint": "58d2ehzx87",
+      "Integrity": "iy5pykRkWvKiUZHGEDm6+2q9Oj9ifcGMY78yepfcKsI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Allgem01.styles.css"
@@ -1039,8 +1039,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "6i77y8ejls",
-      "Integrity": "Qrznvnx/5ryaQnQ/0Nqu/GAweOeKxRiJSUmJckBaGVw=",
+      "Fingerprint": "58d2ehzx87",
+      "Integrity": "iy5pykRkWvKiUZHGEDm6+2q9Oj9ifcGMY78yepfcKsI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Allgem01.bundle.scp.css"
@@ -2243,13 +2243,13 @@
       ]
     },
     {
-      "Route": "Allgem01.6i77y8ejls.bundle.scp.css",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\cfrcn2prdi-6i77y8ejls.gz",
+      "Route": "Allgem01.58d2ehzx87.bundle.scp.css",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\cfrcn2prdi-58d2ehzx87.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.005235602094"
+          "Quality": "0.003267973856"
         }
       ],
       "ResponseHeaders": [
@@ -2259,15 +2259,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "190"
+          "Value": "305"
         },
         {
           "Name": "ETag",
-          "Value": "\"wA3XcLfnXYKHgfmozrx+TKmLf+3r3f8BLWCfUPrDBqI=\""
+          "Value": "\"ePZ/HPPmaGAdLC5+CHSPVHX4Ly1+QHrg6L09beJYcJ8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 11:06:20 GMT"
+          "Value": "Thu, 20 Mar 2025 12:42:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2287,13 +2287,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Qrznvnx/5ryaQnQ/0Nqu/GAweOeKxRiJSUmJckBaGVw=\""
+          "Value": "W/\"iy5pykRkWvKiUZHGEDm6+2q9Oj9ifcGMY78yepfcKsI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6i77y8ejls"
+          "Value": "58d2ehzx87"
         },
         {
           "Name": "label",
@@ -2301,12 +2301,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Qrznvnx/5ryaQnQ/0Nqu/GAweOeKxRiJSUmJckBaGVw="
+          "Value": "sha256-iy5pykRkWvKiUZHGEDm6+2q9Oj9ifcGMY78yepfcKsI="
         }
       ]
     },
     {
-      "Route": "Allgem01.6i77y8ejls.bundle.scp.css",
+      "Route": "Allgem01.58d2ehzx87.bundle.scp.css",
       "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Allgem01.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2316,7 +2316,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "263"
+          "Value": "588"
         },
         {
           "Name": "Content-Type",
@@ -2324,11 +2324,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Qrznvnx/5ryaQnQ/0Nqu/GAweOeKxRiJSUmJckBaGVw=\""
+          "Value": "\"iy5pykRkWvKiUZHGEDm6+2q9Oj9ifcGMY78yepfcKsI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 11:06:20 GMT"
+          "Value": "Thu, 20 Mar 2025 12:42:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2338,7 +2338,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6i77y8ejls"
+          "Value": "58d2ehzx87"
         },
         {
           "Name": "label",
@@ -2346,13 +2346,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Qrznvnx/5ryaQnQ/0Nqu/GAweOeKxRiJSUmJckBaGVw="
+          "Value": "sha256-iy5pykRkWvKiUZHGEDm6+2q9Oj9ifcGMY78yepfcKsI="
         }
       ]
     },
     {
-      "Route": "Allgem01.6i77y8ejls.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\cfrcn2prdi-6i77y8ejls.gz",
+      "Route": "Allgem01.58d2ehzx87.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\cfrcn2prdi-58d2ehzx87.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2361,7 +2361,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "190"
+          "Value": "305"
         },
         {
           "Name": "Content-Type",
@@ -2369,11 +2369,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wA3XcLfnXYKHgfmozrx+TKmLf+3r3f8BLWCfUPrDBqI=\""
+          "Value": "\"ePZ/HPPmaGAdLC5+CHSPVHX4Ly1+QHrg6L09beJYcJ8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 11:06:20 GMT"
+          "Value": "Thu, 20 Mar 2025 12:42:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2391,7 +2391,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6i77y8ejls"
+          "Value": "58d2ehzx87"
         },
         {
           "Name": "label",
@@ -2399,18 +2399,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wA3XcLfnXYKHgfmozrx+TKmLf+3r3f8BLWCfUPrDBqI="
+          "Value": "sha256-ePZ/HPPmaGAdLC5+CHSPVHX4Ly1+QHrg6L09beJYcJ8="
         }
       ]
     },
     {
-      "Route": "Allgem01.6i77y8ejls.styles.css",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\ydx0d74kao-6i77y8ejls.gz",
+      "Route": "Allgem01.58d2ehzx87.styles.css",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\ydx0d74kao-58d2ehzx87.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.005235602094"
+          "Quality": "0.003267973856"
         }
       ],
       "ResponseHeaders": [
@@ -2420,15 +2420,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "190"
+          "Value": "305"
         },
         {
           "Name": "ETag",
-          "Value": "\"wA3XcLfnXYKHgfmozrx+TKmLf+3r3f8BLWCfUPrDBqI=\""
+          "Value": "\"ePZ/HPPmaGAdLC5+CHSPVHX4Ly1+QHrg6L09beJYcJ8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 11:06:20 GMT"
+          "Value": "Thu, 20 Mar 2025 12:42:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2448,13 +2448,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Qrznvnx/5ryaQnQ/0Nqu/GAweOeKxRiJSUmJckBaGVw=\""
+          "Value": "W/\"iy5pykRkWvKiUZHGEDm6+2q9Oj9ifcGMY78yepfcKsI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6i77y8ejls"
+          "Value": "58d2ehzx87"
         },
         {
           "Name": "label",
@@ -2462,12 +2462,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Qrznvnx/5ryaQnQ/0Nqu/GAweOeKxRiJSUmJckBaGVw="
+          "Value": "sha256-iy5pykRkWvKiUZHGEDm6+2q9Oj9ifcGMY78yepfcKsI="
         }
       ]
     },
     {
-      "Route": "Allgem01.6i77y8ejls.styles.css",
+      "Route": "Allgem01.58d2ehzx87.styles.css",
       "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Allgem01.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2477,7 +2477,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "263"
+          "Value": "588"
         },
         {
           "Name": "Content-Type",
@@ -2485,11 +2485,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Qrznvnx/5ryaQnQ/0Nqu/GAweOeKxRiJSUmJckBaGVw=\""
+          "Value": "\"iy5pykRkWvKiUZHGEDm6+2q9Oj9ifcGMY78yepfcKsI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 11:06:20 GMT"
+          "Value": "Thu, 20 Mar 2025 12:42:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2499,7 +2499,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6i77y8ejls"
+          "Value": "58d2ehzx87"
         },
         {
           "Name": "label",
@@ -2507,13 +2507,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Qrznvnx/5ryaQnQ/0Nqu/GAweOeKxRiJSUmJckBaGVw="
+          "Value": "sha256-iy5pykRkWvKiUZHGEDm6+2q9Oj9ifcGMY78yepfcKsI="
         }
       ]
     },
     {
-      "Route": "Allgem01.6i77y8ejls.styles.css.gz",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\ydx0d74kao-6i77y8ejls.gz",
+      "Route": "Allgem01.58d2ehzx87.styles.css.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\ydx0d74kao-58d2ehzx87.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2522,7 +2522,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "190"
+          "Value": "305"
         },
         {
           "Name": "Content-Type",
@@ -2530,11 +2530,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wA3XcLfnXYKHgfmozrx+TKmLf+3r3f8BLWCfUPrDBqI=\""
+          "Value": "\"ePZ/HPPmaGAdLC5+CHSPVHX4Ly1+QHrg6L09beJYcJ8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 11:06:20 GMT"
+          "Value": "Thu, 20 Mar 2025 12:42:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2552,7 +2552,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6i77y8ejls"
+          "Value": "58d2ehzx87"
         },
         {
           "Name": "label",
@@ -2560,18 +2560,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wA3XcLfnXYKHgfmozrx+TKmLf+3r3f8BLWCfUPrDBqI="
+          "Value": "sha256-ePZ/HPPmaGAdLC5+CHSPVHX4Ly1+QHrg6L09beJYcJ8="
         }
       ]
     },
     {
       "Route": "Allgem01.bundle.scp.css",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\cfrcn2prdi-6i77y8ejls.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\cfrcn2prdi-58d2ehzx87.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.005235602094"
+          "Quality": "0.003267973856"
         }
       ],
       "ResponseHeaders": [
@@ -2581,15 +2581,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "190"
+          "Value": "305"
         },
         {
           "Name": "ETag",
-          "Value": "\"wA3XcLfnXYKHgfmozrx+TKmLf+3r3f8BLWCfUPrDBqI=\""
+          "Value": "\"ePZ/HPPmaGAdLC5+CHSPVHX4Ly1+QHrg6L09beJYcJ8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 11:06:20 GMT"
+          "Value": "Thu, 20 Mar 2025 12:42:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2609,13 +2609,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Qrznvnx/5ryaQnQ/0Nqu/GAweOeKxRiJSUmJckBaGVw=\""
+          "Value": "W/\"iy5pykRkWvKiUZHGEDm6+2q9Oj9ifcGMY78yepfcKsI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Qrznvnx/5ryaQnQ/0Nqu/GAweOeKxRiJSUmJckBaGVw="
+          "Value": "sha256-iy5pykRkWvKiUZHGEDm6+2q9Oj9ifcGMY78yepfcKsI="
         }
       ]
     },
@@ -2630,7 +2630,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "263"
+          "Value": "588"
         },
         {
           "Name": "Content-Type",
@@ -2638,11 +2638,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Qrznvnx/5ryaQnQ/0Nqu/GAweOeKxRiJSUmJckBaGVw=\""
+          "Value": "\"iy5pykRkWvKiUZHGEDm6+2q9Oj9ifcGMY78yepfcKsI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 11:06:20 GMT"
+          "Value": "Thu, 20 Mar 2025 12:42:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2652,13 +2652,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Qrznvnx/5ryaQnQ/0Nqu/GAweOeKxRiJSUmJckBaGVw="
+          "Value": "sha256-iy5pykRkWvKiUZHGEDm6+2q9Oj9ifcGMY78yepfcKsI="
         }
       ]
     },
     {
       "Route": "Allgem01.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\cfrcn2prdi-6i77y8ejls.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\cfrcn2prdi-58d2ehzx87.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2667,7 +2667,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "190"
+          "Value": "305"
         },
         {
           "Name": "Content-Type",
@@ -2675,11 +2675,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wA3XcLfnXYKHgfmozrx+TKmLf+3r3f8BLWCfUPrDBqI=\""
+          "Value": "\"ePZ/HPPmaGAdLC5+CHSPVHX4Ly1+QHrg6L09beJYcJ8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 11:06:20 GMT"
+          "Value": "Thu, 20 Mar 2025 12:42:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2697,18 +2697,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-wA3XcLfnXYKHgfmozrx+TKmLf+3r3f8BLWCfUPrDBqI="
+          "Value": "sha256-ePZ/HPPmaGAdLC5+CHSPVHX4Ly1+QHrg6L09beJYcJ8="
         }
       ]
     },
     {
       "Route": "Allgem01.styles.css",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\ydx0d74kao-6i77y8ejls.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\ydx0d74kao-58d2ehzx87.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.005235602094"
+          "Quality": "0.003267973856"
         }
       ],
       "ResponseHeaders": [
@@ -2718,15 +2718,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "190"
+          "Value": "305"
         },
         {
           "Name": "ETag",
-          "Value": "\"wA3XcLfnXYKHgfmozrx+TKmLf+3r3f8BLWCfUPrDBqI=\""
+          "Value": "\"ePZ/HPPmaGAdLC5+CHSPVHX4Ly1+QHrg6L09beJYcJ8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 11:06:20 GMT"
+          "Value": "Thu, 20 Mar 2025 12:42:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2746,13 +2746,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Qrznvnx/5ryaQnQ/0Nqu/GAweOeKxRiJSUmJckBaGVw=\""
+          "Value": "W/\"iy5pykRkWvKiUZHGEDm6+2q9Oj9ifcGMY78yepfcKsI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Qrznvnx/5ryaQnQ/0Nqu/GAweOeKxRiJSUmJckBaGVw="
+          "Value": "sha256-iy5pykRkWvKiUZHGEDm6+2q9Oj9ifcGMY78yepfcKsI="
         }
       ]
     },
@@ -2767,7 +2767,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "263"
+          "Value": "588"
         },
         {
           "Name": "Content-Type",
@@ -2775,11 +2775,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Qrznvnx/5ryaQnQ/0Nqu/GAweOeKxRiJSUmJckBaGVw=\""
+          "Value": "\"iy5pykRkWvKiUZHGEDm6+2q9Oj9ifcGMY78yepfcKsI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 11:06:20 GMT"
+          "Value": "Thu, 20 Mar 2025 12:42:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2789,13 +2789,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Qrznvnx/5ryaQnQ/0Nqu/GAweOeKxRiJSUmJckBaGVw="
+          "Value": "sha256-iy5pykRkWvKiUZHGEDm6+2q9Oj9ifcGMY78yepfcKsI="
         }
       ]
     },
     {
       "Route": "Allgem01.styles.css.gz",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\ydx0d74kao-6i77y8ejls.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\ydx0d74kao-58d2ehzx87.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2804,7 +2804,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "190"
+          "Value": "305"
         },
         {
           "Name": "Content-Type",
@@ -2812,11 +2812,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wA3XcLfnXYKHgfmozrx+TKmLf+3r3f8BLWCfUPrDBqI=\""
+          "Value": "\"ePZ/HPPmaGAdLC5+CHSPVHX4Ly1+QHrg6L09beJYcJ8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 11:06:20 GMT"
+          "Value": "Thu, 20 Mar 2025 12:42:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2834,7 +2834,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-wA3XcLfnXYKHgfmozrx+TKmLf+3r3f8BLWCfUPrDBqI="
+          "Value": "sha256-ePZ/HPPmaGAdLC5+CHSPVHX4Ly1+QHrg6L09beJYcJ8="
         }
       ]
     },

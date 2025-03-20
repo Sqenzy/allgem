@@ -16,6 +16,9 @@ public class Repository
     {
         InitDb();
     }
+    public bool SignedIn = false;
+
+
 
     public void SignUp(string email, string password)
     {
@@ -40,7 +43,17 @@ public class Repository
 
                 using (SQLiteDataReader reader = command.ExecuteReader()) // class pomoci ktery muzes cist data z databaze
                 {
-                    return reader.Read(); // .Read() vraci hodnotu, jestli vubec se nejaky radky vybraly
+                    //return reader.Read(); // .Read() vraci hodnotu, jestli vubec se nejaky radky vybraly
+                    if (reader.Read())
+                    {
+                        SignedIn = true;
+                        return true;
+                    }
+                    else
+                    {
+                        SignedIn = false;
+                        return false;
+                    }
                 }
             }
         }

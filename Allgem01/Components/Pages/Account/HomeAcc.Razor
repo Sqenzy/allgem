@@ -1,21 +1,29 @@
-﻿@page "/"
+@page "/home"
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
 @inject IJSRuntime JSRuntime
+@using Allgem01.Logic
+@inject Repository repository
+@inject IJSRuntime JSRuntime
+@using Microsoft.AspNetCore.Components.Authorization;
+@using Microsoft.AspNetCore.Authentication.OAuth.Claims;
+@using Microsoft.AspNetCore.Authentication;
+@using Microsoft.AspNetCore.Authentication.Cookies;
+@using System.Security.Claims;
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allgem</title>
+    <title>You are signed in</title>
 </head>
 </html>
 
 <!--test-->
 
 
-<header><strong>ALLGEM</strong>
+<header><strong>Welcome to Allgem</strong>
     <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
@@ -481,5 +489,19 @@ body {
     private void contactusFf()
     {
         NavigationManager.NavigateTo("/contact-us");
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(1000);
+        if (repository.SignedIn == true)
+        {
+            
+        }
+        else
+        {
+            Thread.Sleep(100);
+            NavigationManager.NavigateTo("/access-denied");
+        }
     }
 }

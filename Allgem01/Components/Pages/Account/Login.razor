@@ -1,15 +1,21 @@
-@page "/signup"
+@page "/login"
 @using Allgem01.Logic
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
 @inject Repository repository
+@inject IJSRuntime JSRuntime
+@using Microsoft.AspNetCore.Components.Authorization;
+@using Microsoft.AspNetCore.Authentication.OAuth.Claims;
+@using Microsoft.AspNetCore.Authentication;
+@using Microsoft.AspNetCore.Authentication.Cookies;
+@using System.Security.Claims;
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Log In</title>
 </head>
 <body>
     
@@ -19,8 +25,8 @@
 <section class="boxsection">
         <input id="p1" placeholder="Enter your email" type="email" @bind="email">
         <input id="p2" placeholder="Enter your password" type="password" @bind="password">
-        <button @onclick="signUp">
-    Sign Up
+        <button @onclick="logIn">
+    Log In
     <div class="arrow-wrapper">
         <div class="arrow"></div>
 
@@ -60,6 +66,10 @@
     }
     #p2{
         border-radius: 12px;
+    using Microsoft.AspNetCore.Components.Authorization;
+    using Microsoft.AspNetCore.Authentication.OAuth.Claims;
+    using System.Security.Claims;
+    using System.Security.Claims;
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -133,20 +143,29 @@ button:hover .arrow:before {
     private string? email;
     private string? password;
 
-    private void signUp()
+    private void logIn()
     {
         if (string.IsNullOrEmpty(email))
         {
             // Handle the case where email is null or empty
+            JSRuntime.InvokeVoidAsync("alert", "Please input an email.");
             return;
         }
 
         if (string.IsNullOrEmpty(password))
         {
             // Handle the case where password is null or empty
+            JSRuntime.InvokeVoidAsync("alert", "Please input a password.");
             return;
         }
 
-        repository.SignUp(email, password);
+        if (repository.Login(email, password))
+        {
+            NavigationManager.NavigateTo("/home");
+        }
+        else
+        {
+            JSRuntime.InvokeVoidAsync("alert", "Invalid email or password.");
+        }
     }
 }

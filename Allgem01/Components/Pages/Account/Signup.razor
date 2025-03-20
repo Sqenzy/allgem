@@ -1,15 +1,16 @@
-@page "/login"
+@page "/signup"
 @using Allgem01.Logic
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
 @inject Repository repository
+@inject IJSRuntime JSRuntime
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
+    <title>Sign Up</title>
 </head>
 <body>
     
@@ -19,8 +20,8 @@
 <section class="boxsection">
         <input id="p1" placeholder="Enter your email" type="email" @bind="email">
         <input id="p2" placeholder="Enter your password" type="password" @bind="password">
-        <button @onclick="logIn">
-    Log In
+        <button @onclick="signUp">
+    Sign Up
     <div class="arrow-wrapper">
         <div class="arrow"></div>
 
@@ -133,20 +134,22 @@ button:hover .arrow:before {
     private string? email;
     private string? password;
 
-    private void logIn()
+    private void signUp()
     {
         if (string.IsNullOrEmpty(email))
         {
             // Handle the case where email is null or empty
+            JSRuntime.InvokeVoidAsync("alert", "Please input an email.");
             return;
         }
 
         if (string.IsNullOrEmpty(password))
         {
             // Handle the case where password is null or empty
+            JSRuntime.InvokeVoidAsync("alert", "Please input a password.");
             return;
         }
 
-        repository.Login(email, password);
+        repository.SignUp(email, password);
     }
 }
