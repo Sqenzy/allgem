@@ -1,6 +1,10 @@
 using Allgem01.Components;
 using Allgem01.Logic;
+// Removed unused or invalid namespace reference
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Web;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

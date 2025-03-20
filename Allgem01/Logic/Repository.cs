@@ -10,6 +10,7 @@ public class Repository
     // package name: System.Data.SQLite
 
     private string _connectionString = "Data Source=database.sqlite";
+    public bool IsLoggedIn { get; set; }
     
     // abys mohl zobrazit ty data, tak si stahni DbBrowser for sqlite
     
@@ -46,15 +47,22 @@ public class Repository
                     //return reader.Read(); // .Read() vraci hodnotu, jestli vubec se nejaky radky vybraly
                     if (reader.Read())
                     {
+                        IsLoggedIn = true;
                         return true;
                     }
                     else
                     {
+                        IsLoggedIn = false;
                         return false;
                     }
                 }
             }
         }
+    }
+
+    public void SetLoggedIn(bool value)
+    {
+        IsLoggedIn = value;
     }
 
     private void InitDb()

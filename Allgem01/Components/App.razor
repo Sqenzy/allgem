@@ -1,5 +1,7 @@
 ﻿@using Allgem01.Logic
 @inject Repository repository
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,10 +24,10 @@
 </html>
 
 @code {
-    public bool SignedIn = false;
+    public bool SignedIn => repository.IsLoggedIn;
 
     public void SetSignedIn(bool trueOrFalse)
     {
-        SignedIn = trueOrFalse;
+        repository.SetLoggedIn(trueOrFalse);
     }
 }
