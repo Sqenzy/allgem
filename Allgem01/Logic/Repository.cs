@@ -62,7 +62,7 @@ public class Repository
 
     public void SetLoggedIn(bool value)
     {
-        IsLoggedIn = value;
+        IsLoggedIn = value; //sets value of IsLoggedIn
     }
 
     private void InitDb()
