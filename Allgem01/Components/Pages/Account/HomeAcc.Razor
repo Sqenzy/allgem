@@ -494,14 +494,15 @@ body {
     protected override async Task OnInitializedAsync()
     {
         await Task.Delay(1000);
-        if (repository.SignedIn == true)
-        {
-            
-        }
-        else
+
+        if (repository.SignedIn == false)
         {
             Thread.Sleep(100);
             NavigationManager.NavigateTo("/access-denied");
+        }
+        else
+        {
+          
         }
     }
 }
