@@ -1,6 +1,7 @@
 using System.Data.SQLite;
 using System.Security.Cryptography;
 using System.Text;
+using Allgem01.Components;
 
 namespace Allgem01.Logic;
 
@@ -16,8 +17,6 @@ public class Repository
     {
         InitDb();
     }
-    
-    public bool SignedIn = false;
 
 
 
@@ -47,12 +46,10 @@ public class Repository
                     //return reader.Read(); // .Read() vraci hodnotu, jestli vubec se nejaky radky vybraly
                     if (reader.Read())
                     {
-                        SignedIn = true;
                         return true;
                     }
                     else
                     {
-                        SignedIn = false;
                         return false;
                     }
                 }

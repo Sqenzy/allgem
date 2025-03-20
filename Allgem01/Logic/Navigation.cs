@@ -2,19 +2,27 @@ using System;
 
 namespace Allgem01.Logic;
 
+using Microsoft.AspNetCore.Components;
+
 public class Navigation
 {
+    private readonly NavigationManager NavigationManager;
+
+    public Navigation(NavigationManager navigationManager)
+    {
+        NavigationManager = navigationManager;
+    }
     public void Home()
     {
 
-        if (Repository.SignedIn == true)
-        {
-            NavigationManager.NavigateTo("/home");    
-        }
-        else
-        {
-            NavigationManager.NavigateTo("/");
-        }
+        //if ()
+        //{
+            //NavigationManager.NavigateTo("/home");    
+        //}
+        //else
+        //{
+            //NavigationManager.NavigateTo("/");
+        //}
 
     }
 
@@ -46,7 +54,7 @@ public class Navigation
 
     public void Thanks()
     {
-        NavigationManager.NavigateTo("/thanks")
+        NavigationManager.NavigateTo("/thanks");
     }
 
 }

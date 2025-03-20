@@ -4,12 +4,6 @@
 @inject IJSRuntime JSRuntime
 @using Allgem01.Logic
 @inject Repository repository
-@inject IJSRuntime JSRuntime
-@using Microsoft.AspNetCore.Components.Authorization;
-@using Microsoft.AspNetCore.Authentication.OAuth.Claims;
-@using Microsoft.AspNetCore.Authentication;
-@using Microsoft.AspNetCore.Authentication.Cookies;
-@using System.Security.Claims;
 
 <!DOCTYPE html>
 <html lang="en">
@@ -62,7 +56,18 @@
 
 </header>
 
-<section class="downheader"></section>
+<section class="downheader">
+  <div>
+    @if (repository.IsLoggedIn)
+    {
+        <p>Welcome, you are logged in!</p>
+    }
+    else
+    {
+        <p>You are not logged in. Please <a href="/login">log in</a>.</p>
+    }
+</div>
+</section>
 
 <section class="gamessection">
 <div class="cards">
@@ -490,19 +495,14 @@ body {
     {
         NavigationManager.NavigateTo("/contact-us");
     }
+    //protected override async Task OnInitializedAsync()
 
-    protected override async Task OnInitializedAsync()
+    protected override void OnInitialized()
     {
-        await Task.Delay(1000);
-
-        if (repository.SignedIn == false)
+        if (!repository.IsLoggedIn)
         {
-            Thread.Sleep(100);
             NavigationManager.NavigateTo("/access-denied");
         }
-        else
-        {
-          
-        }
     }
+    
 }

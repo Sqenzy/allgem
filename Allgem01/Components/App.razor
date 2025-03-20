@@ -20,3 +20,12 @@
     <script src="_framework/blazor.web.js"></script>
 </body>
 </html>
+
+@code {
+    public bool SignedIn = false;
+
+    public void SetSignedIn(bool trueOrFalse)
+    {
+        SignedIn = trueOrFalse;
+    }
+}
