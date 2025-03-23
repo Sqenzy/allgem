@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "viiCOOR2P8qH43a8BVWJvYErsEjHTySKCwa0ElxzCxQ=",
+  "Hash": "8+3eZDcpPY26c4D3UtUDIFpOujEbCNSRpYbF6PDPc0g=",
   "Source": "Allgem01",
   "BasePath": "_content/Allgem01",
   "Mode": "Default",
@@ -1130,27 +1130,6 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gay.jpg",
-      "SourceId": "Allgem01",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
-      "BasePath": "_content/Allgem01",
-      "RelativePath": "gay#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "ltth91ce2k",
-      "Integrity": "x8FzLBgYezXYXsgvU0c/dEsKmR9SkSxAfBdieCAeFtY=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\gay.jpg"
-    },
-    {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gmail-icon.png",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
@@ -2267,7 +2246,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Mar 2025 19:32:55 GMT"
+          "Value": "Sun, 23 Mar 2025 19:57:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2328,7 +2307,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Mar 2025 19:32:55 GMT"
+          "Value": "Sun, 23 Mar 2025 19:57:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2373,7 +2352,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Mar 2025 19:32:55 GMT"
+          "Value": "Sun, 23 Mar 2025 19:57:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2428,7 +2407,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Mar 2025 19:32:55 GMT"
+          "Value": "Sun, 23 Mar 2025 19:57:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2489,7 +2468,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Mar 2025 19:32:55 GMT"
+          "Value": "Sun, 23 Mar 2025 19:57:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2534,7 +2513,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Mar 2025 19:32:55 GMT"
+          "Value": "Sun, 23 Mar 2025 19:57:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2589,7 +2568,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Mar 2025 19:32:55 GMT"
+          "Value": "Sun, 23 Mar 2025 19:57:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2642,7 +2621,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Mar 2025 19:32:55 GMT"
+          "Value": "Sun, 23 Mar 2025 19:57:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2679,7 +2658,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Mar 2025 19:32:55 GMT"
+          "Value": "Sun, 23 Mar 2025 19:57:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2726,7 +2705,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Mar 2025 19:32:55 GMT"
+          "Value": "Sun, 23 Mar 2025 19:57:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2779,7 +2758,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Mar 2025 19:32:55 GMT"
+          "Value": "Sun, 23 Mar 2025 19:57:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2816,7 +2795,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Mar 2025 19:32:55 GMT"
+          "Value": "Sun, 23 Mar 2025 19:57:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3297,88 +3276,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
-        }
-      ]
-    },
-    {
-      "Route": "gay.jpg",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gay.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "47825"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"x8FzLBgYezXYXsgvU0c/dEsKmR9SkSxAfBdieCAeFtY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 25 Feb 2025 17:05:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-x8FzLBgYezXYXsgvU0c/dEsKmR9SkSxAfBdieCAeFtY="
-        }
-      ]
-    },
-    {
-      "Route": "gay.ltth91ce2k.jpg",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gay.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "47825"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"x8FzLBgYezXYXsgvU0c/dEsKmR9SkSxAfBdieCAeFtY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 25 Feb 2025 17:05:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ltth91ce2k"
-        },
-        {
-          "Name": "label",
-          "Value": "gay.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-x8FzLBgYezXYXsgvU0c/dEsKmR9SkSxAfBdieCAeFtY="
         }
       ]
     },

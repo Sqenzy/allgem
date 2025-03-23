@@ -4,6 +4,9 @@
 @inject NavigationManager NavigationManager
 @inject Repository repository
 @inject IJSRuntime JSRuntime
+@using System.Net;
+@using System.Net.Mail;
+@using RestSharp;
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +21,9 @@
 </html>
 
 <section class="boxsection">
-        <input id="p1" placeholder="Enter your email" type="email" @bind="email">
+  @if (!isVisible)
+{
+    <input id="p1" placeholder="Enter your email" type="email" @bind="email">
         <input id="p2" placeholder="Enter your password" type="password" @bind="password">
         <button @onclick="signUp">
     Sign Up
@@ -27,6 +32,11 @@
 
     </div>
 </button>
+}
+else
+{
+    <button @onclick="verifyEmail">verifyEmail</button>
+}
 </section>
 
 
@@ -130,6 +140,7 @@ button:hover .arrow:before {
   right: 0;
 }
 </style>
+
 @code {
     private string? email;
     private string? password;
@@ -150,6 +161,35 @@ button:hover .arrow:before {
             return;
         }
 
-        repository.SignUp(email, password);
+        var client = new RestClient("https://send.api.mailtrap.io/api/send");
+var request = new RestRequest();
+request.AddHeader("Authorization", "Bearer 648356e75b69975053832541c5ff1f49");
+request.AddHeader("Content-Type", "application/json");
+request.AddParameter("application/json", "{\"from\":{\"email\":\"hello@demomailtrap.co\",\"name\":\"Mailtrap Test\"},\"to\":[{\"email\":\"petr.prusa36@gmail.com\"}],\"template_uuid\":\"f14a299e-40f5-4d6f-a1c8-318b2fdf14fb\",\"template_variables\":{}}", ParameterType.RequestBody);
+var response = client.Post(request);
+System.Console.WriteLine(response.Content);
+repository.SignUp(email, password);
+}
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public string? AccessKey { get; set; }
+
+    protected override void OnInitialized()
+    {
+        if (AccessKey != "5485752")
+        {
+            isVisible = false;
+        }
+        else
+        {
+            isVisible = true;
+        }
+    }
+
+    private bool isVisible = true;
+
+    private void verifyEmail()
+    {
+        repository.emailverified = true;
     }
 }

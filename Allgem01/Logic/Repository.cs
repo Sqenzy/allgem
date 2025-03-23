@@ -11,6 +11,7 @@ public class Repository
 
     private string _connectionString = "Data Source=database.sqlite";
     public bool IsLoggedIn { get; set; }
+    public bool emailverified { get; set; }
     
     // abys mohl zobrazit ty data, tak si stahni DbBrowser for sqlite
     
@@ -24,7 +25,14 @@ public class Repository
     public void SignUp(string email, string password)
     {
         string hashedPassword = HashPassword(password);
-        InsertUser(email, hashedPassword);
+        while (emailverified != true)
+        {
+            if (emailverified == true)
+            {
+                InsertUser(email, hashedPassword);
+                break;
+            }
+        }
     }
 
     public bool Login(string email, string password)

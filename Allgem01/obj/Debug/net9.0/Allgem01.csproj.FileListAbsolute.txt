@@ -85,10 +85,18 @@ C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Allgem01.deps.json
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Allgem01.runtimeconfig.json
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Allgem01.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Allgem01.pdb
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\EntityFramework.SqlServer.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\EntityFramework.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\MailKit.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Microsoft.OpenApi.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\MimeKit.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\RestSharp.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\System.Data.SQLite.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\System.CodeDom.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\System.Data.SqlClient.dll
@@ -120,6 +128,7 @@ C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\Allgem01.GeneratedMSBui
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\Allgem01.AssemblyInfoInputs.cache
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\Allgem01.AssemblyInfo.cs
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\Allgem01.csproj.CoreCompileInputs.cache
+C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\Allgem01.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\Allgem01.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\Allgem01.sourcelink.json
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css

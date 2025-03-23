@@ -1,0 +1,63 @@
+@* @inject NavigationManager NavigationManager
+@inject Repository repository
+@using Allgem01.Logic
+@rendermode InteractiveServer
+@page "/verifyrequest"
+
+@if (!isVisible)
+{
+    <section class="boxsection">
+        404 - Not Found
+    </section>
+}
+else
+{
+    <section class="boxsection">
+        <button @onclick="verifyMail">
+            Verify Mail
+            <div class="arrow-wrapper">
+                <div class="arrow"></div>
+            </div>
+        </button>
+    </section>
+}
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    .boxsection {
+        width: 550px; /* Set width */
+        height: 400px; /* Set height */
+        background-color: rgb(55, 56, 82);
+        position: absolute;
+        top: 260px;
+        border-radius: 48px;
+        left: 700px;
+    }
+</style>
+
+@code {
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public string? AccessKey { get; set; }
+
+    protected override void OnInitialized()
+    {
+        if (AccessKey != "5485752")
+        {
+            // Redirect to an error page or home page if the key is invalid
+            isVisible = false;
+            NavigationManager.NavigateTo("/error");
+        }
+        else
+        {
+            isVisible = true;
+        }
+    }
+} *@

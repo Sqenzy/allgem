@@ -51,9 +51,21 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Mailkit": {
+              "target": "Package",
+              "version": "[4.11.0, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[112.1.0, )"
+            },
             "SQLite": {
               "target": "Package",
               "version": "[3.13.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "System.Data.SQLite": {
               "target": "Package",

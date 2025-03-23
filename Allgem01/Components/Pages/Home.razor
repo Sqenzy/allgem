@@ -38,8 +38,9 @@
     <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
-
-        <label class="popup">
+@if (repository.IsLoggedIn)
+    {
+      <label class="popup">
   <input type="checkbox" />
   <div tabindex="0" class="burger">
     <svg
@@ -57,18 +58,24 @@
   <nav class="popup-window">
     <ul>
       <li>
-        <button @onclick="accountFf">
-          <span>Log In   ›</span>
+        <button @onclick="aboutusFf">
+          <span>Account</span>
         </button>
       </li>
       <li>
-        <button @onclick="signUp">
-          <span>Sign Up   +</span>
+        <button class="logout"@onclick="Logout">
+          <span>Logout   -</span>
         </button>
       </li>
     </ul>
   </nav>
-</label>
+</label>   
+    }
+    else
+    {
+        <button @onclick="accountFf">Log In   ›</button>
+        <button @onclick="signUp">Sign Up   +</button>
+    }
 
 
 </header>
@@ -319,6 +326,9 @@ body {
   --underline-margin-y: 0.3125em;
   padding-left: 50px;
 }
+.logout {
+  --nav-button-hover-text-color: #ff0000;
+}
 
 /* popup settings 👆 */
 
@@ -462,6 +472,7 @@ body {
 </style>
 
 @code {
+    private string? CookieValue;  
 
     private void playGameShooting()
     {
@@ -496,5 +507,32 @@ body {
     private void contactusFf()
     {
         NavigationManager.NavigateTo("/contact-us");
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Read the cookie value
+            CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
+
+            // Update the authentication state based on the cookie value
+            if (CookieValue == "isli")
+            {
+                repository.SetLoggedIn(true);
+            }
+            else
+            {
+                repository.SetLoggedIn(false);
+            }
+
+            StateHasChanged();
+        }
+    }
+    private async Task Logout()
+    {
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_auth");
+        repository.SetLoggedIn(false);
+        NavigationManager.NavigateTo("/");
     }
 }
