@@ -21,24 +21,13 @@
 </html>
 
 <section class="boxsection">
-  @if (!isVisible)
-{
-    <input id="p1" placeholder="Enter your email" type="email" @bind="email">
+        <p class="tg">Create Account</p>
+        <input id="p1" placeholder="Enter your email" type="email" @bind="email">
         <input id="p2" placeholder="Enter your password" type="password" @bind="password">
-        <button @onclick="signUp">
-    Sign Up
-    <div class="arrow-wrapper">
-        <div class="arrow"></div>
-
-    </div>
-</button>
-}
-else
-{
-    <button @onclick="verifyEmail">verifyEmail</button>
-}
+        <input id="p3" placeholder="Enter your verification code" type="number" @bind="code">
+        <button class="verify"@onclick="async () => await signUp()">Verify Mail</button>
+<button class="signup"@onclick="putintodb">SignUp</button>
 </section>
-
 
 
 <style>
@@ -53,143 +42,145 @@ else
     }
     .boxsection {
         width: 550px; /* Set width */
-        height: 400px; /* Set height */
+        height: 500px; /* Set height */
         background-color: rgb(55, 56, 82);
         position: absolute;
-        top: 260px;
+        top: 130px;
         border-radius: 48px;
         left: 700px;
     }
     #p1{
-         border-radius: 12px;
+        border: 3px solid rgb(7, 7, 7);
+        border-radius: 8px;
         width: 470px;
         height: 50px;     
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
-        margin-top: 80px;
+        margin-top: 120px;
     }
     #p2{
         border-radius: 12px;
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
-        margin-top: 180px;
+        margin-top: 220px;
         width: 470px;
-        height: 50px; 
+        height: 50px;
     }
-    button {
-  --primary-color: rgb(10, 13, 20);
-  --secondary-color: #fff;
-  --hover-color: rgb(10, 13, 20);
-  --arrow-width: 10px;
-  --arrow-stroke: 2px;
-  box-sizing: border-box;
-  border: 0;
-  border-radius: 20px;
-  color: var(--secondary-color);
-  padding: 1em 1.8em;
-  background: var(--primary-color);
-  display: flex;
-  transition: 0.2s background;
-  align-items: center;
-  gap: 0.6em;
-  font-weight: bold;
-  margin-top: 290px;
-  margin-left: 200px;
-}
-
-button .arrow-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-button .arrow {
-  margin-top: 1px;
-  width: var(--arrow-width);
-  background: var(--primary-color);
-  height: var(--arrow-stroke);
-  position: relative;
-  transition: 0.2s;
-}
-
-button .arrow::before {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  border: solid var(--secondary-color);
-  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
-  display: inline-block;
-  top: -3px;
-  right: 3px;
-  transition: 0.2s;
-  padding: 3px;
-  transform: rotate(-45deg);
-}
-
-button:hover {
-  background-color: var(--hover-color);
-}
-
-button:hover .arrow {
-  background: var(--secondary-color);
-}
-
-button:hover .arrow:before {
-  right: 0;
-}
+    #p3{
+        border-radius: 12px;
+        position: absolute;
+        left: 32%;
+        transform: translate(-50%, -50%);
+        margin-top: 320px;
+        width: 270px;
+        height: 60px;
+    }
+    .signup{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 420px;
+    }
+    .verify{
+        position: absolute;
+        left: 76%;
+        transform: translate(-50%, -50%);
+        margin-top: 420px;
+        color: white;
+        background-color: rgb(7, 7, 7);
+        border-radius: 12px;
+        border-color: green;
+        top: -100px;
+        height: 48px;
+        width: 140px;
+    }
+    .signup{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 420px;
+        color: white;
+        background-color: rgb(7, 7, 7);
+        border-radius: 12px;
+        top: 10px;
+        height: 48px;
+        width: 160px;
+    }
+    .tg{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 45px;
+        color: white;
+        font-size: 30px;
+    }
 </style>
 
 @code {
     private string? email;
     private string? password;
+    int genNumber;
+    int? code = null;
 
-    private void signUp()
+    private async Task signUp()
     {
+
         if (string.IsNullOrEmpty(email))
         {
             // Handle the case where email is null or empty
-            JSRuntime.InvokeVoidAsync("alert", "Please input an email.");
+            await JSRuntime.InvokeVoidAsync("alert", "Please input an email.");
             return;
         }
 
         if (string.IsNullOrEmpty(password))
         {
             // Handle the case where password is null or empty
-            JSRuntime.InvokeVoidAsync("alert", "Please input a password.");
+            await JSRuntime.InvokeVoidAsync("alert", "Please input a password.");
             return;
         }
 
-        var client = new RestClient("https://send.api.mailtrap.io/api/send");
-var request = new RestRequest();
-request.AddHeader("Authorization", "Bearer 648356e75b69975053832541c5ff1f49");
-request.AddHeader("Content-Type", "application/json");
-request.AddParameter("application/json", "{\"from\":{\"email\":\"hello@demomailtrap.co\",\"name\":\"Mailtrap Test\"},\"to\":[{\"email\":\"petr.prusa36@gmail.com\"}],\"template_uuid\":\"f14a299e-40f5-4d6f-a1c8-318b2fdf14fb\",\"template_variables\":{}}", ParameterType.RequestBody);
-var response = client.Post(request);
-System.Console.WriteLine(response.Content);
-repository.SignUp(email, password);
+
+        Random random = new Random();
+        int generatedNumber = random.Next(100000, 999999);
+        genNumber = generatedNumber;
+
+
+var client = new SmtpClient("live.smtp.mailtrap.io", 587)
+{
+    Credentials = new NetworkCredential("api", "648356e75b69975053832541c5ff1f49"),
+    EnableSsl = true
+};
+client.Send("hello@demomailtrap.co", "petr.prusa36@gmail.com", "Email Verification", generatedNumber.ToString());
+System.Console.WriteLine("Sent");
+
+
 }
-    [Parameter]
-    [SupplyParameterFromQuery]
-    public string? AccessKey { get; set; }
-
-    protected override void OnInitialized()
+private void putintodb()
+{
+    if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
     {
-        if (AccessKey != "5485752")
-        {
-            isVisible = false;
-        }
-        else
-        {
-            isVisible = true;
-        }
+        JSRuntime.InvokeVoidAsync("alert", "Email and password cannot be empty.");
+        return;
     }
-
-    private bool isVisible = true;
-
-    private void verifyEmail()
+    if (code == null)
     {
-        repository.emailverified = true;
+        JSRuntime.InvokeVoidAsync("alert", "You need to verify your email.");
+        return;
     }
+    if (genNumber == code)
+    {
+        repository.SignUp(email, password);
+        NavigationManager.NavigateTo("/login");
+    }
+    else if (genNumber != code)
+    {
+        JSRuntime.InvokeVoidAsync("alert", "Verification code is incorrect.");
+    }
+    else
+    {
+        JSRuntime.InvokeVoidAsync("alert", "Verification code is incorrect.");
+    }
+}
 }

@@ -11,7 +11,7 @@ public class Repository
 
     private string _connectionString = "Data Source=database.sqlite";
     public bool IsLoggedIn { get; set; }
-    public bool emailverified { get; set; }
+    public bool IsEmailVerified { get; set; } = false;
     
     // abys mohl zobrazit ty data, tak si stahni DbBrowser for sqlite
     
@@ -25,14 +25,7 @@ public class Repository
     public void SignUp(string email, string password)
     {
         string hashedPassword = HashPassword(password);
-        while (emailverified != true)
-        {
-            if (emailverified == true)
-            {
-                InsertUser(email, hashedPassword);
-                break;
-            }
-        }
+        InsertUser(email, hashedPassword);
     }
 
     public bool Login(string email, string password)
@@ -123,4 +116,23 @@ public class Repository
         string hashedPassword = Encoding.UTF8.GetString(hashedPasswordBytes);
         return hashedPassword;
     }
+    public void AddPremiumToUser(string email)
+{
+    string sql = """
+                 UPDATE users
+                 SET hasPremium = 1
+                 WHERE email = @Email;
+                 """;
+
+    using (var connection = new SQLiteConnection(_connectionString))
+    {
+        connection.Open();
+
+        using (var command = new SQLiteCommand(sql, connection))
+        {
+            command.Parameters.AddWithValue("@Email", email);
+            command.ExecuteNonQuery();
+        }
+    }
+}
 }

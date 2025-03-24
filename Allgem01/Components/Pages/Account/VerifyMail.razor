@@ -1,4 +1,4 @@
-@* @inject NavigationManager NavigationManager
+@inject NavigationManager NavigationManager
 @inject Repository repository
 @using Allgem01.Logic
 @rendermode InteractiveServer
@@ -46,6 +46,7 @@ else
     [Parameter]
     [SupplyParameterFromQuery]
     public string? AccessKey { get; set; }
+    public bool isVisible = false;
 
     protected override void OnInitialized()
     {
@@ -60,4 +61,8 @@ else
             isVisible = true;
         }
     }
-} *@
+    private void verifyMail()
+    {
+        repository.IsEmailVerified = true;
+    }
+}

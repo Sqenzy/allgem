@@ -1,0 +1,71 @@
+@page "/premium"
+@using Allgem01.Logic
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+@inject Repository repository
+@inject IJSRuntime JSRuntime
+@using Microsoft.AspNetCore.Components.Authorization;
+@using Microsoft.AspNetCore.Authentication.OAuth.Claims;
+@using Microsoft.AspNetCore.Authentication;
+@using Microsoft.AspNetCore.Authentication.Cookies;
+@using System.Security.Claims;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Premium</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<section class="boxsection">
+    <button @onclick="buyPremium">Buy Premium</button>
+    <input id="p1" placeholder="Enter your email" type="email" @bind="email">
+</section>
+
+
+
+<style>
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    .boxsection {
+        width: 550px; /* Set width */
+        height: 400px; /* Set height */
+        background: #0066de;
+        position: absolute;
+        top: 260px;
+        border-radius: 48px;
+        left: 700px;
+    }
+</style>
+@code {
+    private string? email;
+
+    private async void CreateCookie ( string name, string value, int days ) 
+    { 
+        var test = await JSRuntime.InvokeAsync<string>("methods.CreateCookie", name, value, days); 
+    }
+    public async Task buyPremium()
+    {
+        if (!string.IsNullOrWhiteSpace(email))
+        {
+            CreateCookie("allgem_premium", "hsp", 30);
+            repository.AddPremiumToUser(email);
+        }
+        else
+        {
+            await JSRuntime.InvokeVoidAsync("alert", "Please enter your email");
+        }
+    }
+}

@@ -40,6 +40,7 @@
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 @if (repository.IsLoggedIn)
     {
+      <li><button class="premium" type="button" @onclick="premiumFf">Premium</button></li>
       <label class="popup">
   <input type="checkbox" />
   <div tabindex="0" class="burger">
@@ -329,6 +330,40 @@ body {
 .logout {
   --nav-button-hover-text-color: #ff0000;
 }
+.premium {
+  width: fit-content;
+  height: 40px;
+  display: flex;
+  padding: 0.5em 1.1em;
+  gap: 0.4rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+  background: linear-gradient(
+      15deg,
+      #000088,
+      #0022aa,
+      #0044cc,
+      #0066de,
+      #0088f0,
+      #0066de,
+      #0044cc,
+      #0022aa,
+      #000088
+    )
+    no-repeat;
+  background-size: 300%;
+  background-position: left center;
+  transition: background 0.3s ease;
+  color: #fff;
+}
+
+.premium:hover {
+  background-size: 320%;
+  background-position: right center;
+}
 
 /* popup settings 👆 */
 
@@ -472,7 +507,8 @@ body {
 </style>
 
 @code {
-    private string? CookieValue;  
+    private string? CookieValue;
+    public bool hPremium = false;
 
     private void playGameShooting()
     {
@@ -508,6 +544,10 @@ body {
     {
         NavigationManager.NavigateTo("/contact-us");
     }
+    private void premiumFf()
+    {
+        NavigationManager.NavigateTo("/premium");
+    }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -524,6 +564,15 @@ body {
             else
             {
                 repository.SetLoggedIn(false);
+            }
+
+            if (CookieValue == "hsp")
+            {
+                hPremium = true;
+            }
+            else
+            {
+                hPremium = false;
             }
 
             StateHasChanged();
