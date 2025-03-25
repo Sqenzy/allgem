@@ -2,6 +2,8 @@
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
 @inject IJSRuntime JSRuntime
+@using Allgem01.Logic
+@inject Repository repository
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +20,51 @@
     <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
+    @if (repository.IsLoggedIn)
+    {
+        <label class="popup">
+  <input type="checkbox" />
+  <div tabindex="0" class="burger">
+    <svg
+      viewBox="0 0 24 24"
+      fill="white"
+      height="20"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"
+      ></path>
+    </svg>
+  </div>
+  <nav class="popup-window">
+    <ul>
+      <li>
+        <button @onclick="aboutusFf">
+          <span>Account</span>
+        </button>
+      </li>
+      <li>
+        <button class="logout"@onclick="Logout">
+          <span>Logout   -</span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</label>
+        @if (repository.hasPremium)
+        {
+            
+        }
+        else{
+            <li><button class="premium" type="button" @onclick="premiumFf">Premium</button></li>
+        }
+    }
+    else
+    {
+        <button @onclick="loginFf">Log In   ›</button>
+    }
+
 </header>
 
 <section class="downheader"></section>
@@ -63,6 +110,310 @@
 
 
 <style>
+     
+    header {
+        background: rgb(10, 13, 20);
+        background-size: 300% 300%;
+        color: white;
+        font-size: 16px;
+        padding: 20px 40px 10px 50px;
+        border: none;
+        border-radius: none;
+        position: sticky;
+        top: 0px;
+        z-index: 1000;
+    }
+    li{
+        display: inline-block;
+        list-style-type: none;
+        padding-right: 40px;
+
+    }
+    .home{
+        background: none;
+        background-size: 300% 300%;
+        color: white;
+        font-size: 16px;
+        padding: 0;
+        border: none;
+        border-radius: 8px;
+        width: 70px;
+        height: 35px;
+        margin-left: 1000px;
+        transition: all 0.25s ease-out;
+        margin-bottom: 10px;
+    }
+    .home:hover{
+        transform: translateY(-4px);
+    }
+    .aboutus{
+        background: none;
+        background-size: 300% 300%;
+        color: white;
+        font-size: 16px;
+        padding: none;
+        border: none;
+        border-radius: 8px;
+        width: 90px;
+        height: 35px;
+        transition: all 0.25s ease-out;
+    }
+    .aboutus:hover{
+        transform: translateY(-4px);
+    }
+    .contactus{
+        background: none;
+        background-size: 300% 300%;
+        color: white;
+        font-size: 16px;
+        padding: none;
+        border: none;
+        border-radius: 8px;
+        width: 103px;
+        height: 35px;
+        transition: all 0.25s ease-out;
+    }
+    .contactus:hover{
+        transform: translateY(-4px);
+    }
+    .logo{ 
+     width: 150px; 
+     height: 150px;
+     background-image: url("/images/imaginasie.png"); 
+     background-size: contain; 
+     background-repeat: no-repeat;
+     background-position: center;
+    } 
+
+.popup {
+  --burger-line-width: 1.125em;
+  --burger-line-height: 0.125em;
+  --burger-offset: 0.625em;
+  --burger-bg: tohle_nemazat rgb(55, 56, 82);
+  --burger-color: #ffffff;
+  --burger-line-border-radius: 0.1875em;
+  --burger-diameter: 3.125em;
+  --burger-btn-border-radius: calc(var(--burger-diameter) / 2);
+  --burger-line-transition: 0.3s;
+  --burger-transition: all 0.25s ease-in-out;
+  --burger-hover-scale: 1.3;
+  --burger-active-scale: 0.95;
+  --burger-enable-outline-color: var(--burger-bg);
+  --burger-enable-outline-width: 0.125em;
+  --burger-enable-outline-offset: var(--burger-enable-outline-width);
+  /* nav */
+  --nav-padding-x: 0.25em;
+  --nav-padding-y: 0.625em;
+  --nav-border-radius: 0.375em;
+  --nav-border-color: rgb(55, 56, 82);
+  --nav-border-width: 0.0625em;
+  --nav-shadow-color: rgba(0, 0, 0, 0.2);
+  --nav-shadow-width: 0 1px 5px;
+  --nav-bg: rgb(55, 56, 82);
+  --nav-font-family: "Poppins", sans-serif;
+  --nav-default-scale: 0.8;
+  --nav-active-scale: 1;
+  --nav-position-left: 0;
+  --nav-position-right: unset;
+  /* if you want to change sides just switch one property */
+  /* from properties to "unset" and the other to 0 */
+  /* title */
+  --nav-title-size: 0.625em;
+  --nav-title-color: #777;
+  --nav-title-padding-x: 1rem;
+  --nav-title-padding-y: 0.25em;
+  /* nav button */
+  --nav-button-padding-x: 1rem;
+  --nav-button-padding-y: 0.375em;
+  --nav-button-border-radius: 0.375em;
+  --nav-button-font-size: 17px;
+  --nav-button-hover-bg: rgb(107, 107, 107);
+  --nav-button-hover-text-color: #ffffff;
+  --nav-button-distance: 0.875em;
+  /* underline */
+  --underline-border-width: 0.0625em;
+  --underline-border-color: rgb(55, 56, 82);
+  --underline-margin-y: 0.3125em;
+  padding-left: 50px;
+}
+.logout {
+  --nav-button-hover-text-color: #ff0000;
+}
+.premium {
+  width: fit-content;
+  height: 40px;
+  display: flex;
+  padding: 0.5em 1.1em;
+  gap: 0.4rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+  background: linear-gradient(
+      15deg,
+      #000088,
+      #0022aa,
+      #0044cc,
+      #0066de,
+      #0088f0,
+      #0066de,
+      #0044cc,
+      #0022aa,
+      #000088
+    )
+    no-repeat;
+  background-size: 300%;
+  background-position: left center;
+  transition: background 0.3s ease;
+  color: #fff;
+}
+
+.premium:hover {
+  background-size: 320%;
+  background-position: right center;
+}
+
+/* popup settings 👆 */
+
+.popup {
+  display: inline-block;
+  text-rendering: optimizeLegibility;
+  position: relative;
+}
+
+.popup input {
+  display: none;
+}
+
+.burger {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background: var(--burger-bg);
+  width: var(--burger-diameter);
+  height: var(--burger-diameter);
+  border-radius: var(--burger-btn-border-radius);
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: var(--burger-transition);đ
+  outline: var(--burger-enable-outline-width) solid transparent;
+  outline-offset: 0;
+}
+
+.popup-window {
+  transform: scale(var(--nav-default-scale));
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding: var(--nav-padding-y) var(--nav-padding-x);
+  background: var(--nav-bg);
+  font-family: var(--nav-font-family);
+  color: var(--nav-text-color);
+  border-radius: var(--nav-border-radius);
+  box-shadow: var(--nav-shadow-width) var(--nav-shadow-color);
+  border: var(--nav-border-width) solid var(--nav-border-color);
+  top: calc(
+    var(--burger-diameter) + var(--burger-enable-outline-width) +
+      var(--burger-enable-outline-offset)
+  );
+  left: var(--nav-position-left);
+  right: var(--nav-position-right);
+  transition: var(--burger-transition);
+  margin-top: 10px;
+}
+
+.popup-window ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.popup-window ul button {
+  outline: none;
+  width: 100%;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  color: var(--burger-color);
+  font-size: var(--nav-button-font-size);
+  padding: var(--nav-button-padding-y) var(--nav-button-padding-x);
+  white-space: nowrap;
+  border-radius: var(--nav-button-border-radius);
+  cursor: pointer;
+  column-gap: var(--nav-button-distance);
+}
+
+
+.popup-window ul li:nth-child(1) svg,
+.popup-window ul li:nth-child(2) svg {
+  color: #ffffff;
+}
+
+.popup-window ul li:nth-child(4) svg,
+.popup-window ul li:nth-child(5) svg {
+  color: rgb(153, 153, 153);
+}
+
+.popup-window ul li:nth-child(7) svg {
+  color: red;
+}
+
+.popup-window hr {
+  margin: var(--underline-margin-y) 0;
+  border: none;
+  border-bottom: var(--underline-border-width) solid
+    var(--underline-border-color);
+}
+
+/* actions */
+
+.popup-window ul button:hover,
+.popup-window ul button:focus-visible,
+.popup-window ul button:hover svg,
+.popup-window ul button:focus-visible svg {
+  color: var(--nav-button-hover-text-color);
+  background: var(--nav-button-hover-bg);
+}
+
+.burger:hover {
+  transform: scale(var(--burger-hover-scale));
+}
+
+.burger:active {
+  transform: scale(var(--burger-active-scale));
+}
+
+.burger:focus:not(:hover) {
+  outline-color: var(--burger-enable-outline-color);
+  outline-offset: var(--burger-enable-outline-offset);
+}
+
+.popup input:checked + .burger span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.popup input:checked + .burger span:nth-child(2) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+.popup input:checked + .burger span:nth-child(3) {
+  transform: translateX(
+    calc(var(--burger-diameter) * -1 - var(--burger-line-width))
+  );
+}
+
+.popup input:checked ~ nav {
+  transform: scale(var(--nav-active-scale));
+  visibility: visible;
+  opacity: 1;
+}
+
     .discordicon {
         width: 60px;
         height: 60px;
@@ -113,14 +464,7 @@
   transform: translateX(5em);
 }
 
-    header {
-        background: rgb(10, 13, 20);
-        background-size: 300% 300%;
-        color: white;
-        font-size: 16px;
-        padding: 20px 40px 10px 50px;
-        border: none;
-        border-radius: none;
+    
     }
     .downheader {
         background: rgb(31, 33, 48);
@@ -135,46 +479,6 @@
         height: 157px;
         display: flex;
         justify-content: center;
-    }
-    li {
-        display: inline-block;
-        list-style-type: none;
-        padding-right: 40px;
-
-    }
-    .home{
-        background: none;
-        background-size: 300% 300%;
-        color: white;
-        font-size: 16px;
-        padding: 0;
-        border: none;
-        border-radius: 8px;
-        width: 70px;
-        height: 35px;
-        margin-left: 900px;
-    }
-    .aboutus{
-        background: none;
-        background-size: 300% 300%;
-        color: white;
-        font-size: 16px;
-        padding: 0;
-        border: none;
-        border-radius: 8px;
-        width: 90px;
-        height: 35px;
-    }
-    .contactus{
-        background: none;
-        background-size: 300% 300%;
-        color: white;
-        font-size: 16px;
-        padding: 0;
-        border: none;
-        border-radius: 8px;
-        width: 103px;
-        height: 35px;
     }
     .email,.discordinvite{
         background-size: 300% 300%;
@@ -266,11 +570,11 @@
     private string name = string.Empty;
     private string email = string.Empty;
     private string message = string.Empty;
-    //Navigation between pages
-    private void playGameSecurityIDM()
-    {
-        NavigationManager.NavigateTo("SecurityIDM");
-    }
+
+    private string CookieValue1 = string.Empty;
+    private string CookieValue = string.Empty;
+
+
     private void homeFf()
     {
         NavigationManager.NavigateTo("/");
@@ -285,6 +589,7 @@
     }
     private void thanks()
     {
+        
         if (name=="" || email=="" || message=="")
         {
             JSRuntime.InvokeVoidAsync("alert", "Please fill all the fields.");
@@ -315,4 +620,55 @@
             JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
         }
     }
+   
+    private void loginFf()
+    {
+      NavigationManager.NavigateTo("/login");
+    }
+   
+    
+   
+    private void premiumFf()
+    {
+        NavigationManager.NavigateTo("/premium");
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Read the cookie value
+            CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
+            CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
+
+            // Update the authentication state based on the cookie value
+            if (CookieValue == "isli")
+            {
+                repository.SetLoggedIn(true);
+            }
+            else
+            {
+                repository.SetLoggedIn(false);
+            }
+
+            if (CookieValue1 == "hsp")
+            {
+                repository.SetHasPremium(true);
+            }
+            else
+            {
+                repository.SetHasPremium(false);
+            }
+
+            StateHasChanged();
+        }
+    }
+    private async Task Logout()
+    {
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_auth");
+        repository.SetLoggedIn(false);
+        NavigationManager.NavigateTo("/");
+    }
+
+
 }
