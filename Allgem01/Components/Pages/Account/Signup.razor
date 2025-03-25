@@ -27,6 +27,7 @@
         <input id="p3" placeholder="Enter your verification code" type="number" @bind="code">
         <button class="verify"@onclick="async () => await signUp()">Verify Mail</button>
 <button class="signup"@onclick="putintodb">SignUp</button>
+<button class="loginnav" @onclick="loginFf">Already have an account?</button>
 </section>
 
 
@@ -116,6 +117,19 @@
         color: white;
         font-size: 30px;
     }
+    .loginnav
+    {
+        border-radius: 12px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 470px;
+        font-size: 15px;
+        height: 30px;
+        width: 230px;
+        background-color: black;
+        color: white;
+    }
 </style>
 
 @code {
@@ -123,6 +137,11 @@
     private string? password;
     int genNumber;
     int? code = null;
+
+    private void loginFf()
+    {
+        NavigationManager.NavigateTo("/login");
+    }
 
     private async Task signUp()
     {

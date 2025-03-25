@@ -32,6 +32,7 @@
 
     </div>
 </button>
+<button class="signupnav" @onclick="signupFf">Don't have an account?</button>
 </section>
 
 
@@ -134,10 +135,26 @@ button:hover .arrow {
 button:hover .arrow:before {
   right: 0;
 }
+.signupnav{
+        border-radius: 12px;
+        position: absolute;
+        left: 12%;
+        transform: translate(-50%, -50%);
+        margin-top: 20px;
+        font-size: 15px;
+        height: 10px;
+        width: 230px;
+        background-color: none;
+}
 </style>
 @code {
     private string? email;
     private string? password;
+
+    private void signupFf()
+    {
+      NavigationManager.NavigateTo("/signup");
+    }
 
     private void logIn()
     {

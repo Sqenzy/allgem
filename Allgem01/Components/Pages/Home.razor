@@ -95,8 +95,7 @@
     }
     else
     {
-        <button @onclick="accountFf">Log In   ›</button>
-        <button @onclick="signUp">Sign Up   +</button>
+        <button @onclick="loginFf">Log In   ›</button>
     }
 
 
@@ -543,14 +542,9 @@ body {
         NavigationManager.NavigateTo("/parkour/play");
         //var url = "https://s
     }
-    private void signUp()
+    private void loginFf()
     {
-        NavigationManager.NavigateTo("/signup");
-        //var url = "https://sqenzy.github.io/gametest/";
-        //if (JSRuntime != null)
-        //{
-          //  JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
-        //}
+      NavigationManager.NavigateTo("/login");
     }
     private void homeFf()
     {
