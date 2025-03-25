@@ -55,7 +55,6 @@
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 @if (repository.IsLoggedIn)
     {
-      <li><button class="premium" type="button" @onclick="premiumFf">Premium</button></li>
       <label class="popup">
   <input type="checkbox" />
   <div tabindex="0" class="burger">
@@ -85,7 +84,14 @@
       </li>
     </ul>
   </nav>
-</label>   
+</label>
+@if (repository.hasPremium)
+    {
+    }
+    else
+    {
+      <li><button class="premium" type="button" @onclick="premiumFf">Premium</button></li>
+    }
     }
     else
     {
