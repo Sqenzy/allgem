@@ -54,9 +54,14 @@
 
 @code {
     public bool SignedIn => repository.IsLoggedIn;
+    public bool Premium => repository.hasPremium;
 
     public void SetSignedIn(bool trueOrFalse)
     {
         repository.SetLoggedIn(trueOrFalse);
+    }
+    public void SetPremium(bool tof)
+    {
+        repository.SetHasPremium(tof);
     }
 }
