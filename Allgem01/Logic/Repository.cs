@@ -12,6 +12,7 @@ public class Repository
     private string _connectionString = "Data Source=database.sqlite";
     public bool IsLoggedIn { get; set; }
     public bool IsEmailVerified { get; set; } = false;
+    public bool hasPremium { get; set; }
     
     // abys mohl zobrazit ty data, tak si stahni DbBrowser for sqlite
     
@@ -64,6 +65,10 @@ public class Repository
     public void SetLoggedIn(bool value)
     {
         IsLoggedIn = value;
+    }
+    public void SetHasPremium(bool value)
+    {
+        hasPremium = value;
     }
 
     private void InitDb()
@@ -132,6 +137,7 @@ public class Repository
         {
             command.Parameters.AddWithValue("@Email", email);
             command.ExecuteNonQuery();
+            hasPremium = true;
         }
     }
 }

@@ -24,12 +24,27 @@
     {
         
     }
+    @if (repository.hasPremium)
+    {
+
+    }
+    else
+    {
+
+    }
 </div>
 
 <header>
   @if (repository.IsLoggedIn)
     {
-        <strong>ALLGEM DEV</strong>
+      @if (repository.hasPremium)
+      {
+        <strong>ALLGEM PREMIUM</strong>
+      }
+      else
+      {
+        <strong>ALLGEM User</strong>
+      }
     }
     else
     {
@@ -508,7 +523,7 @@ body {
 
 @code {
     private string? CookieValue;
-    public bool hPremium = false;
+    private string? CookieValue1;
 
     private void playGameShooting()
     {
@@ -538,7 +553,7 @@ body {
     }
     private void aboutusFf()
     {
-        NavigationManager.NavigateTo("/about-us");
+        NavigationManager.NavigateTo("/buy");
     }
     private void contactusFf()
     {
@@ -555,6 +570,7 @@ body {
         {
             // Read the cookie value
             CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
+            CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
 
             // Update the authentication state based on the cookie value
             if (CookieValue == "isli")
@@ -566,13 +582,13 @@ body {
                 repository.SetLoggedIn(false);
             }
 
-            if (CookieValue == "hsp")
+            if (CookieValue1 == "hsp")
             {
-                hPremium = true;
+                repository.SetHasPremium(true);
             }
             else
             {
-                hPremium = false;
+                repository.SetHasPremium(false);
             }
 
             StateHasChanged();

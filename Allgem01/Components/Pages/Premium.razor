@@ -62,6 +62,7 @@
         {
             CreateCookie("allgem_premium", "hsp", 30);
             repository.AddPremiumToUser(email);
+            NavigationManager.NavigateTo("/");
         }
         else
         {
