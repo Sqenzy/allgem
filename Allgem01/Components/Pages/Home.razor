@@ -107,7 +107,7 @@
 <section class="gamessection">
 <div class="cards">
     <div class="cards">
-    <button class="card game1">
+    <button class="card game1" @onclick="Graph">
         <p class="tip">Test Game</p>
         <p class="second-text"></p>
     </button>
@@ -529,6 +529,11 @@ body {
 @code {
     private string? CookieValue;
     private string? CookieValue1;
+
+    private void Graph()
+    {
+       NavigationManager.NavigateTo("/graph");
+    }
 
     private void playGameShooting()
     {
