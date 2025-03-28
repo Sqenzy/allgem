@@ -1,33 +1,102 @@
-@page "/buy"
+@page "/graph"
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Subscribe to a cool new product</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://js.stripe.com/v3/"></script>
-  </head>
-  <body>
-    <section>
-      <div class="product">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="16px" viewBox="0 0 14 16" version="1.1">
-            <defs/>
-            <g id="Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="0-Default" transform="translate(-121.000000, -40.000000)" fill="#E184DF">
-                    <path d="M127,50 L126,50 C123.238576,50 121,47.7614237 121,45 C121,42.2385763 123.238576,40 126,40 L135,40 L135,56 L133,56 L133,42 L129,42 L129,56 L127,56 L127,50 Z M127,48 L127,42 L126,42 C124.343146,42 123,43.3431458 123,45 C123,46.6568542 124.343146,48 126,48 L127,48 Z" id="Pilcrow"/>
-                </g>
-            </g>
-        </svg>
-        <div class="description">
-          <h3>Starter plan</h3>
-          <h5>$20.00 / month</h5>
-        </div>
-      </div>
-      <form action="/create-checkout-session" method="POST">
-        <!-- Add a hidden field with the lookup_key of your Price -->
-        <input type="hidden" name="lookup_key" value="{{PRICE_LOOKUP_KEY}}" />
-        <button id="checkout-and-portal-button" type="submit">Checkout</button>
-      </form>
-    </section>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Larger Graph</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f9;
+    }
+    .chart-container {
+      width: 500px;
+      height: 350px;
+      background: white;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    canvas {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="chart-container">
+    <canvas id="cryptoChart"></canvas>
+  </div>
+
+  <script>
+    // Přednastavené hodnoty
+    const predefinedValues = [1, 50, 55, 2, 62, 65, 68, 72, 75, 78, 80, 85, 88, 90, 95, 100, 102, 105, 108, 110, 55, 2, 62, 65, 68, 72, 75, 78, 80, 85, 88, 90, 95, 100];
+    let currentIndex = 0; // Index aktuální hodnoty
+
+    // Inicializace grafu
+    const ctx = document.getElementById('cryptoChart').getContext('2d');
+    const chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: Array.from({ length: 20 }, (_, i) => i), // Přednastavené časové značky
+        datasets: [{
+          label: 'Crypto Price',
+          data: predefinedValues.slice(0, 15), // Načte prvních 20 hodnot
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 2,
+          fill: false,
+          tension: 0.3
+        }]
+      },
+      options: {
+        animation: false,
+        responsive: true,
+        scales: {
+          x: {
+          },
+          y: {
+            beginAtZero: true,
+            title: { display: true, text: 'Price' }
+          }
+        }
+      }
+    });
+
+    // Funkce pro aktualizaci grafu
+    function updateChart() {
+      if (currentIndex < predefinedValues.length) {
+        // Přidá další hodnotu z přednastaveného seznamu
+        chart.data.labels.push(chart.data.labels.length);
+        chart.data.datasets[0].data.push(predefinedValues[currentIndex]);
+
+        // Odstraní nejstarší hodnotu, pokud je více než 20 hodnot
+        if (chart.data.labels.length > 20) {
+          chart.data.labels.shift();
+          chart.data.datasets[0].data.shift();
+        }
+
+        // Aktualizuje graf
+        chart.update();
+
+        // Zvýší index
+        currentIndex++;
+      } else {
+        console.log('Všechny hodnoty byly zobrazeny.');
+      }
+    }
+
+    // Aktualizuje graf každých 30 sekund
+    setInterval(updateChart, 1000);
+  </script>
+</body>
 </html>
