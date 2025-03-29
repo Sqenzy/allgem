@@ -95,7 +95,9 @@
     }
     else
     {
-        <button @onclick="loginFf">Log In   ›</button>
+        <button class="login"@onclick="loginFf">
+          <p class="lgtxt">Log In</p><p class="txt"> ›</p>
+          </button>
     }
 
 
@@ -522,6 +524,32 @@ body {
   transform: scale(var(--nav-active-scale));
   visibility: visible;
   opacity: 1;
+}
+.login {
+  background: rgb(28, 75, 185);
+  border: 0;
+  margin-left: 20px;
+  border-radius: 18px;
+  transition: 0.01s outline;
+  color: white;
+  height: 40px;
+  width: 100px;
+  display: flex;
+}
+.login:hover{
+  outline: 2px #e6e6e6 solid;
+}
+.txt{
+  margin-left: 13px;
+  margin-top: 7px;
+  transition: 0.25s all;
+}
+.login:hover .txt{
+  margin-left: 20px;
+}
+.lgtxt {
+  margin-left: 13px;
+  margin-top: 7px;
 }
 </style>
 
