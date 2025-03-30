@@ -61,7 +61,7 @@
         if (!string.IsNullOrWhiteSpace(email))
         {
             repository.AddPremiumToUser(email);
-            CreateCookie("allgem_premium", "hsp", 30);
+            //CreateCookie("allgem_premium", "hsp", 30);
             NavigationManager.NavigateTo("/");
         }
         else

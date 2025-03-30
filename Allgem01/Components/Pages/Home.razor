@@ -39,11 +39,12 @@
     {
       @if (repository.hasPremium)
       {
-        <strong>ALLGEM PREMIUM</strong>
+        <img @onclick="homeFf" class="logopremium" src="/allgempremium.png" alt="ALLGEM PREMIUM">
+        <img class="lpu">
       }
       else
       {
-        <strong>ALLGEM</strong>   
+        <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">   
       }
     }
     else
@@ -229,12 +230,29 @@
         transform: translateY(-4px);
     }
     .logo{ 
-     width: 129px; 
-     height: 25px;
-     background-image: url("/images/imaginasie.png"); 
+     width: 104px; 
+     height: 20px; 
      background-size: contain; 
      background-repeat: no-repeat;
      background-position: center;
+    }
+    .logopremium{
+     width: 142px; 
+     height: 45px; 
+     background-size: contain; 
+     background-repeat: no-repeat;
+     background-position: center;
+    }
+    .lpu{
+      margin-top: 50px;
+      margin-left: -150px;
+      background: white;
+      height: 2px;
+      width: 30px;
+      transition: 1s margin-left;
+    }
+    html:hover .lpu{
+      margin-left: 0px;
     }
     .gamessection,.secondgamessection {
     display: flex; /* Align buttons in a row */
@@ -630,6 +648,7 @@ body {
     private async Task Logout()
     {
         await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_auth");
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_premium");
         repository.SetLoggedIn(false);
         NavigationManager.NavigateTo("/");
     }

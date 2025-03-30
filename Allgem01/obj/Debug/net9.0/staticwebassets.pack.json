@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\all_icon.png"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\allgempremium.png",
+      "PackagePath": "staticwebassets\\allgempremium.png"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\allgemtext.png",
       "PackagePath": "staticwebassets\\allgemtext.png"
     },
