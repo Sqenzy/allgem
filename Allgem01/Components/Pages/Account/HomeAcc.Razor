@@ -1,4 +1,4 @@
-@page "/home"
+@page "/account"
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
 @inject IJSRuntime JSRuntime
@@ -10,19 +10,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You are signed in</title>
+    <title>Account</title>
 </head>
 </html>
 
 <!--test-->
+<div>
+    @if (repository.IsLoggedIn)
+    {
+        
+    }
+    else
+    {
+        
+    }
+    @if (repository.hasPremium)
+    {
 
+    }
+    else
+    {
 
-<header><strong>Welcome to Allgem</strong>
+    }
+</div>
+
+<header>
+  @if (repository.IsLoggedIn)
+    {
+      @if (repository.hasPremium)
+      {
+        <strong>ALLGEM PREMIUM</strong>
+      }
+      else
+      {
+        <strong>ALLGEM</strong>   
+      }
+    }
+    else
+    {
+      <strong>ALLGEM</strong>   
+    }
     <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
-
-        <label class="popup">
+@if (repository.IsLoggedIn)
+    {
+      <label class="popup">
   <input type="checkbox" />
   <div tabindex="0" class="burger">
     <svg
@@ -41,73 +74,45 @@
     <ul>
       <li>
         <button @onclick="accountFf">
-          <span>Log In   ›</span>
+          <span>Account</span>
         </button>
       </li>
       <li>
-        <button @onclick="signUp">
-          <span>Sign Up   +</span>
+        <button class="logout"@onclick="Logout">
+          <span>Logout   -</span>
         </button>
       </li>
     </ul>
   </nav>
 </label>
-
-
-</header>
-
-<section class="downheader">
-  <div>
-    @if (repository.IsLoggedIn)
+@if (repository.hasPremium)
     {
-        <p>Welcome, you are logged in!</p>
     }
     else
     {
-        <p>You are not logged in. Please <a href="/login">log in</a>.</p>
+      <li><button class="premium" type="button" @onclick="premiumFf">Premium</button></li>
     }
-</div>
-</section>
+    }
+    else
+    {
+        <button class="login" @onclick="loginFf">
+          <p class="lgtxt">Log In</p><p class="txt"> ›</p>
+          </button>
+    }
+</header>
 
-<section class="gamessection">
-<div class="cards">
-    <div class="cards">
-    <button class="card game1">
-        <p class="tip">Test Game</p>
-        <p class="second-text"></p>
-    </button>
-    <button class="card game2" @onclick="playGameSecurityIDM">
-        <p class="tip">Multiplayer</p>
-        <p class="second-text"></p>
-    </button>
-    <button class="card game3" @onclick="playGameShooting">
-        <p class="tip">Shooting</p>
-        <p class="second-text"></p>
-    </button>
-</div>
-</div>
+<section>
+@if (repository.IsLoggedIn)
+{
+  <button class="accountbutton">Account</button>
+  <button class="rankbutton">Rank</button>
+  <button class="premiumbutton">Premium</button>
+  <button class="logoutbutton">Logout</button> 
+}
+else
+{
+}
 </section>
-
-<section class="secondgamessection">
-    <div class="cards">
-    <button class="card game1">
-        <p class="tip">Upcoming Game</p>
-        <p class="second-text">.......</p>
-    </button>
-    <button class="card game2">
-        <p class="tip">Upcoming Game</p>
-        <p class="second-text">.......</p>
-    </button>
-    <button class="card game3">
-        <p class="tip">Upcoming Game</p>
-        <p class="second-text">.......</p>
-    </button>
-</div>
-</section>
-
-<section class="lowersection">Upcoming Events</section>
-<footer>footer
-</footer>
 
 <style>
     
@@ -121,21 +126,7 @@
         border-radius: none;
         position: sticky;
         top: 0px;
-        opacity: 0.98;
         z-index: 1000;
-    }
-    .downheader {
-        background: rgb(31, 33, 48);
-        height: 2px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    footer{
-        background: rgb(10, 13, 20);
-        color:  white;
-        padding: 10px 20px;
-        height: 100px;
     }
     li{
         display: inline-block;
@@ -153,7 +144,7 @@
         border-radius: 8px;
         width: 70px;
         height: 35px;
-        margin-left: 1120px;
+        margin-left: 1000px;
         transition: all 0.25s ease-out;
         margin-bottom: 10px;
     }
@@ -313,6 +304,43 @@ body {
   --underline-margin-y: 0.3125em;
   padding-left: 50px;
 }
+.logout {
+  --nav-button-hover-text-color: #ff0000;
+}
+.premium {
+  width: fit-content;
+  height: 40px;
+  display: flex;
+  padding: 0.5em 1.1em;
+  gap: 0.4rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+  background: linear-gradient(
+      15deg,
+      #000088,
+      #0022aa,
+      #0044cc,
+      #0066de,
+      #0088f0,
+      #0066de,
+      #0044cc,
+      #0022aa,
+      #000088
+    )
+    no-repeat;
+  background-size: 300%;
+  background-position: left center;
+  transition: background 0.3s ease;
+  color: #fff;
+}
+
+.premium:hover {
+  background-size: 320%;
+  background-position: right center;
+}
 
 /* popup settings 👆 */
 
@@ -409,8 +437,6 @@ body {
     var(--underline-border-color);
 }
 
-/* actions */
-
 .popup-window ul button:hover,
 .popup-window ul button:focus-visible,
 .popup-window ul button:hover svg,
@@ -453,9 +479,42 @@ body {
   visibility: visible;
   opacity: 1;
 }
+.login {
+  background: rgb(28, 75, 185);
+  border: 0;
+  margin-left: 20px;
+  border-radius: 18px;
+  transition: 0.01s outline;
+  color: white;
+  height: 40px;
+  width: 100px;
+  display: flex;
+}
+.login:hover{
+  outline: 2px rgb(202, 203, 206) solid;
+}
+.txt{
+  margin-left: 13px;
+  margin-top: 7px;
+  transition: 0.25s all;
+}
+.login:hover .txt{
+  margin-left: 20px;
+}
+.lgtxt {
+  margin-left: 13px;
+  margin-top: 7px;
+}
 </style>
 
 @code {
+    private string? CookieValue;
+    private string? CookieValue1;
+
+    private void Graph()
+    {
+       NavigationManager.NavigateTo("/graph");
+    }
 
     private void playGameShooting()
     {
@@ -463,25 +522,15 @@ body {
     }
     private void accountFf()
     {
-        NavigationManager.NavigateTo("/login");
+        NavigationManager.NavigateTo("/account");
     }
     private void playGameSecurityIDM()
     {
         NavigationManager.NavigateTo("/parkour/play");
-        //var url = "https://sqenzy.github.io/multyplayergametest/";
-        //if (JSRuntime != null)
-        //{
-          //  JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
-        //}
     }
-    private void signUp()
+    private void loginFf()
     {
-        NavigationManager.NavigateTo("/signup");
-        //var url = "https://sqenzy.github.io/gametest/";
-        //if (JSRuntime != null)
-        //{
-          //  JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
-        //}
+      NavigationManager.NavigateTo("/login");
     }
     private void homeFf()
     {
@@ -495,14 +544,45 @@ body {
     {
         NavigationManager.NavigateTo("/contact-us");
     }
-    //protected override async Task OnInitializedAsync()
+    private void premiumFf()
+    {
+        NavigationManager.NavigateTo("/premium");
+    }
 
-    //protected override void OnInitialized()
-    //{
-        //if (repository.IsLoggedIn == false)
-        //{
-            //NavigationManager.NavigateTo("/access-denied");
-        //}
-    //}
-    
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Read the cookie value
+            CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
+            CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
+
+            // Update the authentication state based on the cookie value
+            if (CookieValue == "isli")
+            {
+                repository.SetLoggedIn(true);
+            }
+            else
+            {
+                repository.SetLoggedIn(false);
+            }
+
+            if (CookieValue1 == "hsp")
+            {
+                repository.SetHasPremium(true);
+            }
+            else
+            {
+                repository.SetHasPremium(false);
+            }
+
+            StateHasChanged();
+        }
+    }
+    private async Task Logout()
+    {
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_auth");
+        repository.SetLoggedIn(false);
+        NavigationManager.NavigateTo("/");
+    }
 }

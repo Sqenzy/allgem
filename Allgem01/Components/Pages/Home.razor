@@ -73,7 +73,7 @@
   <nav class="popup-window">
     <ul>
       <li>
-        <button @onclick="aboutusFf">
+        <button @onclick="accountFf">
           <span>Account</span>
         </button>
       </li>
@@ -95,7 +95,7 @@
     }
     else
     {
-        <button class="login"@onclick="loginFf">
+        <button class="login" @onclick="loginFf">
           <p class="lgtxt">Log In</p><p class="txt"> ›</p>
           </button>
     }
@@ -566,12 +566,11 @@ body {
     }
     private void accountFf()
     {
-        NavigationManager.NavigateTo("/login");
+        NavigationManager.NavigateTo("/account");
     }
     private void playGameSecurityIDM()
     {
         NavigationManager.NavigateTo("/parkour/play");
-        //var url = "https://s
     }
     private void loginFf()
     {
