@@ -25,8 +25,13 @@
 <section class="boxsection">
         <input id="p1" placeholder="Enter your email" type="email" @bind="email">
         <input id="p2" placeholder="Enter your password" type="password" @bind="password">
-        <button class="login" @onclick="logIn">Log In</button>
-        <button class="signupnav" @onclick="signupFf">Don't have an account?</button>
+        <button class="login" @onclick="logIn">
+            <p class="lgtxt">Log In</p><p class="txt"> ›</p>
+            </button>
+        <button class="signupnav" @onclick="signupFf">
+            <p class="dnt">Don't have an account?</p>
+            <p class="crt">Create Account</p>
+        </button>
 </section>
 
 
@@ -69,27 +74,36 @@
         height: 50px; 
     }
     .login {
-  background: rgb(10, 13, 20);
-  box-sizing: border-box;
+  background: rgb(28, 75, 185);
   border: 0;
-  border-radius: 20px;
-  padding: 1em 1.8em;
-  display: flex;
-  transition: 0.2s all;
-  align-items: center;
-  gap: 0.6em;
-  font-weight: bold;
-  margin-top: 290px;
-  margin-left: 200px;
+  margin-left: 220px;
+  border-radius: 18px;
+  transition: 0.01s outline;
   color: white;
+  height: 50px;
+  width: 120px;
+  display: flex;
+  margin-top: 300px;
 }
-
-.login:hover {
-   background: rgb(15, 21, 36);
-   transform: translateY(-3px);
+.login:hover{
+  outline: 2px rgb(202, 203, 206) solid;
+}
+.txt{
+  margin-left: 9px;
+  margin-top: 13px;
+  transition: 0.25s all;
+}
+.login:hover .txt{
+  margin-left: 20px;
+  font-size: 150%;
+  margin-top: 5px;
+}
+.lgtxt {
+  margin-left: 27px;
+  margin-top: 13px;
 }
 .signupnav{
-  background: rgb(10, 13, 20);
+  background: none;
   box-sizing: border-box;
   border: 0;
   border-radius: 20px;
@@ -99,13 +113,35 @@
   align-items: center;
   gap: 0.6em;
   font-weight: bold;
-  margin-top: 290px;
-  margin-left: 200px;
-  color: white;
+  margin-top: 20px;
+  margin-left: 190px;
 }
 .signupnav:hover {
    background: rgb(15, 21, 36);
-   transform: translateY(-3px);
+}
+.signupnav:hover .crt {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.signupnav .crt{
+    font-size: 0px;
+    color: white;
+    transition: 0.3s all;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.signupnav .dnt{
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    transition: 0.3s all;
+}
+.signupnav:hover .dnt{
+    margin-top: -30px;
+    margin-left: 65px;
+    transform: translateY(-10px);
+    font-size: 0px;
 }
 </style>
 @code {
