@@ -48,7 +48,7 @@
     }
     else
     {
-      <strong>ALLGEM</strong>   
+      <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">
     }
     <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
@@ -191,6 +191,7 @@
         margin-left: 1000px;
         transition: all 0.25s ease-out;
         margin-bottom: 10px;
+        font-weight: bold;
     }
     .home:hover{
         transform: translateY(-4px);
@@ -206,6 +207,7 @@
         width: 90px;
         height: 35px;
         transition: all 0.25s ease-out;
+        font-weight: bold;
     }
     .aboutus:hover{
         transform: translateY(-4px);
@@ -221,13 +223,14 @@
         width: 103px;
         height: 35px;
         transition: all 0.25s ease-out;
+        font-weight: bold;
     }
     .contactus:hover{
         transform: translateY(-4px);
     }
     .logo{ 
-     width: 150px; 
-     height: 150px;
+     width: 129px; 
+     height: 25px;
      background-image: url("/images/imaginasie.png"); 
      background-size: contain; 
      background-repeat: no-repeat;
@@ -533,6 +536,7 @@ body {
   height: 40px;
   width: 100px;
   display: flex;
+  font-weight: bold;
 }
 .login:hover{
   outline: 2px rgb(202, 203, 206) solid;
