@@ -28,10 +28,7 @@
         <button class="login" @onclick="logIn">
             <p class="lgtxt">Log In</p><p class="txt"> ›</p>
             </button>
-        <button class="signupnav" @onclick="signupFf">
-            <p class="dnt">Don't have an account?</p>
-            <p class="crt">Create Account</p>
-        </button>
+        <button class="signupnav" @onclick="signupFf">Create Account</button>
 </section>
 
 
@@ -102,46 +99,28 @@
   margin-left: 27px;
   margin-top: 13px;
 }
-.signupnav{
-  background: none;
+.signupnav {
+  background: rgb(10, 13, 20);
   box-sizing: border-box;
   border: 0;
   border-radius: 20px;
-  padding: 1em 1.8em;
   display: flex;
   transition: 0.2s all;
   align-items: center;
-  gap: 0.6em;
   font-weight: bold;
   margin-top: 20px;
-  margin-left: 190px;
+  margin-left: 200px;
+  color: white;
+  width: 150px;
+  height: 50px;
+  justify-content: center;
+  font-size: 15px; 
+  
 }
+
 .signupnav:hover {
    background: rgb(15, 21, 36);
-}
-.signupnav:hover .crt {
-    font-size: 16px;
-    margin-top: 0px;
-    margin-left: 0px;
-}
-.signupnav .crt{
-    font-size: 0px;
-    color: white;
-    transition: 0.3s all;
-    margin-top: 30px;
-    margin-left: 40px;
-}
-.signupnav .dnt{
-    color: white;
-    font-size: 12px;
-    position: absolute;
-    transition: 0.3s all;
-}
-.signupnav:hover .dnt{
-    margin-top: -30px;
-    margin-left: 65px;
-    transform: translateY(-10px);
-    font-size: 0px;
+   transform: translateY(-3px);
 }
 </style>
 @code {
