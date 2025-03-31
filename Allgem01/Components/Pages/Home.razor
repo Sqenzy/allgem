@@ -626,7 +626,7 @@ body {
     private async Task Logout()
     {
         await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_auth");
-        repository.SetLoggedIn(false);
+            repository.SetLoggedIn(false);
         NavigationManager.NavigateTo("/");
     }
 }

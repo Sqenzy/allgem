@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Allgem01.props" />
-</Project>
