@@ -1964,24 +1964,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\janlu\\.nuget\\packages\\": {}
+    "C:\\Users\\sqenz\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\janlu\\allgem\\Allgem01\\Allgem01.csproj",
+      "projectUniqueName": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\Allgem01.csproj",
       "projectName": "Allgem01",
-      "projectPath": "C:\\Users\\janlu\\allgem\\Allgem01\\Allgem01.csproj",
-      "packagesPath": "C:\\Users\\janlu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\janlu\\allgem\\Allgem01\\obj\\",
+      "projectPath": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\Allgem01.csproj",
+      "packagesPath": "C:\\Users\\sqenz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\janlu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\sqenz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

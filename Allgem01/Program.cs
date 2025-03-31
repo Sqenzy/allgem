@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using ASP.Components;
+using Allgem01.Components;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

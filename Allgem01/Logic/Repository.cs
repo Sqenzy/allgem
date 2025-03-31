@@ -33,7 +33,7 @@ public class Repository
     {
         string hashedPassword = HashPassword(password);
 
-        string sql = "SELECT * FROM users WHERE email = @email AND password = @password"; // WHERE - neco jako if, po nem das podminku
+        string sql = "SELECT hasPremium FROM users WHERE email = @email AND password = @password"; // WHERE - neco jako if, po nem das podminku
 
         using (var connection = new SQLiteConnection(_connectionString))
         {
@@ -50,11 +50,13 @@ public class Repository
                     if (reader.Read())
                     {
                         IsLoggedIn = true;
+                        hasPremium = !reader.IsDBNull(0) && reader.GetInt32(0) == 1;
                         return true;
                     }
                     else
                     {
                         IsLoggedIn = false;
+                        hasPremium = false;
                         return false;
                     }
                 }
