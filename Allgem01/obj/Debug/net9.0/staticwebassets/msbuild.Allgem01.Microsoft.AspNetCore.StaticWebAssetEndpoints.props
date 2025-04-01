@@ -648,6 +648,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zno8jsberb"},{"Name":"integrity","Value":"sha256-30H7Nq6TWx5f6XcHAnzye2mx9WKVgfBeKTJ2zRY1JWo="},{"Name":"label","Value":"_content/Allgem01/play.png"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"14724"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u002230H7Nq6TWx5f6XcHAnzye2mx9WKVgfBeKTJ2zRY1JWo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Mar 2025 11:23:54 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Allgem01/quickplay.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\quickplay.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-LHcbehgF85l7H8zte4xqQ57UTjXwA3VHSGoBP2oBGNo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9754"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022LHcbehgF85l7H8zte4xqQ57UTjXwA3VHSGoBP2oBGNo=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Apr 2025 16:35:57 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Allgem01/quickplay.wr8raqygr1.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\quickplay.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wr8raqygr1"},{"Name":"integrity","Value":"sha256-LHcbehgF85l7H8zte4xqQ57UTjXwA3VHSGoBP2oBGNo="},{"Name":"label","Value":"_content/Allgem01/quickplay.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9754"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022LHcbehgF85l7H8zte4xqQ57UTjXwA3VHSGoBP2oBGNo=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Apr 2025 16:35:57 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Allgem01/ulteros.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ulteros.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

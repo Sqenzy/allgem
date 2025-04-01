@@ -217,6 +217,10 @@
       "PackagePath": "staticwebassets\\play.png"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\quickplay.png",
+      "PackagePath": "staticwebassets\\quickplay.png"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\ulteros.jpg",
       "PackagePath": "staticwebassets\\ulteros.jpg"
     },

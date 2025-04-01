@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fDo3kb2N3qs8+9v+gYbX6YF26izosevWyik7cPU1LgA=",
+  "Hash": "hnXL+0WhiyxXe8kfwl2kqMosl6/YRFtPW1eMHEFzzI0=",
   "Source": "Allgem01",
   "BasePath": "_content/Allgem01",
   "Mode": "Default",
@@ -2157,6 +2157,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\play.png"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\quickplay.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "quickplay#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wr8raqygr1",
+      "Integrity": "LHcbehgF85l7H8zte4xqQ57UTjXwA3VHSGoBP2oBGNo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\quickplay.png"
     },
     {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\ulteros.jpg",
@@ -16840,6 +16861,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-30H7Nq6TWx5f6XcHAnzye2mx9WKVgfBeKTJ2zRY1JWo="
+        }
+      ]
+    },
+    {
+      "Route": "quickplay.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\quickplay.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9754"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LHcbehgF85l7H8zte4xqQ57UTjXwA3VHSGoBP2oBGNo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 16:35:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LHcbehgF85l7H8zte4xqQ57UTjXwA3VHSGoBP2oBGNo="
+        }
+      ]
+    },
+    {
+      "Route": "quickplay.wr8raqygr1.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\quickplay.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9754"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LHcbehgF85l7H8zte4xqQ57UTjXwA3VHSGoBP2oBGNo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 16:35:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wr8raqygr1"
+        },
+        {
+          "Name": "label",
+          "Value": "quickplay.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LHcbehgF85l7H8zte4xqQ57UTjXwA3VHSGoBP2oBGNo="
         }
       ]
     },
