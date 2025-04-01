@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\app.css"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\crserver.png",
+      "PackagePath": "staticwebassets\\crserver.png"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\discord-icon.png",
       "PackagePath": "staticwebassets\\discord-icon.png"
     },
