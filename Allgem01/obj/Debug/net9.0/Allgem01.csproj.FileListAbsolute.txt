@@ -196,16 +196,14 @@ C:\Users\janlu\allgem\Allgem01\obj\Debug\net9.0\refint\Allgem01.dll
 C:\Users\janlu\allgem\Allgem01\obj\Debug\net9.0\Allgem01.pdb
 C:\Users\janlu\allgem\Allgem01\obj\Debug\net9.0\Allgem01.genruntimeconfig.cache
 C:\Users\janlu\allgem\Allgem01\obj\Debug\net9.0\ref\Allgem01.dll
-C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Allgem01.exe
-C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Allgem01.dll
-C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\System.Data.SQLite.dll
-C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\runtimes\win-x64\native\SQLite.Interop.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\appsettings.json
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Allgem01.staticwebassets.runtime.json
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Allgem01.staticwebassets.endpoints.json
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Allgem01.exe
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Allgem01.deps.json
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Allgem01.runtimeconfig.json
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Allgem01.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Allgem01.pdb
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\EntityFramework.SqlServer.dll
@@ -215,6 +213,7 @@ C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Microsoft.OpenApi.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\MimeKit.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\RestSharp.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\System.Data.SQLite.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -236,6 +235,7 @@ C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\runtimes\win7-x64\nativ
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\runtimes\win7-x86\native\sqlite3.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\runtimes\linux-x64\native\SQLite.Interop.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\runtimes\win-x64\native\SQLite.Interop.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\runtimes\win-x86\native\SQLite.Interop.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

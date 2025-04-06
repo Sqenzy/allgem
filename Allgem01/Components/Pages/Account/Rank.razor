@@ -1,4 +1,4 @@
-﻿@page "/"
+@page "/rank"
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
 @inject IJSRuntime JSRuntime
@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allgem</title>
+    <title>Account</title>
 </head>
 </html>
 
@@ -39,17 +39,16 @@
     {
       @if (repository.hasPremium)
       {
-        <img @onclick="homeFf" class="logopremium" src="/allgempremium.png" alt="ALLGEM PREMIUM">
-        <img class="lpu">
+        <strong>ALLGEM PREMIUM</strong>
       }
       else
       {
-        <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">   
+        <strong>ALLGEM</strong>   
       }
     }
     else
     {
-      <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">
+      <strong>ALLGEM</strong>   
     }
     <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
@@ -62,6 +61,7 @@
     <svg
       viewBox="0 0 24 24"
       fill="white"
+    using System.Net;
       height="20"
       width="20"
       xmlns="http://www.w3.org/2000/svg"
@@ -96,55 +96,24 @@
     }
     else
     {
-        <button class="login" @onclick="loginFf">
-          <p class="lgtxt">Log In</p><p class="txt"> ›</p>
-          </button>
+
     }
-
-
 </header>
 
-<section class="downheader"></section>
-
-<section class="gamessection">
-<div class="cards">
-    <div class="cards">
-    <button class="card game1" @onclick="Graph">
-        <p class="tip">Test Game</p>
-        <p class="second-text"></p>
-    </button>
-    <button class="card game2" @onclick="playGameSecurityIDM">
-        <p class="tip">Multiplayer</p>
-        <p class="second-text"></p>
-    </button>
-    <button class="card game3" @onclick="playGameShooting">
-        <p class="tip">Shooting</p>
-        <p class="second-text"></p>
-    </button>
-</div>
-</div>
+<section class="acc">
+@if (repository.IsLoggedIn)
+{
+  <button @onclick="Bronze">Bronze</button>
+  <button @onclick="Silver">Silver</button>
+  <button @onclick="Gold">Gold</button>
+  <button @onclick="Platinum">Platinum</button> 
+  <button @onclick="Diamond">Diamond</button> 
+  <button @onclick="Master">Master</button>
+}
+else
+{
+}
 </section>
-
-<section class="secondgamessection">
-    <div class="cards">
-    <button class="card game1">
-        <p class="tip">Upcoming Game</p>
-        <p class="second-text">.......</p>
-    </button>
-    <button class="card game2">
-        <p class="tip">Upcoming Game</p>
-        <p class="second-text">.......</p>
-    </button>
-    <button class="card game3">
-        <p class="tip">Upcoming Game</p>
-        <p class="second-text">.......</p>
-    </button>
-</div>
-</section>
-
-<section class="lowersection">Upcoming Events</section>
-<footer>footer
-</footer>
 
 <style>
     
@@ -159,19 +128,6 @@
         position: sticky;
         top: 0px;
         z-index: 1000;
-    }
-    .downheader {
-        background: rgb(31, 33, 48);
-        height: 2px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    footer{
-        background: rgb(10, 13, 20);
-        color:  white;
-        padding: 10px 20px;
-        height: 100px;
     }
     li{
         display: inline-block;
@@ -189,12 +145,9 @@
         border-radius: 8px;
         width: 70px;
         height: 35px;
-        margin-left: 1070px;
+        margin-left: 1000px;
         transition: all 0.25s ease-out;
         margin-bottom: 10px;
-        font-weight: bold;
-        display: flex;
-        flex-direction: row;
     }
     .home:hover{
         transform: translateY(-4px);
@@ -210,7 +163,6 @@
         width: 90px;
         height: 35px;
         transition: all 0.25s ease-out;
-        font-weight: bold;
     }
     .aboutus:hover{
         transform: translateY(-4px);
@@ -226,36 +178,21 @@
         width: 103px;
         height: 35px;
         transition: all 0.25s ease-out;
-        font-weight: bold;
     }
     .contactus:hover{
         transform: translateY(-4px);
     }
     .logo{ 
-     width: 130px; 
-     height: 25px; 
+     width: 150px; 
+     height: 150px;
+     background-image: url("/images/imaginasie.png"); 
      background-size: contain; 
      background-repeat: no-repeat;
      background-position: center;
-    }
-    .logopremium{
-     width: 142px; 
-     height: 45px; 
-     background-size: contain; 
-     background-repeat: no-repeat;
-     background-position: center;
-    }
-    .lpu{
-      margin-top: 55px;
-      margin-left: -150px;
-      background: rgb(13, 134, 255);
-      height: 2px;
-      width: 150px;
     }
     .gamessection,.secondgamessection {
     display: flex; /* Align buttons in a row */
     flex-wrap: wrap; /* Wrap if screen is too small */
-    flex-direction: row;
     justify-content: center; /* Center align */
     gap: 30px; /* Add space between buttons */
     background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
@@ -553,7 +490,6 @@ body {
   height: 40px;
   width: 100px;
   display: flex;
-  font-weight: bold;
 }
 .login:hover{
   outline: 2px rgb(202, 203, 206) solid;
@@ -575,28 +511,11 @@ body {
 @code {
     private string? CookieValue;
     private string? CookieValue1;
+    private string? CookieValue2;
+    private string? email;
+    private string? rank;
 
-    private void Graph()
-    {
-       NavigationManager.NavigateTo("/graph");
-    }
 
-    private void playGameShooting()
-    {
-        NavigationManager.NavigateTo("/shooting/play");
-    }
-    private void accountFf()
-    {
-        NavigationManager.NavigateTo("/account");
-    }
-    private void playGameSecurityIDM()
-    {
-        NavigationManager.NavigateTo("/parkour/play");
-    }
-    private void loginFf()
-    {
-      NavigationManager.NavigateTo("/login");
-    }
     private void homeFf()
     {
         NavigationManager.NavigateTo("/");
@@ -613,6 +532,88 @@ body {
     {
         NavigationManager.NavigateTo("/premium");
     }
+    private void rankFf()
+    {
+        NavigationManager.NavigateTo("/rank");
+    }
+    private void accountFf()
+    {
+        NavigationManager.NavigateTo("/account");
+    }
+
+
+    private void Bronze()
+    {
+        rank = "Bronze";
+        if (!string.IsNullOrEmpty(email))
+        {
+            repository.AddRankToUser(email, rank);
+        }
+        else
+        {
+            JSRuntime.InvokeVoidAsync("alert", "You are not logged in. How did you get here?");
+        }
+    }
+    private void Silver()
+    {
+        rank = "Silver";
+        if (!string.IsNullOrEmpty(email))
+        {
+            repository.AddRankToUser(email, rank);
+        }
+        else
+        {
+            JSRuntime.InvokeVoidAsync("alert", "You are not logged in. How did you get here?");
+        }
+    }
+    private void Gold()
+    {
+        rank = "Gold";
+        if (!string.IsNullOrEmpty(email))
+        {
+            repository.AddRankToUser(email, rank);
+        }
+        else
+        {
+            JSRuntime.InvokeVoidAsync("alert", "You are not logged in. How did you get here?");
+        }
+    }
+    private void Platinum()
+    {
+        rank = "Platinum";
+        if (!string.IsNullOrEmpty(email))
+        {
+            repository.AddRankToUser(email, rank);
+        }
+        else
+        {
+            JSRuntime.InvokeVoidAsync("alert", "You are not logged in. How did you get here?");
+        }
+    }
+    private void Diamond()
+    {
+        rank = "Diamond";
+        if (!string.IsNullOrEmpty(email))
+        {
+            repository.AddRankToUser(email, rank);
+        }
+        else
+        {
+            JSRuntime.InvokeVoidAsync("alert", "You are not logged in. How did you get here?");
+        }
+    }
+    private void Master()
+    {
+        rank = "Master";
+        if (!string.IsNullOrEmpty(email))
+        {
+            repository.AddRankToUser(email, rank);
+        }
+        else
+        {
+            JSRuntime.InvokeVoidAsync("alert", "You are not logged in. How did you get here?");
+        }
+    }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -621,6 +622,7 @@ body {
             // Read the cookie value
             CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
             CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
+            CookieValue2 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_email");
 
             // Update the authentication state based on the cookie value
             if (CookieValue == "isli")
@@ -641,15 +643,14 @@ body {
                 repository.SetHasPremium(false);
             }
 
+            email = CookieValue2;
+
             StateHasChanged();
         }
     }
     private async Task Logout()
     {
         await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_auth");
-        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_premium");
-        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_rank");
-
         repository.SetLoggedIn(false);
         NavigationManager.NavigateTo("/");
     }

@@ -27,22 +27,26 @@
     <div class="cards">
         @if (repository.hasPremium)
         {
-            <button class="qpbutton"><img src="/quickplay.png" class="qpimage">
+            <button class="qpbutton" @onclick="QuickPlay"><img src="/quickplay.png" class="qpimage">
             <p class="qptxt">QUICK PLAY</p></button>
             <button class="csbutton"><img src="/crserver.png" class="crservericon">
             <p class="crtxt">CREATE CUSTOM SERVER</p></button>
         }
         else
         {
-            <button class="qppbutton"><img src="/quickplay.png" class="qpimage">
+            <button class="qpbutton" @onclick="QuickPlay"><img src="/quickplay.png" class="qpimage">
             <p class="qptxt">QUICK PLAY</p></button>
-            <button class="crbutton"><img src="/crserver.png" class="crservericon">
-<div class="container">
-    <div class="card_box">
-        <span></span>
-    </div>
-</div>
+            <button class="crbutton" @onclick="premiumFf">
+                <img src="/crserver.png" class="crservericon">
             <p class="crtxt">CREATE CUSTOM SERVER</p></button>
+        }
+        @if (repository.hasPremium)
+        {
+            
+        }
+        else
+        {
+            <img src="/premiumtag.png" class="premiumtagimg">
         }
     </div>
 </section>
@@ -116,43 +120,52 @@
 .cards {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: -5px;
   top: 50%;
-  left: 50%;
+  left: 56%;
+  background-image: url("/gshootimg.png");
+  border-radius: 12px;
+  height: 550px;
+  width: 990px;
+  margin-top: 145px;
 }
-.qpbutton,.csbutton{
-    margin-top: 300px;
-    margin-left: 20px;
-    background: gray;
+.qpbutton,.csbutton,.crbutton{
+    margin-top: 125px;
+    margin-left: 80px;
     border-radius: 20px;
     border: 0;
     height: 300px;
     width: 270px;
     transition: 0.5s all;
 }
+.qpbutton{
+    background: rgb(28, 75, 185);
+    margin-left: 183px;
+}
+.csbutton{
+    background: rgb(28, 75, 185);
+}
+.crbutton{
+    background: rgb(65, 65, 65);
+}
 .qpbutton:hover,.csbutton:hover{
     transform: scale(1.1);
 }
 .qptxt{
-    color: white;
+    color: #d1d1d1;
     font-weight: bold;
     font-size: 15px;
 }
 .crtxt{
-    color: white;
+    color: #d1d1d1;
     font-weight: bold;
     font-size: 15px;
 }
-.crservericon{
-    transform: scale(0.9);
-}
-.crbutton{
-    margin-top: 300px;
-    background: rgb(65, 65, 65);
-    border-radius: 20px;
-    border: 0;
-    height: 300px;
-    width: 270px;
+.premiumtagimg{
+    height: 200px;
+    width: 200px;
+    margin-top: 105px;
+    margin-left: -290px;
 }
 .qppbutton{
     margin-top: 300px;
@@ -163,7 +176,6 @@
     height: 300px;
     width: 270px;
 }
-/* From Uiverse.io by mrhyddenn */ 
 .container {
   display: flex;
   align-items: center;
@@ -231,14 +243,14 @@
     private string? CookieValue;
     private string? CookieValue1;
 
-    private void Graph()
+    private void QuickPlay()
     {
-       NavigationManager.NavigateTo("/graph");
-    }
-
-    private void playGameShooting()
-    {
-        NavigationManager.NavigateTo("/shooting/play");
+        NavigationManager.NavigateTo("/");
+        var url = "https://sqenzy.github.io/fpsgamet/";
+        if (JSRuntime != null)
+        {
+            JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
+        }
     }
     private void accountFf()
     {

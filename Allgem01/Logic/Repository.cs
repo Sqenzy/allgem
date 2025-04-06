@@ -13,6 +13,7 @@ public class Repository
     public bool IsLoggedIn { get; set; }
     public bool IsEmailVerified { get; set; } = false;
     public bool hasPremium { get; set; }
+    public string rank { get; set; }
     
     // abys mohl zobrazit ty data, tak si stahni DbBrowser for sqlite
     
@@ -33,7 +34,7 @@ public class Repository
     {
         string hashedPassword = HashPassword(password);
 
-        string sql = "SELECT hasPremium FROM users WHERE email = @email AND password = @password"; // WHERE - neco jako if, po nem das podminku
+        string sql = "SELECT hasPremium, role FROM users WHERE email = @email AND password = @password"; // WHERE - neco jako if, po nem das podminku
 
         using (var connection = new SQLiteConnection(_connectionString))
         {
@@ -51,6 +52,7 @@ public class Repository
                     {
                         IsLoggedIn = true;
                         hasPremium = !reader.IsDBNull(0) && reader.GetInt32(0) == 1;
+                        rank = reader.IsDBNull(1) ? null : reader.GetString(1);
                         return true;
                     }
                     else
@@ -143,4 +145,27 @@ public class Repository
         }
     }
 }
+
+public void AddRankToUser(string email, string rank)
+{
+    string sql = """
+                 UPDATE users
+                 SET role = @rank
+                 WHERE email = @Email;
+                 """;
+
+    using (var connection = new SQLiteConnection(_connectionString))
+    {
+        connection.Open();
+
+        using (var command = new SQLiteCommand(sql, connection))
+        {
+            command.Parameters.AddWithValue("@Email", email);
+            command.Parameters.AddWithValue("@rank", rank); // <-- CHYBĚLO!
+            command.ExecuteNonQuery();
+            hasPremium = true;
+        }
+    }
+}
+
 }

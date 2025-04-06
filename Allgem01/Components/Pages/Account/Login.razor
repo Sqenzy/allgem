@@ -180,7 +180,8 @@
 
         if (repository.Login(email, password))
         {
-            CreateCookie("allgem_auth", "isli", 15);
+            CreateCookie("allgem_email", email, 30);
+            CreateCookie("allgem_auth", "isli", 30);
             if (repository.hasPremium)
             {
                 CreateCookie("allgem_premium", "hsp", 30);
@@ -189,6 +190,35 @@
             else
             {
                 NavigationManager.NavigateTo("/");
+            }
+
+            if (repository.rank == "Bronze")
+            {
+                CreateCookie("allgem_rank", "bronze", 30);
+            }
+            else if (repository.rank == "Silver")
+            {
+                CreateCookie("allgem_rank", "silver", 30);
+            }
+            else if (repository.rank == "Gold")
+            {
+                CreateCookie("allgem_rank", "gold", 30);
+            }
+            else if (repository.rank == "Platinum")
+            {
+                CreateCookie("allgem_rank", "platinum", 30);
+            }
+            else if (repository.rank == "Diamond")
+            {
+                CreateCookie("allgem_rank", "diamond", 30);
+            }
+            else if (repository.rank == "Master")
+            {
+                CreateCookie("allgem_rank", "master", 30);
+            }
+            else
+            {
+
             }
         }
         else

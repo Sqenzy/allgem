@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\gmail-icon.png"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gshootimg.png",
+      "PackagePath": "staticwebassets\\gshootimg.png"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\imaginase.png",
       "PackagePath": "staticwebassets\\imaginase.png"
     },
@@ -219,6 +223,10 @@
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\play.png",
       "PackagePath": "staticwebassets\\play.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\premiumtag.png",
+      "PackagePath": "staticwebassets\\premiumtag.png"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\quickplay.png",

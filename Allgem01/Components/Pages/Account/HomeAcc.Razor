@@ -105,7 +105,7 @@
 @if (repository.IsLoggedIn)
 {
   <button class="accountbutton">Account</button>
-  <button class="rankbutton">Rank</button>
+  <button class="rankbutton" @onclick="rankFf">Rank</button>
   <button class="premiumbutton">Premium</button>
   <button class="logoutbutton">Logout</button> 
 }
@@ -547,6 +547,10 @@ body {
     private void premiumFf()
     {
         NavigationManager.NavigateTo("/premium");
+    }
+    private void rankFf()
+    {
+        NavigationManager.NavigateTo("/rank");
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
