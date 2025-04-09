@@ -51,9 +51,12 @@
     {
       <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">
     }
+    <nav>
     <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
+    </nav>
+    <section class="nav2">
 @if (repository.IsLoggedIn)
     {
       <label class="popup">
@@ -101,7 +104,7 @@
           </button>
     }
 
-
+</section>
 </header>
 
 <section class="downheader"></section>
@@ -145,12 +148,12 @@
 <section class="lowersection">Upcoming Events</section>
 <footer>footer
 </footer>
-
 <style>
-    
     header {
         background: rgb(10, 13, 20);
-        background-size: 300% 300%;
+        min-width: 99vw;
+        min-height: 10vh;
+        display: flex;
         color: white;
         font-size: 16px;
         padding: 20px 40px 10px 50px;
@@ -179,19 +182,29 @@
         padding-right: 40px;
 
     }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 180px;
+    }
+    .nav2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 180px;
+    }
     .home{
         background: none;
         background-size: 300% 300%;
         color: white;
         font-size: 16px;
-        padding: 0;
+        padding: none;
         border: none;
         border-radius: 8px;
         width: 70px;
         height: 35px;
-        margin-left: 1070px;
         transition: all 0.25s ease-out;
-        margin-bottom: 10px;
         font-weight: bold;
         display: flex;
         flex-direction: row;
