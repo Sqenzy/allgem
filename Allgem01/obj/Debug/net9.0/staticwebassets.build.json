@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NIKSBNWdGn4PvA4TExG8N7jXllQIRifnMhSL83dZaao=",
+  "Hash": "19unvnoGSa+J4Y9Gxbp38XoCY0SJIPC2MHNr5SVsosQ=",
   "Source": "Allgem01",
   "BasePath": "_content/Allgem01",
   "Mode": "Default",
@@ -2222,6 +2222,27 @@
       "OriginalItemSpec": "wwwroot\\premiumtag.png"
     },
     {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\profile.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "profile#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9atcb5d4xh",
+      "Integrity": "v/F1EMei/qDgD7aNZ6jxBTZTxvEj5MMyDiigLXO/qu8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\profile.png"
+    },
+    {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\quickplay.png",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
@@ -2372,7 +2393,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 14:46:55 GMT"
+          "Value": "Thu, 10 Apr 2025 18:54:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2433,7 +2454,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 14:46:55 GMT"
+          "Value": "Thu, 10 Apr 2025 18:54:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2478,7 +2499,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 14:46:55 GMT"
+          "Value": "Thu, 10 Apr 2025 18:54:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2533,7 +2554,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 14:46:55 GMT"
+          "Value": "Thu, 10 Apr 2025 18:54:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2594,7 +2615,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 14:46:55 GMT"
+          "Value": "Thu, 10 Apr 2025 18:54:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2639,7 +2660,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 14:46:55 GMT"
+          "Value": "Thu, 10 Apr 2025 18:54:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2694,7 +2715,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 14:46:55 GMT"
+          "Value": "Thu, 10 Apr 2025 18:54:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2747,7 +2768,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 14:46:55 GMT"
+          "Value": "Thu, 10 Apr 2025 18:54:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2784,7 +2805,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 14:46:55 GMT"
+          "Value": "Thu, 10 Apr 2025 18:54:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2831,7 +2852,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 14:46:55 GMT"
+          "Value": "Thu, 10 Apr 2025 18:54:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2884,7 +2905,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 14:46:55 GMT"
+          "Value": "Thu, 10 Apr 2025 18:54:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2921,7 +2942,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Apr 2025 14:46:55 GMT"
+          "Value": "Thu, 10 Apr 2025 18:54:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -17170,6 +17191,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-l25PE54Mgv+WhV4oslGjCYkNrLUT0vsnhE0xDykNR4k="
+        }
+      ]
+    },
+    {
+      "Route": "profile.9atcb5d4xh.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\profile.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "895"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v/F1EMei/qDgD7aNZ6jxBTZTxvEj5MMyDiigLXO/qu8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 17:25:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9atcb5d4xh"
+        },
+        {
+          "Name": "label",
+          "Value": "profile.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-v/F1EMei/qDgD7aNZ6jxBTZTxvEj5MMyDiigLXO/qu8="
+        }
+      ]
+    },
+    {
+      "Route": "profile.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\profile.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "895"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v/F1EMei/qDgD7aNZ6jxBTZTxvEj5MMyDiigLXO/qu8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 17:25:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-v/F1EMei/qDgD7aNZ6jxBTZTxvEj5MMyDiigLXO/qu8="
         }
       ]
     },

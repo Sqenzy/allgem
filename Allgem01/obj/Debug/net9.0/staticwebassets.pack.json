@@ -229,6 +229,10 @@
       "PackagePath": "staticwebassets\\premiumtag.png"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\profile.png",
+      "PackagePath": "staticwebassets\\profile.png"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\quickplay.png",
       "PackagePath": "staticwebassets\\quickplay.png"
     },
