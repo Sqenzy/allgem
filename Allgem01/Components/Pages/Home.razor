@@ -57,26 +57,25 @@
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 @if (repository.IsLoggedIn)
     {
-      <button class="profile"  @onclick="Profile" type="button">
+      <button class="profile"  @onclick="accountFf" type="button">
           <img class="profileimg" src="/profile.png" alt="profile">
       </button>
       @if (profile == true)
       {
         <div class="profilemenu">
           <button class="logout" @onclick="Logout">Log Out</button>
-          <button class="account" @onclick="accountFf">Account</button>
         </div>
       }
       else{
 
       }
-@if (repository.hasPremium)
-    {
-    }
-    else
-    {
-      <li><button class="premium" type="button" @onclick="premiumFf">Premium</button></li>
-    }
+      @if (repository.hasPremium)
+      {
+      }
+      else
+      {
+          <li><button class="premium" type="button" @onclick="premiumFf">Premium</button></li>
+      }
     }
     else
     {
@@ -88,40 +87,39 @@
 </header>
 
 <section class="downheader"></section>
+
 <section class="gamessection">
-<div class="cards">
     <div class="cards">
-    <button class="card game1" @onclick="Graph">
-        <p class="tip">Test Game</p>
-        <p class="second-text"></p>
-    </button>
-    <button class="card game2" @onclick="playGameSecurityIDM">
-        <p class="tip">Multiplayer</p>
-        <p class="second-text"></p>
-    </button>
-    <button class="card game3" @onclick="playGameShooting">
-        <p class="tip">Shooting</p>
-        <p class="second-text"></p>
-    </button>
-</div>
-</div>
+        <button class="card" id="card1" @onclick="Graph">
+            <p class="tip">Test Game</p>
+            <p class="second-text"></p>
+        </button>
+        <button class="card" id="card2" @onclick="playGameSecurityIDM">
+            <p class="tip">Multiplayer</p>
+            <p class="second-text"></p>
+        </button>
+        <button class="card" id="card3" @onclick="playGameShooting">
+            <p class="tip">Shooting</p>
+            <p class="second-text"></p>
+        </button>
+    </div>
 </section>
 
 <section class="secondgamessection">
     <div class="cards">
-    <button class="card game1">
-        <p class="tip">Upcoming Game</p>
-        <p class="second-text">.......</p>
-    </button>
-    <button class="card game2">
-        <p class="tip">Upcoming Game</p>
-        <p class="second-text">.......</p>
-    </button>
-    <button class="card game3">
-        <p class="tip">Upcoming Game</p>
-        <p class="second-text">.......</p>
-    </button>
-</div>
+        <button class="card" id="card4">
+            <p class="tip">Upcoming Game</p>
+            <p class="second-text"></p>
+        </button>
+        <button class="card" id="card5">
+            <p class="tip">Upcoming Game</p>
+            <p class="second-text"></p>
+        </button>
+        <button class="card" id="card6">
+            <p class="tip">Upcoming Game</p>
+            <p class="second-text"></p>
+        </button>
+    </div>
 </section>
 
 <section class="lowersection">Upcoming Events</section>
@@ -131,7 +129,7 @@
     header {
         background: rgb(10, 13, 20);
         min-width: 99vw;
-        min-height: 10vh;
+        min-height: 9vh;
         display: flex;
         color: white;
         font-size: 16px;
@@ -163,9 +161,9 @@
 
     }
     nav{
-        margin-left: clamp(20px, 50vw, 80vw);
-        margin-top: -35px;
+        margin-left: clamp(20px, 62vw, 80vw);
         flex-direction: column;
+        margin-top: -40px;
         gap: 10px;
     }
     .home{
@@ -178,7 +176,7 @@
         border-radius: 8px;
         width: 70px;
         height: 35px;
-        transition: all 0.25s ease-out;
+        transition: all 0.1s ease-out;
         font-weight: bold;
         display: flex;
     }
@@ -195,7 +193,7 @@
         border-radius: 8px;
         width: 90px;
         height: 35px;
-        transition: all 0.25s ease-out;
+        transition: all 0.1s ease-out;
         font-weight: bold;
     }
     .aboutus:hover{
@@ -211,7 +209,7 @@
         border-radius: 8px;
         width: 103px;
         height: 35px;
-        transition: all 0.25s ease-out;
+        transition: all 0.1s ease-out;
         font-weight: bold;
     }
     .contactus:hover{
@@ -243,14 +241,16 @@
       background: none;
       height: 38px;
       width: 38px;
-      transition: all 0.25s ease-out;
+      transition: all 0.2s ease-out;
+      margin-left: 50px;
     }
     .profileimg{
       width: 38px;
       height: 38px;
+      transition: all 0.2s ease-out;
     }
-    .profile:hover{
-      transform: scale(1.1, 1.1);
+    .profile:hover .profileimg{
+      transform: scale(1.2, 1.2);
     }
 .premium {
   width: fit-content;
@@ -296,10 +296,10 @@
     }
     .gamessection {
     min-height: 100px;
-    padding-top: 200px;
+    padding-top: 100px;
     }
     .secondgamessection {
-    padding-top: 200px;
+    padding-top: 150px;
     min-height: 800px;
 }  
 body {
@@ -313,25 +313,16 @@ body {
   
 }
 
-.cards .game1 {
-  background-color: rgb(55, 56, 82);
-}
-
-.cards .game2 {
-  background-color: rgb(55, 56, 82);
-}
-
-.cards .game3 {
-  background-color: rgb(55, 56, 82);
-}
-
 .cards .card {
   flex: 3 3 calc(100% - 20px);
-  max-width: 450px;
+  min-width: 25vw;
+  height: 260px;
   margin: 10px;
   color: white;
   cursor: pointer;
-  transition: 400ms;
+  background-color: rgb(55, 56, 82);
+  transition: 250ms;
+  border-radius: 20px;
 }
 
 .cards .card p.tip {
@@ -349,7 +340,6 @@ body {
 .login {
   background: rgb(28, 75, 185);
   border: 0;
-  margin-left: 20px;
   border-radius: 18px;
   transition: 0.01s outline;
   color: white;
@@ -378,7 +368,7 @@ body {
 @code {
     private string? CookieValue;
     private string? CookieValue1;
-    private bool profile = true;
+    private bool profile = false;
 
     private void Profile()
     {
