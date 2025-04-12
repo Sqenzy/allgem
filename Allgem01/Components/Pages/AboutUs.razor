@@ -39,64 +39,51 @@
     {
       @if (repository.hasPremium)
       {
-        <strong>ALLGEM PREMIUM</strong>
+        <img @onclick="homeFf" class="logopremium" src="/allgempremium.png" alt="ALLGEM PREMIUM">
+        <img class="lpu">
       }
       else
       {
+        <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">   
       }
     }
     else
     {
-        
+      <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">
     }
-    <strong>ALLGEM</strong>
+    <nav>
     <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 @if (repository.IsLoggedIn)
     {
-      <label class="popup">
-  <input type="checkbox" />
-  <div tabindex="0" class="burger">
-    <svg
-      viewBox="0 0 24 24"
-      fill="white"
-      height="20"
-      width="20"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"
-      ></path>
-    </svg>
-  </div>
-  <nav class="popup-window">
-    <ul>
-      <li>
-        <button @onclick="aboutusFf">
-          <span>Account</span>
-        </button>
-      </li>
-      <li>
-        <button class="logout"@onclick="Logout">
-          <span>Logout   -</span>
-        </button>
-      </li>
-    </ul>
-  </nav>
-</label>
-@if (repository.hasPremium)
-    {
+      <button class="profile"  @onclick="accountFf" type="button">
+          <img class="profileimg" src="/profile.png" alt="profile">
+      </button>
+      @if (profile == true)
+      {
+        <div class="profilemenu">
+          <button class="logout" @onclick="Logout">Log Out</button>
+        </div>
+      }
+      else{
+
+      }
+      @if (repository.hasPremium)
+      {
+      }
+      else
+      {
+          <li><button class="premium" type="button" @onclick="premiumFf">Premium</button></li>
+      }
     }
     else
     {
-      <li><button class="premium" type="button" @onclick="premiumFf">Premium</button></li>
+        <button class="login" @onclick="loginFf">
+          <p class="lgtxt">Log In</p><p class="txt"> ›</p>
+          </button>
     }
-    }
-    else
-    {
-        <button @onclick="loginFf">Log In   ›</button>
-    }
+    </nav>
 </header>
 <section class="lowersection">
     <div class="negr">
@@ -119,7 +106,9 @@
     
     header {
         background: rgb(10, 13, 20);
-        background-size: 300% 300%;
+        min-width: 99vw;
+        min-height: 9vh;
+        display: flex;
         color: white;
         font-size: 16px;
         padding: 20px 40px 10px 50px;
@@ -127,7 +116,21 @@
         border-radius: none;
         position: sticky;
         top: 0px;
+        flex-direction: column;
         z-index: 1000;
+    }
+    .downheader {
+        background: rgb(31, 33, 48);
+        height: 2px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    footer{
+        background: rgb(10, 13, 20);
+        color:  white;
+        padding: 10px 20px;
+        height: 100px;
     }
     li{
         display: inline-block;
@@ -135,19 +138,25 @@
         padding-right: 40px;
 
     }
+    nav{
+        margin-left: clamp(20px, 62vw, 80vw);
+        flex-direction: column;
+        margin-top: -40px;
+        gap: 10px;
+    }
     .home{
         background: none;
         background-size: 300% 300%;
         color: white;
         font-size: 16px;
-        padding: 0;
+        padding: none;
         border: none;
         border-radius: 8px;
         width: 70px;
         height: 35px;
-        margin-left: 1000px;
-        transition: all 0.25s ease-out;
-        margin-bottom: 10px;
+        transition: all 0.1s ease-out;
+        font-weight: bold;
+        display: flex;
     }
     .home:hover{
         transform: translateY(-4px);
@@ -162,7 +171,8 @@
         border-radius: 8px;
         width: 90px;
         height: 35px;
-        transition: all 0.25s ease-out;
+        transition: all 0.1s ease-out;
+        font-weight: bold;
     }
     .aboutus:hover{
         transform: translateY(-4px);
@@ -177,74 +187,50 @@
         border-radius: 8px;
         width: 103px;
         height: 35px;
-        transition: all 0.25s ease-out;
+        transition: all 0.1s ease-out;
+        font-weight: bold;
     }
     .contactus:hover{
         transform: translateY(-4px);
     }
     .logo{ 
-     width: 150px; 
-     height: 150px;
-     background-image: url("/images/imaginasie.png"); 
+     width: 130px; 
+     height: 25px;
+     margin-top: 11px; 
      background-size: contain; 
      background-repeat: no-repeat;
      background-position: center;
-    } 
-
-.popup {
-  --burger-line-width: 1.125em;
-  --burger-line-height: 0.125em;
-  --burger-offset: 0.625em;
-  --burger-bg: tohle_nemazat rgb(55, 56, 82);
-  --burger-color: #ffffff;
-  --burger-line-border-radius: 0.1875em;
-  --burger-diameter: 3.125em;
-  --burger-btn-border-radius: calc(var(--burger-diameter) / 2);
-  --burger-line-transition: 0.3s;
-  --burger-transition: all 0.25s ease-in-out;
-  --burger-hover-scale: 1.3;
-  --burger-active-scale: 0.95;
-  --burger-enable-outline-color: var(--burger-bg);
-  --burger-enable-outline-width: 0.125em;
-  --burger-enable-outline-offset: var(--burger-enable-outline-width);
-  /* nav */
-  --nav-padding-x: 0.25em;
-  --nav-padding-y: 0.625em;
-  --nav-border-radius: 0.375em;
-  --nav-border-color: rgb(55, 56, 82);
-  --nav-border-width: 0.0625em;
-  --nav-shadow-color: rgba(0, 0, 0, 0.2);
-  --nav-shadow-width: 0 1px 5px;
-  --nav-bg: rgb(55, 56, 82);
-  --nav-font-family: "Poppins", sans-serif;
-  --nav-default-scale: 0.8;
-  --nav-active-scale: 1;
-  --nav-position-left: 0;
-  --nav-position-right: unset;
-  /* if you want to change sides just switch one property */
-  /* from properties to "unset" and the other to 0 */
-  /* title */
-  --nav-title-size: 0.625em;
-  --nav-title-color: #777;
-  --nav-title-padding-x: 1rem;
-  --nav-title-padding-y: 0.25em;
-  /* nav button */
-  --nav-button-padding-x: 1rem;
-  --nav-button-padding-y: 0.375em;
-  --nav-button-border-radius: 0.375em;
-  --nav-button-font-size: 17px;
-  --nav-button-hover-bg: rgb(107, 107, 107);
-  --nav-button-hover-text-color: #ffffff;
-  --nav-button-distance: 0.875em;
-  /* underline */
-  --underline-border-width: 0.0625em;
-  --underline-border-color: rgb(55, 56, 82);
-  --underline-margin-y: 0.3125em;
-  padding-left: 50px;
-}
-.logout {
-  --nav-button-hover-text-color: #ff0000;
-}
+    }
+    .logopremium{
+     width: 142px; 
+     height: 45px; 
+     background-size: contain; 
+     background-repeat: no-repeat;
+     background-position: center;
+    }
+    .lpu{
+      margin-top: 5px;
+      margin-left: -4px;
+      background: rgb(13, 134, 255);
+      height: 2px;
+      width: 150px;
+    }
+    .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 50px;
+    }
+    .profileimg{
+      width: 38px;
+      height: 38px;
+      transition: all 0.2s ease-out;
+    }
+    .profile:hover .profileimg{
+      transform: scale(1.2, 1.2);
+    }
 .premium {
   width: fit-content;
   height: 40px;
@@ -278,152 +264,163 @@
 .premium:hover {
   background-size: 320%;
   background-position: right center;
+}  
+body {
+    margin: 0 !important;
+    padding: 0 !important;
 }
-
-/* popup settings 👆 */
-
-.popup {
-  display: inline-block;
-  text-rendering: optimizeLegibility;
-  position: relative;
-}
-
-.popup input {
-  display: none;
-}
-
-.burger {
+.login {
+  background: rgb(28, 75, 185);
+  border: 0;
+  margin-left: 420px;
+  margin-top: -42px;
+  border-radius: 18px;
+  transition: 0.01s outline;
+  color: white;
+  height: 40px;
+  width: 100px;
   display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  background: var(--burger-bg);
-  width: var(--burger-diameter);
-  height: var(--burger-diameter);
-  border-radius: var(--burger-btn-border-radius);
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  transition: var(--burger-transition);đ
-  outline: var(--burger-enable-outline-width) solid transparent;
-  outline-offset: 0;
+  font-weight: bold;
 }
-
-.popup-window {
-  transform: scale(var(--nav-default-scale));
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  padding: var(--nav-padding-y) var(--nav-padding-x);
-  background: var(--nav-bg);
-  font-family: var(--nav-font-family);
-  color: var(--nav-text-color);
-  border-radius: var(--nav-border-radius);
-  box-shadow: var(--nav-shadow-width) var(--nav-shadow-color);
-  border: var(--nav-border-width) solid var(--nav-border-color);
-  top: calc(
-    var(--burger-diameter) + var(--burger-enable-outline-width) +
-      var(--burger-enable-outline-offset)
-  );
-  left: var(--nav-position-left);
-  right: var(--nav-position-right);
-  transition: var(--burger-transition);
-  margin-top: 10px;
+.login:hover{
+  outline: 2px rgb(202, 203, 206) solid;
 }
-
-.popup-window ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.txt{
+  margin-left: 13px;
+  margin-top: 7px;
+  transition: 0.25s all;
 }
-
-.popup-window ul button {
-  outline: none;
-  width: 100%;
-  border: none;
-  background: none;
-  display: flex;
-  align-items: center;
-  color: var(--burger-color);
-  font-size: var(--nav-button-font-size);
-  padding: var(--nav-button-padding-y) var(--nav-button-padding-x);
-  white-space: nowrap;
-  border-radius: var(--nav-button-border-radius);
-  cursor: pointer;
-  column-gap: var(--nav-button-distance);
+.login:hover .txt{
+  margin-left: 20px;
+}
+.lgtxt {
+  margin-left: 13px;
+  margin-top: 7px;
 }
 
 
-.popup-window ul li:nth-child(1) svg,
-.popup-window ul li:nth-child(2) svg {
-  color: #ffffff;
-}
 
-.popup-window ul li:nth-child(4) svg,
-.popup-window ul li:nth-child(5) svg {
-  color: rgb(153, 153, 153);
-}
+@@media (max-width: 1499px) {
+        nav {
+            margin-left: clamp(20px, 60vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1437px) {
+        nav {
+            margin-left: clamp(20px, 58vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1356px) {
+        nav {
+            margin-left: clamp(20px, 50vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 9px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1139px) {
+        nav {
+            margin-left: clamp(20px, 40vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 8px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 950px) {
+        nav {
+            margin-left: clamp(20px, 37vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 7px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 5px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    }
 
-.popup-window ul li:nth-child(7) svg {
-  color: red;
-}
-
-.popup-window hr {
-  margin: var(--underline-margin-y) 0;
-  border: none;
-  border-bottom: var(--underline-border-width) solid
-    var(--underline-border-color);
-}
-
-/* actions */
-
-.popup-window ul button:hover,
-.popup-window ul button:focus-visible,
-.popup-window ul button:hover svg,
-.popup-window ul button:focus-visible svg {
-  color: var(--nav-button-hover-text-color);
-  background: var(--nav-button-hover-bg);
-}
-
-.burger:hover {
-  transform: scale(var(--burger-hover-scale));
-}
-
-.burger:active {
-  transform: scale(var(--burger-active-scale));
-}
-
-.burger:focus:not(:hover) {
-  outline-color: var(--burger-enable-outline-color);
-  outline-offset: var(--burger-enable-outline-offset);
-}
-
-.popup input:checked + .burger span:nth-child(1) {
-  top: 50%;
-  transform: translateY(-50%) rotate(45deg);
-}
-
-.popup input:checked + .burger span:nth-child(2) {
-  bottom: 50%;
-  transform: translateY(50%) rotate(-45deg);
-}
-
-.popup input:checked + .burger span:nth-child(3) {
-  transform: translateX(
-    calc(var(--burger-diameter) * -1 - var(--burger-line-width))
-  );
-}
-
-.popup input:checked ~ nav {
-  transform: scale(var(--nav-active-scale));
-  visibility: visible;
-  opacity: 1;
-}
+     @if (!repository.IsLoggedIn) {
+        <style>nav {
+            margin-left: clamp(20px, 58vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 10px;
+        }
+        </style>
+    }
 </style>
 
 @code {
     private string? CookieValue;
     private string? CookieValue1;
+    private bool profile = false;
+
+    private void Profile()
+    {
+       if (profile == false)
+       {
+           profile = true;
+       }
+       else
+       {
+           profile = false;
+       }
+    }
+
+    private void Graph()
+    {
+       NavigationManager.NavigateTo("/graph");
+    }
 
     private void playGameShooting()
     {
@@ -431,12 +428,11 @@
     }
     private void accountFf()
     {
-        NavigationManager.NavigateTo("/login");
+        NavigationManager.NavigateTo("/account");
     }
     private void playGameSecurityIDM()
     {
         NavigationManager.NavigateTo("/parkour/play");
-        //var url = "https://s
     }
     private void loginFf()
     {
@@ -492,6 +488,9 @@
     private async Task Logout()
     {
         await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_auth");
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_premium");
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_rank");
+
         repository.SetLoggedIn(false);
         NavigationManager.NavigateTo("/");
     }
