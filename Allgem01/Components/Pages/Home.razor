@@ -141,6 +141,7 @@
         flex-direction: column;
         z-index: 1000;
         opacity: 0.98;
+        position: relative;
     }
     .downheader {
         background: rgb(31, 33, 48);
@@ -257,9 +258,12 @@
 .premium {
   width: fit-content;
   height: 40px;
+  width: 105px;
   display: flex;
-  padding: 0.5em 1.1em;
-  gap: 0.4rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 514px;
+  margin-top: -42px;
   border: none;
   font-weight: bold;
   border-radius: 20px;
@@ -458,6 +462,59 @@ body {
     background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
     }
     }
+    @@media (max-width: 768px) {
+        nav {
+            margin-left: clamp(20px, 3vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 7px;
+        }
+        .logo{
+          width: 75px; 
+          height: 15px;
+          margin-top: 11px; 
+          background-size: contain; 
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .home{
+          content: "Account";
+          margin-top: -80px;
+          width: 20px;
+          height: 10px;
+          font-size: 10px;
+        }
+        .aboutus{
+          width: 20px;
+          height: 10px;
+          font-size: 10px;
+        }
+        .contactus{
+          width: 10px;
+          height: 5px;
+          font-size: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: -20px;
+    }
+    .login{
+        height: 0px;
+        width: 0px;
+    }
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 5px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    }
 
      @if (!repository.IsLoggedIn) {
         <style>nav {
@@ -466,8 +523,305 @@ body {
             margin-top: -24px;
             gap: 10px;
         }
+
+
+
+        @@media (max-width: 1499px) {
+        nav {
+            margin-left: clamp(20px, 55vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1437px) {
+        nav {
+            margin-left: clamp(20px, 53vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1356px) {
+        nav {
+            margin-left: clamp(20px, 48vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 9px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1139px) {
+        nav {
+            margin-left: clamp(20px, 40vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 8px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 950px) {
+        nav {
+            margin-left: clamp(20px, 37vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 7px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 5px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    }
+
+    @@media (max-width: 918px) {
+        nav {
+            margin-left: clamp(20px, 30vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 7px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 5px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    }
+
+     @@media (max-width: 840px) {
+        nav {
+            margin-left: clamp(20px, 28vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 7px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 5px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    }
+    .login{
+        background: rgb(28, 75, 185);
+        border: 0;
+        margin-left: 400px;
+        margin-top: -42px;
+        border-radius: 18px;
+        transition: 0.01s outline;
+        color: white;
+        height: 40px;
+        width: 100px;
+        display: flex;
+        font-weight: bold;
+    }
         </style>
     }
+    @if (repository.IsLoggedIn) {
+        @if (!repository.hasPremium) {
+        <style>
+          nav{
+            margin-left: clamp(20px, 58vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 10px;
+          }
+          .profile{
+            border: none;
+            background: none;
+            height: 38px;
+            width: 38px;
+            transition: all 0.2s ease-out;
+            margin-left: 10px;
+          }
+          .premium{
+            width: fit-content;
+            position: absolute;
+            height: 40px;
+            width: 105px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 110px;
+            margin-top: -25px;
+            border: none;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+            text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+            background: linear-gradient(
+                15deg,
+                #000088,
+                #0022aa,
+                #0044cc,
+                #0066de,
+                #0088f0,
+                #0066de,
+                #0044cc,
+                #0022aa,
+                #000088
+              )
+              no-repeat;
+            background-size: 300%;
+            background-position: left center;
+            transition: background 0.3s ease;
+            color: #fff;
+          }
+
+
+          @@media (max-width: 1499px) {
+        nav {
+            margin-left: clamp(20px, 60vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1437px) {
+        nav {
+            margin-left: clamp(20px, 58vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1356px) {
+        nav {
+            margin-left: clamp(20px, 50vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 9px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1139px) {
+        nav {
+            margin-left: clamp(20px, 40vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 8px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 950px) {
+        nav {
+            margin-left: clamp(20px, 37vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 7px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 5px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    }
+        </style>
+        }
+      }
 </style>
 
 @code {
