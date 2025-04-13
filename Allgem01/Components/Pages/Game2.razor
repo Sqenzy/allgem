@@ -15,13 +15,57 @@
 </html>
 
 
-<header><strong>ALLGEM</strong>
-    <li><button class="home" type=".button" @onclick="homeFf">Home</button></li>
-    <li><button class="aboutus" type=".button" @onclick="aboutusFf">About Us</button></li>
-    <li><button class="contactus" type=".button" @onclick="contactusFf">Contact Us</button></li>
-</header>
+<header>
+  @if (repository.IsLoggedIn)
+    {
+      @if (repository.hasPremium)
+      {
+        <img @onclick="homeFf" class="logopremium" src="/allgempremium.png" alt="ALLGEM PREMIUM">
+        <img class="lpu">
+      }
+      else
+      {
+        <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">   
+      }
+    }
+    else
+    {
+      <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">
+    }
+    <nav>
+    <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
+    <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
+    <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
+@if (repository.IsLoggedIn)
+    {
+      <button class="profile"  @onclick="accountFf" type="button">
+          <img class="profileimg" src="/profile.png" alt="profile">
+      </button>
+      @if (profile == true)
+      {
+        <div class="profilemenu">
+          <button class="logout" @onclick="Logout">Log Out</button>
+        </div>
+      }
+      else{
 
-<section class="downheader"></section>
+      }
+      @if (repository.hasPremium)
+      {
+      }
+      else
+      {
+          <li><button class="premium" type="button" @onclick="premiumFf">Premium</button></li>
+      }
+    }
+    else
+    {
+        <button class="login" @onclick="loginFf">
+          <p class="lgtxt">Log In</p><p class="txt"> ›</p>
+          </button>
+    }
+    </nav>
+</header>
 
 <section class="lowersection">
     <div class="cards">
@@ -55,13 +99,18 @@
 <style>
     header {
         background: rgb(10, 13, 20);
-        background-size: 300% 300%;
+        min-width: 99vw;
+        min-height: 9vh;
+        display: flex;
         color: white;
         font-size: 16px;
         padding: 20px 40px 10px 50px;
         border: none;
         border-radius: none;
-        
+        position: sticky;
+        top: 0px;
+        flex-direction: column;
+        z-index: 1000;
     }
     .downheader {
         background: rgb(31, 33, 48);
@@ -70,11 +119,23 @@
         display: flex;
         justify-content: center;
     }
+    footer{
+        background: rgb(10, 13, 20);
+        color:  white;
+        padding: 10px 20px;
+        height: 100px;
+    }
     li{
         display: inline-block;
         list-style-type: none;
         padding-right: 40px;
 
+    }
+    nav{
+        margin-left: clamp(20px, 62vw, 80vw);
+        flex-direction: column;
+        margin-top: -40px;
+        gap: 10px;
     }
     .home{
         background: none;
@@ -86,7 +147,12 @@
         border-radius: 8px;
         width: 70px;
         height: 35px;
-        margin-left: 900px;
+        transition: all 0.1s ease-out;
+        font-weight: bold;
+        display: flex;
+    }
+    .home:hover{
+        transform: translateY(-4px);
     }
     .aboutus{
         background: none;
@@ -98,6 +164,11 @@
         border-radius: 8px;
         width: 90px;
         height: 35px;
+        transition: all 0.1s ease-out;
+        font-weight: bold;
+    }
+    .aboutus:hover{
+        transform: translateY(-4px);
     }
     .contactus{
         background: none;
@@ -109,7 +180,240 @@
         border-radius: 8px;
         width: 103px;
         height: 35px;
+        transition: all 0.1s ease-out;
+        font-weight: bold;
     }
+    .contactus:hover{
+        transform: translateY(-4px);
+    }
+    .logo{ 
+     width: 130px; 
+     height: 25px;
+     margin-top: 11px; 
+     background-size: contain; 
+     background-repeat: no-repeat;
+     background-position: center;
+    }
+    .logopremium{
+     width: 142px; 
+     height: 45px; 
+     background-size: contain; 
+     background-repeat: no-repeat;
+     background-position: center;
+    }
+    .lpu{
+      margin-top: 5px;
+      margin-left: -4px;
+      background: rgb(13, 134, 255);
+      height: 2px;
+      width: 150px;
+    }
+    .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 50px;
+    }
+    .profileimg{
+      width: 38px;
+      height: 38px;
+      transition: all 0.2s ease-out;
+    }
+    .profile:hover .profileimg{
+      transform: scale(1.2, 1.2);
+    }
+.premium {
+  width: fit-content;
+  height: 40px;
+  display: flex;
+  padding: 0.5em 1.1em;
+  gap: 0.4rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+  background: linear-gradient(
+      15deg,
+      #000088,
+      #0022aa,
+      #0044cc,
+      #0066de,
+      #0088f0,
+      #0066de,
+      #0044cc,
+      #0022aa,
+      #000088
+    )
+    no-repeat;
+  background-size: 300%;
+  background-position: left center;
+  transition: background 0.3s ease;
+  color: #fff;
+}
+
+.premium:hover {
+  background-size: 320%;
+  background-position: right center;
+}  
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.login {
+  background: rgb(28, 75, 185);
+  border: 0;
+  margin-left: 420px;
+  margin-top: -42px;
+  border-radius: 18px;
+  transition: 0.01s outline;
+  color: white;
+  height: 40px;
+  width: 100px;
+  display: flex;
+  font-weight: bold;
+}
+.login:hover{
+  outline: 2px rgb(202, 203, 206) solid;
+}
+.txt{
+  margin-left: 13px;
+  margin-top: 7px;
+  transition: 0.25s all;
+}
+.login:hover .txt{
+  margin-left: 20px;
+}
+.lgtxt {
+  margin-left: 13px;
+  margin-top: 7px;
+}
+
+
+
+@@media (max-width: 1499px) {
+        nav {
+            margin-left: clamp(20px, 60vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1437px) {
+        nav {
+            margin-left: clamp(20px, 58vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1356px) {
+        nav {
+            margin-left: clamp(20px, 50vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 9px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1139px) {
+        nav {
+            margin-left: clamp(20px, 40vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 8px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 950px) {
+        nav {
+            margin-left: clamp(20px, 37vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 7px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 5px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    }
+
+     @if (!repository.IsLoggedIn) {
+        <style>nav {
+            margin-left: clamp(20px, 58vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 10px;
+        }
+        </style>
+    }
+
+//misto .login tam das tu .classu
+.login {
+  background: rgb(10, 13, 20);
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  padding: 1em 1.8em;
+  display: flex;
+  transition: 0.2s all;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  margin-top: 290px;
+  margin-left: 200px;
+  color: white;
+}
+
+.login:hover {
+   background: rgb(15, 21, 36);
+   transform: translateY(-3px);
+}
+
     .lowersection {
         display: flex;
         justify-content: center;
@@ -242,6 +546,20 @@
 @code {
     private string? CookieValue;
     private string? CookieValue1;
+
+    private bool profile = false;
+
+    private void Profile()
+    {
+       if (profile == false)
+       {
+           profile = true;
+       }
+       else
+       {
+           profile = false;
+       }
+    }
 
     private void QuickPlay()
     {
