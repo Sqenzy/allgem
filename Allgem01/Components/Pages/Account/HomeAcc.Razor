@@ -94,13 +94,20 @@
 <section class="acc">
 @if (repository.IsLoggedIn)
 {
+  <section class="navsection">
   <button class="accountbutton">Account</button>
   <button class="rankbutton" @onclick="rankFf">Rank</button>
   <button class="premiumbutton">Premium</button>
   <button class="logoutbutton" @onclick="Logout">Logout</button> 
+  </section>
+
+  <section class="displaysection">
+    <p></p>
+  </section>
 }
 else
 {
+  NavigationManager.NavigateTo("/login");
 }
 </section>
 
@@ -924,6 +931,7 @@ body {
             else
             {
                 repository.SetLoggedIn(false);
+                NavigationManager.NavigateTo("/login");
             }
 
             if (CookieValue1 == "hsp")
@@ -937,6 +945,7 @@ body {
 
             StateHasChanged();
         }
+
     }
     private async Task Logout()
     {
