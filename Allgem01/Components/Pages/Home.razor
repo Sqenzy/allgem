@@ -51,6 +51,9 @@
     {
       <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">
     }
+    <button class="mobileprofile" @onclick="MobileProfile" type="button">
+      <img class="profileimg" src="/profile.png" alt="profile">
+      </button>
     <nav>
     <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
@@ -128,7 +131,7 @@
 <style>
     header {
         background: rgb(10, 13, 20);
-        min-width: 99vw;
+        min-width: 98vw;
         min-height: 9vh;
         display: flex;
         color: white;
@@ -216,6 +219,13 @@
     }
     .contactus:hover{
         transform: translateY(-4px);
+    }
+    .mobileprofile{
+      display: none;
+      background: none;
+      border: none;
+      justify-content: center;
+      align-items: center;
     }
     .logo{ 
      width: 130px; 
@@ -392,7 +402,7 @@ body {
     }
     @@media (max-width: 1437px) {
         nav {
-            margin-left: clamp(20px, 58vw, 80vw);
+            margin-left: clamp(20px, 57vw, 80vw);
             flex-direction: column;
             margin-top: -40px;
             gap: 10px;
@@ -408,7 +418,7 @@ body {
     }
     @@media (max-width: 1356px) {
         nav {
-            margin-left: clamp(20px, 50vw, 80vw);
+            margin-left: clamp(20px, 49vw, 80vw);
             flex-direction: column;
             margin-top: -40px;
             gap: 9px;
@@ -424,7 +434,7 @@ body {
     }
     @@media (max-width: 1139px) {
         nav {
-            margin-left: clamp(20px, 40vw, 80vw);
+            margin-left: clamp(20px, 38vw, 80vw);
             flex-direction: column;
             margin-top: -40px;
             gap: 8px;
@@ -438,9 +448,9 @@ body {
       margin-left: 10px;
     }
     }
-    @@media (max-width: 950px) {
+    @@media (max-width: 976px) {
         nav {
-            margin-left: clamp(20px, 37vw, 80vw);
+            margin-left: clamp(20px, 32vw, 80vw);
             flex-direction: column;
             margin-top: -40px;
             gap: 7px;
@@ -462,7 +472,7 @@ body {
     background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
     }
     }
-    @@media (max-width: 768px) {
+    @@media (max-width: 818px) {
         nav {
             margin-left: clamp(20px, 3vw, 80vw);
             flex-direction: column;
@@ -470,42 +480,82 @@ body {
             gap: 7px;
         }
         .logo{
-          width: 75px; 
-          height: 15px;
+          width: 135px; 
+          height: 27px;
           margin-top: 11px; 
           background-size: contain; 
           background-repeat: no-repeat;
           background-position: center;
         }
+        .login{
+          display: none;
+        }
         .home{
-          content: "Account";
-          margin-top: -80px;
-          width: 20px;
-          height: 10px;
-          font-size: 10px;
+          display: none;
         }
         .aboutus{
-          width: 20px;
-          height: 10px;
-          font-size: 10px;
+          display: none;
         }
         .contactus{
-          width: 10px;
-          height: 5px;
-          font-size: 10px;
+          display: none;
         }
         .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: -20px;
+          display: none;
+        }
+        .mobileprofile{
+          display: flex;
+          margin-left: 500px;
+          margin-top: -34px;
+          min-height: 48px;
+          min-width: 48px;
+        }
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 5px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
     }
-    .login{
-        height: 0px;
-        width: 0px;
     }
+
+    @@media (max-width: 610px) {
+        nav {
+            margin-left: clamp(20px, 3vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 7px;
+        }
+        .logo{
+          width: 135px; 
+          height: 27px;
+          margin-top: 11px;
+          background-size: contain; 
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .login{
+          display: none;
+        }
+        .home{
+          display: none;
+        }
+        .aboutus{
+          display: none;
+        }
+        .contactus{
+          display: none;
+        }
+        .profile{
+          display: none;
+        }
+        .mobileprofile{
+          display: flex;
+          margin-left: 400px;
+          margin-top: -34px;
+          min-height: 48px;
+          min-width: 48px;
+        }
     .gamessection,.secondgamessection {
     display: flex; /* Align buttons in a row */
     flex-wrap: wrap; /* Wrap if screen is too small */
@@ -590,9 +640,9 @@ body {
       margin-left: 10px;
     }
     }
-    @@media (max-width: 950px) {
+    @@media (max-width: 976px) {
         nav {
-            margin-left: clamp(20px, 37vw, 80vw);
+            margin-left: clamp(20px, 35vw, 80vw);
             flex-direction: column;
             margin-top: -24px;
             gap: 7px;
@@ -663,19 +713,6 @@ body {
     gap: 5px; /* Add space between buttons */
     background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
     }
-    }
-    .login{
-        background: rgb(28, 75, 185);
-        border: 0;
-        margin-left: 400px;
-        margin-top: -42px;
-        border-radius: 18px;
-        transition: 0.01s outline;
-        color: white;
-        height: 40px;
-        width: 100px;
-        display: flex;
-        font-weight: bold;
     }
         </style>
     }
@@ -839,6 +876,18 @@ body {
        {
            profile = false;
        }
+    }
+
+    private void MobileProfile()
+    {
+        if (repository.IsLoggedIn)
+        {
+          NavigationManager.NavigateTo("/account");
+        }
+        else
+        {
+          NavigationManager.NavigateTo("/login");
+        }
     }
 
     private void Graph()

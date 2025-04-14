@@ -51,6 +51,9 @@
     {
       <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">
     }
+    <button class="mobileprofile" @onclick="MobileProfile" type="button">
+      <img class="profileimg" src="/profile.png" alt="profile">
+      </button>
     <nav>
     <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
@@ -85,6 +88,8 @@
     }
     </nav>
 </header>
+
+<section class="downheader"></section>
 <section class="lowersection">
     <div class="negr">
         <h1>About Us</h1>
@@ -106,7 +111,7 @@
     
     header {
         background: rgb(10, 13, 20);
-        min-width: 99vw;
+        min-width: 98vw;
         min-height: 9vh;
         display: flex;
         color: white;
@@ -118,6 +123,8 @@
         top: 0px;
         flex-direction: column;
         z-index: 1000;
+        opacity: 0.98;
+        position: relative;
     }
     .downheader {
         background: rgb(31, 33, 48);
@@ -193,6 +200,13 @@
     .contactus:hover{
         transform: translateY(-4px);
     }
+    .mobileprofile{
+      display: none;
+      background: none;
+      border: none;
+      justify-content: center;
+      align-items: center;
+    }
     .logo{ 
      width: 130px; 
      height: 25px;
@@ -234,9 +248,12 @@
 .premium {
   width: fit-content;
   height: 40px;
+  width: 105px;
   display: flex;
-  padding: 0.5em 1.1em;
-  gap: 0.4rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 514px;
+  margin-top: -42px;
   border: none;
   font-weight: bold;
   border-radius: 20px;
@@ -264,10 +281,57 @@
 .premium:hover {
   background-size: 320%;
   background-position: right center;
+}
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 30px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    .gamessection {
+    min-height: 100px;
+    padding-top: 100px;
+    }
+    .secondgamessection {
+    padding-top: 150px;
+    min-height: 800px;
 }  
 body {
     margin: 0 !important;
     padding: 0 !important;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  
+}
+
+.cards .card {
+  flex: 3 3 calc(100% - 20px);
+  min-width: 25vw;
+  height: 260px;
+  margin: 10px;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(55, 56, 82);
+  transition: 250ms;
+  border-radius: 20px;
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: .7em;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
 }
 .login {
   background: rgb(28, 75, 185);
@@ -301,6 +365,390 @@ body {
 
 
 @@media (max-width: 1499px) {
+        nav {
+            margin-left: clamp(20px, 60vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1437px) {
+        nav {
+            margin-left: clamp(20px, 57vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1356px) {
+        nav {
+            margin-left: clamp(20px, 49vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 9px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1139px) {
+        nav {
+            margin-left: clamp(20px, 38vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 8px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 976px) {
+        nav {
+            margin-left: clamp(20px, 32vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 7px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 5px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    }
+    @@media (max-width: 818px) {
+        nav {
+            margin-left: clamp(20px, 3vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 7px;
+        }
+        .logo{
+          width: 135px; 
+          height: 27px;
+          margin-top: 11px; 
+          background-size: contain; 
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .login{
+          display: none;
+        }
+        .home{
+          display: none;
+        }
+        .aboutus{
+          display: none;
+        }
+        .contactus{
+          display: none;
+        }
+        .profile{
+          display: none;
+        }
+        .mobileprofile{
+          display: flex;
+          margin-left: 500px;
+          margin-top: -34px;
+          min-height: 48px;
+          min-width: 48px;
+        }
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 5px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    }
+
+    @@media (max-width: 610px) {
+        nav {
+            margin-left: clamp(20px, 3vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 7px;
+        }
+        .logo{
+          width: 135px; 
+          height: 27px;
+          margin-top: 11px;
+          background-size: contain; 
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .login{
+          display: none;
+        }
+        .home{
+          display: none;
+        }
+        .aboutus{
+          display: none;
+        }
+        .contactus{
+          display: none;
+        }
+        .profile{
+          display: none;
+        }
+        .mobileprofile{
+          display: flex;
+          margin-left: 400px;
+          margin-top: -34px;
+          min-height: 48px;
+          min-width: 48px;
+        }
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 5px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    }
+
+     @if (!repository.IsLoggedIn) {
+        <style>nav {
+            margin-left: clamp(20px, 58vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 10px;
+        }
+
+
+
+        @@media (max-width: 1499px) {
+        nav {
+            margin-left: clamp(20px, 55vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1437px) {
+        nav {
+            margin-left: clamp(20px, 53vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1356px) {
+        nav {
+            margin-left: clamp(20px, 48vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 9px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1139px) {
+        nav {
+            margin-left: clamp(20px, 40vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 8px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 976px) {
+        nav {
+            margin-left: clamp(20px, 35vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 7px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 5px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    }
+
+    @@media (max-width: 918px) {
+        nav {
+            margin-left: clamp(20px, 30vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 7px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 5px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    }
+
+     @@media (max-width: 840px) {
+        nav {
+            margin-left: clamp(20px, 28vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 7px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 5px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    }
+        </style>
+    }
+    @if (repository.IsLoggedIn) {
+        @if (!repository.hasPremium) {
+        <style>
+          nav{
+            margin-left: clamp(20px, 58vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 10px;
+          }
+          .profile{
+            border: none;
+            background: none;
+            height: 38px;
+            width: 38px;
+            transition: all 0.2s ease-out;
+            margin-left: 10px;
+          }
+          .premium{
+            width: fit-content;
+            position: absolute;
+            height: 40px;
+            width: 105px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 110px;
+            margin-top: -25px;
+            border: none;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+            text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+            background: linear-gradient(
+                15deg,
+                #000088,
+                #0022aa,
+                #0044cc,
+                #0066de,
+                #0088f0,
+                #0066de,
+                #0044cc,
+                #0022aa,
+                #000088
+              )
+              no-repeat;
+            background-size: 300%;
+            background-position: left center;
+            transition: background 0.3s ease;
+            color: #fff;
+          }
+
+
+          @@media (max-width: 1499px) {
         nav {
             margin-left: clamp(20px, 60vw, 80vw);
             flex-direction: column;
@@ -388,16 +836,9 @@ body {
     background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
     }
     }
-
-     @if (!repository.IsLoggedIn) {
-        <style>nav {
-            margin-left: clamp(20px, 58vw, 80vw);
-            flex-direction: column;
-            margin-top: -24px;
-            gap: 10px;
-        }
         </style>
-    }
+        }
+      }
 </style>
 
 @code {
@@ -415,6 +856,18 @@ body {
        {
            profile = false;
        }
+    }
+
+     private void MobileProfile()
+    {
+        if (repository.IsLoggedIn)
+        {
+          NavigationManager.NavigateTo("/account");
+        }
+        else
+        {
+          NavigationManager.NavigateTo("/login");
+        }
     }
 
     private void Graph()
