@@ -95,11 +95,18 @@
 @if (repository.IsLoggedIn)
 {
   <section class="navsection">
-  <button class="accountbutton">Account</button>
-  <button class="rankbutton" @onclick="rankFf">Rank</button>
-  <button class="premiumbutton">Premium</button>
-  <button class="logoutbutton" @onclick="Logout">Logout</button> 
+  <p class="settings">Settings</p>
+
+  <ul><button class="accountbutton"><img class="accimg" src="/profile.png" alt="profile">Account</button></ul>
+  
+  <ul><button class="rankbutton" @onclick="rankFf"><img class="rankimg" src="/rank.png" alt="rank">Rank</button></ul>
+
+  <ul><button class="premiumbutton">Premium</button></ul>
+  
+  <ul><button class="logoutbutton" @onclick="Logout">Logout</button></ul> 
   </section>
+
+  <section class="kk"></section>
 
   <section class="displaysection">
     <p></p>
@@ -107,11 +114,141 @@
 }
 else
 {
-  NavigationManager.NavigateTo("/login");
+  
 }
 </section>
 
 <style>
+
+  .acc {
+  display: flex;
+  min-height: calc(100vh - 11vh);
+  width: 100%;
+}
+  .navsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 20px;
+  width: 180px;
+  height: 90.8vh;
+  background: rgb(20, 20, 20);
+  color: white;
+}
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    width: 150px;
+    margin-left: 30px;
+  }
+  .settings{
+    margin-left: 45px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .accountbutton,.rankbutton,.premiumbutton,.logoutbutton{
+    background: none;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    width: 90px;
+    height: 35px;
+  }
+  .accountbutton{
+    margin-top: 240px;
+    transition: all 0.2s ease-out;
+  }
+  .accountbutton:hover{
+    transform: translateX(6px);
+  }
+  .accimg{
+    width: 24px;
+    height: 24px;
+    margin-left: -15px;
+    margin-top: -3px;
+  }
+  .rankbutton{
+    margin-top: 255px;
+    margin-left: -12.5px;
+    transition: all 0.2s ease-out;
+  }
+  .rankbutton:hover{
+    transform: translateX(6px);
+  }
+  .rankimg{
+    width: 20px;
+    height: 20px;
+    margin-left: -6px;
+    margin-top: -3px;
+  }
+  .premiumbutton{
+    margin-top: 270px;
+    width: fit-content;
+    height: 40px;
+    width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+  background: linear-gradient(
+      15deg,
+      #000088,
+      #0022aa,
+      #0044cc,
+      #0066de,
+      #0088f0,
+      #0066de,
+      #0044cc,
+      #0022aa,
+      #000088
+    )
+    no-repeat;
+  background-size: 300%;
+  background-position: left center;
+  transition: background 0.3s ease;
+  color: #fff;
+  }
+  .premiumbutton:hover {
+  background-size: 320%;
+  background-position: right center;
+}
+  .logoutbutton{
+    margin-top: 60.48vh;
+    background: rgb(192, 17, 11);
+    transition: background 0.3s ease;
+  }
+  .logoutbutton:hover{
+    background: rgb(134, 0, 0);
+  }
+
+@@media (max-height: 880px) {
+    .logoutbutton{
+        margin-top: 58vh;
+    }
+    }
+    @@media (max-height: 755px) {
+    .logoutbutton{
+        margin-top: 55vh;
+    }
+    }
+    @@media (max-height: 700px) {
+    .logoutbutton{
+        margin-top: 52vh;
+    }
+    }
+    @@media (max-height: 654px) {
+    .logoutbutton{
+        margin-top: 49vh;
+    }
+    }
+
+    
     header {
         background: rgb(10, 13, 20);
         min-width: 98vw;
@@ -915,38 +1052,38 @@ body {
         NavigationManager.NavigateTo("/rank");
     }
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
+   protected override async Task OnAfterRenderAsync(bool firstRender)
+{
+    if (firstRender)
     {
-        if (firstRender)
+        // Read the cookie value
+        CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
+        CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
+
+        // Update the authentication state based on the cookie value
+        if (CookieValue == "isli")
         {
-            // Read the cookie value
-            CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
-            CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
-
-            // Update the authentication state based on the cookie value
-            if (CookieValue == "isli")
-            {
-                repository.SetLoggedIn(true);
-            }
-            else
-            {
-                repository.SetLoggedIn(false);
-                NavigationManager.NavigateTo("/login");
-            }
-
-            if (CookieValue1 == "hsp")
-            {
-                repository.SetHasPremium(true);
-            }
-            else
-            {
-                repository.SetHasPremium(false);
-            }
-
-            StateHasChanged();
+            repository.SetLoggedIn(true);
+        }
+        else
+        {
+            repository.SetLoggedIn(false);
+            NavigationManager.NavigateTo("/login");
         }
 
+        if (CookieValue1 == "hsp")
+        {
+            repository.SetHasPremium(true);
+        }
+        else
+        {
+            repository.SetHasPremium(false);
+        }
+
+        StateHasChanged();
     }
+}
+
     private async Task Logout()
     {
         await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_auth");

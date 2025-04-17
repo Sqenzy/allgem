@@ -880,14 +880,7 @@ body {
 
     private void MobileProfile()
     {
-        if (repository.IsLoggedIn)
-        {
-          NavigationManager.NavigateTo("/account");
-        }
-        else
-        {
-          NavigationManager.NavigateTo("/login");
-        }
+      NavigationManager.NavigateTo("/account");
     }
 
     private void Graph()
