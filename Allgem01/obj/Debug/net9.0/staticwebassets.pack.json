@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Allgem01.58d2ehzx87.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\acc.png",
+      "PackagePath": "staticwebassets\\acc.png"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\all_icon.png",
       "PackagePath": "staticwebassets\\all_icon.png"
     },
@@ -229,8 +233,16 @@
       "PackagePath": "staticwebassets\\premiumtag.png"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\profile.png",
+      "PackagePath": "staticwebassets\\profile.png"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\quickplay.png",
       "PackagePath": "staticwebassets\\quickplay.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rank.png",
+      "PackagePath": "staticwebassets\\rank.png"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\ulteros.jpg",
