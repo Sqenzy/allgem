@@ -97,7 +97,7 @@
   <section class="navsection">
   <p class="settings">Settings</p>
 
-  <ul><button class="accountbutton" @onclick="rankFf"><img class="accimg" src="/profile.png" alt="profile">Account</button></ul>
+  <ul><button class="accountbutton" @onclick="accountFf"><img class="accimg" src="/profile.png" alt="profile">Account</button></ul>
   
   <ul><button class="rankbutton" @onclick="rankFf"><img class="rankimg" src="/rank.png" alt="rank">Rank</button></ul>
 
@@ -109,7 +109,11 @@
   <section class="kk"></section>
 
   <section class="displaysection">
-    <p></p>
+    <section class="accsection">
+      <h1>Account</h1>
+    <p class="mail">@CookieValueEmail</p>
+    <p class="und">______________________</p>
+    </section>
   </section>
 }
 else
@@ -125,6 +129,43 @@ else
   min-height: calc(100vh - 11vh);
   width: 100%;
 }
+.displaysection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -20px;
+  width: 100%;
+  height: 90.8vh;
+  color: white;
+  background: linear-gradient(to right,rgb(40, 45, 85),rgb(35, 37, 65),rgb(47, 48, 71),rgb(39, 39, 56));
+}
+  .accsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    margin-left: -5px;
+    border-radius: 20px;
+    min-width: 85vw;
+    min-height: 75vh;
+    background: linear-gradient(to right,rgb(18, 22, 53),rgb(7, 40, 77),rgb(16, 43, 102),rgb(0, 57, 180));
+    color: white;
+  }
+  .accsection h1{
+    margin-top: -200px;
+    font-size: 30px;
+  }
+  .accsection .mail{
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .und{
+    margin-top: -35px;
+    font-size: 20px;
+  }
   .navsection {
   display: flex;
   flex-direction: column;
@@ -185,7 +226,7 @@ else
     margin-top: -3px;
   }
   .premiumbutton{
-    margin-top: 230px;
+    margin-top: 235px;
     width: fit-content;
     height: 40px;
     width: 100px;
@@ -993,6 +1034,7 @@ body {
 @code {
      private string? CookieValue;
     private string? CookieValue1;
+    private string? CookieValueEmail;
     private bool profile = false;
 
     private void Profile()
@@ -1058,13 +1100,14 @@ body {
     }
     private void rankFf()
     {
-        NavigationManager.NavigateTo("/rank");
+        NavigationManager.NavigateTo("/account/rank");
     }
 
    protected override async Task OnAfterRenderAsync(bool firstRender)
 {
     if (firstRender)
     {
+        CookieValueEmail = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_email");
         // Read the cookie value
         CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
         CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
