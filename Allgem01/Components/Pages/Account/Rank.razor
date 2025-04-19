@@ -1086,34 +1086,7 @@ body {
 
     private void kkFF()
     {
-        Random random = new Random();
-        int generatedNumber = random.Next(1, 6);
-
-        if (generatedNumber == 1)
-        {
-          repository.AddRankToUser(CookieValueEmail, "Bronze");
-          CookieValueRank = "Bronze";
-        }
-        else if (generatedNumber == 2)
-        {
-          repository.AddRankToUser(CookieValueEmail, "Silver");
-          CookieValueRank = "Silver";
-        }
-        else if (generatedNumber == 3)
-        {
           repository.AddRankToUser(CookieValueEmail, "Gold");
-          CookieValueRank = "Gold";
-        }
-        else if (generatedNumber == 4)
-        {
-          repository.AddRankToUser(CookieValueEmail, "Platinum");
-          CookieValueRank = "Platinum";
-        }
-        else if (generatedNumber == 5)
-        {
-          repository.AddRankToUser(CookieValueEmail, "Diamond");
-          CookieValueRank = "Diamond";
-        }
         
     }
     private void Profile()
@@ -1187,7 +1160,6 @@ body {
     if (firstRender)
     {
         CookieValueEmail = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_email");
-        CookieValueRank = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_rank");
         // Read the cookie value
         CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
         CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
@@ -1212,6 +1184,29 @@ body {
             repository.SetHasPremium(false);
         }
 
+        if (repository.rank == "Bronze")
+            {
+                CreateCookie("allgem_rank", "Bronze", 30);
+            }
+            else if (repository.rank == "Silver")
+            {
+                CreateCookie("allgem_rank", "Silver", 30);
+            }
+            else if (repository.rank == "Gold")
+            {
+                CreateCookie("allgem_rank", "Gold", 30);
+            }
+            else if (repository.rank == "Platinum")
+            {
+                CreateCookie("allgem_rank", "Platinum", 30);
+            }
+            else if (repository.rank == "Diamond")
+            {
+                CreateCookie("allgem_rank", "Diamond", 30);
+            }
+
+            CookieValueRank = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_rank");
+
         StateHasChanged();
     }
 }
@@ -1221,8 +1216,14 @@ body {
         await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_auth");
         await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_premium");
         await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_rank");
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_email");
 
         repository.SetLoggedIn(false);
         NavigationManager.NavigateTo("/");
+    }
+
+    private async void CreateCookie ( string name, string value, int days ) 
+    { 
+        var test = await JSRuntime.InvokeAsync<string>("methods.CreateCookie", name, value, days); 
     }
 }
