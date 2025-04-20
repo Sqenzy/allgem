@@ -37,6 +37,7 @@
 <header>
   @if (repository.IsLoggedIn)
     {
+      
       @if (repository.hasPremium)
       {
         <img @onclick="homeFf" class="logopremium" src="/allgempremium.png" alt="ALLGEM PREMIUM">
@@ -46,6 +47,11 @@
       {
         <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">   
       }
+
+            <div class="rankal">
+      <p class="ranktx">Rank</p>
+      <img class="rankim" src="@rankimg" alt="rank">
+      </div>
     }
     else
     {
@@ -131,7 +137,7 @@
 <style>
     header {
         background: rgb(10, 13, 20);
-        min-width: 98vw;
+        min-width: 97vw;
         min-height: 9vh;
         display: flex;
         color: white;
@@ -145,6 +151,7 @@
         z-index: 1000;
         opacity: 0.98;
         position: relative;
+        position: sticky;
     }
     .downheader {
         background: rgb(31, 33, 48);
@@ -301,6 +308,20 @@
 .premium:hover {
   background-size: 320%;
   background-position: right center;
+}
+
+.rankim{
+  width: 45px;
+  height: 45px;
+  margin-top: -16px;
+}
+.rankal{
+  margin-top: -60px;
+  margin-left: 195px;
+}
+.ranktx{
+  font-size: 12px;
+  margin-left: 8.5px;
 }
     .gamessection,.secondgamessection {
     display: flex; /* Align buttons in a row */
@@ -552,6 +573,52 @@ body {
         .mobileprofile{
           display: flex;
           margin-left: 400px;
+          margin-top: -34px;
+          min-height: 48px;
+          min-width: 48px;
+        }
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 5px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    }
+    @@media (max-width: 551px) {
+        nav {
+            margin-left: clamp(20px, 3vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 7px;
+        }
+        .logo{
+          width: 135px; 
+          height: 27px;
+          margin-top: 11px;
+          background-size: contain; 
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .login{
+          display: none;
+        }
+        .home{
+          display: none;
+        }
+        .aboutus{
+          display: none;
+        }
+        .contactus{
+          display: none;
+        }
+        .profile{
+          display: none;
+        }
+        .mobileprofile{
+          display: flex;
+          margin-left: 00px;
           margin-top: -34px;
           min-height: 48px;
           min-width: 48px;
@@ -937,7 +1004,10 @@ body {
 @code {
     private string? CookieValue;
     private string? CookieValue1;
+    private string? CookieValueRank;
+    private string? CookieValueEmail;
     private bool profile = false;
+    private string rankimg;
 
     private void Profile()
     {
@@ -1001,6 +1071,7 @@ body {
             // Read the cookie value
             CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
             CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
+            CookieValueEmail = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_email");
 
             // Update the authentication state based on the cookie value
             if (CookieValue == "isli")
@@ -1021,6 +1092,39 @@ body {
                 repository.SetHasPremium(false);
             }
 
+            repository.CheckRank(CookieValueEmail);
+
+            if (!string.IsNullOrEmpty(repository.rank))
+            {
+                // Update the rank cookie if it doesn't match the current rank
+                CookieValueRank = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_rank");
+                if (CookieValueRank != repository.rank)
+                {
+                    CreateCookie("allgem_rank", repository.rank, 30);
+                }
+            }
+
+            if (CookieValueRank == "Bronze")
+            {
+              rankimg = "/bronze.png";
+            }
+            else if (CookieValueRank == "Silver")
+            {
+              rankimg = "/silver.png";
+            }
+            else if (CookieValueRank == "Gold")
+            {
+              rankimg = "/gold.png";
+            }
+            else if (CookieValueRank == "Platinum")
+            {
+              rankimg = "/platinum.png";
+            }
+            else if (CookieValueRank == "Diamond")
+            {
+              rankimg = "/diamond.png";
+            }
+
             StateHasChanged();
         }
     }
@@ -1032,5 +1136,10 @@ body {
 
         repository.SetLoggedIn(false);
         NavigationManager.NavigateTo("/");
+    }
+
+    private async void CreateCookie(string name, string value, int days)
+    {
+        await JSRuntime.InvokeVoidAsync("methods.CreateCookie", name, value, days);
     }
 }

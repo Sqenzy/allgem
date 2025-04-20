@@ -161,9 +161,36 @@ public void AddRankToUser(string email, string rank)
         using (var command = new SQLiteCommand(sql, connection))
         {
             command.Parameters.AddWithValue("@Email", email);
-            command.Parameters.AddWithValue("@rank", rank); // <-- CHYBĚLO!
+            command.Parameters.AddWithValue("@rank", rank);
             command.ExecuteNonQuery();
             hasPremium = true;
+        }
+    }
+}
+
+public void CheckRank(string email)
+{
+    string sql = "SELECT role FROM users WHERE email = @Email";
+
+    using (var connection = new SQLiteConnection(_connectionString))
+    {
+        connection.Open();
+
+        using (var command = new SQLiteCommand(sql, connection))
+        {
+            command.Parameters.AddWithValue("@Email", email);
+
+            using (SQLiteDataReader reader = command.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    rank = reader.IsDBNull(0) ? null : reader.GetString(0);
+                }
+                else
+                {
+                    rank = null;
+                }
+            }
         }
     }
 }

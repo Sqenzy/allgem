@@ -342,6 +342,22 @@ else
         margin-top: 49vh;
     }
     }
+        @@media (max-width: 1165px)
+    {
+      .accsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    margin-left: -5px;
+    border-radius: 20px;
+    min-width: 60vw;
+    min-height: 75vh;
+    background: linear-gradient(to right,rgb(18, 22, 53),rgb(7, 40, 77),rgb(16, 43, 102),rgb(0, 57, 180));
+    color: white;
+  }
+    }
 
     
     header {
@@ -1086,7 +1102,7 @@ body {
 
     private void kkFF()
     {
-          repository.AddRankToUser(CookieValueEmail, "Gold");
+          repository.AddRankToUser(CookieValueEmail, "Diamond");
         
     }
     private void Profile()
