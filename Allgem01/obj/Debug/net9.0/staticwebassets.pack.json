@@ -45,6 +45,50 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.data",
+      "PackagePath": "staticwebassets\\fpsgame\\Build\\fps game.data"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.framework.js",
+      "PackagePath": "staticwebassets\\fpsgame\\Build\\fps game.framework.js"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.loader.js",
+      "PackagePath": "staticwebassets\\fpsgame\\Build\\fps game.loader.js"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.wasm",
+      "PackagePath": "staticwebassets\\fpsgame\\Build\\fps game.wasm"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\MemoryProfiler.png",
+      "PackagePath": "staticwebassets\\fpsgame\\TemplateData\\MemoryProfiler.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\favicon.ico",
+      "PackagePath": "staticwebassets\\fpsgame\\TemplateData\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\logo-photon.svg",
+      "PackagePath": "staticwebassets\\fpsgame\\TemplateData\\logo-photon.svg"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\progress-bar-empty.png",
+      "PackagePath": "staticwebassets\\fpsgame\\TemplateData\\progress-bar-empty.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\style.css",
+      "PackagePath": "staticwebassets\\fpsgame\\TemplateData\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\webmemd-icon.png",
+      "PackagePath": "staticwebassets\\fpsgame\\TemplateData\\webmemd-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\fpsgame.html",
+      "PackagePath": "staticwebassets\\fpsgame\\fpsgame.html"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gmail-icon.png",
       "PackagePath": "staticwebassets\\gmail-icon.png"
     },
@@ -267,6 +311,10 @@
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\ulteros.jpg",
       "PackagePath": "staticwebassets\\ulteros.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\vercel.json",
+      "PackagePath": "staticwebassets\\vercel.json"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Allgem01.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

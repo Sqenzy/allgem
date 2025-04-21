@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LsngNU9/ubU5mESaT6t8TEC4iS/4tT7B1TQAMb71K6U=",
+  "Hash": "tDjDNsAtfL+V/swSyEGYZv3NVd7WVmlBm2xdJKV/IWk=",
   "Source": "Allgem01",
   "BasePath": "_content/Allgem01",
   "Mode": "Default",
@@ -164,6 +164,27 @@
       "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\3hqqf38247-q2vcmq571s.gz",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "fpsgame/Build/fps game#[.{fingerprint=q2vcmq571s}]?.wasm.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "370nhu5ynz",
+      "Integrity": "vxmG8+uFfcUZqNW2WdVgMcMBm82/PDswcrmT3rSzCZA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.wasm"
+    },
+    {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\4w58x9k66z-v0zj4ognzu.gz",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
@@ -183,6 +204,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\4z3ozpr39p-hb89wdlb35.gz",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "fpsgame/TemplateData/style#[.{fingerprint=hb89wdlb35}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\style.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "5sfnttixv6",
+      "Integrity": "peDYxfugxCIXhbIwspl8UdhBseiZ3bJRwnZ1whBhpUc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\58ksr265gp-a6gyt7gnut.gz",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "fpsgame/TemplateData/logo-photon#[.{fingerprint=a6gyt7gnut}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\logo-photon.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ly76x7uvns",
+      "Integrity": "zUrRD1g6WqcbX42lDEg3nCgXQPs/AFGlW2HAr/8zA8s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\logo-photon.svg"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\5mqc69otte-qq8dz680mq.gz",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "fpsgame/Build/fps game.framework#[.{fingerprint=qq8dz680mq}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.framework.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "jvyiy6w32b",
+      "Integrity": "8YSgH6pPkqDAE3hTy0QPO5HleBKOrFbbBKsLIcHIHCk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.framework.js"
     },
     {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\5ttkjc4lle-pj5nd1wqec.gz",
@@ -267,6 +351,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\aanue390kj-25gtzapajp.gz",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "fpsgame/fpsgame#[.{fingerprint=25gtzapajp}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\fpsgame.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "76j3uv6bpl",
+      "Integrity": "MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\fpsgame.html"
     },
     {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\aqvfz4l7un-8vyfqsqgz1.gz",
@@ -626,6 +731,27 @@
       "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\kucaebxc1a-s25sga0nut.gz",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "vercel#[.{fingerprint=s25sga0nut}]?.json.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\vercel.json",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "7quswvk937",
+      "Integrity": "cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\vercel.json"
+    },
+    {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\l4yom3o0ai-hrwsygsryq.gz",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
@@ -687,6 +813,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\nhnanhs0at-y2lra6d6kf.gz",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "fpsgame/Build/fps game.loader#[.{fingerprint=y2lra6d6kf}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.loader.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "osxvtvhf4a",
+      "Integrity": "KFqGmEVsqyO6C3kbISY5n9uHDjx3UFXvmLMeeKsdAbc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.loader.js"
     },
     {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\nzjm09pqky-h1s4sie4z3.gz",
@@ -983,6 +1130,27 @@
       "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Allgem01.styles.css"
     },
     {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\yvqldnio6u-70xlt0pfqo.gz",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "fpsgame/TemplateData/favicon#[.{fingerprint=70xlt0pfqo}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\favicon.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ya3tf5hxy1",
+      "Integrity": "BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\favicon.ico"
+    },
+    {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\zghthfpb1x-u9q1upor1n.gz",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
@@ -1254,6 +1422,237 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.data",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "fpsgame/Build/fps game#[.{fingerprint}]?.data",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ejy0vax70",
+      "Integrity": "rVJGpU5D68gV/hOmXQhcw02uDT2yjiZ7dUcWxd93zMk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fpsgame\\Build\\fps game.data"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.framework.js",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "fpsgame/Build/fps game.framework#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qq8dz680mq",
+      "Integrity": "fjc/6kkhSnGqHciKf7rSBPl3s6wdmKKC6lOzxqTBQzs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fpsgame\\Build\\fps game.framework.js"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.loader.js",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "fpsgame/Build/fps game.loader#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y2lra6d6kf",
+      "Integrity": "hupiKD5UJiukcdf8z9Gvh373oJ7E0EevvZ3bttMV0Wk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fpsgame\\Build\\fps game.loader.js"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.wasm",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "fpsgame/Build/fps game#[.{fingerprint}]?.wasm",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q2vcmq571s",
+      "Integrity": "rkn+yPB7FDvCl6yetXyPmcPpwWf7ptc0LNvd7TZN7eQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fpsgame\\Build\\fps game.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\fpsgame.html",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "fpsgame/fpsgame#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "25gtzapajp",
+      "Integrity": "9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fpsgame\\fpsgame.html"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\favicon.ico",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "fpsgame/TemplateData/favicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "70xlt0pfqo",
+      "Integrity": "qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fpsgame\\TemplateData\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\logo-photon.svg",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "fpsgame/TemplateData/logo-photon#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a6gyt7gnut",
+      "Integrity": "Yv8EOkWMGch59Lb3nWRE1vEc8/90qqZHT0nFUHq9zYE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fpsgame\\TemplateData\\logo-photon.svg"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\MemoryProfiler.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "fpsgame/TemplateData/MemoryProfiler#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cwkpu9lju0",
+      "Integrity": "DOh74g0MJKtstztX3iAE2iYcwqZB5pMZxq4/4R/IVIM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fpsgame\\TemplateData\\MemoryProfiler.png"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\progress-bar-empty.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "fpsgame/TemplateData/progress-bar-empty#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v41pqq44in",
+      "Integrity": "/xM0y6JRmrxRcqGg3m4rq393BNqk+XiwxQvtbM/LLJo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fpsgame\\TemplateData\\progress-bar-empty.png"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\style.css",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "fpsgame/TemplateData/style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hb89wdlb35",
+      "Integrity": "XRZVlcpwaBZWvTko9sKN38bYhtl6v027uoPm8eWaiX0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fpsgame\\TemplateData\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\webmemd-icon.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "fpsgame/TemplateData/webmemd-icon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l424coiqtw",
+      "Integrity": "xW9UlGQM7donOq041Y5qudpiXVs/TYdcD/ksYZKlacI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fpsgame\\TemplateData\\webmemd-icon.png"
     },
     {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gmail-icon.png",
@@ -2430,6 +2829,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ulteros.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\vercel.json",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "vercel#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s25sga0nut",
+      "Integrity": "tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\vercel.json"
     }
   ],
   "Endpoints": [
@@ -2622,7 +3042,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 19:00:46 GMT"
+          "Value": "Mon, 21 Apr 2025 17:01:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2683,7 +3103,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 19:00:46 GMT"
+          "Value": "Mon, 21 Apr 2025 17:01:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2728,7 +3148,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 19:00:46 GMT"
+          "Value": "Mon, 21 Apr 2025 17:01:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2783,7 +3203,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 19:00:46 GMT"
+          "Value": "Mon, 21 Apr 2025 17:01:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2844,7 +3264,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 19:00:46 GMT"
+          "Value": "Mon, 21 Apr 2025 17:01:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2889,7 +3309,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 19:00:46 GMT"
+          "Value": "Mon, 21 Apr 2025 17:01:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2944,7 +3364,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 19:00:46 GMT"
+          "Value": "Mon, 21 Apr 2025 17:01:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2997,7 +3417,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 19:00:46 GMT"
+          "Value": "Mon, 21 Apr 2025 17:01:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3034,7 +3454,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 19:00:46 GMT"
+          "Value": "Mon, 21 Apr 2025 17:01:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3081,7 +3501,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 19:00:46 GMT"
+          "Value": "Mon, 21 Apr 2025 17:01:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3134,7 +3554,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 19:00:46 GMT"
+          "Value": "Mon, 21 Apr 2025 17:01:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3171,7 +3591,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 19:00:46 GMT"
+          "Value": "Mon, 21 Apr 2025 17:01:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4062,6 +4482,2420 @@
         {
           "Name": "integrity",
           "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.5ejy0vax70.data",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.data",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36052632"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rVJGpU5D68gV/hOmXQhcw02uDT2yjiZ7dUcWxd93zMk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:47:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ejy0vax70"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.data"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rVJGpU5D68gV/hOmXQhcw02uDT2yjiZ7dUcWxd93zMk="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.data",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.data",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36052632"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rVJGpU5D68gV/hOmXQhcw02uDT2yjiZ7dUcWxd93zMk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:47:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rVJGpU5D68gV/hOmXQhcw02uDT2yjiZ7dUcWxd93zMk="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.framework.js",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\5mqc69otte-qq8dz680mq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000011697411"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85488"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8YSgH6pPkqDAE3hTy0QPO5HleBKOrFbbBKsLIcHIHCk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"fjc/6kkhSnGqHciKf7rSBPl3s6wdmKKC6lOzxqTBQzs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fjc/6kkhSnGqHciKf7rSBPl3s6wdmKKC6lOzxqTBQzs="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.framework.js",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.framework.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "413305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fjc/6kkhSnGqHciKf7rSBPl3s6wdmKKC6lOzxqTBQzs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fjc/6kkhSnGqHciKf7rSBPl3s6wdmKKC6lOzxqTBQzs="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.framework.js.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\5mqc69otte-qq8dz680mq.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85488"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8YSgH6pPkqDAE3hTy0QPO5HleBKOrFbbBKsLIcHIHCk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8YSgH6pPkqDAE3hTy0QPO5HleBKOrFbbBKsLIcHIHCk="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.framework.qq8dz680mq.js",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\5mqc69otte-qq8dz680mq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000011697411"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85488"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8YSgH6pPkqDAE3hTy0QPO5HleBKOrFbbBKsLIcHIHCk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"fjc/6kkhSnGqHciKf7rSBPl3s6wdmKKC6lOzxqTBQzs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qq8dz680mq"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.framework.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fjc/6kkhSnGqHciKf7rSBPl3s6wdmKKC6lOzxqTBQzs="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.framework.qq8dz680mq.js",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.framework.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "413305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fjc/6kkhSnGqHciKf7rSBPl3s6wdmKKC6lOzxqTBQzs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qq8dz680mq"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.framework.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fjc/6kkhSnGqHciKf7rSBPl3s6wdmKKC6lOzxqTBQzs="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.framework.qq8dz680mq.js.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\5mqc69otte-qq8dz680mq.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85488"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8YSgH6pPkqDAE3hTy0QPO5HleBKOrFbbBKsLIcHIHCk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qq8dz680mq"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.framework.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8YSgH6pPkqDAE3hTy0QPO5HleBKOrFbbBKsLIcHIHCk="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.loader.js",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\nhnanhs0at-y2lra6d6kf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000135906496"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7357"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KFqGmEVsqyO6C3kbISY5n9uHDjx3UFXvmLMeeKsdAbc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hupiKD5UJiukcdf8z9Gvh373oJ7E0EevvZ3bttMV0Wk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hupiKD5UJiukcdf8z9Gvh373oJ7E0EevvZ3bttMV0Wk="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.loader.js",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.loader.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20642"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hupiKD5UJiukcdf8z9Gvh373oJ7E0EevvZ3bttMV0Wk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hupiKD5UJiukcdf8z9Gvh373oJ7E0EevvZ3bttMV0Wk="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.loader.js.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\nhnanhs0at-y2lra6d6kf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7357"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KFqGmEVsqyO6C3kbISY5n9uHDjx3UFXvmLMeeKsdAbc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KFqGmEVsqyO6C3kbISY5n9uHDjx3UFXvmLMeeKsdAbc="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.loader.y2lra6d6kf.js",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\nhnanhs0at-y2lra6d6kf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000135906496"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7357"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KFqGmEVsqyO6C3kbISY5n9uHDjx3UFXvmLMeeKsdAbc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hupiKD5UJiukcdf8z9Gvh373oJ7E0EevvZ3bttMV0Wk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y2lra6d6kf"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.loader.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hupiKD5UJiukcdf8z9Gvh373oJ7E0EevvZ3bttMV0Wk="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.loader.y2lra6d6kf.js",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.loader.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20642"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hupiKD5UJiukcdf8z9Gvh373oJ7E0EevvZ3bttMV0Wk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y2lra6d6kf"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.loader.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hupiKD5UJiukcdf8z9Gvh373oJ7E0EevvZ3bttMV0Wk="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.loader.y2lra6d6kf.js.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\nhnanhs0at-y2lra6d6kf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7357"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KFqGmEVsqyO6C3kbISY5n9uHDjx3UFXvmLMeeKsdAbc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y2lra6d6kf"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.loader.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KFqGmEVsqyO6C3kbISY5n9uHDjx3UFXvmLMeeKsdAbc="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.q2vcmq571s.wasm",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\3hqqf38247-q2vcmq571s.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000092166"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10849929"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vxmG8+uFfcUZqNW2WdVgMcMBm82/PDswcrmT3rSzCZA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"rkn+yPB7FDvCl6yetXyPmcPpwWf7ptc0LNvd7TZN7eQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q2vcmq571s"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rkn+yPB7FDvCl6yetXyPmcPpwWf7ptc0LNvd7TZN7eQ="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.q2vcmq571s.wasm",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36227553"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rkn+yPB7FDvCl6yetXyPmcPpwWf7ptc0LNvd7TZN7eQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q2vcmq571s"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rkn+yPB7FDvCl6yetXyPmcPpwWf7ptc0LNvd7TZN7eQ="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.q2vcmq571s.wasm.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\3hqqf38247-q2vcmq571s.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10849929"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vxmG8+uFfcUZqNW2WdVgMcMBm82/PDswcrmT3rSzCZA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q2vcmq571s"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vxmG8+uFfcUZqNW2WdVgMcMBm82/PDswcrmT3rSzCZA="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.wasm",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\3hqqf38247-q2vcmq571s.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000092166"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10849929"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vxmG8+uFfcUZqNW2WdVgMcMBm82/PDswcrmT3rSzCZA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"rkn+yPB7FDvCl6yetXyPmcPpwWf7ptc0LNvd7TZN7eQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rkn+yPB7FDvCl6yetXyPmcPpwWf7ptc0LNvd7TZN7eQ="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.wasm",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36227553"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rkn+yPB7FDvCl6yetXyPmcPpwWf7ptc0LNvd7TZN7eQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rkn+yPB7FDvCl6yetXyPmcPpwWf7ptc0LNvd7TZN7eQ="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.wasm.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\3hqqf38247-q2vcmq571s.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10849929"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vxmG8+uFfcUZqNW2WdVgMcMBm82/PDswcrmT3rSzCZA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vxmG8+uFfcUZqNW2WdVgMcMBm82/PDswcrmT3rSzCZA="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/fpsgame.25gtzapajp.html",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\aanue390kj-25gtzapajp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000545553737"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 16:57:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "25gtzapajp"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/fpsgame.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/fpsgame.25gtzapajp.html",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\fpsgame.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4511"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 16:57:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "25gtzapajp"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/fpsgame.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/fpsgame.25gtzapajp.html.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\aanue390kj-25gtzapajp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 16:57:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "25gtzapajp"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/fpsgame.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/fpsgame.html",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\aanue390kj-25gtzapajp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000545553737"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 16:57:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/fpsgame.html",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\fpsgame.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4511"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 16:57:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/fpsgame.html.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\aanue390kj-25gtzapajp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 16:57:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/favicon.70xlt0pfqo.ico",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\yvqldnio6u-70xlt0pfqo.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000459981601"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2173"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 20:06:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "70xlt0pfqo"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/favicon.70xlt0pfqo.ico",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 20:06:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "70xlt0pfqo"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/favicon.70xlt0pfqo.ico.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\yvqldnio6u-70xlt0pfqo.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2173"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 20:06:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "70xlt0pfqo"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/favicon.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/favicon.ico",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\yvqldnio6u-70xlt0pfqo.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000459981601"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2173"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 20:06:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/favicon.ico",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 20:06:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/favicon.ico.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\yvqldnio6u-70xlt0pfqo.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2173"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 20:06:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/logo-photon.a6gyt7gnut.svg",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\58ksr265gp-a6gyt7gnut.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000398565165"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2508"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zUrRD1g6WqcbX42lDEg3nCgXQPs/AFGlW2HAr/8zA8s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Yv8EOkWMGch59Lb3nWRE1vEc8/90qqZHT0nFUHq9zYE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a6gyt7gnut"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/logo-photon.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yv8EOkWMGch59Lb3nWRE1vEc8/90qqZHT0nFUHq9zYE="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/logo-photon.a6gyt7gnut.svg",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\logo-photon.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6748"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yv8EOkWMGch59Lb3nWRE1vEc8/90qqZHT0nFUHq9zYE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a6gyt7gnut"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/logo-photon.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yv8EOkWMGch59Lb3nWRE1vEc8/90qqZHT0nFUHq9zYE="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/logo-photon.a6gyt7gnut.svg.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\58ksr265gp-a6gyt7gnut.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2508"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zUrRD1g6WqcbX42lDEg3nCgXQPs/AFGlW2HAr/8zA8s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a6gyt7gnut"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/logo-photon.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zUrRD1g6WqcbX42lDEg3nCgXQPs/AFGlW2HAr/8zA8s="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/logo-photon.svg",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\58ksr265gp-a6gyt7gnut.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000398565165"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2508"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zUrRD1g6WqcbX42lDEg3nCgXQPs/AFGlW2HAr/8zA8s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Yv8EOkWMGch59Lb3nWRE1vEc8/90qqZHT0nFUHq9zYE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yv8EOkWMGch59Lb3nWRE1vEc8/90qqZHT0nFUHq9zYE="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/logo-photon.svg",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\logo-photon.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6748"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yv8EOkWMGch59Lb3nWRE1vEc8/90qqZHT0nFUHq9zYE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yv8EOkWMGch59Lb3nWRE1vEc8/90qqZHT0nFUHq9zYE="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/logo-photon.svg.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\58ksr265gp-a6gyt7gnut.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2508"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zUrRD1g6WqcbX42lDEg3nCgXQPs/AFGlW2HAr/8zA8s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zUrRD1g6WqcbX42lDEg3nCgXQPs/AFGlW2HAr/8zA8s="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/MemoryProfiler.cwkpu9lju0.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\MemoryProfiler.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DOh74g0MJKtstztX3iAE2iYcwqZB5pMZxq4/4R/IVIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cwkpu9lju0"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/MemoryProfiler.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DOh74g0MJKtstztX3iAE2iYcwqZB5pMZxq4/4R/IVIM="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/MemoryProfiler.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\MemoryProfiler.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DOh74g0MJKtstztX3iAE2iYcwqZB5pMZxq4/4R/IVIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DOh74g0MJKtstztX3iAE2iYcwqZB5pMZxq4/4R/IVIM="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/progress-bar-empty.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\progress-bar-empty.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "239"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/xM0y6JRmrxRcqGg3m4rq393BNqk+XiwxQvtbM/LLJo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/xM0y6JRmrxRcqGg3m4rq393BNqk+XiwxQvtbM/LLJo="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/progress-bar-empty.v41pqq44in.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\progress-bar-empty.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "239"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/xM0y6JRmrxRcqGg3m4rq393BNqk+XiwxQvtbM/LLJo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v41pqq44in"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/progress-bar-empty.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/xM0y6JRmrxRcqGg3m4rq393BNqk+XiwxQvtbM/LLJo="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/style.css",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\4z3ozpr39p-hb89wdlb35.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002732240437"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "365"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"peDYxfugxCIXhbIwspl8UdhBseiZ3bJRwnZ1whBhpUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"XRZVlcpwaBZWvTko9sKN38bYhtl6v027uoPm8eWaiX0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XRZVlcpwaBZWvTko9sKN38bYhtl6v027uoPm8eWaiX0="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/style.css",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "878"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XRZVlcpwaBZWvTko9sKN38bYhtl6v027uoPm8eWaiX0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XRZVlcpwaBZWvTko9sKN38bYhtl6v027uoPm8eWaiX0="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/style.css.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\4z3ozpr39p-hb89wdlb35.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "365"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"peDYxfugxCIXhbIwspl8UdhBseiZ3bJRwnZ1whBhpUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-peDYxfugxCIXhbIwspl8UdhBseiZ3bJRwnZ1whBhpUc="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/style.hb89wdlb35.css",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\4z3ozpr39p-hb89wdlb35.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002732240437"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "365"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"peDYxfugxCIXhbIwspl8UdhBseiZ3bJRwnZ1whBhpUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"XRZVlcpwaBZWvTko9sKN38bYhtl6v027uoPm8eWaiX0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hb89wdlb35"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XRZVlcpwaBZWvTko9sKN38bYhtl6v027uoPm8eWaiX0="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/style.hb89wdlb35.css",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "878"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XRZVlcpwaBZWvTko9sKN38bYhtl6v027uoPm8eWaiX0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hb89wdlb35"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XRZVlcpwaBZWvTko9sKN38bYhtl6v027uoPm8eWaiX0="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/style.hb89wdlb35.css.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\4z3ozpr39p-hb89wdlb35.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "365"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"peDYxfugxCIXhbIwspl8UdhBseiZ3bJRwnZ1whBhpUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hb89wdlb35"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/style.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-peDYxfugxCIXhbIwspl8UdhBseiZ3bJRwnZ1whBhpUc="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/webmemd-icon.l424coiqtw.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\webmemd-icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1670"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xW9UlGQM7donOq041Y5qudpiXVs/TYdcD/ksYZKlacI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l424coiqtw"
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/webmemd-icon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xW9UlGQM7donOq041Y5qudpiXVs/TYdcD/ksYZKlacI="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/webmemd-icon.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\TemplateData\\webmemd-icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1670"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xW9UlGQM7donOq041Y5qudpiXVs/TYdcD/ksYZKlacI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xW9UlGQM7donOq041Y5qudpiXVs/TYdcD/ksYZKlacI="
         }
       ]
     },
@@ -18158,6 +20992,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-x8FzLBgYezXYXsgvU0c/dEsKmR9SkSxAfBdieCAeFtY="
+        }
+      ]
+    },
+    {
+      "Route": "vercel.json",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\kucaebxc1a-s25sga0nut.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.008333333333"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 20:10:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40="
+        }
+      ]
+    },
+    {
+      "Route": "vercel.json",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\vercel.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 20:10:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40="
+        }
+      ]
+    },
+    {
+      "Route": "vercel.json.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\kucaebxc1a-s25sga0nut.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 20:10:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok="
+        }
+      ]
+    },
+    {
+      "Route": "vercel.s25sga0nut.json",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\kucaebxc1a-s25sga0nut.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.008333333333"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 20:10:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s25sga0nut"
+        },
+        {
+          "Name": "label",
+          "Value": "vercel.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40="
+        }
+      ]
+    },
+    {
+      "Route": "vercel.s25sga0nut.json",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\vercel.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 20:10:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s25sga0nut"
+        },
+        {
+          "Name": "label",
+          "Value": "vercel.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40="
+        }
+      ]
+    },
+    {
+      "Route": "vercel.s25sga0nut.json.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\kucaebxc1a-s25sga0nut.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 20:10:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s25sga0nut"
+        },
+        {
+          "Name": "label",
+          "Value": "vercel.json.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok="
         }
       ]
     }

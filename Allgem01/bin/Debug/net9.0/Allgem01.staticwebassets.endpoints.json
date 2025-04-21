@@ -43,7 +43,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 19:00:46 GMT"
+          "Value": "Mon, 21 Apr 2025 17:01:48 GMT"
         },
         {
           "Name": "Vary",
@@ -92,7 +92,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 19:00:46 GMT"
+          "Value": "Mon, 21 Apr 2025 17:01:48 GMT"
         }
       ],
       "EndpointProperties": [
@@ -141,7 +141,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 19:00:46 GMT"
+          "Value": "Mon, 21 Apr 2025 17:01:48 GMT"
         },
         {
           "Name": "Vary",
@@ -204,7 +204,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 19:00:46 GMT"
+          "Value": "Mon, 21 Apr 2025 17:01:48 GMT"
         },
         {
           "Name": "Vary",
@@ -245,7 +245,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 19:00:46 GMT"
+          "Value": "Mon, 21 Apr 2025 17:01:48 GMT"
         }
       ],
       "EndpointProperties": [
@@ -286,7 +286,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 19:00:46 GMT"
+          "Value": "Mon, 21 Apr 2025 17:01:48 GMT"
         },
         {
           "Name": "Vary",
@@ -1333,6 +1333,2420 @@
         {
           "Name": "integrity",
           "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.5ejy0vax70.data",
+      "AssetFile": "fpsgame/Build/fps game.data",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36052632"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rVJGpU5D68gV/hOmXQhcw02uDT2yjiZ7dUcWxd93zMk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:47:55 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ejy0vax70"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rVJGpU5D68gV/hOmXQhcw02uDT2yjiZ7dUcWxd93zMk="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.data"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.data",
+      "AssetFile": "fpsgame/Build/fps game.data",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36052632"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rVJGpU5D68gV/hOmXQhcw02uDT2yjiZ7dUcWxd93zMk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:47:55 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rVJGpU5D68gV/hOmXQhcw02uDT2yjiZ7dUcWxd93zMk="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.framework.js",
+      "AssetFile": "fpsgame/Build/fps game.framework.js.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000011697411"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85488"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8YSgH6pPkqDAE3hTy0QPO5HleBKOrFbbBKsLIcHIHCk=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"fjc/6kkhSnGqHciKf7rSBPl3s6wdmKKC6lOzxqTBQzs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:15 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fjc/6kkhSnGqHciKf7rSBPl3s6wdmKKC6lOzxqTBQzs="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.framework.js",
+      "AssetFile": "fpsgame/Build/fps game.framework.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "413305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fjc/6kkhSnGqHciKf7rSBPl3s6wdmKKC6lOzxqTBQzs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fjc/6kkhSnGqHciKf7rSBPl3s6wdmKKC6lOzxqTBQzs="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.framework.js.gz",
+      "AssetFile": "fpsgame/Build/fps game.framework.js.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85488"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8YSgH6pPkqDAE3hTy0QPO5HleBKOrFbbBKsLIcHIHCk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:15 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8YSgH6pPkqDAE3hTy0QPO5HleBKOrFbbBKsLIcHIHCk="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.framework.qq8dz680mq.js",
+      "AssetFile": "fpsgame/Build/fps game.framework.js.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000011697411"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85488"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8YSgH6pPkqDAE3hTy0QPO5HleBKOrFbbBKsLIcHIHCk=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"fjc/6kkhSnGqHciKf7rSBPl3s6wdmKKC6lOzxqTBQzs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:15 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qq8dz680mq"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fjc/6kkhSnGqHciKf7rSBPl3s6wdmKKC6lOzxqTBQzs="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.framework.js"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.framework.qq8dz680mq.js",
+      "AssetFile": "fpsgame/Build/fps game.framework.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "413305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fjc/6kkhSnGqHciKf7rSBPl3s6wdmKKC6lOzxqTBQzs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qq8dz680mq"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fjc/6kkhSnGqHciKf7rSBPl3s6wdmKKC6lOzxqTBQzs="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.framework.js"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.framework.qq8dz680mq.js.gz",
+      "AssetFile": "fpsgame/Build/fps game.framework.js.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85488"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8YSgH6pPkqDAE3hTy0QPO5HleBKOrFbbBKsLIcHIHCk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:15 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qq8dz680mq"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8YSgH6pPkqDAE3hTy0QPO5HleBKOrFbbBKsLIcHIHCk="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.framework.js.gz"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.loader.js",
+      "AssetFile": "fpsgame/Build/fps game.loader.js.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000135906496"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7357"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KFqGmEVsqyO6C3kbISY5n9uHDjx3UFXvmLMeeKsdAbc=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hupiKD5UJiukcdf8z9Gvh373oJ7E0EevvZ3bttMV0Wk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:19 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hupiKD5UJiukcdf8z9Gvh373oJ7E0EevvZ3bttMV0Wk="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.loader.js",
+      "AssetFile": "fpsgame/Build/fps game.loader.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20642"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hupiKD5UJiukcdf8z9Gvh373oJ7E0EevvZ3bttMV0Wk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:19 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hupiKD5UJiukcdf8z9Gvh373oJ7E0EevvZ3bttMV0Wk="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.loader.js.gz",
+      "AssetFile": "fpsgame/Build/fps game.loader.js.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7357"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KFqGmEVsqyO6C3kbISY5n9uHDjx3UFXvmLMeeKsdAbc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:19 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KFqGmEVsqyO6C3kbISY5n9uHDjx3UFXvmLMeeKsdAbc="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.loader.y2lra6d6kf.js",
+      "AssetFile": "fpsgame/Build/fps game.loader.js.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000135906496"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7357"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KFqGmEVsqyO6C3kbISY5n9uHDjx3UFXvmLMeeKsdAbc=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hupiKD5UJiukcdf8z9Gvh373oJ7E0EevvZ3bttMV0Wk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:19 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y2lra6d6kf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hupiKD5UJiukcdf8z9Gvh373oJ7E0EevvZ3bttMV0Wk="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.loader.js"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.loader.y2lra6d6kf.js",
+      "AssetFile": "fpsgame/Build/fps game.loader.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20642"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hupiKD5UJiukcdf8z9Gvh373oJ7E0EevvZ3bttMV0Wk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:19 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y2lra6d6kf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hupiKD5UJiukcdf8z9Gvh373oJ7E0EevvZ3bttMV0Wk="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.loader.js"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.loader.y2lra6d6kf.js.gz",
+      "AssetFile": "fpsgame/Build/fps game.loader.js.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7357"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KFqGmEVsqyO6C3kbISY5n9uHDjx3UFXvmLMeeKsdAbc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:19 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y2lra6d6kf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KFqGmEVsqyO6C3kbISY5n9uHDjx3UFXvmLMeeKsdAbc="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.loader.js.gz"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.q2vcmq571s.wasm",
+      "AssetFile": "fpsgame/Build/fps game.wasm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000092166"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10849929"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vxmG8+uFfcUZqNW2WdVgMcMBm82/PDswcrmT3rSzCZA=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"rkn+yPB7FDvCl6yetXyPmcPpwWf7ptc0LNvd7TZN7eQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:14 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q2vcmq571s"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rkn+yPB7FDvCl6yetXyPmcPpwWf7ptc0LNvd7TZN7eQ="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.wasm"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.q2vcmq571s.wasm",
+      "AssetFile": "fpsgame/Build/fps game.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36227553"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rkn+yPB7FDvCl6yetXyPmcPpwWf7ptc0LNvd7TZN7eQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q2vcmq571s"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rkn+yPB7FDvCl6yetXyPmcPpwWf7ptc0LNvd7TZN7eQ="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.wasm"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.q2vcmq571s.wasm.gz",
+      "AssetFile": "fpsgame/Build/fps game.wasm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10849929"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vxmG8+uFfcUZqNW2WdVgMcMBm82/PDswcrmT3rSzCZA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:14 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q2vcmq571s"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vxmG8+uFfcUZqNW2WdVgMcMBm82/PDswcrmT3rSzCZA="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game.wasm.gz"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.wasm",
+      "AssetFile": "fpsgame/Build/fps game.wasm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000092166"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10849929"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vxmG8+uFfcUZqNW2WdVgMcMBm82/PDswcrmT3rSzCZA=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"rkn+yPB7FDvCl6yetXyPmcPpwWf7ptc0LNvd7TZN7eQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:14 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rkn+yPB7FDvCl6yetXyPmcPpwWf7ptc0LNvd7TZN7eQ="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.wasm",
+      "AssetFile": "fpsgame/Build/fps game.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36227553"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rkn+yPB7FDvCl6yetXyPmcPpwWf7ptc0LNvd7TZN7eQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rkn+yPB7FDvCl6yetXyPmcPpwWf7ptc0LNvd7TZN7eQ="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game.wasm.gz",
+      "AssetFile": "fpsgame/Build/fps game.wasm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10849929"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vxmG8+uFfcUZqNW2WdVgMcMBm82/PDswcrmT3rSzCZA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:52:14 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vxmG8+uFfcUZqNW2WdVgMcMBm82/PDswcrmT3rSzCZA="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/MemoryProfiler.cwkpu9lju0.png",
+      "AssetFile": "fpsgame/TemplateData/MemoryProfiler.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DOh74g0MJKtstztX3iAE2iYcwqZB5pMZxq4/4R/IVIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cwkpu9lju0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DOh74g0MJKtstztX3iAE2iYcwqZB5pMZxq4/4R/IVIM="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/MemoryProfiler.png"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/MemoryProfiler.png",
+      "AssetFile": "fpsgame/TemplateData/MemoryProfiler.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DOh74g0MJKtstztX3iAE2iYcwqZB5pMZxq4/4R/IVIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DOh74g0MJKtstztX3iAE2iYcwqZB5pMZxq4/4R/IVIM="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/favicon.70xlt0pfqo.ico",
+      "AssetFile": "fpsgame/TemplateData/favicon.ico.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000459981601"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2173"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 20:06:55 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "70xlt0pfqo"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/favicon.ico"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/favicon.70xlt0pfqo.ico",
+      "AssetFile": "fpsgame/TemplateData/favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 20:06:55 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "70xlt0pfqo"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/favicon.ico"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/favicon.70xlt0pfqo.ico.gz",
+      "AssetFile": "fpsgame/TemplateData/favicon.ico.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2173"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 20:06:55 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "70xlt0pfqo"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/favicon.ico.gz"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/favicon.ico",
+      "AssetFile": "fpsgame/TemplateData/favicon.ico.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000459981601"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2173"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 20:06:55 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/favicon.ico",
+      "AssetFile": "fpsgame/TemplateData/favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 20:06:55 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/favicon.ico.gz",
+      "AssetFile": "fpsgame/TemplateData/favicon.ico.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2173"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 20:06:55 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/logo-photon.a6gyt7gnut.svg",
+      "AssetFile": "fpsgame/TemplateData/logo-photon.svg.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000398565165"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2508"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zUrRD1g6WqcbX42lDEg3nCgXQPs/AFGlW2HAr/8zA8s=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Yv8EOkWMGch59Lb3nWRE1vEc8/90qqZHT0nFUHq9zYE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a6gyt7gnut"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yv8EOkWMGch59Lb3nWRE1vEc8/90qqZHT0nFUHq9zYE="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/logo-photon.svg"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/logo-photon.a6gyt7gnut.svg",
+      "AssetFile": "fpsgame/TemplateData/logo-photon.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6748"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yv8EOkWMGch59Lb3nWRE1vEc8/90qqZHT0nFUHq9zYE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a6gyt7gnut"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yv8EOkWMGch59Lb3nWRE1vEc8/90qqZHT0nFUHq9zYE="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/logo-photon.svg"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/logo-photon.a6gyt7gnut.svg.gz",
+      "AssetFile": "fpsgame/TemplateData/logo-photon.svg.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2508"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zUrRD1g6WqcbX42lDEg3nCgXQPs/AFGlW2HAr/8zA8s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a6gyt7gnut"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zUrRD1g6WqcbX42lDEg3nCgXQPs/AFGlW2HAr/8zA8s="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/logo-photon.svg.gz"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/logo-photon.svg",
+      "AssetFile": "fpsgame/TemplateData/logo-photon.svg.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000398565165"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2508"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zUrRD1g6WqcbX42lDEg3nCgXQPs/AFGlW2HAr/8zA8s=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Yv8EOkWMGch59Lb3nWRE1vEc8/90qqZHT0nFUHq9zYE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yv8EOkWMGch59Lb3nWRE1vEc8/90qqZHT0nFUHq9zYE="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/logo-photon.svg",
+      "AssetFile": "fpsgame/TemplateData/logo-photon.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6748"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yv8EOkWMGch59Lb3nWRE1vEc8/90qqZHT0nFUHq9zYE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yv8EOkWMGch59Lb3nWRE1vEc8/90qqZHT0nFUHq9zYE="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/logo-photon.svg.gz",
+      "AssetFile": "fpsgame/TemplateData/logo-photon.svg.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2508"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zUrRD1g6WqcbX42lDEg3nCgXQPs/AFGlW2HAr/8zA8s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zUrRD1g6WqcbX42lDEg3nCgXQPs/AFGlW2HAr/8zA8s="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/progress-bar-empty.png",
+      "AssetFile": "fpsgame/TemplateData/progress-bar-empty.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "239"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/xM0y6JRmrxRcqGg3m4rq393BNqk+XiwxQvtbM/LLJo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/xM0y6JRmrxRcqGg3m4rq393BNqk+XiwxQvtbM/LLJo="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/progress-bar-empty.v41pqq44in.png",
+      "AssetFile": "fpsgame/TemplateData/progress-bar-empty.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "239"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/xM0y6JRmrxRcqGg3m4rq393BNqk+XiwxQvtbM/LLJo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v41pqq44in"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/xM0y6JRmrxRcqGg3m4rq393BNqk+XiwxQvtbM/LLJo="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/progress-bar-empty.png"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/style.css",
+      "AssetFile": "fpsgame/TemplateData/style.css.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002732240437"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "365"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"peDYxfugxCIXhbIwspl8UdhBseiZ3bJRwnZ1whBhpUc=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"XRZVlcpwaBZWvTko9sKN38bYhtl6v027uoPm8eWaiX0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:18 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XRZVlcpwaBZWvTko9sKN38bYhtl6v027uoPm8eWaiX0="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/style.css",
+      "AssetFile": "fpsgame/TemplateData/style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "878"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XRZVlcpwaBZWvTko9sKN38bYhtl6v027uoPm8eWaiX0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:18 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XRZVlcpwaBZWvTko9sKN38bYhtl6v027uoPm8eWaiX0="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/style.css.gz",
+      "AssetFile": "fpsgame/TemplateData/style.css.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "365"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"peDYxfugxCIXhbIwspl8UdhBseiZ3bJRwnZ1whBhpUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:18 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-peDYxfugxCIXhbIwspl8UdhBseiZ3bJRwnZ1whBhpUc="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/style.hb89wdlb35.css",
+      "AssetFile": "fpsgame/TemplateData/style.css.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002732240437"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "365"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"peDYxfugxCIXhbIwspl8UdhBseiZ3bJRwnZ1whBhpUc=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"XRZVlcpwaBZWvTko9sKN38bYhtl6v027uoPm8eWaiX0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:18 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hb89wdlb35"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XRZVlcpwaBZWvTko9sKN38bYhtl6v027uoPm8eWaiX0="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/style.css"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/style.hb89wdlb35.css",
+      "AssetFile": "fpsgame/TemplateData/style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "878"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XRZVlcpwaBZWvTko9sKN38bYhtl6v027uoPm8eWaiX0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:18 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hb89wdlb35"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XRZVlcpwaBZWvTko9sKN38bYhtl6v027uoPm8eWaiX0="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/style.css"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/style.hb89wdlb35.css.gz",
+      "AssetFile": "fpsgame/TemplateData/style.css.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "365"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"peDYxfugxCIXhbIwspl8UdhBseiZ3bJRwnZ1whBhpUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:18 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hb89wdlb35"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-peDYxfugxCIXhbIwspl8UdhBseiZ3bJRwnZ1whBhpUc="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/style.css.gz"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/webmemd-icon.l424coiqtw.png",
+      "AssetFile": "fpsgame/TemplateData/webmemd-icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1670"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xW9UlGQM7donOq041Y5qudpiXVs/TYdcD/ksYZKlacI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l424coiqtw"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xW9UlGQM7donOq041Y5qudpiXVs/TYdcD/ksYZKlacI="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/webmemd-icon.png"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/webmemd-icon.png",
+      "AssetFile": "fpsgame/TemplateData/webmemd-icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1670"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xW9UlGQM7donOq041Y5qudpiXVs/TYdcD/ksYZKlacI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xW9UlGQM7donOq041Y5qudpiXVs/TYdcD/ksYZKlacI="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/fpsgame.25gtzapajp.html",
+      "AssetFile": "fpsgame/fpsgame.html.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000545553737"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 16:57:49 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "25gtzapajp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/fpsgame.html"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/fpsgame.25gtzapajp.html",
+      "AssetFile": "fpsgame/fpsgame.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4511"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 16:57:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "25gtzapajp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/fpsgame.html"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/fpsgame.25gtzapajp.html.gz",
+      "AssetFile": "fpsgame/fpsgame.html.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 16:57:49 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "25gtzapajp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/fpsgame.html.gz"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/fpsgame.html",
+      "AssetFile": "fpsgame/fpsgame.html.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000545553737"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 16:57:49 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/fpsgame.html",
+      "AssetFile": "fpsgame/fpsgame.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4511"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 16:57:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/fpsgame.html.gz",
+      "AssetFile": "fpsgame/fpsgame.html.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 16:57:49 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps="
         }
       ]
     },
@@ -15429,6 +17843,304 @@
         {
           "Name": "label",
           "Value": "ulteros.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "vercel.json",
+      "AssetFile": "vercel.json.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.008333333333"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 20:10:25 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40="
+        }
+      ]
+    },
+    {
+      "Route": "vercel.json",
+      "AssetFile": "vercel.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 20:10:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40="
+        }
+      ]
+    },
+    {
+      "Route": "vercel.json.gz",
+      "AssetFile": "vercel.json.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 20:10:25 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok="
+        }
+      ]
+    },
+    {
+      "Route": "vercel.s25sga0nut.json",
+      "AssetFile": "vercel.json.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.008333333333"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 20:10:25 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s25sga0nut"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40="
+        },
+        {
+          "Name": "label",
+          "Value": "vercel.json"
+        }
+      ]
+    },
+    {
+      "Route": "vercel.s25sga0nut.json",
+      "AssetFile": "vercel.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 20:10:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s25sga0nut"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40="
+        },
+        {
+          "Name": "label",
+          "Value": "vercel.json"
+        }
+      ]
+    },
+    {
+      "Route": "vercel.s25sga0nut.json.gz",
+      "AssetFile": "vercel.json.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Apr 2025 20:10:25 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s25sga0nut"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok="
+        },
+        {
+          "Name": "label",
+          "Value": "vercel.json.gz"
         }
       ]
     }
