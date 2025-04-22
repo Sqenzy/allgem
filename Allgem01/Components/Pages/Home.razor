@@ -48,7 +48,7 @@
         <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">   
       }
 
-            <div class="rankal">
+            <div class="rankal" @onclick="RankFf">
       <p class="ranktx">Rank</p>
       <img class="rankim" src="@rankimg" alt="rank">
       </div>
@@ -130,8 +130,6 @@
         </button>
     </div>
 </section>
-
-<section class="lowersection">Upcoming Events</section>
 <footer><p>© 2025 Allgem</p>
 </footer>
 <style>
@@ -161,7 +159,7 @@
         justify-content: center;
     }
     footer{
-        background: rgb(10, 13, 20);
+        background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
         color:  white;
         padding: 10px 20px;
         height: 90px;
@@ -1032,6 +1030,11 @@ body {
     private void Graph()
     {
        NavigationManager.NavigateTo("/graph");
+    }
+
+    private void RankFf()
+    {
+        NavigationManager.NavigateTo("/account/rank");
     }
 
     private void playGameShooting()
