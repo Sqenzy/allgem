@@ -72,7 +72,7 @@
 </header>
 
 <section class="downheader"></section>
-
+<section class="ifk">
 <section class="lowersection">
     <button class="discordinvite" @onclick="DiscordInvite">
         <img src="discord-icon.png" class="discordicon"></button>
@@ -83,7 +83,6 @@
 <section class="formsection">
     <div class="blue-box"></div>
         <form class="from" action="https://formsubmit.co/36e6b93cb26f8ec08611000a741650f4" method="POST">
-            <input class="name" type="text" name="name" required placeholder="Name" @bind-value="name" TValue="string">
             <input class="emaill" type="email" name="email" required placeholder="Email"@bind-value="email" TValue="string">
             <input type="text" class="message" name="message" required placeholder="Message"@bind-value="message" TValue="string">
             <input type="hidden" name="_captcha" value="false">
@@ -108,9 +107,20 @@
   <span>Send</span></button>
         </form>
 </section>
+</section>
 
 
 <style>
+  .ifk{
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    min-height: 100vh;
+  }
+  .emaill{
+    margin-top: -100px;
+  }
+  .message{
+    margin-top: -100px;
+  }
      header {
         background: rgb(10, 13, 20);
         min-width: 98vw;
@@ -917,6 +927,8 @@ body {
         border-radius: 48px;
         width: 230px;
         height: 60px;
+        margin-top: 200px;
+        transition: all 0.1s ease-out;
     }
     .discordinvite {
         background: rgba(88, 101, 242, 1);
@@ -941,22 +953,23 @@ body {
         gap: 50px;
     }
     .formsection {
+        margin-top: 200px;
         display: flex;
         justify-content: center;
-        height: 534px;
+        height: 100vh;
         width: 100%;
         background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
     } 
     .blue-box {
-        width: 600px; /* Set width */
-        height: 430px; /* Set height */
+        width: 600px;
+        height: 360px;
         background-color: rgb(55, 56, 82);
         position: static;
-        top: 20px;
+        top: 100px;
         border-radius: 48px;
     }
     .from {
-        margin-top: 70px;
+        margin-top: 0px;
     }
     .name {
         border-radius: 12px;

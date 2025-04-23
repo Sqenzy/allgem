@@ -14,8 +14,8 @@ public class Repository
     public bool IsEmailVerified { get; set; } = false;
     public bool hasPremium { get; set; }
     public string rank { get; set; }
+    public int rankCount { get; set; } = 0;
     
-    // abys mohl zobrazit ty data, tak si stahni DbBrowser for sqlite
     
     public Repository()
     {
@@ -27,7 +27,8 @@ public class Repository
     public void SignUp(string email, string password)
     {
         string hashedPassword = HashPassword(password);
-        InsertUser(email, hashedPassword);
+        string rnn = "Bronze";
+        InsertUser(email, hashedPassword, rnn);
     }
 
     public bool Login(string email, string password)
@@ -96,11 +97,11 @@ public class Repository
         }
     }
 
-    private void InsertUser(string email, string hashedPassword)
+    private void InsertUser(string email, string hashedPassword, string rnn)
     {
         string sql = """
-                     INSERT INTO users(email, password) 
-                     VALUES (@Email, @Password);
+                     INSERT INTO users(email, password , role) 
+                     VALUES (@Email, @Password , @rnn);
                      """;
 
         using (var connection = new SQLiteConnection(_connectionString))
@@ -111,6 +112,8 @@ public class Repository
             {
                 command.Parameters.AddWithValue("@Email", email);
                 command.Parameters.AddWithValue("@Password", hashedPassword);
+                command.Parameters.AddWithValue("@rnn", rnn);
+                command.Parameters.AddWithValue("@hasPremium", 0); // 0 = false, 1 = true
                 
                 command.ExecuteNonQuery();
             }

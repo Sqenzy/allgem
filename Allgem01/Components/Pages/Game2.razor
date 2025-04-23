@@ -986,6 +986,9 @@ body {
 @code {
     private string? CookieValue;
     private string? CookieValue1;
+    private string? CookieValueEmail;
+    private string? CookieValueRank;
+    private bool dik = true;
 
     private bool profile = false;
 
@@ -1060,6 +1063,8 @@ body {
             // Read the cookie value
             CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
             CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
+            CookieValueEmail = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_email");
+            CookieValueRank = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_rank");
 
             // Update the authentication state based on the cookie value
             if (CookieValue == "isli")
@@ -1079,8 +1084,16 @@ body {
             {
                 repository.SetHasPremium(false);
             }
-
             StateHasChanged();
+            if (repository.IsLoggedIn)
+            {
+                dik = true;
+                _ = RankosAsync();
+            }
+            else
+            {
+                dik = false;
+            }
         }
     }
     private async Task Logout()
@@ -1090,4 +1103,46 @@ body {
         repository.SetLoggedIn(false);
         NavigationManager.NavigateTo("/");
     }
+
+private async Task RankosAsync()
+{
+    if (CookieValueRank == "Silver")
+    {
+        repository.rankCount = 10;
+    }
+    else if (CookieValueRank == "Gold")
+    {
+        repository.rankCount = 20;
+    }
+    else if (CookieValueRank == "Platinum")
+    {
+        repository.rankCount = 30;
+    }
+    else if (CookieValueRank == "Diamond")
+    {
+        repository.rankCount = 40;
+    }
+    while (dik)
+    {
+        await Task.Delay(10000);
+        repository.rankCount++;
+
+        if (repository.rankCount == 10)
+        {
+            repository.AddRankToUser(CookieValueEmail, "Silver");
+        }
+        else if (repository.rankCount == 20)
+        {
+            repository.AddRankToUser(CookieValueEmail, "Gold");
+        }
+        else if (repository.rankCount == 30)
+        {
+            repository.AddRankToUser(CookieValueEmail, "Platinum");
+        }
+        else if (repository.rankCount == 40)
+        {
+            repository.AddRankToUser(CookieValueEmail, "Diamond");
+        }
+    }
+}
 }
