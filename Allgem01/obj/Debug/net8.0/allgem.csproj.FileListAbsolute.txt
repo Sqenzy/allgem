@@ -1,0 +1,8 @@
+C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net8.0\allgem.csproj.AssemblyReference.cache
+C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net8.0\allgem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net8.0\allgem.AssemblyInfoInputs.cache
+C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net8.0\allgem.AssemblyInfo.cs
+C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net8.0\allgem.csproj.CoreCompileInputs.cache
+C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net8.0\allgem.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net8.0\allgem.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net8.0\allgem.sourcelink.json

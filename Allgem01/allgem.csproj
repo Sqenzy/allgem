@@ -24,7 +24,6 @@
 
   <ItemGroup>
     <Compile Include="Components\**\*.cs" />
-    <Content Include="Components\**\*.razor" />
     <Content Include="database.sqlite">
     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
