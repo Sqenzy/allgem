@@ -23,9 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-  <Content Include="wwwroot\**\*">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Compile Include="Components\**\*.cs" />
     <Content Include="database.sqlite">
     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
