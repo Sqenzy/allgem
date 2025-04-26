@@ -65,8 +65,6 @@
     public bool SignedIn => repository.IsLoggedIn;
     public bool Premium => repository.hasPremium;
 
-    [Inject]
-    private NavigationManager NavigationManager { get; set; } = default!;
 
 
     public void SetSignedIn(bool trueOrFalse)
@@ -76,10 +74,5 @@
     public void SetPremium(bool tof)
     {
         repository.SetHasPremium(tof);
-    }
-
-    protected override void OnInitialized()
-    {
-        NavigationManager.NavigateTo("/ho");
     }
 }
