@@ -13,7 +13,7 @@ public class Repository
     public bool IsLoggedIn { get; set; }
     public bool IsEmailVerified { get; set; } = false;
     public bool hasPremium { get; set; }
-    public string rank { get; set; }
+    public string rank { get; set; } = string.Empty;
     public int rankCount { get; set; } = 0;
     
     

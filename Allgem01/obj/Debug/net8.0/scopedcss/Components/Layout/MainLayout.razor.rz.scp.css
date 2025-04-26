@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+  header[b-x737nakjve] {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .nav-buttons[b-x737nakjve] {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  .nav-buttons button[b-x737nakjve] {
+      width: auto;
+      padding: 5px 10px;
+  }
+}
+@keyframes fly-1-b-x737nakjve {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
