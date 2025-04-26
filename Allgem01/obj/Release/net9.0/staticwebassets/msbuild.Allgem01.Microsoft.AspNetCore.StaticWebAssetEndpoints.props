@@ -936,17 +936,5 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ltth91ce2k"},{"Name":"integrity","Value":"sha256-x8FzLBgYezXYXsgvU0c/dEsKmR9SkSxAfBdieCAeFtY="},{"Name":"label","Value":"_content/Allgem01/ulteros.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"47825"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022x8FzLBgYezXYXsgvU0c/dEsKmR9SkSxAfBdieCAeFtY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 04 Mar 2025 17:05:39 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Allgem01/vercel.json">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\vercel.json'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-tEBCKll2\u002BH0ax5C\u002BhofD26oXpX4k9wVT/lQ8yTget40="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"131"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022tEBCKll2\u002BH0ax5C\u002BhofD26oXpX4k9wVT/lQ8yTget40=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Apr 2025 20:10:25 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Allgem01/vercel.s25sga0nut.json">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\vercel.json'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"s25sga0nut"},{"Name":"integrity","Value":"sha256-tEBCKll2\u002BH0ax5C\u002BhofD26oXpX4k9wVT/lQ8yTget40="},{"Name":"label","Value":"_content/Allgem01/vercel.json"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"131"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022tEBCKll2\u002BH0ax5C\u002BhofD26oXpX4k9wVT/lQ8yTget40=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Apr 2025 20:10:25 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

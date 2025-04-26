@@ -43,7 +43,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 09:25:52 GMT"
+          "Value": "Sat, 26 Apr 2025 10:03:08 GMT"
         },
         {
           "Name": "Vary",
@@ -92,7 +92,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 09:25:52 GMT"
+          "Value": "Sat, 26 Apr 2025 10:03:08 GMT"
         }
       ],
       "EndpointProperties": [
@@ -141,7 +141,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 09:25:52 GMT"
+          "Value": "Sat, 26 Apr 2025 10:03:08 GMT"
         },
         {
           "Name": "Vary",
@@ -204,7 +204,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 09:25:52 GMT"
+          "Value": "Sat, 26 Apr 2025 10:03:08 GMT"
         },
         {
           "Name": "Vary",
@@ -245,7 +245,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 09:25:52 GMT"
+          "Value": "Sat, 26 Apr 2025 10:03:08 GMT"
         }
       ],
       "EndpointProperties": [
@@ -286,7 +286,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 09:25:52 GMT"
+          "Value": "Sat, 26 Apr 2025 10:03:08 GMT"
         },
         {
           "Name": "Vary",
@@ -17843,304 +17843,6 @@
         {
           "Name": "label",
           "Value": "ulteros.jpg"
-        }
-      ]
-    },
-    {
-      "Route": "vercel.json",
-      "AssetFile": "vercel.json.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.008333333333"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "119"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 20:10:25 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40="
-        }
-      ]
-    },
-    {
-      "Route": "vercel.json",
-      "AssetFile": "vercel.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "131"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 20:10:25 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40="
-        }
-      ]
-    },
-    {
-      "Route": "vercel.json.gz",
-      "AssetFile": "vercel.json.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "119"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 20:10:25 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok="
-        }
-      ]
-    },
-    {
-      "Route": "vercel.s25sga0nut.json",
-      "AssetFile": "vercel.json.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.008333333333"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "119"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 20:10:25 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "s25sga0nut"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40="
-        },
-        {
-          "Name": "label",
-          "Value": "vercel.json"
-        }
-      ]
-    },
-    {
-      "Route": "vercel.s25sga0nut.json",
-      "AssetFile": "vercel.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "131"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 20:10:25 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "s25sga0nut"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-tEBCKll2+H0ax5C+hofD26oXpX4k9wVT/lQ8yTget40="
-        },
-        {
-          "Name": "label",
-          "Value": "vercel.json"
-        }
-      ]
-    },
-    {
-      "Route": "vercel.s25sga0nut.json.gz",
-      "AssetFile": "vercel.json.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "119"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 20 Apr 2025 20:10:25 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "s25sga0nut"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-cflA9BQb4L3WpL+D+j2dMc4vPq1w0bGbaXg6vHluKok="
-        },
-        {
-          "Name": "label",
-          "Value": "vercel.json.gz"
         }
       ]
     }

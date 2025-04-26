@@ -313,10 +313,6 @@
       "PackagePath": "staticwebassets\\ulteros.jpg"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\vercel.json",
-      "PackagePath": "staticwebassets\\vercel.json"
-    },
-    {
       "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.Allgem01.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
