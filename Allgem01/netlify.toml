@@ -2,5 +2,5 @@
 
 [[redirects]]
   from = "/*"
-  to = "Home.razor"
+  to = "/index.html"
   status = 200
