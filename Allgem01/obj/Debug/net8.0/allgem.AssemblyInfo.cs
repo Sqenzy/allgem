@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("allgem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77c8acedc7c9c8aa4d9306390f547ebb76b039b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+313ddfe6db90fc328ddff14db468d4a97786c287")]
 [assembly: System.Reflection.AssemblyProductAttribute("allgem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("allgem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

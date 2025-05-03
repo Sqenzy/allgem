@@ -1,38 +1,11 @@
 ﻿@page "/Home"
-@rendermode InteractiveServer
 @inject NavigationManager NavigationManager
 @using Allgem01.Logic
 @inject Repository repository
+@inject IJSRuntime JSRuntime
+@using Microsoft.JSInterop
 @namespace Allgem01.Components.Pages
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allgem</title>
-</head>
-</html>
-
-<!--test-->
-<div>
-    @if (repository.IsLoggedIn)
-    {
-        
-    }
-    else
-    {
-        
-    }
-    @if (repository.hasPremium)
-    {
-
-    }
-    else
-    {
-
-    }
-</div>
 
 <header>
   @if (repository.IsLoggedIn)

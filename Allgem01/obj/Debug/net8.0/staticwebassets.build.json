@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jdVU1akLwmscvYFCkUI50cw5ZkKMT8GXTy9wyY1niME=",
+  "Hash": "beI+Er0yRFnXsQ4IvEiD6ImRd2MrZTK7FuOTDDWI23g=",
   "Source": "allgem",
   "BasePath": "_content/allgem",
   "Mode": "Default",
@@ -563,6 +563,27 @@
       "OriginalItemSpec": "wwwroot\\gshootimg.png"
     },
     {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\Home.razor",
+      "SourceId": "allgem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/allgem",
+      "RelativePath": "Home#[.{fingerprint}]?.razor",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "24ck87xigz",
+      "Integrity": "Uo6j7UGvdG8YEE8owqjItfEK/aE+SDiJtdlAkGPspm8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Home.razor"
+    },
+    {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\imaginase.png",
       "SourceId": "allgem",
       "SourceType": "Discovered",
@@ -598,8 +619,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nq6jfyweut",
-      "Integrity": "IaBc08gYvGXNiS5RRwmsNuNuj1rMbNcEolQizxcJ3cg=",
+      "Fingerprint": "5giibfl0v3",
+      "Integrity": "G/tBjPVkzlH/5qiagp9uUWqkOOYwwiXr9GPx0FXh2N4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
@@ -1885,7 +1906,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 19:30:00 GMT"
+          "Value": "Sat, 03 May 2025 15:32:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1922,7 +1943,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 19:30:00 GMT"
+          "Value": "Sat, 03 May 2025 15:32:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1967,7 +1988,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 19:30:00 GMT"
+          "Value": "Sat, 03 May 2025 15:32:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2012,7 +2033,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 19:30:00 GMT"
+          "Value": "Sat, 03 May 2025 15:32:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3831,6 +3852,88 @@
       ]
     },
     {
+      "Route": "Home.24ck87xigz.razor",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\Home.razor",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29932"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Uo6j7UGvdG8YEE8owqjItfEK/aE+SDiJtdlAkGPspm8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 15:32:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "24ck87xigz"
+        },
+        {
+          "Name": "label",
+          "Value": "Home.razor"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Uo6j7UGvdG8YEE8owqjItfEK/aE+SDiJtdlAkGPspm8="
+        }
+      ]
+    },
+    {
+      "Route": "Home.razor",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\Home.razor",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29932"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Uo6j7UGvdG8YEE8owqjItfEK/aE+SDiJtdlAkGPspm8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 15:32:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Uo6j7UGvdG8YEE8owqjItfEK/aE+SDiJtdlAkGPspm8="
+        }
+      ]
+    },
+    {
       "Route": "imaginase.i341v86h0q.png",
       "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\imaginase.png",
       "Selectors": [],
@@ -3913,6 +4016,51 @@
       ]
     },
     {
+      "Route": "index.5giibfl0v3.html",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1145"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G/tBjPVkzlH/5qiagp9uUWqkOOYwwiXr9GPx0FXh2N4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 19:50:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5giibfl0v3"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-G/tBjPVkzlH/5qiagp9uUWqkOOYwwiXr9GPx0FXh2N4="
+        }
+      ]
+    },
+    {
       "Route": "index.html",
       "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\index.html",
       "Selectors": [],
@@ -3923,7 +4071,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "513"
+          "Value": "1145"
         },
         {
           "Name": "Content-Type",
@@ -3931,11 +4079,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IaBc08gYvGXNiS5RRwmsNuNuj1rMbNcEolQizxcJ3cg=\""
+          "Value": "\"G/tBjPVkzlH/5qiagp9uUWqkOOYwwiXr9GPx0FXh2N4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 19:18:37 GMT"
+          "Value": "Sat, 26 Apr 2025 19:50:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3945,52 +4093,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IaBc08gYvGXNiS5RRwmsNuNuj1rMbNcEolQizxcJ3cg="
-        }
-      ]
-    },
-    {
-      "Route": "index.nq6jfyweut.html",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\index.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "513"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IaBc08gYvGXNiS5RRwmsNuNuj1rMbNcEolQizxcJ3cg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 19:18:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "nq6jfyweut"
-        },
-        {
-          "Name": "label",
-          "Value": "index.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-IaBc08gYvGXNiS5RRwmsNuNuj1rMbNcEolQizxcJ3cg="
+          "Value": "sha256-G/tBjPVkzlH/5qiagp9uUWqkOOYwwiXr9GPx0FXh2N4="
         }
       ]
     },

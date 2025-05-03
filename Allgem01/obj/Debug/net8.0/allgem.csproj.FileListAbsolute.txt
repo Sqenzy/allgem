@@ -11,11 +11,13 @@ C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\allgem.pdb
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\EntityFramework.SqlServer.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\EntityFramework.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\Humanizer.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\MailKit.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\Microsoft.Data.Sqlite.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
@@ -23,6 +25,7 @@ C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\Microsoft.JSInterop.Web
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\MimeKit.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\RestSharp.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net8.0\SQLitePCLRaw.core.dll
