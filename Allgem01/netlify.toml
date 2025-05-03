@@ -4,7 +4,7 @@
 
 [[redirects]]
   from = "/"
-  to = "/Home.razor"
+  to = "/"
   status = 200
 
 [[headers]]
