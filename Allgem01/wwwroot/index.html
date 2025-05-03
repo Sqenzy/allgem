@@ -21,7 +21,7 @@
                     clearInterval(checkBlazorReady);
                     // Navigovat na Home.razor
                     setTimeout(function () {
-                        window.location.href = '';
+                        window.location.href = '/';
                     }, 200);
                 }
             }, 100);
@@ -29,3 +29,14 @@
     </script>
 </body>
 </html>
+
+@inject NavigationManager NavigationManager
+
+<button class="btn btn-primary" @onclick="NavigateToHome">Go to Home</button>
+
+@code {
+    private void NavigateToHome()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+}
