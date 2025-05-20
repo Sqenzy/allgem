@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "beI+Er0yRFnXsQ4IvEiD6ImRd2MrZTK7FuOTDDWI23g=",
+  "Hash": "dkbzkCLBZDp416bjd2sXm0S6YBvbng3xR3Q1RZpt1X0=",
   "Source": "allgem",
   "BasePath": "_content/allgem",
   "Mode": "Default",
@@ -563,27 +563,6 @@
       "OriginalItemSpec": "wwwroot\\gshootimg.png"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\Home.razor",
-      "SourceId": "allgem",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
-      "BasePath": "_content/allgem",
-      "RelativePath": "Home#[.{fingerprint}]?.razor",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "24ck87xigz",
-      "Integrity": "Uo6j7UGvdG8YEE8owqjItfEK/aE+SDiJtdlAkGPspm8=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Home.razor"
-    },
-    {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\imaginase.png",
       "SourceId": "allgem",
       "SourceType": "Discovered",
@@ -603,27 +582,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imaginase.png"
-    },
-    {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\index.html",
-      "SourceId": "allgem",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
-      "BasePath": "_content/allgem",
-      "RelativePath": "index#[.{fingerprint}]?.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "5giibfl0v3",
-      "Integrity": "G/tBjPVkzlH/5qiagp9uUWqkOOYwwiXr9GPx0FXh2N4=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
@@ -3852,88 +3810,6 @@
       ]
     },
     {
-      "Route": "Home.24ck87xigz.razor",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\Home.razor",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "29932"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Uo6j7UGvdG8YEE8owqjItfEK/aE+SDiJtdlAkGPspm8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 03 May 2025 15:32:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "24ck87xigz"
-        },
-        {
-          "Name": "label",
-          "Value": "Home.razor"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Uo6j7UGvdG8YEE8owqjItfEK/aE+SDiJtdlAkGPspm8="
-        }
-      ]
-    },
-    {
-      "Route": "Home.razor",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\Home.razor",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "29932"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Uo6j7UGvdG8YEE8owqjItfEK/aE+SDiJtdlAkGPspm8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 03 May 2025 15:32:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Uo6j7UGvdG8YEE8owqjItfEK/aE+SDiJtdlAkGPspm8="
-        }
-      ]
-    },
-    {
       "Route": "imaginase.i341v86h0q.png",
       "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\imaginase.png",
       "Selectors": [],
@@ -4012,88 +3888,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-AvZ6fNybUFS3bAkU3sbssty7pcr43I3+qwz77tFOY9s="
-        }
-      ]
-    },
-    {
-      "Route": "index.5giibfl0v3.html",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\index.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1145"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"G/tBjPVkzlH/5qiagp9uUWqkOOYwwiXr9GPx0FXh2N4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 19:50:03 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5giibfl0v3"
-        },
-        {
-          "Name": "label",
-          "Value": "index.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-G/tBjPVkzlH/5qiagp9uUWqkOOYwwiXr9GPx0FXh2N4="
-        }
-      ]
-    },
-    {
-      "Route": "index.html",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\index.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1145"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"G/tBjPVkzlH/5qiagp9uUWqkOOYwwiXr9GPx0FXh2N4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 19:50:03 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-G/tBjPVkzlH/5qiagp9uUWqkOOYwwiXr9GPx0FXh2N4="
         }
       ]
     },

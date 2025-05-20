@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets\\allgem.ety7px0e0j.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\Home.razor",
-      "PackagePath": "staticwebassets\\Home.razor"
-    },
-    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\acc.png",
       "PackagePath": "staticwebassets\\acc.png"
     },
@@ -107,10 +103,6 @@
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\imaginase.png",
       "PackagePath": "staticwebassets\\imaginase.png"
-    },
-    {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\index.html",
-      "PackagePath": "staticwebassets\\index.html"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
