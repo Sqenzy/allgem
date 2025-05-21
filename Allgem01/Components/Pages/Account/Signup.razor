@@ -256,6 +256,7 @@ private void putintodb()
     if (genNumber == code)
     {
         repository.SignUp(email, password);
+        repository.AddRankToUser(email, "Bronze");
         NavigationManager.NavigateTo("/login");
     }
     else if (genNumber != code)
