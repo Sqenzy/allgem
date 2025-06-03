@@ -196,8 +196,15 @@ C:\Users\janlu\allgem\Allgem01\obj\Debug\net9.0\refint\Allgem01.dll
 C:\Users\janlu\allgem\Allgem01\obj\Debug\net9.0\Allgem01.pdb
 C:\Users\janlu\allgem\Allgem01\obj\Debug\net9.0\Allgem01.genruntimeconfig.cache
 C:\Users\janlu\allgem\Allgem01\obj\Debug\net9.0\ref\Allgem01.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\publish\web.config
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\appsettings.json
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\publish\Allgem01.deps.json
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\publish\Allgem01.runtimeconfig.json
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\publish\Allgem01.staticwebassets.endpoints.json
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\publish\appsettings.Development.json
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\publish\appsettings.json
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\publish\wwwroot\vercel.json
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Allgem01.staticwebassets.runtime.json
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Allgem01.staticwebassets.endpoints.json
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Allgem01.exe

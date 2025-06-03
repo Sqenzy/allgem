@@ -1,7 +1,6 @@
-﻿@using Allgem01.Logic
-@using Microsoft.AspNetCore.Components.Routing // Import the namespace for RouteView
-@using Microsoft.AspNetCore.Components.Web // Add this for HeadOutlet
-@using Allgem01.Components.Layout // Ensure the namespace for MainLayout is correct
+﻿﻿@using Allgem01.Logic
+@using Microsoft.AspNetCore.Components.Routing
+@using Allgem01.Components.Layout
 @inject Repository repository
 @layout MainLayout
 @namespace Allgem01.Components
@@ -21,15 +20,12 @@
 </head>
 
 <body>
-    <Router AppAssembly="@typeof(Program).Assembly">
-        <Found Context="routeData">
-            <RouteView RouteData="routeData" DefaultLayout="@typeof(MainLayout)" />
-            <FocusOnNavigate RouteData="routeData" Selector="h1" />
-        </Found>
-        <NotFound>
-            <h1>Page not found</h1>
-        </NotFound>
-    </Router>
+<Router AppAssembly="@typeof(App).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(Allgem01.Components.Layout.MainLayout)" />
+        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+    </Found>
+</Router>
     <script src="_framework/blazor.web.js"></script>
     <script>
         window.methods = {

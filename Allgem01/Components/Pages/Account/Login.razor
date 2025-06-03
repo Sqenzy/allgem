@@ -180,11 +180,12 @@
 
         if (repository.Login(email, password))
         {
-            CreateCookie("allgem_email", email, 30);
-            CreateCookie("allgem_auth", "isli", 30);
+            CreateCookie("allgem_email", email, 2592000);
+            CreateCookie("allgem_auth", "isli", 2592000);
+            CreateCookie("allgem_rank", repository.rank, 2592000);
             if (repository.hasPremium)
             {
-                CreateCookie("allgem_premium", "hsp", 30);
+                CreateCookie("allgem_premium", "hsp", 2592000);
                 NavigationManager.NavigateTo("/");
             }
             else

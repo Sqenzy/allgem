@@ -1010,7 +1010,7 @@ body {
     private string? CookieValueRank;
     private string? CookieValueEmail;
     private bool profile = false;
-    private string rankimg;
+    private string rankimg = "/bronze.png";
 
     private void Profile()
     {
@@ -1103,7 +1103,7 @@ body {
                 CookieValueRank = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_rank");
                 if (CookieValueRank != repository.rank)
                 {
-                    CreateCookie("allgem_rank", repository.rank, 30);
+                    CreateCookie("allgem_rank", repository.rank, 2592000); // 30 days in seconds
                 }
             }
 
