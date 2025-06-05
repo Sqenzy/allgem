@@ -100,7 +100,7 @@
 <section class="gamessection">
     <div class="cards">
         <button class="card" id="card1" @onclick="Graph">
-            <p class="tip">Test Game</p>
+            <p class="tip">Upcoming Game</p>
             <p class="second-text"></p>
         </button>
         <button class="card" id="card2" @onclick="playGameSecurityIDM">
@@ -108,7 +108,7 @@
             <p class="second-text"></p>
         </button>
         <button class="card" id="card3" @onclick="playGameShooting">
-            <p class="tip">Shooting</p>
+            <p class="tip">Upcoming Game</p>
             <p class="second-text"></p>
         </button>
     </div>
@@ -792,7 +792,7 @@ body {
           nav{
             margin-left: clamp(20px, 58vw, 80vw);
             flex-direction: column;
-            margin-top: -24px;
+            margin-top: -40px;
             gap: 10px;
           }
           .profile{
@@ -837,6 +837,10 @@ body {
             color: #fff;
           }
 
+          .rankal{
+            margin-top: -47px;
+            margin-left: 195px;
+          }
 
 @@media (max-width: 1774px) {
     .premium{
@@ -1031,12 +1035,12 @@ body {
 
     private void Graph()
     {
-       NavigationManager.NavigateTo("/graph");
+       //NavigationManager.NavigateTo("/graph");
     }
 
     private void playGameShooting()
     {
-        NavigationManager.NavigateTo("/shooting/play");
+        //NavigationManager.NavigateTo("/shooting/play");
     }
     private void accountFf()
     {

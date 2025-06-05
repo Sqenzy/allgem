@@ -43,7 +43,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Jun 2025 20:04:37 GMT"
+          "Value": "Thu, 05 Jun 2025 11:09:20 GMT"
         },
         {
           "Name": "Vary",
@@ -92,7 +92,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Jun 2025 20:04:37 GMT"
+          "Value": "Thu, 05 Jun 2025 11:09:20 GMT"
         }
       ],
       "EndpointProperties": [
@@ -141,7 +141,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Jun 2025 20:04:37 GMT"
+          "Value": "Thu, 05 Jun 2025 11:09:20 GMT"
         },
         {
           "Name": "Vary",
@@ -204,7 +204,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Jun 2025 20:04:37 GMT"
+          "Value": "Thu, 05 Jun 2025 11:09:20 GMT"
         },
         {
           "Name": "Vary",
@@ -245,7 +245,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Jun 2025 20:04:37 GMT"
+          "Value": "Thu, 05 Jun 2025 11:09:20 GMT"
         }
       ],
       "EndpointProperties": [
@@ -286,7 +286,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Jun 2025 20:04:37 GMT"
+          "Value": "Thu, 05 Jun 2025 11:09:20 GMT"
         },
         {
           "Name": "Vary",
@@ -1337,53 +1337,8 @@
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.5ejy0vax70.data",
-      "AssetFile": "fpsgame/Build/fps game.data",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "36052632"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rVJGpU5D68gV/hOmXQhcw02uDT2yjiZ7dUcWxd93zMk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:47:55 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5ejy0vax70"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-rVJGpU5D68gV/hOmXQhcw02uDT2yjiZ7dUcWxd93zMk="
-        },
-        {
-          "Name": "label",
-          "Value": "fpsgame/Build/fps game.data"
-        }
-      ]
-    },
-    {
-      "Route": "fpsgame/Build/fps game.data",
-      "AssetFile": "fpsgame/Build/fps game.data",
+      "Route": "fpsgame/Build/fps game 2.data",
+      "AssetFile": "fpsgame/Build/fps game 2.data",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1396,7 +1351,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "36052632"
+          "Value": "35980209"
         },
         {
           "Name": "Content-Type",
@@ -1404,23 +1359,23 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rVJGpU5D68gV/hOmXQhcw02uDT2yjiZ7dUcWxd93zMk=\""
+          "Value": "\"26jk6FrEpXyOilWegYUNIf59zQIYpXmxY3l5yPq3PaM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:47:55 GMT"
+          "Value": "Thu, 05 Jun 2025 09:29:35 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-rVJGpU5D68gV/hOmXQhcw02uDT2yjiZ7dUcWxd93zMk="
+          "Value": "sha256-26jk6FrEpXyOilWegYUNIf59zQIYpXmxY3l5yPq3PaM="
         }
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.framework.js",
-      "AssetFile": "fpsgame/Build/fps game.framework.js.gz",
+      "Route": "fpsgame/Build/fps game 2.framework.js",
+      "AssetFile": "fpsgame/Build/fps game 2.framework.js.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1459,7 +1414,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:52:15 GMT"
+          "Value": "Thu, 05 Jun 2025 09:33:34 GMT"
         },
         {
           "Name": "Vary",
@@ -1474,8 +1429,8 @@
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.framework.js",
-      "AssetFile": "fpsgame/Build/fps game.framework.js",
+      "Route": "fpsgame/Build/fps game 2.framework.js",
+      "AssetFile": "fpsgame/Build/fps game 2.framework.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1500,7 +1455,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:52:15 GMT"
+          "Value": "Thu, 05 Jun 2025 09:33:34 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1511,8 +1466,8 @@
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.framework.js.gz",
-      "AssetFile": "fpsgame/Build/fps game.framework.js.gz",
+      "Route": "fpsgame/Build/fps game 2.framework.js.gz",
+      "AssetFile": "fpsgame/Build/fps game 2.framework.js.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1541,7 +1496,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:52:15 GMT"
+          "Value": "Thu, 05 Jun 2025 09:33:34 GMT"
         },
         {
           "Name": "Vary",
@@ -1556,8 +1511,8 @@
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.framework.qq8dz680mq.js",
-      "AssetFile": "fpsgame/Build/fps game.framework.js.gz",
+      "Route": "fpsgame/Build/fps game 2.framework.qq8dz680mq.js",
+      "AssetFile": "fpsgame/Build/fps game 2.framework.js.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1596,7 +1551,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:52:15 GMT"
+          "Value": "Thu, 05 Jun 2025 09:33:34 GMT"
         },
         {
           "Name": "Vary",
@@ -1614,13 +1569,13 @@
         },
         {
           "Name": "label",
-          "Value": "fpsgame/Build/fps game.framework.js"
+          "Value": "fpsgame/Build/fps game 2.framework.js"
         }
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.framework.qq8dz680mq.js",
-      "AssetFile": "fpsgame/Build/fps game.framework.js",
+      "Route": "fpsgame/Build/fps game 2.framework.qq8dz680mq.js",
+      "AssetFile": "fpsgame/Build/fps game 2.framework.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1645,7 +1600,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:52:15 GMT"
+          "Value": "Thu, 05 Jun 2025 09:33:34 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1659,13 +1614,13 @@
         },
         {
           "Name": "label",
-          "Value": "fpsgame/Build/fps game.framework.js"
+          "Value": "fpsgame/Build/fps game 2.framework.js"
         }
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.framework.qq8dz680mq.js.gz",
-      "AssetFile": "fpsgame/Build/fps game.framework.js.gz",
+      "Route": "fpsgame/Build/fps game 2.framework.qq8dz680mq.js.gz",
+      "AssetFile": "fpsgame/Build/fps game 2.framework.js.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1694,7 +1649,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:52:15 GMT"
+          "Value": "Thu, 05 Jun 2025 09:33:34 GMT"
         },
         {
           "Name": "Vary",
@@ -1712,13 +1667,13 @@
         },
         {
           "Name": "label",
-          "Value": "fpsgame/Build/fps game.framework.js.gz"
+          "Value": "fpsgame/Build/fps game 2.framework.js.gz"
         }
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.loader.js",
-      "AssetFile": "fpsgame/Build/fps game.loader.js.gz",
+      "Route": "fpsgame/Build/fps game 2.loader.js",
+      "AssetFile": "fpsgame/Build/fps game 2.loader.js.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1757,7 +1712,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:19 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:15 GMT"
         },
         {
           "Name": "Vary",
@@ -1772,8 +1727,8 @@
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.loader.js",
-      "AssetFile": "fpsgame/Build/fps game.loader.js",
+      "Route": "fpsgame/Build/fps game 2.loader.js",
+      "AssetFile": "fpsgame/Build/fps game 2.loader.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1798,7 +1753,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:19 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:15 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1809,8 +1764,8 @@
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.loader.js.gz",
-      "AssetFile": "fpsgame/Build/fps game.loader.js.gz",
+      "Route": "fpsgame/Build/fps game 2.loader.js.gz",
+      "AssetFile": "fpsgame/Build/fps game 2.loader.js.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1839,7 +1794,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:19 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:15 GMT"
         },
         {
           "Name": "Vary",
@@ -1854,8 +1809,8 @@
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.loader.y2lra6d6kf.js",
-      "AssetFile": "fpsgame/Build/fps game.loader.js.gz",
+      "Route": "fpsgame/Build/fps game 2.loader.y2lra6d6kf.js",
+      "AssetFile": "fpsgame/Build/fps game 2.loader.js.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1894,7 +1849,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:19 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:15 GMT"
         },
         {
           "Name": "Vary",
@@ -1912,13 +1867,13 @@
         },
         {
           "Name": "label",
-          "Value": "fpsgame/Build/fps game.loader.js"
+          "Value": "fpsgame/Build/fps game 2.loader.js"
         }
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.loader.y2lra6d6kf.js",
-      "AssetFile": "fpsgame/Build/fps game.loader.js",
+      "Route": "fpsgame/Build/fps game 2.loader.y2lra6d6kf.js",
+      "AssetFile": "fpsgame/Build/fps game 2.loader.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1943,7 +1898,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:19 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:15 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1957,13 +1912,13 @@
         },
         {
           "Name": "label",
-          "Value": "fpsgame/Build/fps game.loader.js"
+          "Value": "fpsgame/Build/fps game 2.loader.js"
         }
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.loader.y2lra6d6kf.js.gz",
-      "AssetFile": "fpsgame/Build/fps game.loader.js.gz",
+      "Route": "fpsgame/Build/fps game 2.loader.y2lra6d6kf.js.gz",
+      "AssetFile": "fpsgame/Build/fps game 2.loader.js.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1992,7 +1947,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:19 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:15 GMT"
         },
         {
           "Name": "Vary",
@@ -2010,13 +1965,13 @@
         },
         {
           "Name": "label",
-          "Value": "fpsgame/Build/fps game.loader.js.gz"
+          "Value": "fpsgame/Build/fps game 2.loader.js.gz"
         }
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.q2vcmq571s.wasm",
-      "AssetFile": "fpsgame/Build/fps game.wasm.gz",
+      "Route": "fpsgame/Build/fps game 2.q2vcmq571s.wasm",
+      "AssetFile": "fpsgame/Build/fps game 2.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2055,7 +2010,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:52:14 GMT"
+          "Value": "Thu, 05 Jun 2025 09:33:33 GMT"
         },
         {
           "Name": "Vary",
@@ -2073,13 +2028,13 @@
         },
         {
           "Name": "label",
-          "Value": "fpsgame/Build/fps game.wasm"
+          "Value": "fpsgame/Build/fps game 2.wasm"
         }
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.q2vcmq571s.wasm",
-      "AssetFile": "fpsgame/Build/fps game.wasm",
+      "Route": "fpsgame/Build/fps game 2.q2vcmq571s.wasm",
+      "AssetFile": "fpsgame/Build/fps game 2.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2104,7 +2059,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:52:14 GMT"
+          "Value": "Thu, 05 Jun 2025 09:33:33 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2118,13 +2073,13 @@
         },
         {
           "Name": "label",
-          "Value": "fpsgame/Build/fps game.wasm"
+          "Value": "fpsgame/Build/fps game 2.wasm"
         }
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.q2vcmq571s.wasm.gz",
-      "AssetFile": "fpsgame/Build/fps game.wasm.gz",
+      "Route": "fpsgame/Build/fps game 2.q2vcmq571s.wasm.gz",
+      "AssetFile": "fpsgame/Build/fps game 2.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2153,7 +2108,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:52:14 GMT"
+          "Value": "Thu, 05 Jun 2025 09:33:33 GMT"
         },
         {
           "Name": "Vary",
@@ -2171,13 +2126,13 @@
         },
         {
           "Name": "label",
-          "Value": "fpsgame/Build/fps game.wasm.gz"
+          "Value": "fpsgame/Build/fps game 2.wasm.gz"
         }
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.wasm",
-      "AssetFile": "fpsgame/Build/fps game.wasm.gz",
+      "Route": "fpsgame/Build/fps game 2.wasm",
+      "AssetFile": "fpsgame/Build/fps game 2.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2216,7 +2171,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:52:14 GMT"
+          "Value": "Thu, 05 Jun 2025 09:33:33 GMT"
         },
         {
           "Name": "Vary",
@@ -2231,8 +2186,8 @@
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.wasm",
-      "AssetFile": "fpsgame/Build/fps game.wasm",
+      "Route": "fpsgame/Build/fps game 2.wasm",
+      "AssetFile": "fpsgame/Build/fps game 2.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2257,7 +2212,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:52:14 GMT"
+          "Value": "Thu, 05 Jun 2025 09:33:33 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2268,8 +2223,8 @@
       ]
     },
     {
-      "Route": "fpsgame/Build/fps game.wasm.gz",
-      "AssetFile": "fpsgame/Build/fps game.wasm.gz",
+      "Route": "fpsgame/Build/fps game 2.wasm.gz",
+      "AssetFile": "fpsgame/Build/fps game 2.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2298,7 +2253,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:52:14 GMT"
+          "Value": "Thu, 05 Jun 2025 09:33:33 GMT"
         },
         {
           "Name": "Vary",
@@ -2309,6 +2264,51 @@
         {
           "Name": "integrity",
           "Value": "sha256-vxmG8+uFfcUZqNW2WdVgMcMBm82/PDswcrmT3rSzCZA="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/Build/fps game 2.xp0yfcknus.data",
+      "AssetFile": "fpsgame/Build/fps game 2.data",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35980209"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"26jk6FrEpXyOilWegYUNIf59zQIYpXmxY3l5yPq3PaM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Jun 2025 09:29:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xp0yfcknus"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-26jk6FrEpXyOilWegYUNIf59zQIYpXmxY3l5yPq3PaM="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/Build/fps game 2.data"
         }
       ]
     },
@@ -2339,7 +2339,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2384,7 +2384,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2395,174 +2395,13 @@
       ]
     },
     {
-      "Route": "fpsgame/TemplateData/favicon.70xlt0pfqo.ico",
-      "AssetFile": "fpsgame/TemplateData/favicon.ico.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000459981601"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2173"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/x-icon"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 20:06:55 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "70xlt0pfqo"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU="
-        },
-        {
-          "Name": "label",
-          "Value": "fpsgame/TemplateData/favicon.ico"
-        }
-      ]
-    },
-    {
-      "Route": "fpsgame/TemplateData/favicon.70xlt0pfqo.ico",
-      "AssetFile": "fpsgame/TemplateData/favicon.ico",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4286"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/x-icon"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 20:06:55 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "70xlt0pfqo"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU="
-        },
-        {
-          "Name": "label",
-          "Value": "fpsgame/TemplateData/favicon.ico"
-        }
-      ]
-    },
-    {
-      "Route": "fpsgame/TemplateData/favicon.70xlt0pfqo.ico.gz",
-      "AssetFile": "fpsgame/TemplateData/favicon.ico.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2173"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/x-icon"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 20:06:55 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "70xlt0pfqo"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE="
-        },
-        {
-          "Name": "label",
-          "Value": "fpsgame/TemplateData/favicon.ico.gz"
-        }
-      ]
-    },
-    {
       "Route": "fpsgame/TemplateData/favicon.ico",
       "AssetFile": "fpsgame/TemplateData/favicon.ico.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000459981601"
+          "Quality": "0.000435919791"
         }
       ],
       "ResponseHeaders": [
@@ -2580,7 +2419,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2173"
+          "Value": "2293"
         },
         {
           "Name": "Content-Type",
@@ -2588,15 +2427,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE=\""
+          "Value": "\"zDaXcqtHwtJSJaPE0ZkWw8t6F7QOncEmSXcPY8q2cgc=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU=\""
+          "Value": "W/\"nBO+uQ7o9wWA1Soh1SM5cNHInnHko0pGLCJhCUHDx38=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 20:06:55 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         },
         {
           "Name": "Vary",
@@ -2606,7 +2445,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU="
+          "Value": "sha256-nBO+uQ7o9wWA1Soh1SM5cNHInnHko0pGLCJhCUHDx38="
         }
       ]
     },
@@ -2625,7 +2464,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4286"
+          "Value": "2305"
         },
         {
           "Name": "Content-Type",
@@ -2633,17 +2472,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU=\""
+          "Value": "\"nBO+uQ7o9wWA1Soh1SM5cNHInnHko0pGLCJhCUHDx38=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 20:06:55 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU="
+          "Value": "sha256-nBO+uQ7o9wWA1Soh1SM5cNHInnHko0pGLCJhCUHDx38="
         }
       ]
     },
@@ -2666,7 +2505,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2173"
+          "Value": "2293"
         },
         {
           "Name": "Content-Type",
@@ -2674,11 +2513,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE=\""
+          "Value": "\"zDaXcqtHwtJSJaPE0ZkWw8t6F7QOncEmSXcPY8q2cgc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 20:06:55 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         },
         {
           "Name": "Vary",
@@ -2688,7 +2527,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BlfJUjznpeWUAWi7D3i9siCfOx82o4ecO7wrP7ZXlrE="
+          "Value": "sha256-zDaXcqtHwtJSJaPE0ZkWw8t6F7QOncEmSXcPY8q2cgc="
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/favicon.sae86n3l19.ico",
+      "AssetFile": "fpsgame/TemplateData/favicon.ico.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000435919791"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zDaXcqtHwtJSJaPE0ZkWw8t6F7QOncEmSXcPY8q2cgc=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"nBO+uQ7o9wWA1Soh1SM5cNHInnHko0pGLCJhCUHDx38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sae86n3l19"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nBO+uQ7o9wWA1Soh1SM5cNHInnHko0pGLCJhCUHDx38="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/favicon.ico"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/favicon.sae86n3l19.ico",
+      "AssetFile": "fpsgame/TemplateData/favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nBO+uQ7o9wWA1Soh1SM5cNHInnHko0pGLCJhCUHDx38=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sae86n3l19"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nBO+uQ7o9wWA1Soh1SM5cNHInnHko0pGLCJhCUHDx38="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/favicon.ico"
+        }
+      ]
+    },
+    {
+      "Route": "fpsgame/TemplateData/favicon.sae86n3l19.ico.gz",
+      "AssetFile": "fpsgame/TemplateData/favicon.ico.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zDaXcqtHwtJSJaPE0ZkWw8t6F7QOncEmSXcPY8q2cgc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sae86n3l19"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zDaXcqtHwtJSJaPE0ZkWw8t6F7QOncEmSXcPY8q2cgc="
+        },
+        {
+          "Name": "label",
+          "Value": "fpsgame/TemplateData/favicon.ico.gz"
         }
       ]
     },
@@ -2733,7 +2733,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         },
         {
           "Name": "Vary",
@@ -2782,7 +2782,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2831,7 +2831,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         },
         {
           "Name": "Vary",
@@ -2894,7 +2894,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         },
         {
           "Name": "Vary",
@@ -2935,7 +2935,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2976,7 +2976,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         },
         {
           "Name": "Vary",
@@ -3017,7 +3017,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         }
       ],
       "EndpointProperties": [
@@ -3054,7 +3054,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         }
       ],
       "EndpointProperties": [
@@ -3113,7 +3113,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:18 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         },
         {
           "Name": "Vary",
@@ -3154,7 +3154,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:18 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         }
       ],
       "EndpointProperties": [
@@ -3195,7 +3195,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:18 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         },
         {
           "Name": "Vary",
@@ -3250,7 +3250,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:18 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         },
         {
           "Name": "Vary",
@@ -3299,7 +3299,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:18 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         }
       ],
       "EndpointProperties": [
@@ -3348,7 +3348,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:18 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         },
         {
           "Name": "Vary",
@@ -3397,7 +3397,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         }
       ],
       "EndpointProperties": [
@@ -3442,7 +3442,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 15:45:17 GMT"
+          "Value": "Thu, 05 Jun 2025 09:27:14 GMT"
         }
       ],
       "EndpointProperties": [
@@ -3453,13 +3453,13 @@
       ]
     },
     {
-      "Route": "fpsgame/fpsgame.25gtzapajp.html",
+      "Route": "fpsgame/fpsgame.0wy2v4zo79.html",
       "AssetFile": "fpsgame/fpsgame.html.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000545553737"
+          "Quality": "0.000544959128"
         }
       ],
       "ResponseHeaders": [
@@ -3477,7 +3477,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1832"
+          "Value": "1834"
         },
         {
           "Name": "Content-Type",
@@ -3485,15 +3485,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps=\""
+          "Value": "\"0SxMw0F6/ZbInYhssezwHDtYJaCIEYOQ7Z23p7XW5YI=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM=\""
+          "Value": "W/\"4KPY/5LslkGFwyPQ5LlR+gbLNfIfff3abMK98HkNT64=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 16:57:49 GMT"
+          "Value": "Thu, 05 Jun 2025 11:09:08 GMT"
         },
         {
           "Name": "Vary",
@@ -3503,11 +3503,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "25gtzapajp"
+          "Value": "0wy2v4zo79"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM="
+          "Value": "sha256-4KPY/5LslkGFwyPQ5LlR+gbLNfIfff3abMK98HkNT64="
         },
         {
           "Name": "label",
@@ -3516,7 +3516,7 @@
       ]
     },
     {
-      "Route": "fpsgame/fpsgame.25gtzapajp.html",
+      "Route": "fpsgame/fpsgame.0wy2v4zo79.html",
       "AssetFile": "fpsgame/fpsgame.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3530,7 +3530,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4511"
+          "Value": "4519"
         },
         {
           "Name": "Content-Type",
@@ -3538,21 +3538,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM=\""
+          "Value": "\"4KPY/5LslkGFwyPQ5LlR+gbLNfIfff3abMK98HkNT64=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 16:57:49 GMT"
+          "Value": "Thu, 05 Jun 2025 11:09:08 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "25gtzapajp"
+          "Value": "0wy2v4zo79"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM="
+          "Value": "sha256-4KPY/5LslkGFwyPQ5LlR+gbLNfIfff3abMK98HkNT64="
         },
         {
           "Name": "label",
@@ -3561,7 +3561,7 @@
       ]
     },
     {
-      "Route": "fpsgame/fpsgame.25gtzapajp.html.gz",
+      "Route": "fpsgame/fpsgame.0wy2v4zo79.html.gz",
       "AssetFile": "fpsgame/fpsgame.html.gz",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3579,7 +3579,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1832"
+          "Value": "1834"
         },
         {
           "Name": "Content-Type",
@@ -3587,11 +3587,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps=\""
+          "Value": "\"0SxMw0F6/ZbInYhssezwHDtYJaCIEYOQ7Z23p7XW5YI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 16:57:49 GMT"
+          "Value": "Thu, 05 Jun 2025 11:09:08 GMT"
         },
         {
           "Name": "Vary",
@@ -3601,11 +3601,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "25gtzapajp"
+          "Value": "0wy2v4zo79"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps="
+          "Value": "sha256-0SxMw0F6/ZbInYhssezwHDtYJaCIEYOQ7Z23p7XW5YI="
         },
         {
           "Name": "label",
@@ -3620,7 +3620,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000545553737"
+          "Quality": "0.000544959128"
         }
       ],
       "ResponseHeaders": [
@@ -3638,7 +3638,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1832"
+          "Value": "1834"
         },
         {
           "Name": "Content-Type",
@@ -3646,15 +3646,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps=\""
+          "Value": "\"0SxMw0F6/ZbInYhssezwHDtYJaCIEYOQ7Z23p7XW5YI=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM=\""
+          "Value": "W/\"4KPY/5LslkGFwyPQ5LlR+gbLNfIfff3abMK98HkNT64=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 16:57:49 GMT"
+          "Value": "Thu, 05 Jun 2025 11:09:08 GMT"
         },
         {
           "Name": "Vary",
@@ -3664,7 +3664,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM="
+          "Value": "sha256-4KPY/5LslkGFwyPQ5LlR+gbLNfIfff3abMK98HkNT64="
         }
       ]
     },
@@ -3683,7 +3683,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4511"
+          "Value": "4519"
         },
         {
           "Name": "Content-Type",
@@ -3691,17 +3691,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM=\""
+          "Value": "\"4KPY/5LslkGFwyPQ5LlR+gbLNfIfff3abMK98HkNT64=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 16:57:49 GMT"
+          "Value": "Thu, 05 Jun 2025 11:09:08 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM="
+          "Value": "sha256-4KPY/5LslkGFwyPQ5LlR+gbLNfIfff3abMK98HkNT64="
         }
       ]
     },
@@ -3724,7 +3724,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1832"
+          "Value": "1834"
         },
         {
           "Name": "Content-Type",
@@ -3732,11 +3732,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps=\""
+          "Value": "\"0SxMw0F6/ZbInYhssezwHDtYJaCIEYOQ7Z23p7XW5YI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 16:57:49 GMT"
+          "Value": "Thu, 05 Jun 2025 11:09:08 GMT"
         },
         {
           "Name": "Vary",
@@ -3746,7 +3746,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-MaLuPfsoJgHeOKh8PCEmkKJvw8R4upQ4y6JomOJKgps="
+          "Value": "sha256-0SxMw0F6/ZbInYhssezwHDtYJaCIEYOQ7Z23p7XW5YI="
         }
       ]
     },

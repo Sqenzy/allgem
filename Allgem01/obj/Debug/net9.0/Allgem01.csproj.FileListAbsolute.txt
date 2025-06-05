@@ -262,11 +262,11 @@ C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\scopedcss\Components\La
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\scopedcss\bundle\Allgem01.styles.css
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\scopedcss\projectbundle\Allgem01.bundle.scp.css
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\ffw1vtxivu-oanwjjojd9.gz
-C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\5mqc69otte-qq8dz680mq.gz
-C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\nhnanhs0at-y2lra6d6kf.gz
-C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\3hqqf38247-q2vcmq571s.gz
-C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\aanue390kj-25gtzapajp.gz
-C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\yvqldnio6u-70xlt0pfqo.gz
+C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\4tw345e77c-qq8dz680mq.gz
+C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\z30ocuy1z9-y2lra6d6kf.gz
+C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\fuofl958nb-q2vcmq571s.gz
+C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\aanue390kj-0wy2v4zo79.gz
+C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\yvqldnio6u-sae86n3l19.gz
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\58ksr265gp-a6gyt7gnut.gz
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\4z3ozpr39p-hb89wdlb35.gz
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\xhd5kbr89x-t1cqhe9u97.gz

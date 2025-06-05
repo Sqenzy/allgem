@@ -198,30 +198,30 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\Build\fps game.data'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\Build\fps game 2.data'))">
       <SourceType>Package</SourceType>
       <SourceId>Allgem01</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Allgem01</BasePath>
-      <RelativePath>fpsgame/Build/fps game.data</RelativePath>
+      <RelativePath>fpsgame/Build/fps game 2.data</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>5ejy0vax70</Fingerprint>
-      <Integrity>rVJGpU5D68gV/hOmXQhcw02uDT2yjiZ7dUcWxd93zMk=</Integrity>
+      <Fingerprint>xp0yfcknus</Fingerprint>
+      <Integrity>26jk6FrEpXyOilWegYUNIf59zQIYpXmxY3l5yPq3PaM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\Build\fps game.data'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\Build\fps game 2.data'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\Build\fps game.wasm'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\Build\fps game 2.wasm'))">
       <SourceType>Package</SourceType>
       <SourceId>Allgem01</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Allgem01</BasePath>
-      <RelativePath>fpsgame/Build/fps game.wasm</RelativePath>
+      <RelativePath>fpsgame/Build/fps game 2.wasm</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -232,14 +232,14 @@
       <Integrity>rkn+yPB7FDvCl6yetXyPmcPpwWf7ptc0LNvd7TZN7eQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\Build\fps game.wasm'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\Build\fps game 2.wasm'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\Build\fps game.framework.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\Build\fps game 2.framework.js'))">
       <SourceType>Package</SourceType>
       <SourceId>Allgem01</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Allgem01</BasePath>
-      <RelativePath>fpsgame/Build/fps game.framework.js</RelativePath>
+      <RelativePath>fpsgame/Build/fps game 2.framework.js</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -250,14 +250,14 @@
       <Integrity>fjc/6kkhSnGqHciKf7rSBPl3s6wdmKKC6lOzxqTBQzs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\Build\fps game.framework.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\Build\fps game 2.framework.js'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\Build\fps game.loader.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\Build\fps game 2.loader.js'))">
       <SourceType>Package</SourceType>
       <SourceId>Allgem01</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Allgem01</BasePath>
-      <RelativePath>fpsgame/Build/fps game.loader.js</RelativePath>
+      <RelativePath>fpsgame/Build/fps game 2.loader.js</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -268,7 +268,7 @@
       <Integrity>hupiKD5UJiukcdf8z9Gvh373oJ7E0EevvZ3bttMV0Wk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\Build\fps game.loader.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\Build\fps game 2.loader.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\fpsgame.html'))">
       <SourceType>Package</SourceType>
@@ -282,8 +282,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>25gtzapajp</Fingerprint>
-      <Integrity>9nGuNmkPHUlmekkwdWi9haf/VA283hms9q00+E1ZQvM=</Integrity>
+      <Fingerprint>0wy2v4zo79</Fingerprint>
+      <Integrity>4KPY/5LslkGFwyPQ5LlR+gbLNfIfff3abMK98HkNT64=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\fpsgame.html'))</OriginalItemSpec>
@@ -300,8 +300,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>70xlt0pfqo</Fingerprint>
-      <Integrity>qdiQnLQ6V5XXxzk1IyN4JTBWm86KkIWhLe/5E9rnQGU=</Integrity>
+      <Fingerprint>sae86n3l19</Fingerprint>
+      <Integrity>nBO+uQ7o9wWA1Soh1SM5cNHInnHko0pGLCJhCUHDx38=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fpsgame\TemplateData\favicon.ico'))</OriginalItemSpec>

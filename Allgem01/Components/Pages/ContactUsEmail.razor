@@ -72,7 +72,7 @@
 </header>
 
 <section class="downheader"></section>
-
+<section class="bck">
 <section class="lowersection">
     <button class="discordinvite" @onclick="DiscordInvite">
         <img src="discord-icon.png" class="discordicon"></button>
@@ -108,9 +108,12 @@
   <span>Send</span></button>
         </form>
 </section>
+</section>
 
 
 <style>
+
+     
      header {
         background: rgb(10, 13, 20);
         min-width: 98vw;
@@ -932,7 +935,16 @@ body {
         background: rgb(228, 228, 228);
         width: 240px;
     }
+    .bck{
+        background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+        min-height: calc(100vh - 9vh);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
     .lowersection {
+       
+        margin-top: 200px;
         display: flex;
         justify-content: center;
         height: 70px;
