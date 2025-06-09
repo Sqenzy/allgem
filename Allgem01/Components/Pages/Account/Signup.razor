@@ -233,11 +233,38 @@
 
 var client = new SmtpClient("live.smtp.mailtrap.io", 587)
 {
-    Credentials = new NetworkCredential("api", "648356e75b69975053832541c5ff1f49"),
+    Credentials = new NetworkCredential("api", "14dec78b27698f43708d4ba0e60b4846"),
     EnableSsl = true
 };
-client.Send("hello@demomailtrap.co", "petr.prusa36@gmail.com", "Email Verification", generatedNumber.ToString());
+client.Send("Allgem@allgemgames.com", email, "Email Verification", $"Here is your verification code: {generatedNumber.ToString()}");
 System.Console.WriteLine("Sent");
+
+
+
+@* var client = new RestClient("https://send.api.mailtrap.io/api/send");
+var request = new RestRequest();
+request.AddHeader("Authorization", "Bearer <14dec78b27698f43708d4ba0e60b4846>");
+request.AddHeader("Content-Type", "application/json");
+
+var emailBody = new
+{
+    from = new { email = "hello@allgemgames.com", name = "Allgem Games" },
+    to = new[] { new { email = email } },
+    template_uuid = "0705417e-dc41-4d50-85dd-4f44af001ebc",
+    template_variables = new
+    {
+        verification_code = genNumber.ToString(),
+        name = "User",
+        company_info_name = "Allgem Games",
+        company_info_address = "",
+        company_info_city = "",
+        company_info_zip_code = "",
+        company_info_country = ""
+    }
+};
+
+request.AddJsonBody(emailBody);
+var response = client.Post(request); *@
 
 
 }
@@ -267,5 +294,30 @@ private void putintodb()
     {
         JSRuntime.InvokeVoidAsync("alert", "Verification code is incorrect.");
     }
+
+var client = new RestClient("https://send.api.mailtrap.io/api/send");
+var request = new RestRequest();
+request.AddHeader("Authorization", "Bearer 14dec78b27698f43708d4ba0e60b4846");
+request.AddHeader("Content-Type", "application/json");
+
+var emailBody = new
+{
+    from = new { email = "Allgem@allgemgames.com", name = "Allgem Games" },
+    to = new[] { new { email = email } },
+    template_uuid = "0705417e-dc41-4d50-85dd-4f44af001ebc",
+    template_variables = new
+    {
+        verification_code = genNumber.ToString(),
+        name = "User",
+        company_info_name = "Allgem Games",
+        company_info_address = "",
+        company_info_city = "",
+        company_info_zip_code = "",
+        company_info_country = ""
+    }
+};
+
+request.AddJsonBody(emailBody);
+var response = client.Post(request);
 }
 }

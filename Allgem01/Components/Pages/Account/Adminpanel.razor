@@ -1,0 +1,232 @@
+@page "/adminpanel"
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+@using Allgem01.Logic
+@inject Repository repository
+
+@namespace Allgem01.Components.Pages.Account
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+</html>
+
+<!--test-->
+<div>
+    @if (repository.IsLoggedIn)
+    {
+        
+    }
+    else
+    {
+        
+    }
+    @if (repository.hasPremium)
+    {
+
+    }
+    else
+    {
+
+    }
+</div>
+
+<header>
+  @if (repository.IsLoggedIn)
+    {
+      @if (repository.hasPremium)
+      {
+        <input id="1" placeholder="Enter email" type="email" @bind="email">
+        <button @onclick="buyPremium">Buy Premium</button>
+        <select id="2" @bind="repository.rank">
+          <option value="" disabled selected>Select Rank</option>
+          <option value="Bronze">Bronze</option>
+          <option value="Silver">Silver</option>
+          <option value="Gold">Gold</option>
+          <option value="Platinum">Platinum</option>
+          <option value="Diamond">Diamond</option>
+          <option value="Staff">Staff</option>
+          <option value="Dev">Developer</option>
+          <option value="Nigger">Nigger</option>
+        </select>
+        <button @onclick="kkFF">Set Rank</button>
+      }
+      else
+      {
+        
+      }
+    }
+    else
+    {
+        
+    }
+</header>
+
+@code {
+     private string? CookieValue;
+    private string? CookieValue1;
+    private string? CookieValueEmail;
+    private string? CookieValueRank;
+    public string email { get; set; } = string.Empty;
+    private bool profile = false;
+
+
+    private void kkFF()
+    {
+        repository.AddRankToUser(email, repository.rank);
+    }
+
+    public async Task buyPremium()
+    {
+        if (!string.IsNullOrWhiteSpace(email))
+        {
+            repository.AddPremiumToUser(email);
+        }
+        else
+        {
+            await JSRuntime.InvokeVoidAsync("alert", "Please enter your email");
+        }
+    }
+    private void Profile()
+    {
+       if (profile == false)
+       {
+           profile = true;
+       }
+       else
+       {
+           profile = false;
+       }
+    }
+
+     private void MobileProfile()
+    {
+        if (repository.IsLoggedIn)
+        {
+          NavigationManager.NavigateTo("/account");
+        }
+        else
+        {
+          NavigationManager.NavigateTo("/login");
+        }
+    }
+
+    private void Graph()
+    {
+       NavigationManager.NavigateTo("/graph");
+    }
+
+    private void playGameShooting()
+    {
+        NavigationManager.NavigateTo("/shooting/play");
+    }
+    private void accountFf()
+    {
+        NavigationManager.NavigateTo("/account");
+    }
+    private void playGameSecurityIDM()
+    {
+        NavigationManager.NavigateTo("/parkour/play");
+    }
+    private void loginFf()
+    {
+      NavigationManager.NavigateTo("/login");
+    }
+    private void homeFf()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+    private void aboutusFf()
+    {
+        NavigationManager.NavigateTo("/about-us");
+    }
+    private void contactusFf()
+    {
+        NavigationManager.NavigateTo("/contact-us");
+    }
+    private void premiumFf()
+    {
+        NavigationManager.NavigateTo("/premium");
+    }
+    private void rankFf()
+    {
+        NavigationManager.NavigateTo("/account/rank");
+    }
+
+   protected override async Task OnAfterRenderAsync(bool firstRender)
+{
+    if (firstRender)
+    {
+        CookieValueEmail = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_email");
+        // Read the cookie value
+        CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
+        CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
+
+        // Update the authentication state based on the cookie value
+        if (CookieValue == "isli")
+        {
+            repository.SetLoggedIn(true);
+        }
+        else
+        {
+            repository.SetLoggedIn(false);
+            NavigationManager.NavigateTo("/login");
+        }
+
+        if (CookieValue1 == "hsp")
+        {
+            repository.SetHasPremium(true);
+        }
+        else
+        {
+            repository.SetHasPremium(false);
+        }
+
+        if (repository.rank == "Bronze")
+            {
+                CreateCookie("allgem_rank", "Bronze", 30);
+            }
+            else if (repository.rank == "Silver")
+            {
+                CreateCookie("allgem_rank", "Silver", 30);
+            }
+            else if (repository.rank == "Gold")
+            {
+                CreateCookie("allgem_rank", "Gold", 30);
+            }
+            else if (repository.rank == "Platinum")
+            {
+                CreateCookie("allgem_rank", "Platinum", 30);
+            }
+            else if (repository.rank == "Diamond")
+            {
+                CreateCookie("allgem_rank", "Diamond", 30);
+            }
+
+            CookieValueRank = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_rank");
+
+        StateHasChanged();
+    }
+}
+
+    private async Task Logout()
+    {
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_auth");
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_premium");
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_rank");
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_email");
+
+        repository.SetLoggedIn(false);
+        NavigationManager.NavigateTo("/");
+    }
+
+    private async void CreateCookie ( string name, string value, int days ) 
+    { 
+        var test = await JSRuntime.InvokeAsync<string>("methods.CreateCookie", name, value, days); 
+    }
+}

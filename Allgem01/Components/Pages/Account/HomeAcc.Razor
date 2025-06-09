@@ -102,6 +102,11 @@
   <ul><button class="rankbutton" @onclick="rankFf"><img class="rankimg" src="/rank.png" alt="rank">Rank</button></ul>
 
   <ul><button class="premiumbutton">Premium</button></ul>
+
+  @if (repository.rank == "Dev")
+  {
+    <ul><button class="adminbutton" @onclick="AdminFf">Admin Panel</button></ul>
+  }
   
   <ul><button class="logoutbutton" @onclick="Logout">Logout</button></ul> 
   </section>
@@ -214,6 +219,16 @@ else
   .rankbutton{
     margin-top: 225px;
     margin-left: -12.5px;
+    transition: all 0.2s ease-out;
+  }
+  .adminbutton{
+    margin-top: 240px;
+    width: 110px;
+    height: 35px;
+    background: none;
+    color: white;
+    border: none;
+    border-radius: 12px;
     transition: all 0.2s ease-out;
   }
   .rankbutton:hover{
@@ -1051,7 +1066,21 @@ body {
      private string? CookieValue;
     private string? CookieValue1;
     private string? CookieValueEmail;
+    private string? CookieValueRank;
     private bool profile = false;
+
+
+    private void AdminFf()
+    {
+        if (repository.IsLoggedIn && repository.rank == "Dev")
+        {
+            NavigationManager.NavigateTo("/adminpanel");
+        }
+        else
+        {
+            NavigationManager.NavigateTo("/");
+        }
+    }
 
     private void Profile()
     {
@@ -1127,6 +1156,7 @@ body {
         // Read the cookie value
         CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
         CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
+        CookieValueRank = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_rank");
 
         // Update the authentication state based on the cookie value
         if (CookieValue == "isli")
@@ -1157,6 +1187,7 @@ body {
         await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_auth");
         await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_premium");
         await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_rank");
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_email");
 
         repository.SetLoggedIn(false);
         NavigationManager.NavigateTo("/");
