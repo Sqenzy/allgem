@@ -39,10 +39,11 @@
 <header>
   @if (repository.IsLoggedIn)
     {
-      @if (repository.hasPremium)
+      @if (repository.rank == "Dev")
       {
         <input id="1" placeholder="Enter email" type="email" @bind="email">
         <button @onclick="buyPremium">Buy Premium</button>
+        <button @onclick="rmPremium">Remove Premium</button>
         <select id="2" @bind="repository.rank">
           <option value="" disabled selected>Select Rank</option>
           <option value="Bronze">Bronze</option>
@@ -91,6 +92,18 @@
         {
             await JSRuntime.InvokeVoidAsync("alert", "Please enter your email");
         }
+    }
+
+    public async Task rmPremium()
+    {
+        if (!string.IsNullOrWhiteSpace(email))
+        {
+            repository.RemovePremiumFromUser(email);
+        }
+        else
+        {
+            await JSRuntime.InvokeVoidAsync("alert", "Please enter your email");
+        }   
     }
     private void Profile()
     {

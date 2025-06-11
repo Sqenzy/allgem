@@ -129,31 +129,31 @@ public class Repository
         return hashedPassword;
     }
     public void AddPremiumToUser(string email)
-{
-    string sql = """
+    {
+        string sql = """
                  UPDATE users
                  SET hasPremium = 1
                  WHERE email = @Email;
                  """;
 
-    using (var connection = new SQLiteConnection(_connectionString))
-    {
-        connection.Open();
-
-        using (var command = new SQLiteCommand(sql, connection))
+        using (var connection = new SQLiteConnection(_connectionString))
         {
-            command.Parameters.AddWithValue("@Email", email);
-            command.ExecuteNonQuery();
-            hasPremium = true;
+            connection.Open();
+
+            using (var command = new SQLiteCommand(sql, connection))
+            {
+                command.Parameters.AddWithValue("@Email", email);
+                command.ExecuteNonQuery();
+                hasPremium = true;
+            }
         }
     }
-}
 
-public void AddRankToUser(string email, string rank)
+    public void RemovePremiumFromUser(string email)
 {
     string sql = """
                  UPDATE users
-                 SET role = @rank
+                 SET hasPremium = null
                  WHERE email = @Email;
                  """;
 
@@ -164,12 +164,33 @@ public void AddRankToUser(string email, string rank)
         using (var command = new SQLiteCommand(sql, connection))
         {
             command.Parameters.AddWithValue("@Email", email);
-            command.Parameters.AddWithValue("@rank", rank);
             command.ExecuteNonQuery();
             hasPremium = true;
         }
     }
 }
+
+    public void AddRankToUser(string email, string rank)
+    {
+        string sql = """
+                 UPDATE users
+                 SET role = @rank
+                 WHERE email = @Email;
+                 """;
+
+        using (var connection = new SQLiteConnection(_connectionString))
+        {
+            connection.Open();
+
+            using (var command = new SQLiteCommand(sql, connection))
+            {
+                command.Parameters.AddWithValue("@Email", email);
+                command.Parameters.AddWithValue("@rank", rank);
+                command.ExecuteNonQuery();
+                hasPremium = true;
+            }
+        }
+    }
 
 public void CheckRank(string email)
 {
