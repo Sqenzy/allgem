@@ -21,7 +21,7 @@
     
 </body>
 </html>
-<header>
+@* <header>
   @if (repository.IsLoggedIn)
     {
       @if (repository.hasPremium)
@@ -74,19 +74,33 @@
           </button>
     }
     </nav>
-</header>
+</header> *@
 
 <section class="downheader"></section>
 
 <section class="boxsection">
-    <button @onclick="buyPremium">Buy Premium</button>
-    <input id="p1" placeholder="Enter your email" type="email" @bind="email">
+  <div>
+    <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1RaMjmCS4EV2Abb7nO18pmUM"
+  publishable-key="pk_live_51R6YDBCS4EV2Abb7w0j2ARArOzhTSPsFCiJ2dnLZ5f8vEgcJqA7gp6vDELbdrSqCj8k37r8Rk64tlS5WTWiSTKZZ005Kc1u7R7"
+>
+</stripe-buy-button>
+  </div>
 </section>
 
 
 
 <style>
-
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
     body {
         display: flex;
         justify-content: center;
@@ -96,11 +110,14 @@
         background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
     }
     .boxsection {
-        width: 550px; /* Set width */
-        height: 400px; /* Set height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 570px; /* Set width */
+        height: 700px; /* Set height */
         background: #0066de;
         position: absolute;
-        top: 260px;
+        top: 160px;
         border-radius: 48px;
         left: 700px;
     }
@@ -844,7 +861,13 @@ body {
     }
     public async Task buyPremium()
     {
-        if (!string.IsNullOrWhiteSpace(email))
+      var url = "https://buy.stripe.com/aFacN4dNy2Ju2Usg9TcAo00";
+        if (JSRuntime != null)
+        {
+            JSRuntime.InvokeVoidAsync("window.open", url, "blank");
+        }
+
+        @* if (!string.IsNullOrWhiteSpace(email))
         {
             repository.AddPremiumToUser(email);
             CreateCookie("allgem_premium", "hsp", 30);
@@ -853,7 +876,7 @@ body {
         else
         {
             await JSRuntime.InvokeVoidAsync("alert", "Please enter your email");
-        }
+        } *@
     }
 
     private string? CookieValue;

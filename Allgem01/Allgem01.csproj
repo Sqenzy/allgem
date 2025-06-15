@@ -11,6 +11,7 @@
     <PackageReference Include="Mailkit" Version="4.11.0" />
     <PackageReference Include="RestSharp" Version="112.1.0" />
     <PackageReference Include="SQLite" Version="3.13.0" />
+    <PackageReference Include="Stripe.NET" Version="48.2.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="8.0.0" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.119" />
   </ItemGroup>
