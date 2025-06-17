@@ -1,0 +1,111 @@
+@page "/success"
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+@using Allgem01.Logic
+@inject Repository repository
+
+<PageTitle>Payment Successful - Allgem</PageTitle>
+
+<div class="container mt-5">
+    @if (_isLoading)
+    {
+        <div class="text-center">
+            <h2>Processing payment...</h2>
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    }
+    else if (_isSuccess)
+    {
+        <div class="text-center">
+            <h1 class="text-success">Payment Successful!</h1>
+            <p class="lead">Thank you for your purchase.</p>
+            <button class="btn btn-primary" @onclick="NavigateHome">Continue to Home</button>
+        </div>
+    }
+    else
+    {
+        <div class="text-center">
+            <h1 class="text-danger">Payment Failed</h1>
+            <p class="lead">@_errorMessage</p>
+            <button class="btn btn-primary" @onclick="NavigateHome">Return Home</button>
+        </div>
+    }
+</div>
+
+@code {
+    private string CookieValueEmail { get; set; } = string.Empty;
+    private bool _isLoading = true;
+    private bool _isSuccess = false;
+    private string _errorMessage = "An error occurred while processing your payment.";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            CookieValueEmail = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_email");
+
+
+            var uri = new Uri(NavigationManager.Uri);
+            var sessionId = System.Web.HttpUtility.ParseQueryString(uri.Query).Get("session_id");
+            
+
+            if (string.IsNullOrEmpty(sessionId))
+            {
+                _isLoading = false;
+                _errorMessage = "No payment session found.";
+                StateHasChanged();
+                return;
+            }
+
+            try
+            {
+                // Here you would validate the session with Stripe
+                // Using your repository or service to check payment status
+                bool isPaid = await ValidateStripeSession(sessionId);
+                
+                if (isPaid)
+                {
+                    await ProcessSuccessfulPayment(sessionId);
+                    _isSuccess = true;
+                }
+                else
+                {
+                    _errorMessage = "Payment verification failed. Please contact support.";
+                }
+            }
+            catch (Exception ex)
+            {
+                _errorMessage = "An error occurred while processing your payment.";
+                Console.WriteLine($"Payment processing error: {ex.Message}");
+            }
+
+            _isLoading = false;
+            StateHasChanged();
+        }
+    }
+
+    private async Task<bool> ValidateStripeSession(string sessionId)
+    {
+        // TODO: Implement Stripe session validation
+        // This should use your Stripe secret key to verify the payment
+        return true; // Temporary return for demonstration
+    }
+
+    private async Task ProcessSuccessfulPayment(string sessionId)
+    {
+        repository.AddPremiumToUser(CookieValueEmail);
+    }
+
+    private void NavigateToGraph()
+    {
+        NavigationManager.NavigateTo("/graph");
+    }
+
+    private void NavigateHome()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+}
