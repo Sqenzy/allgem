@@ -14,26 +14,42 @@
 </head>
 </html>
 
-<!--test-->
-<div>
-    @if (repository.IsLoggedIn)
-    {
-        
-    }
-    else
-    {
-        
-    }
-    @if (repository.hasPremium)
-    {
-
-    }
-    else
-    {
-
-    }
+<div class="loading-container" id="loadingContainer">
+  <img src="/allgemtext.png" alt="ALLGEM" class="logo">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Loading...</div>
 </div>
 
+<style>
+  .loading-container {
+    background: rgb(10, 13, 20);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            width: 100vw;
+        height: 1000vh;
+        z-index: -1;
+        background-size: cover;
+        background-position: center;
+        }
+        
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-top: 200px;
+        }
+        
+        .loading-text {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            margin-top: 200px;
+            opacity: 0.8;
+        }
+</style>
+<!--test-->
 <header>
   @if (repository.IsLoggedIn)
     {
@@ -96,6 +112,30 @@
 </header>
 
 <section class="downheader"></section>
+<!--<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>--test-->
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
 
 <section class="gamessection">
     <div class="cards">
@@ -103,7 +143,7 @@
             <p class="tip">Upcoming Game</p>
             <p class="second-text"></p>
         </button>
-        <button class="card" id="card2" @onclick="playGameSecurityIDM">
+        <button class="card" id="card2" @onclick="() => playGameSecurityIDM()">
             <p class="tip">Multiplayer</p>
             <p class="second-text"></p>
         </button>
@@ -131,10 +171,43 @@
     </div>
 </section>
 
-<section class="lowersection">Upcoming Events</section>
-<footer><p>© 2025 Allgem</p>
+
+<footer><p>© 2025 Allgem</p><button class="tc" @onclick="termFf">Terms & conditions</button><button class="dd" @onclick="devFf">Developer Panel</button>
 </footer>
 <style>
+  .tc{
+        background: none;
+        background-size: 300% 300%;
+        color: white;
+        font-size: 14px;
+        padding: none;
+        border: none;
+        border-radius: 8px;
+        width: 150px;
+        height: 35px;
+        display: flex;
+        margin-left: 20px;
+  }
+  .dd{
+        background: none;
+        background-size: 300% 300%;
+        color: white;
+        font-size: 14px;
+        padding: none;
+        border: none;
+        border-radius: 8px;
+        width: 150px;
+        height: 35px;
+        display: flex;
+  }
+
+   #kk {
+        width: 100vw;
+        height: 1000vh;
+        z-index: -1;
+        background-size: cover;
+        background-position: center;
+    }
     header {
         background: rgb(10, 13, 20);
         min-width: 97vw;
@@ -1006,6 +1079,17 @@ body {
         </style>
         }
       }
+
+      .loading-container {
+        width: 0vw;
+        height: 0vh;
+        z-index: 0;
+        background-size: null;
+        background-position: null;
+    }
+    .loading-text {
+            font-size: 0px;
+        }
 </style>
 
 @code {
@@ -1028,9 +1112,19 @@ body {
        }
     }
 
+    private void devFf()
+    {
+        NavigationManager.NavigateTo("/developer-panel");
+    }
+
     private void MobileProfile()
     {
       NavigationManager.NavigateTo("/account");
+    }
+
+    private void termFf()
+    {
+        NavigationManager.NavigateTo("/terms-and-conditions");
     }
 
     private void Graph()
@@ -1046,9 +1140,9 @@ body {
     {
         NavigationManager.NavigateTo("/account");
     }
-    private void playGameSecurityIDM()
+    private async Task playGameSecurityIDM()
     {
-        NavigationManager.NavigateTo("loading");
+      await JSRuntime.InvokeVoidAsync("window.open", "http://localhost:5173/parkour/play", "_blank");
     }
     private void loginFf()
     {
@@ -1145,6 +1239,7 @@ body {
             }
 
             StateHasChanged();
+            await JSRuntime.InvokeVoidAsync("topFunction");
         }
     }
     private async Task Logout()
@@ -1155,7 +1250,7 @@ body {
 
         repository.SetLoggedIn(false);
         NavigationManager.NavigateTo("/");
-    }
+        }
 
     private async void CreateCookie(string name, string value, int days)
     {

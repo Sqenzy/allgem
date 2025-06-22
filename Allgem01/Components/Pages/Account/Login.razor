@@ -26,6 +26,7 @@
         <p class="tg2">Welcome</p>
         <input id="p1" placeholder="Enter your email" type="email" @bind="email">
         <input id="p2" placeholder="Enter your password" type="password" @bind="password">
+        <p class="ptxt">Show password</p><input type="checkbox" class="pass" onclick="p2.type = p2.type === 'password' ? 'text' : 'password'">
         <button class="login" @onclick="logIn">
             <p class="lgtxt">Log In</p><p class="txt"> ›</p>
             </button>
@@ -35,6 +36,59 @@
 
 
 <style>
+
+    .ptxt {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 250px;
+        margin-left: 145px;
+        color: white;
+        font-size: 12px;
+    }
+
+    .pass {
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    background: rgb(37, 37, 37);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 250px;
+    margin-left: 210px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.pass:hover {
+    border-color: #4a90e2;
+    box-shadow: 0 4px 12px rgba(74,144,226,0.15);
+}
+
+.pass:checked {
+    background: linear-gradient(135deg, #4a90e2 60%, #357ab8 100%);
+    border-color: #4a90e2;
+}
+
+.pass:checked::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    width: 7px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    border-radius: 1px;
+    transform: rotate(45deg);
+}
 
     body {
         display: flex;
