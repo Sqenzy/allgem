@@ -146,8 +146,8 @@ function topFunction() {
             <p class="second-text"></p>
         </button>
         <button class="card" id="card2" @onclick="() => playGameSecurityIDM()">
-            <p class="tip">Multiplayer</p>
-            <p class="second-text"></p>
+            <p class="tip"></p>
+            <p class="second-text">GShoot</p>
         </button>
         <button class="card" id="card3" @onclick="playGameShooting">
             <p class="tip">Upcoming Game</p>
@@ -172,6 +172,8 @@ function topFunction() {
         </button>
     </div>
 </section>
+
+<script src="main.js"></script>
 
 
 <footer><p>© 2025 Allgem</p><button class="tc" @onclick="termFf">Terms & conditions</button><button class="dd" @onclick="devFf">Developer Panel</button>
@@ -421,6 +423,28 @@ body {
     margin: 0 !important;
     padding: 0 !important;
 }
+
+#card1{
+  
+}
+#card2{
+  background-image: url('/gshoot.png');
+  background-size: contain;
+}
+#card2:hover {
+  background-image: url('/video.gif');
+  background-size: cover;
+  background-position: center;
+}
+#card2 p.second-text {
+  font-size: 0em;
+  margin-bottom: 40px;
+}
+#card2 :hover p.second-text {
+  font-size: 1em;
+  margin-bottom: 40px;
+}
+
 .cards {
   display: flex;
   flex-direction: row;
@@ -431,6 +455,7 @@ body {
 .cards .card {
   flex: 3 3 calc(100% - 20px);
   min-width: 25vw;
+  max-width: 520px;
   height: 260px;
   margin: 10px;
   color: white;
@@ -446,7 +471,8 @@ body {
 }
 
 .cards .card p.second-text {
-  font-size: .7em;
+  font-size: 0em;
+  margin-bottom: 40px;
 }
 
 .cards .card:hover {

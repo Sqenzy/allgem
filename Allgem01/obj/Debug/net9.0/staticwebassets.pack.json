@@ -101,6 +101,10 @@
       "PackagePath": "staticwebassets\\gold.png"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gshoot.png",
+      "PackagePath": "staticwebassets\\gshoot.png"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gshootimg.png",
       "PackagePath": "staticwebassets\\gshootimg.png"
     },
@@ -289,6 +293,10 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\js\\main.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\main.js"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\platinum.png",
       "PackagePath": "staticwebassets\\platinum.png"
     },
@@ -323,6 +331,10 @@
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\vercel.json",
       "PackagePath": "staticwebassets\\vercel.json"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\video.gif",
+      "PackagePath": "staticwebassets\\video.gif"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Allgem01.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
