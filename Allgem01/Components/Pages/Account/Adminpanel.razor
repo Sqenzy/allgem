@@ -41,8 +41,8 @@
 <header>
   @if (repository.IsLoggedIn)
     {
-      @if (repository.rank == "Dev")
-      {
+      @* @if (repository.rank == "Dev")
+      { *@
         <input id="1" placeholder="Enter email" type="email" @bind="email">
         <button @onclick="buyPremium">Buy Premium</button>
         <button @onclick="rmPremium">Remove Premium</button>
@@ -58,11 +58,12 @@
           <option value="Nigger">Nigger</option>
         </select>
         <button @onclick="kkFF">Set Rank</button>
-      }
+        <button @onclick="aC">Add Collumn</button>
+      @* }
       else
       {
         
-      }
+      } *@
     }
     else
     {
@@ -171,6 +172,10 @@
     private void rankFf()
     {
         NavigationManager.NavigateTo("/account/rank");
+    }
+    private void aC()
+    {
+        repository.AddColumn();
     }
 
    protected override async Task OnAfterRenderAsync(bool firstRender)

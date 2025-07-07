@@ -1,4 +1,4 @@
-﻿@page "/"
+@page "/casino"
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
 @inject IJSRuntime JSRuntime
@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allgem</title>
+    <title>Allgem Casino</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1918445686655465"
      crossorigin="anonymous"></script>
 </head>
@@ -79,7 +79,7 @@
       <img class="profileimg" src="/profile.png" alt="profile">
       </button>
     <nav>
-    <li><button class="home" type="button" @onclick="casinoFf">Casino</button></li>
+    <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 @if (repository.IsLoggedIn)
@@ -141,8 +141,8 @@ function topFunction() {
 
 <section class="gamessection">
     <div class="cards">
-        <button class="card" id="card1" @onclick="Graph">
-            <p class="tip">Upcoming Game</p>
+        <button class="card" id="card1" @onclick="Mines">
+            <p class="tip">Mines</p>
             <p class="second-text"></p>
         </button>
         <button class="card" id="card2" @onclick="() => playGameSecurityIDM()">
@@ -153,10 +153,18 @@ function topFunction() {
             <p class="tip">Upcoming Game</p>
             <p class="second-text"></p>
         </button>
+        <button class="card" id="card4" @onclick="playGameShooting">
+            <p class="tip">Upcoming Game</p>
+            <p class="second-text"></p>
+        </button>
+        <button class="card" id="card5" @onclick="playGameShooting">
+            <p class="tip">Upcoming Game</p>
+            <p class="second-text"></p>
+        </button>
     </div>
 </section>
 
-<section class="secondgamessection">
+@* <section class="secondgamessection">
     <div class="cards">
         <button class="card" id="card4">
             <p class="tip">Upcoming Game</p>
@@ -171,7 +179,7 @@ function topFunction() {
             <p class="second-text"></p>
         </button>
     </div>
-</section>
+</section> *@
 
 <script src="main.js"></script>
 
@@ -454,9 +462,9 @@ body {
 
 .cards .card {
   flex: 3 3 calc(100% - 20px);
-  min-width: 25vw;
-  max-width: 520px;
-  height: 260px;
+  min-width: 10vw;
+  max-width: 220px;
+  height: 210px;
   margin: 10px;
   color: white;
   cursor: pointer;
@@ -1155,9 +1163,9 @@ body {
         NavigationManager.NavigateTo("/terms-and-conditions");
     }
 
-    private void Graph()
+    private void Mines()
     {
-       //NavigationManager.NavigateTo("/graph");
+      NavigationManager.NavigateTo("/casino/mines");
     }
 
     private void playGameShooting()
@@ -1191,10 +1199,6 @@ body {
     private void premiumFf()
     {
         NavigationManager.NavigateTo("/premium");
-    }
-    private void casinoFf()
-    {
-        NavigationManager.NavigateTo("/casino");
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)

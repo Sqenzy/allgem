@@ -15,8 +15,8 @@ public class Repository
     public bool hasPremium { get; set; }
     public string rank { get; set; } = string.Empty;
     public int rankCount { get; set; }
-    
-    
+
+
     public Repository()
     {
         InitDb();
@@ -114,7 +114,7 @@ public class Repository
                 command.Parameters.AddWithValue("@Password", hashedPassword);
                 command.Parameters.AddWithValue("@rnn", rnn);
                 command.Parameters.AddWithValue("@hasPremium", 0); // 0 = false, 1 = true
-                
+
                 command.ExecuteNonQuery();
             }
         }
@@ -150,25 +150,25 @@ public class Repository
     }
 
     public void RemovePremiumFromUser(string email)
-{
-    string sql = """
+    {
+        string sql = """
                  UPDATE users
                  SET hasPremium = null
                  WHERE email = @Email;
                  """;
 
-    using (var connection = new SQLiteConnection(_connectionString))
-    {
-        connection.Open();
-
-        using (var command = new SQLiteCommand(sql, connection))
+        using (var connection = new SQLiteConnection(_connectionString))
         {
-            command.Parameters.AddWithValue("@Email", email);
-            command.ExecuteNonQuery();
-            hasPremium = true;
+            connection.Open();
+
+            using (var command = new SQLiteCommand(sql, connection))
+            {
+                command.Parameters.AddWithValue("@Email", email);
+                command.ExecuteNonQuery();
+                hasPremium = true;
+            }
         }
     }
-}
 
     public void AddRankToUser(string email, string rank)
     {
@@ -192,31 +192,49 @@ public class Repository
         }
     }
 
-public void CheckRank(string email)
-{
-    string sql = "SELECT role FROM users WHERE email = @Email";
-
-    using (var connection = new SQLiteConnection(_connectionString))
+    public void CheckRank(string email)
     {
-        connection.Open();
+        string sql = "SELECT role FROM users WHERE email = @Email";
 
-        using (var command = new SQLiteCommand(sql, connection))
+        using (var connection = new SQLiteConnection(_connectionString))
         {
-            command.Parameters.AddWithValue("@Email", email);
+            connection.Open();
 
-            using (SQLiteDataReader reader = command.ExecuteReader())
+            using (var command = new SQLiteCommand(sql, connection))
             {
-                if (reader.Read())
+                command.Parameters.AddWithValue("@Email", email);
+
+                using (SQLiteDataReader reader = command.ExecuteReader())
                 {
-                    rank = reader.IsDBNull(0) ? null : reader.GetString(0);
-                }
-                else
-                {
-                    rank = null;
+                    if (reader.Read())
+                    {
+                        rank = reader.IsDBNull(0) ? null : reader.GetString(0);
+                    }
+                    else
+                    {
+                        rank = null;
+                    }
                 }
             }
         }
     }
-}
+
+    public void AddColumn()
+    {
+        string sql = """
+                     ALTER TABLE users
+                     ADD COLUMN Casino_Money INTEGER DEFAULT 100;
+                     """;
+
+        using (var connection = new SQLiteConnection(_connectionString))
+        {
+            connection.Open();
+
+            using (var command = new SQLiteCommand(sql, connection))
+            {
+                command.ExecuteNonQuery();
+            }
+        }
+    }
 
 }

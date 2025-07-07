@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yffzgTR+qS3vLJUVdzwm9732GT29JvO8XQO0M+vEuiM=",
+  "Hash": "30FakzSsYNFj69u/AiDoavn3Ld4hRtjYWMXwM5a6w2A=",
   "Source": "Allgem01",
   "BasePath": "_content/Allgem01",
   "Mode": "Default",
@@ -1191,27 +1191,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
-    },
-    {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\zm2xrwmu17-naw0bhsekk.gz",
-      "SourceId": "Allgem01",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\",
-      "BasePath": "_content/Allgem01",
-      "RelativePath": "lib/bootstrap/dist/js/main#[.{fingerprint=naw0bhsekk}]?.js.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\js\\main.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "1gvcdjux6t",
-      "Integrity": "MaN0mM19oHdnsY3ZTQqLtw2w6onP5YytlBsdk9irtRk=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\js\\main.js"
     },
     {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Allgem01.styles.css",
@@ -2768,27 +2747,6 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\js\\main.js",
-      "SourceId": "Allgem01",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
-      "BasePath": "_content/Allgem01",
-      "RelativePath": "lib/bootstrap/dist/js/main#[.{fingerprint}]?.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "naw0bhsekk",
-      "Integrity": "gU0vhPYLRyLmyeQJLc/JxNHEehUTyTUEt6u/9KGhpCw=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\main.js"
-    },
-    {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\platinum.png",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
@@ -3189,7 +3147,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 15:01:02 GMT"
+          "Value": "Mon, 07 Jul 2025 20:04:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3250,7 +3208,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 15:01:02 GMT"
+          "Value": "Mon, 07 Jul 2025 20:04:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3295,7 +3253,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 15:01:02 GMT"
+          "Value": "Mon, 07 Jul 2025 20:04:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3350,7 +3308,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 15:01:02 GMT"
+          "Value": "Mon, 07 Jul 2025 20:04:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3411,7 +3369,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 15:01:02 GMT"
+          "Value": "Mon, 07 Jul 2025 20:04:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3456,7 +3414,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 15:01:02 GMT"
+          "Value": "Mon, 07 Jul 2025 20:04:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3511,7 +3469,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 15:01:02 GMT"
+          "Value": "Mon, 07 Jul 2025 20:04:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3564,7 +3522,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 15:01:02 GMT"
+          "Value": "Mon, 07 Jul 2025 20:04:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3601,7 +3559,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 15:01:02 GMT"
+          "Value": "Mon, 07 Jul 2025 20:04:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3648,7 +3606,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 15:01:02 GMT"
+          "Value": "Mon, 07 Jul 2025 20:04:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3701,7 +3659,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 15:01:02 GMT"
+          "Value": "Mon, 07 Jul 2025 20:04:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3738,7 +3696,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 15:01:02 GMT"
+          "Value": "Mon, 07 Jul 2025 20:04:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20945,304 +20903,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-pf2AOjAOccWBEl9ORfBaaHo0t3lQUfisiqfIeMW9tqI="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/main.js",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\zm2xrwmu17-naw0bhsekk.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.005347593583"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "186"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MaN0mM19oHdnsY3ZTQqLtw2w6onP5YytlBsdk9irtRk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 11:58:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"gU0vhPYLRyLmyeQJLc/JxNHEehUTyTUEt6u/9KGhpCw=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-gU0vhPYLRyLmyeQJLc/JxNHEehUTyTUEt6u/9KGhpCw="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/main.js",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\js\\main.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "358"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"gU0vhPYLRyLmyeQJLc/JxNHEehUTyTUEt6u/9KGhpCw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 11:58:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-gU0vhPYLRyLmyeQJLc/JxNHEehUTyTUEt6u/9KGhpCw="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/main.js.gz",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\zm2xrwmu17-naw0bhsekk.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "186"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MaN0mM19oHdnsY3ZTQqLtw2w6onP5YytlBsdk9irtRk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 11:58:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-MaN0mM19oHdnsY3ZTQqLtw2w6onP5YytlBsdk9irtRk="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/main.naw0bhsekk.js",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\zm2xrwmu17-naw0bhsekk.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.005347593583"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "186"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MaN0mM19oHdnsY3ZTQqLtw2w6onP5YytlBsdk9irtRk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 11:58:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"gU0vhPYLRyLmyeQJLc/JxNHEehUTyTUEt6u/9KGhpCw=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "naw0bhsekk"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/js/main.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-gU0vhPYLRyLmyeQJLc/JxNHEehUTyTUEt6u/9KGhpCw="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/main.naw0bhsekk.js",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\js\\main.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "358"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"gU0vhPYLRyLmyeQJLc/JxNHEehUTyTUEt6u/9KGhpCw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 11:58:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "naw0bhsekk"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/js/main.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-gU0vhPYLRyLmyeQJLc/JxNHEehUTyTUEt6u/9KGhpCw="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/js/main.naw0bhsekk.js.gz",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\zm2xrwmu17-naw0bhsekk.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "186"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MaN0mM19oHdnsY3ZTQqLtw2w6onP5YytlBsdk9irtRk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 11:58:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "naw0bhsekk"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/js/main.js.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-MaN0mM19oHdnsY3ZTQqLtw2w6onP5YytlBsdk9irtRk="
         }
       ]
     },
