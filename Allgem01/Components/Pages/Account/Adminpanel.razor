@@ -58,7 +58,6 @@
           <option value="Nigger">Nigger</option>
         </select>
         <button @onclick="kkFF">Set Rank</button>
-        <button @onclick="aC">Add Collumn</button>
       @* }
       else
       {
@@ -172,10 +171,6 @@
     private void rankFf()
     {
         NavigationManager.NavigateTo("/account/rank");
-    }
-    private void aC()
-    {
-        repository.AddColumn();
     }
 
    protected override async Task OnAfterRenderAsync(bool firstRender)

@@ -15,6 +15,7 @@ public class Repository
     public bool hasPremium { get; set; }
     public string rank { get; set; } = string.Empty;
     public int rankCount { get; set; }
+    public int CasinoMoney { get; set; } = 100;
 
 
     public Repository()
@@ -219,22 +220,10 @@ public class Repository
         }
     }
 
-    public void AddColumn()
+    public void SetCasinoMoney(int amount)
     {
-        string sql = """
-                     ALTER TABLE users
-                     ADD COLUMN Casino_Money INTEGER DEFAULT 100;
-                     """;
-
-        using (var connection = new SQLiteConnection(_connectionString))
-        {
-            connection.Open();
-
-            using (var command = new SQLiteCommand(sql, connection))
-            {
-                command.ExecuteNonQuery();
-            }
-        }
+        CasinoMoney = amount;
     }
+
 
 }

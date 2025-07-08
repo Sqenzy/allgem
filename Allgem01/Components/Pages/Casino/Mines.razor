@@ -39,6 +39,7 @@
       <img class="profileimg" src="/profile.png" alt="profile">
       </button>
     <nav>
+    <li><div class="balance">Balance: @Money</div></li>
     <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
@@ -93,10 +94,10 @@
                     🎮 Play
                 </button>
             }
-            else
+            else if (!gameOver)
             {
-                <button @onclick="ResetGame" class="reset-button">
-                    🔄 Reset
+                <button @onclick="Checkout" class="reset-button">
+                    💰 Checkout
                 </button>
             }
         </div>
@@ -143,6 +144,21 @@
 
 
 <style>
+
+  .balance {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-left: -350px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 250px;
+    background-color: #0080ff;
+    outline: white solid 1px;
+    border-radius: 12px;
+  }
 
     .mines-game {
     display: flex;
@@ -1326,7 +1342,7 @@ body {
         height: 95vh;
         width: 100%;
         background: white;
-        @* background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71)); *@
+        background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
     }
 .cards {
   display: flex;
@@ -1456,6 +1472,7 @@ body {
     private string? CookieValueEmail;
     private string? CookieValueRank;
     private bool dik = true;
+    public int Money;
 
     private bool profile = false;
 
@@ -1527,6 +1544,8 @@ body {
     {
         if (firstRender)
         {
+
+            Money = repository.CasinoMoney;
             // Read the cookie value
             CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
             CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
@@ -1619,10 +1638,11 @@ private async Task RankosAsync()
 }
 
 @code {
-    private decimal betAmount = 0.00m;
+    private int betAmount = 0;
     private const int mineCount = 6;
     private bool gameStarted = false;
     private bool gameOver = false;
+    int revealedDiamonds = 0;
     
     private class Tile
     {
@@ -1652,6 +1672,10 @@ private async Task RankosAsync()
 
     private void StartGame()
     {
+       Money -= betAmount;
+       Money = Math.Max(Money, -1000);
+
+        
         if (betAmount <= 0)
         {
             // Add validation for bet amount
@@ -1754,7 +1778,7 @@ private async Task RankosAsync()
 
     private void CheckWinCondition()
     {
-        int revealedDiamonds = 0;
+        revealedDiamonds = 0;
         for (int y = 0; y < 5; y++)
         {
             for (int x = 0; x < 5; x++)
@@ -1780,5 +1804,36 @@ private async Task RankosAsync()
         gameOver = false;
         InitializeGrid();
         StateHasChanged();
+    }
+
+    private void Checkout()
+    {
+
+        if (revealedDiamonds == 1)
+        {
+           Money += betAmount * 1;
+        }
+        else if (revealedDiamonds == 2)
+        {
+           Money += betAmount * 2;
+        }
+        else if (revealedDiamonds == 3)
+        {
+           Money += betAmount * 3;
+        }
+        else if (revealedDiamonds == 4)
+        {
+           Money += betAmount * 4;
+        }
+        else if (revealedDiamonds == 5)
+        {
+           Money += betAmount * 5;
+        }
+
+        repository.SetCasinoMoney(Money);
+
+        gameStarted = false;
+        gameOver = false;
+
     }
 }
