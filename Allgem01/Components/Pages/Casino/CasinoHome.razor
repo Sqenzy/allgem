@@ -138,6 +138,10 @@ function topFunction() {
 }
 </script>
 
+<section class="balancesection">
+  <li><div class="balance">Balance: @Money</div></li>
+</section>
+
 
 <section class="gamessection">
     <div class="cards">
@@ -187,6 +191,30 @@ function topFunction() {
 <footer><p>© 2025 Allgem</p><button class="tc" @onclick="termFf">Terms & conditions</button><button class="dd" @onclick="devFf">Developer Panel</button>
 </footer>
 <style>
+
+  .balancesection {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+  }
+
+  .balance {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 250px;
+    background-color: rgb(39, 39, 39);
+    outline: rgb(129, 129, 129) solid 1px;
+    border-radius: 12px;
+    margin: 15px auto 0 auto;
+  }
   .tc{
         background: none;
         background-size: 300% 300%;
@@ -1135,6 +1163,7 @@ body {
     private string? CookieValueEmail;
     private bool profile = false;
     private string rankimg = "/bronze.png";
+    public int Money;
 
     private void Profile()
     {
@@ -1209,6 +1238,10 @@ body {
             CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
             CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
             CookieValueEmail = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_email");
+            var moneyString = await JSRuntime.InvokeAsync<string>("getCookie", "acm");
+            int.TryParse(moneyString, out Money);
+
+            Money = repository.CasinoMoney;
 
             // Update the authentication state based on the cookie value
             if (CookieValue == "isli")

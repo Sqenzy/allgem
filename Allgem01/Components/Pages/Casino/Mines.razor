@@ -39,7 +39,6 @@
       <img class="profileimg" src="/profile.png" alt="profile">
       </button>
     <nav>
-    <li><div class="balance">Balance: @Money</div></li>
     <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
@@ -75,6 +74,10 @@
 </header>
 
 <section class="downheader"></section>
+
+<section class="balancesection">
+  <li><div class="balance">Balance: @Money</div></li>
+</section>
 
 <section class="lowersection">
 <div class="mines-game">
@@ -145,19 +148,28 @@
 
 <style>
 
+  .balancesection {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+  }
+
   .balance {
     font-size: 16px;
     color: white;
     font-weight: bold;
-    margin-left: -350px;
     align-items: center;
     display: flex;
     justify-content: center;
     height: 40px;
     width: 250px;
-    background-color: #0080ff;
-    outline: white solid 1px;
+    background-color: rgb(39, 39, 39);
+    outline: rgb(129, 129, 129) solid 1px;
     border-radius: 12px;
+    margin: 15px auto 0 auto;
   }
 
     .mines-game {
@@ -1545,12 +1557,15 @@ body {
         if (firstRender)
         {
 
-            Money = repository.CasinoMoney;
             // Read the cookie value
             CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
             CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
             CookieValueEmail = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_email");
             CookieValueRank = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_rank");
+            var moneyString = await JSRuntime.InvokeAsync<string>("getCookie", "acm");
+            int.TryParse(moneyString, out Money);
+
+            Money = repository.CasinoMoney;
 
             // Update the authentication state based on the cookie value
             if (CookieValue == "isli")
@@ -1719,6 +1734,8 @@ private async Task RankosAsync()
                 }
             }
         }
+
+        CreateCookie("acm", Money.ToString(), 2592000);
         
         StateHasChanged();
     }
@@ -1832,8 +1849,15 @@ private async Task RankosAsync()
 
         repository.SetCasinoMoney(Money);
 
+        CreateCookie("acm", Money.ToString(), 2592000);
+
         gameStarted = false;
         gameOver = false;
 
+    }
+
+    private async void CreateCookie(string name, string value, int days)
+    {
+        await JSRuntime.InvokeVoidAsync("methods.CreateCookie", name, value, days);
     }
 }
