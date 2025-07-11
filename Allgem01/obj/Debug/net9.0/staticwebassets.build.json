@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PVTDT+6e3Yk6ZYqZBhL6lk0KV0FJL0NhM658+alVL/0=",
+  "Hash": "4I9bCFnY2961tYhuXnUh+0N2H4Jh959Z1dS7Au2aNQE=",
   "Source": "Allgem01",
   "BasePath": "_content/Allgem01",
   "Mode": "Default",
@@ -2747,6 +2747,48 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\mines.gif",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "mines#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fbnvscu23w",
+      "Integrity": "Ncy4AtJyoHDGqEg84R9zuH8mmsAVWctXowy3qaM3i0A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\mines.gif"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\mines.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "mines#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qw662hvgbp",
+      "Integrity": "en4CBD1VCgo4qWXayWD6zWDmIUemNa2kgMWrb0D3qHg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\mines.png"
+    },
+    {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\platinum.png",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
@@ -3147,7 +3189,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 09 Jul 2025 20:23:16 GMT"
+          "Value": "Fri, 11 Jul 2025 20:11:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3208,7 +3250,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 09 Jul 2025 20:23:16 GMT"
+          "Value": "Fri, 11 Jul 2025 20:11:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3253,7 +3295,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 09 Jul 2025 20:23:16 GMT"
+          "Value": "Fri, 11 Jul 2025 20:11:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3308,7 +3350,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 09 Jul 2025 20:23:16 GMT"
+          "Value": "Fri, 11 Jul 2025 20:11:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3369,7 +3411,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 09 Jul 2025 20:23:16 GMT"
+          "Value": "Fri, 11 Jul 2025 20:11:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3414,7 +3456,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 09 Jul 2025 20:23:16 GMT"
+          "Value": "Fri, 11 Jul 2025 20:11:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3469,7 +3511,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 09 Jul 2025 20:23:16 GMT"
+          "Value": "Fri, 11 Jul 2025 20:11:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3522,7 +3564,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 09 Jul 2025 20:23:16 GMT"
+          "Value": "Fri, 11 Jul 2025 20:11:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3559,7 +3601,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 09 Jul 2025 20:23:16 GMT"
+          "Value": "Fri, 11 Jul 2025 20:11:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3606,7 +3648,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 09 Jul 2025 20:23:16 GMT"
+          "Value": "Fri, 11 Jul 2025 20:11:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3659,7 +3701,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 09 Jul 2025 20:23:16 GMT"
+          "Value": "Fri, 11 Jul 2025 20:11:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3696,7 +3738,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 09 Jul 2025 20:23:16 GMT"
+          "Value": "Fri, 11 Jul 2025 20:11:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -20903,6 +20945,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-pf2AOjAOccWBEl9ORfBaaHo0t3lQUfisiqfIeMW9tqI="
+        }
+      ]
+    },
+    {
+      "Route": "mines.fbnvscu23w.gif",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\mines.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "481458"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ncy4AtJyoHDGqEg84R9zuH8mmsAVWctXowy3qaM3i0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 19:15:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fbnvscu23w"
+        },
+        {
+          "Name": "label",
+          "Value": "mines.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ncy4AtJyoHDGqEg84R9zuH8mmsAVWctXowy3qaM3i0A="
+        }
+      ]
+    },
+    {
+      "Route": "mines.gif",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\mines.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "481458"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ncy4AtJyoHDGqEg84R9zuH8mmsAVWctXowy3qaM3i0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 19:15:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ncy4AtJyoHDGqEg84R9zuH8mmsAVWctXowy3qaM3i0A="
+        }
+      ]
+    },
+    {
+      "Route": "mines.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\mines.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "229222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"en4CBD1VCgo4qWXayWD6zWDmIUemNa2kgMWrb0D3qHg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 18:45:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-en4CBD1VCgo4qWXayWD6zWDmIUemNa2kgMWrb0D3qHg="
+        }
+      ]
+    },
+    {
+      "Route": "mines.qw662hvgbp.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\mines.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "229222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"en4CBD1VCgo4qWXayWD6zWDmIUemNa2kgMWrb0D3qHg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 18:45:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qw662hvgbp"
+        },
+        {
+          "Name": "label",
+          "Value": "mines.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-en4CBD1VCgo4qWXayWD6zWDmIUemNa2kgMWrb0D3qHg="
         }
       ]
     },
