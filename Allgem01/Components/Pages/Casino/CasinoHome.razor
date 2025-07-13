@@ -146,8 +146,6 @@ function topFunction() {
 <section class="gamessection">
     <div class="cards">
         <button class="card" id="card1" @onclick="Mines">
-            <p class="tip">Mines</p>
-            <p class="second-text"></p>
         </button>
         <button class="card" id="card2" @onclick="() => playGameSecurityIDM()">
             <p class="tip"></p>
@@ -463,6 +461,8 @@ body {
 #card1{
   background-image: url('/mines.png');
   background-size: cover;
+  background-position: center;
+  background-position: no-repeat;
 }
 #card1:hover {
   background-image: url('/mines.gif');
@@ -471,7 +471,7 @@ body {
 }
 #card2{
   background-image: url('/gshoot.png');
-  background-size: contain;
+  background-size: cover;
 }
 #card2:hover {
   background-image: url('/video.gif');
@@ -495,10 +495,11 @@ body {
 }
 
 .cards .card {
+  position: relative;
   flex: 3 3 calc(100% - 20px);
-  min-width: 10vw;
-  max-width: 220px;
-  height: 210px;
+  min-width: 11vw;
+  max-width: 230px;
+  height: 250px;
   margin: 10px;
   color: white;
   cursor: pointer;
@@ -508,13 +509,33 @@ body {
 }
 
 .cards .card p.tip {
-  font-size: 1em;
-  font-weight: 700;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background: none;
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .cards .card p.second-text {
-  font-size: 0em;
-  margin-bottom: 40px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background: none;
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .cards .card:hover {
