@@ -72,8 +72,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXNpbm9cRmxpcC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Casino/Line.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXNpbm9cTGluZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Casino/Mines.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXNpbm9cTWluZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Casino/Towero4.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXNpbm9cVG93ZXJvNC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/ContactUsEmail.razor]

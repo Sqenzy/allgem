@@ -226,8 +226,8 @@
 
 .game-controls input:focus {
     outline: none;
-    border-color: #4f46e5;
-    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+    border-color: #0084ff;
+    box-shadow: 0 0 20px rgba(0, 174, 255, 0.3);
     background: rgba(255, 255, 255, 0.15);
 }
 
@@ -1556,6 +1556,7 @@ body {
     {
         if (firstRender)
         {
+            Money = repository.CasinoMoney;
 
             // Read the cookie value
             CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
@@ -1565,7 +1566,6 @@ body {
             var moneyString = await JSRuntime.InvokeAsync<string>("getCookie", "acm");
             int.TryParse(moneyString, out Money);
 
-            Money = repository.CasinoMoney;
 
             // Update the authentication state based on the cookie value
             if (CookieValue == "isli")

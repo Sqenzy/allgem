@@ -1,4 +1,4 @@
-@page "/casino"
+@page "/casino/towerof4"
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
 @inject IJSRuntime JSRuntime
@@ -10,48 +10,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allgem Casino</title>
+    <title>Allgem</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1918445686655465"
      crossorigin="anonymous"></script>
 </head>
 </html>
 
-<div class="loading-container" id="loadingContainer">
-  <img src="/allgemtext.png" alt="ALLGEM" class="logo">
-        <div class="loading-spinner"></div>
-        <div class="loading-text">Loading...</div>
-</div>
 
-<style>
-  .loading-container {
-    background: rgb(10, 13, 20);
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
-            width: 100vw;
-        height: 1000vh;
-        z-index: -1;
-        background-size: cover;
-        background-position: center;
-        }
-        
-        .logo {
-            width: 200px;
-            height: auto;
-            margin-top: 200px;
-        }
-        
-        .loading-text {
-            font-size: 18px;
-            font-weight: bold;
-            color: white;
-            margin-top: 200px;
-            opacity: 0.8;
-        }
-</style>
-<!--test-->
 <header>
   @if (repository.IsLoggedIn)
     {
@@ -65,11 +30,6 @@
       {
         <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">   
       }
-
-            <div class="rankal">
-      <p class="ranktx">Rank</p>
-      <img class="rankim" src="@rankimg" alt="rank">
-      </div>
     }
     else
     {
@@ -101,95 +61,97 @@
       }
       else
       {
-          <li><button class="premium" type="button" @onclick="premiumFf">Premium</button></li>
+          
       }
     }
     else
     {
         <button class="login" @onclick="loginFf">
-          <p class="lgtxt">Log In</p><p class="txt"> ›</p>
+          <p class="lgtxt">LogIn</p>
           </button>
     }
     </nav>
 </header>
 
 <section class="downheader"></section>
-<!--<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>--test-->
-
-<script>
-// Get the button
-let mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
 
 <section class="balancesection">
   <li><div class="balance">Balance: @Money</div></li>
 </section>
 
+<section class="lowersection">
+<div class="mines-game">
+        <div class="game-controls">
+            <label>
+                <span>Amount:</span>
+                <input type="number" @bind="betAmount" min="1" step="1" placeholder="0" />
+                <span>$</span>
+            </label>
+            @if (!gameStarted)
+            {
+                <button @onclick="StartGame" class="play-button">
+                    Bet
+                </button>
+            }
+            else if (!gameOver)
+            {
+                <button class="reset-button">
+                    Playing
+                </button>
+            }
+        </div>
 
-<section class="gamessection">
-    <div class="cards">
-        <button class="card" id="card1" @onclick="Mines">
-        </button>
-        <button class="card" id="card2" @onclick="() => playGameSecurityIDM()">
-            <p class="tip"></p>
-            <p class="second-text"></p>
-        </button>
-        <button class="card" id="card3" @onclick="TowerOf4">
-            <p class="tip"></p>
-            <p class="second-text"></p>
-        </button>
-        <button class="card" id="card4" @onclick="playPlinko">
-            <p class="tip">Plinko</p>
-            <p class="second-text"></p>
-        </button>
-        <button class="card" id="card5" @onclick="playGameShooting">
-            <p class="tip">Upcoming Game</p>
-            <p class="second-text"></p>
-        </button>
-    </div>
+        <div class="game-grid">
+            <div class="output" style="background-color:@GetOutputColor4();">
+              @if (revealedTiles >= 4)
+              {
+                <span>4x</span>
+              }
+            </div>
+            <div class="output" style="background-color:@GetOutputColor3();">
+              @if (revealedTiles >= 3)
+              {
+                <span>3x</span>
+              }
+            </div>        
+            <div class="output" style="background-color:@GetOutputColor2();">
+              @if (revealedTiles >= 2)
+              {
+                <span>2x</span>
+              }
+            </div>        
+            <div class="output" style="background-color:@GetOutputColor();">
+              @if (revealedTiles >= 1)
+              {
+                <span>1x</span>
+              }
+            </div>    
+
+        </div>
+</div>
 </section>
 
-@* <section class="secondgamessection">
-    <div class="cards">
-        <button class="card" id="card4">
-            <p class="tip">Upcoming Game</p>
-            <p class="second-text"></p>
-        </button>
-        <button class="card" id="card5">
-            <p class="tip">Upcoming Game</p>
-            <p class="second-text"></p>
-        </button>
-        <button class="card" id="card6">
-            <p class="tip">Upcoming Game</p>
-            <p class="second-text"></p>
-        </button>
-    </div>
-</section> *@
 
-<script src="main.js"></script>
-
-
-<footer><p>© 2025 Allgem</p><button class="tc" @onclick="termFf">Terms & conditions</button><button class="dd" @onclick="devFf">Developer Panel</button>
-</footer>
 <style>
 
+  .selected {
+    outline: 3px solid rgb(216, 216, 216);
+    box-shadow: 0 0 20px rgb(165, 165, 165);
+}
+
+  .output{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(75, 75, 75);
+    border-radius: 12px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .balancesection {
     height: 60px;
     display: flex;
@@ -213,39 +175,269 @@ function topFunction() {
     border-radius: 12px;
     margin: 15px auto 0 auto;
   }
-  .tc{
-        background: none;
-        background-size: 300% 300%;
-        color: white;
-        font-size: 14px;
-        padding: none;
-        border: none;
-        border-radius: 8px;
-        width: 150px;
-        height: 35px;
-        display: flex;
-        margin-left: 20px;
-  }
-  .dd{
-        background: none;
-        background-size: 300% 300%;
-        color: white;
-        font-size: 14px;
-        padding: none;
-        border: none;
-        border-radius: 8px;
-        width: 150px;
-        height: 35px;
-        display: flex;
-  }
 
-   #kk {
-        width: 100vw;
-        height: 1000vh;
-        z-index: -1;
-        background-size: cover;
-        background-position: center;
+    .mines-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 35vw;
+    height: 80vh;
+}
+
+.game-controls {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-controls label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #e0e6ed;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.game-controls input {
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 120px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.game-controls input:focus {
+    outline: none;
+    border-color: #0084ff;
+    box-shadow: 0 0 20px rgba(0, 174, 255, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.play-button, .reset-button {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    padding: 14px 28px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(16, 185, 129, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.play-button:hover, .reset-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(16, 185, 129, 0.4);
+}
+
+.play-button:active, .reset-button:active {
+    transform: translateY(0);
+}
+
+.reset-button {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    box-shadow: 0 8px 16px rgba(239, 68, 68, 0.3);
+}
+
+.reset-button:hover {
+    box-shadow: 0 12px 24px rgba(239, 68, 68, 0.4);
+}
+
+.game-status {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(239, 68, 68, 0.1);
+    border: 2px solid rgba(239, 68, 68, 0.3);
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fecaca;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.play-again-button {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+}
+
+.play-again-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(59, 130, 246, 0.4);
+}
+
+.game-grid {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.grid-row {
+    display: contents;
+}
+
+.grid-tile {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-tile::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.grid-tile:hover::before {
+    opacity: 1;
+}
+
+.grid-tile:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.grid-tile:active {
+    transform: translateY(0);
+}
+
+.grid-tile.revealed {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border-color: rgba(255, 255, 255, 0.2);
+    cursor: default;
+    transform: none;
+}
+
+.grid-tile.revealed:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.grid-tile.revealed.mine {
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    border-color: #fca5a5;
+    animation: explode 0.3s ease-out;
+}
+
+.grid-tile.revealed.diamond {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    border-color: #6ee7b7;
+    animation: sparkle 0.5s ease-out;
+}
+
+
+.mine {
+    font-size: 32px;
+    animation: bounce 0.5s ease-in-out;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.diamond {
+    font-size: 32px;
+    animation: shine 0.5s ease-in-out;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+
+/* Add some glow effects for mines and diamonds */
+.grid-tile.revealed.mine .mine {
+    text-shadow: 0 0 10px #ff4444, 0 0 20px #ff4444, 0 0 30px #ff4444;
+}
+
+.grid-tile.revealed.diamond .diamond {
+    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 30px #00ff88;
+}
+
+/* Responsive design */
+@@media (max-width: 768px) {
+    .game-grid {
+        grid-template-columns: repeat(5, 60px);
+        grid-template-rows: repeat(5, 60px);
+        gap: 6px;
+        padding: 15px;
     }
+    
+    .grid-tile {
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+    }
+    
+    .mine, .diamond {
+        font-size: 24px;
+    }
+    
+    .game-controls {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .mines-game {
+        padding: 20px;
+        margin: 10px;
+    }
+}
     header {
         background: rgb(10, 13, 20);
         min-width: 97vw;
@@ -272,7 +464,7 @@ function topFunction() {
         justify-content: center;
     }
     footer{
-        background: rgb(10, 13, 20);
+        background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
         color:  white;
         padding: 10px 20px;
         height: 90px;
@@ -457,44 +649,6 @@ body {
     margin: 0 !important;
     padding: 0 !important;
 }
-
-#card1{
-  background-image: url('/mines.png');
-  background-size: cover;
-  background-position: top center;
-  background-position: no-repeat;
-}
-#card1:hover {
-  background-image: url('/mines.gif');
-  background-size: cover;
-  background-position: center;
-}
-#card2{
-  background-image: url('/flip.png');
-  background-size: cover;
-  background-position: top center;
-  background-position: no-repeat;
-}
-#card2:hover {
-  background-image: url('/video.gif');
-  background-size: cover;
-  background-position: center;
-}
-#card2 p.second-text {
-  font-size: 0em;
-  margin-bottom: 40px;
-}
-#card2 :hover p.second-text {
-  font-size: 1em;
-  margin-bottom: 40px;
-}
-#card3{
-  background-image: url('/tower.png');
-  background-size: cover;
-  background-position: top center;
-  background-position: no-repeat;
-}
-
 .cards {
   display: flex;
   flex-direction: row;
@@ -503,11 +657,9 @@ body {
 }
 
 .cards .card {
-  position: relative;
   flex: 3 3 calc(100% - 20px);
-  min-width: 11vw;
-  max-width: 230px;
-  height: 250px;
+  min-width: 25vw;
+  height: 260px;
   margin: 10px;
   color: white;
   cursor: pointer;
@@ -517,33 +669,12 @@ body {
 }
 
 .cards .card p.tip {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  background: none;
-  margin: 0;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: white;
-  z-index: 2;
-  pointer-events: none;
+  font-size: 1em;
+  font-weight: 700;
 }
 
 .cards .card p.second-text {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  background: none;
-  margin: 0;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: white;
-  z-index: 2;
-  pointer-events: none;
+  font-size: .7em;
 }
 
 .cards .card:hover {
@@ -815,6 +946,34 @@ body {
             margin-top: -24px;
             gap: 10px;
         }
+        .login {
+  background: rgb(28, 75, 185);
+  border: 0;
+  margin-left: 420px;
+  margin-top: -42px;
+  border-radius: 18px;
+  transition: 0.01s outline;
+  color: white;
+  height: 40px;
+  width: 100px;
+  display: flex;
+  font-weight: bold;
+}
+.login:hover{
+  outline: 2px rgb(202, 203, 206) solid;
+}
+.txt{
+  margin-left: 13px;
+  margin-top: 7px;
+  transition: 0.25s all;
+}
+.login:hover .txt{
+  margin-left: 20px;
+}
+.lgtxt {
+  margin-left: 0px;
+  margin-top: 17px;
+}
 
 
 
@@ -964,7 +1123,7 @@ body {
           nav{
             margin-left: clamp(20px, 58vw, 80vw);
             flex-direction: column;
-            margin-top: -40px;
+            margin-top: -24px;
             gap: 10px;
           }
           .profile{
@@ -1009,10 +1168,6 @@ body {
             color: #fff;
           }
 
-          .rankal{
-            margin-top: -47px;
-            margin-left: 195px;
-          }
 
 @@media (max-width: 1774px) {
     .premium{
@@ -1179,26 +1334,166 @@ body {
         }
       }
 
-      .loading-container {
-        width: 0vw;
-        height: 0vh;
-        z-index: 0;
-        background-size: null;
-        background-position: null;
+.login {
+  background: rgb(10, 13, 20);
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  padding: 1em 1.8em;
+  display: flex;
+  transition: 0.2s all;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  margin-top: 290px;
+  margin-left: 200px;
+  color: white;
+}
+
+.login:hover {
+   background: rgb(15, 21, 36);
+   transform: translateY(-3px);
+}
+
+    .lowersection {
+        display: flex;
+        justify-content: center;
+        height: 95vh;
+        width: 100%;
+        background: white;
+        background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
     }
-    .loading-text {
-            font-size: 0px;
-        }
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: -5px;
+  top: 50%;
+  left: 56%;
+  background-image: url("/gshootimg.png");
+  border-radius: 12px;
+  height: 550px;
+  width: 990px;
+  margin-top: 145px;
+}
+.qpbutton,.csbutton,.crbutton{
+    margin-top: 125px;
+    margin-left: 80px;
+    border-radius: 20px;
+    border: 0;
+    height: 300px;
+    width: 270px;
+    transition: 0.5s all;
+}
+.qpbutton{
+    background: rgb(28, 75, 185);
+    margin-left: 169px;
+}
+.csbutton{
+    background: rgb(28, 75, 185);
+}
+.crbutton{
+    background: rgb(65, 65, 65);
+}
+.qpbutton:hover,.csbutton:hover{
+    transform: scale(1.1);
+}
+.qptxt{
+    color: #d1d1d1;
+    font-weight: bold;
+    font-size: 15px;
+}
+.crtxt{
+    color: #d1d1d1;
+    font-weight: bold;
+    font-size: 15px;
+}
+.premiumtagimg{
+    height: 200px;
+    width: 200px;
+    margin-top: 105px;
+    margin-left: -290px;
+}
+.qppbutton{
+    margin-top: 300px;
+    margin-left: 20px;
+    background: gray;
+    border-radius: 20px;
+    border: 0;
+    height: 300px;
+    width: 270px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_box {
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.card_box:hover {
+  transform: scale(0.9);
+}
+
+.card_box span {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_box span::before {
+  content: 'Premium';
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+}
+
+.card_box span::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+}
 </style>
 
 @code {
     private string? CookieValue;
     private string? CookieValue1;
-    private string? CookieValueRank;
     private string? CookieValueEmail;
-    private bool profile = false;
-    private string rankimg = "/bronze.png";
+    private string? CookieValueRank;
+    private bool dik = true;
     public int Money;
+
+    private bool profile = false;
 
     private void Profile()
     {
@@ -1212,37 +1507,36 @@ body {
        }
     }
 
-    private void devFf()
+    private void QuickPlay()
     {
-        NavigationManager.NavigateTo("/developer-panel");
+
+      NavigationManager.NavigateTo("fpsgame/fpsgame.html", forceLoad: true);
+        @* NavigationManager.NavigateTo("/");
+        var url = "https://sqenzy.github.io/fpsgamet/";
+        if (JSRuntime != null)
+        {
+            JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
+        } *@
     }
 
-    private void MobileProfile()
+     private void MobileProfile()
     {
-      NavigationManager.NavigateTo("/account");
-    }
-
-    private void termFf()
-    {
-        NavigationManager.NavigateTo("/terms-and-conditions");
-    }
-
-    private void Mines()
-    {
-      NavigationManager.NavigateTo("/casino/mines");
-    }
-
-    private void playGameShooting()
-    {
-        //NavigationManager.NavigateTo("/shooting/play");
+        if (repository.IsLoggedIn)
+        {
+          NavigationManager.NavigateTo("/account");
+        }
+        else
+        {
+          NavigationManager.NavigateTo("/login");
+        }
     }
     private void accountFf()
     {
         NavigationManager.NavigateTo("/account");
     }
-    private async Task playGameSecurityIDM()
+    private void playGameSecurityIDM()
     {
-      NavigationManager.NavigateTo("/casino/flip");
+        NavigationManager.NavigateTo("/parkour/play");
     }
     private void loginFf()
     {
@@ -1264,24 +1558,19 @@ body {
     {
         NavigationManager.NavigateTo("/premium");
     }
-    private void playPlinko()
-    {
-        NavigationManager.NavigateTo("/casino/line");
-    }
-    private void TowerOf4()
-    {
-        NavigationManager.NavigateTo("/casino/towerof4");
-    }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
+
             Money = repository.CasinoMoney;
+
             // Read the cookie value
             CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
             CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
             CookieValueEmail = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_email");
+            CookieValueRank = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_rank");
             var moneyString = await JSRuntime.InvokeAsync<string>("getCookie", "acm");
             int.TryParse(moneyString, out Money);
 
@@ -1304,65 +1593,208 @@ body {
             {
                 repository.SetHasPremium(false);
             }
-
-            repository.CheckRank(CookieValueEmail);
-
-            if (!string.IsNullOrEmpty(repository.rank))
-            {
-                // Update the rank cookie if it doesn't match the current rank
-                CookieValueRank = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_rank");
-                if (CookieValueRank != repository.rank)
-                {
-                    CreateCookie("allgem_rank", repository.rank, 2592000); // 30 days in seconds
-                }
-            }
-
-            if (CookieValueRank == "Bronze")
-            {
-              rankimg = "/bronze.png";
-            }
-            else if (CookieValueRank == "Silver")
-            {
-              rankimg = "/silver.png";
-            }
-            else if (CookieValueRank == "Gold")
-            {
-              rankimg = "/gold.png";
-            }
-            else if (CookieValueRank == "Platinum")
-            {
-              rankimg = "/platinum.png";
-            }
-            else if (CookieValueRank == "Diamond")
-            {
-              rankimg = "/diamond.png";
-            }
-            else if (CookieValueRank == "Contributor")
-            {
-              rankimg = "/diamond.png";
-            }
-            else if (CookieValueRank == "Dev")
-            {
-              rankimg = "/diamond.png";
-            }
-            else if (CookieValueRank == "Nigger")
-            {
-              rankimg = "/diamond.png";
-            }
-
             StateHasChanged();
-            await JSRuntime.InvokeVoidAsync("topFunction");
+            if (repository.IsLoggedIn)
+            {
+                dik = true;
+                _ = RankosAsync();
+            }
+            else
+            {
+                dik = false;
+            }
         }
     }
     private async Task Logout()
     {
         await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_auth");
         await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_premium");
-        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_rank");
-
         repository.SetLoggedIn(false);
         NavigationManager.NavigateTo("/");
+    }
+
+private async Task RankosAsync()
+{
+    if (CookieValueRank == "Silver")
+    {
+        repository.rankCount = 10;
+    }
+    else if (CookieValueRank == "Gold")
+    {
+        repository.rankCount = 20;
+    }
+    else if (CookieValueRank == "Platinum")
+    {
+        repository.rankCount = 30;
+    }
+    else if (CookieValueRank == "Diamond")
+    {
+        repository.rankCount = 40;
+    }
+    else
+    {
+        repository.rankCount = 0;
+    }
+    while (dik)
+    {
+        await Task.Delay(10000);
+        repository.rankCount++;
+
+        if (repository.rankCount == 10)
+        {
+            repository.AddRankToUser(CookieValueEmail, "Silver");
         }
+        else if (repository.rankCount == 20)
+        {
+            repository.AddRankToUser(CookieValueEmail, "Gold");
+        }
+        else if (repository.rankCount == 30)
+        {
+            repository.AddRankToUser(CookieValueEmail, "Platinum");
+        }
+        else if (repository.rankCount == 40)
+        {
+            repository.AddRankToUser(CookieValueEmail, "Diamond");
+        }
+    }
+}
+}
+
+@code {
+    private int betAmount = 0;
+    private bool gameStarted = false;
+    private bool gameOver = false;
+    private int revealedTiles = 0;
+    private int generatedNumber;
+
+    private string GetOutputColor()
+{
+    return revealedTiles >= 1 ? "green" : "rgb(40, 40, 40)";
+}
+private string GetOutputColor2()
+{
+    return revealedTiles >= 2 ? "green" : "rgb(40, 40, 40)";
+}
+private string GetOutputColor3()
+{
+    return revealedTiles >= 3 ? "green" : "rgb(40, 40, 40)";
+}
+private string GetOutputColor4()
+{
+    return revealedTiles >= 4 ? "green" : "rgb(40, 40, 40)";
+}
+    
+
+    private async Task StartGame()
+    {
+       
+       Money -= betAmount;
+       Money = Math.Max(Money, -1000);
+       if (Money <= -1000)
+        {
+            JSRuntime.InvokeVoidAsync("alert", "You don't have enough money to start the game.");
+        }
+        if (betAmount <= 0)
+        {
+            JSRuntime.InvokeVoidAsync("alert", "Please enter a bet amount.");
+            return;
+        }
+        revealedTiles = 0;
+
+        gameStarted = true;
+        gameOver = false;
+
+        Random random = new Random();
+        generatedNumber = random.Next(1, 10);
+
+        await Task.Delay(2000);
+
+        if (generatedNumber == 1 || generatedNumber == 2  || generatedNumber == 3)
+        {
+            await ReveiledTiles(0);
+        }
+        else if (generatedNumber == 4 || generatedNumber == 5)
+        {
+            await ReveiledTiles(1);
+        }
+        else if (generatedNumber == 6 || generatedNumber == 7)
+        {
+            await ReveiledTiles(2);
+        }
+        else if (generatedNumber == 8)
+        {
+            await ReveiledTiles(3);
+        }
+        else if (generatedNumber == 9)
+        {
+            await ReveiledTiles(4);
+        }
+        
+        StateHasChanged();
+    }
+
+    private async Task ReveiledTiles(int tiles)
+{
+    if (tiles == 0)
+    {
+        revealedTiles = 0;
+        StateHasChanged();
+    }
+    else if (tiles == 1)
+    {
+        revealedTiles = 1;
+        Money += betAmount;
+        StateHasChanged();
+    }
+    else if (tiles == 2)
+    {
+        revealedTiles = 1;
+        StateHasChanged();
+        await Task.Delay(1000);
+        revealedTiles = 2;
+
+        Money += betAmount * 2;
+        StateHasChanged();
+    }
+    else if (tiles == 3)
+    {
+        revealedTiles = 1;
+        StateHasChanged();
+        await Task.Delay(1000);
+        revealedTiles = 2;
+        StateHasChanged();
+        await Task.Delay(1000);
+        revealedTiles = 3;
+
+        Money += betAmount * 3;
+        StateHasChanged();
+    }
+    else if (tiles == 4)
+    {
+        revealedTiles = 1;
+        StateHasChanged();
+        await Task.Delay(1000);
+        revealedTiles = 2;
+        StateHasChanged();
+        await Task.Delay(1000);
+        revealedTiles = 3;
+        StateHasChanged();
+        await Task.Delay(1000);
+        revealedTiles = 4;
+
+        Money += betAmount * 4;
+        StateHasChanged();
+    }
+
+    repository.SetCasinoMoney(Money);
+
+        CreateCookie("acm", Money.ToString(), 2592000);
+
+        gameStarted = false;
+        gameOver = false;
+        
+        StateHasChanged();
+}
 
     private async void CreateCookie(string name, string value, int days)
     {

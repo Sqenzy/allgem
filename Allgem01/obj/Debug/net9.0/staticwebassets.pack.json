@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\flip.png",
+      "PackagePath": "staticwebassets\\flip.png"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\Build\\fps game 2.data",
       "PackagePath": "staticwebassets\\fpsgame\\Build\\fps game 2.data"
     },
@@ -327,6 +331,10 @@
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\silver.png",
       "PackagePath": "staticwebassets\\silver.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\tower.png",
+      "PackagePath": "staticwebassets\\tower.png"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\ulteros.jpg",
