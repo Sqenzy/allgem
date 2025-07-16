@@ -84,7 +84,7 @@
         <div class="game-controls">
             <label>
                 <span>Amount:</span>
-                <input type="number" @bind="betAmount" min="1" step="1" placeholder="0" />
+                <input type="number" @bind="betAmount" min="1" step="1" placeholder="0" disabled="@gameStarted" />
                 <span>$</span>
             </label>
             @if (!gameStarted)

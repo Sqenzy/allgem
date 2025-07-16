@@ -84,7 +84,7 @@
         <div class="game-controls">
             <label>
                 <span>Amount:</span>
-                <input type="number" @bind="betAmount" min="1" step="1" placeholder="0" />
+                <input type="number" @bind="betAmount" min="1" step="1" placeholder="0" disabled="@gameStarted" />
                 <span>$</span>
             </label>
             @if (!gameStarted)
@@ -93,74 +93,54 @@
                     Bet
                 </button>
             }
-            else if (!gameOver)
+            else if (!gameOver && revealedTiles >= 0)
             {
-                <button class="reset-button">
-                    Playing
+                <button @onclick="CashOut" class="play-button">
+                    Cash Out (@(betAmount * GetMultiplier())$)
                 </button>
             }
+            @* else if (!gameOver && revealedTiles == 0)
+            {
+                <button class="reset-button" @onclick="CashOut">
+                    Playing
+                </button>
+            } *@
         </div>
 
         <div class="game-grid" @ref="gameGridRef">
-            <div class="output" style="background-color:@GetOutputColor();">
-              @if (revealedTiles >= 4)
-              {
-                <span>5x</span>
-              }
+            <div class="output" style="background-color:@GetTileColor(0);">
+              <span>2x</span>
             </div>
-            <div class="output" style="background-color:@GetOutputColor2();">
-              @if (revealedTiles >= 4)
-              {
-                <span>4x</span>
-              }
+            <div class="output" style="background-color:@GetTileColor(1);">
+              <span>3x</span>
             </div>
-            <div class="output" style="background-color:@GetOutputColor3();">
-              @if (revealedTiles >= 3)
-              {
-                <span>3x</span>
-              }
+            <div class="output" style="background-color:@GetTileColor(2);">
+              <span>4x</span>
             </div>
-            <div class="output" style="background-color:@GetOutputColor4();">
-              @if (revealedTiles >= 2)
-              {
-                <span>2x</span>
-              }
+            <div class="output" style="background-color:@GetTileColor(3);">
+              <span>5x</span>
             </div>        
-            <div class="output" style="background-color:@GetOutputColor4();">
-              @if (revealedTiles >= 1)
-              {
-                <span>1x</span>
-              }
+            <div class="output" style="background-color:@GetTileColor(4);">
+              <span>6x</span>
             </div>        
-            <div class="output" style="background-color:@GetOutputColor4();">
-              @if (revealedTiles >= 1)
-              {
-                <span>1x</span>
-              }
+            <div class="output" style="background-color:@GetTileColor(5);">
+              <span>7x</span>
             </div>
-            <div class="output" style="background-color:@GetOutputColor4();">
-              @if (revealedTiles >= 1)
-              {
-                <span>1x</span>
-              }
+            <div class="output" style="background-color:@GetTileColor(6);">
+              <span>8x</span>
             </div>
-            <div class="output" style="background-color:@GetOutputColor4();">
-              @if (revealedTiles >= 1)
-              {
-                <span>1x</span>
-              }
+            <div class="output" style="background-color:@GetTileColor(7);">
+              <span>9x</span>
             </div>
-            <div class="output" style="background-color:@GetOutputColor4();">
-              @if (revealedTiles >= 1)
-              {
-                <span>1x</span>
-              }
+            <div class="output" style="background-color:@GetTileColor(8);">
+              <span>10x</span>
             </div> 
         </div>
+        
         <div class="bt">
             @if (gameStarted && !gameOver)
             {
-                <button class="play-button" @onclick="Next"></button>
+                <button class="play-button" @onclick="Next1">Next</button>
             }
         </div>
 </div>
@@ -170,6 +150,12 @@
     window.scrollGameGridRight = function(element, amount) {
         if (element) {
             element.scrollLeft += amount || 100;
+        }
+    }
+
+    window.scrollGameGridLeft = function(element, amount) {
+        if (element) {
+            element.scrollLeft -= amount || 2000;
         }
     }
 </script>
@@ -182,6 +168,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    height: 100px;
+    width: 200px;
   }
 
   .selected {
@@ -198,6 +186,9 @@
     color: white;
     font-size: 20px;
     font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
   .balancesection {
     height: 60px;
@@ -369,6 +360,8 @@
 .game-grid::-webkit-scrollbar-button {
     width: 0px;
     height: 0px;
+    background: none;
+    color: blue;
 }
 
 .grid-row {
@@ -1720,105 +1713,199 @@ private async Task RankosAsync()
     private bool gameOver = false;
     private int revealedTiles = 0;
     private int generatedNumber;
+    int tilescroll = 0;
+    private List<string> tileColors = new List<string>(); // Track tile colors
 
     private ElementReference gameGridRef;
 
     private async Task ScrollGameGridToRight(int amount = 100)
-{
-    await JSRuntime.InvokeVoidAsync("scrollGameGridRight", gameGridRef, amount);
-}
+    {
+        await JSRuntime.InvokeVoidAsync("scrollGameGridRight", gameGridRef, amount);
+    }
+    private async Task ScrollGameGridToLeft(int amount = 2000)
+    {
+        await JSRuntime.InvokeVoidAsync("scrollGameGridLeft", gameGridRef, amount);
+    }
 
-    private string GetOutputColor()
-{
-    return revealedTiles >= 1 ? "green" : "rgb(40, 40, 40)";
-}
-private string GetOutputColor2()
-{
-    return revealedTiles >= 2 ? "green" : "rgb(40, 40, 40)";
-}
-private string GetOutputColor3()
-{
-    return revealedTiles >= 3 ? "green" : "rgb(40, 40, 40)";
-}
-private string GetOutputColor4()
-{
-    return revealedTiles >= 4 ? "green" : "rgb(40, 40, 40)";
-}
+    private string GetTileColor(int index)
+    {
+        if (index < tileColors.Count)
+        {
+            return tileColors[index];
+        }
+        return "rgb(40, 40, 40)"; // Default gray color
+    }
     
+    private double GetMultiplier()
+    {
+        return revealedTiles + 1;
+    }
 
     private async Task StartGame()
     {
-       
-       Money -= betAmount;
-       Money = Math.Max(Money, -1000);
-       if (Money <= -1000)
+        Money -= betAmount;
+        Money = Math.Max(Money, -1000);
+        
+        if (Money <= -1000)
         {
             JSRuntime.InvokeVoidAsync("alert", "You don't have enough money to start the game.");
+            return;
         }
+        
         if (betAmount <= 0)
         {
             JSRuntime.InvokeVoidAsync("alert", "Please enter a bet amount.");
             return;
         }
+        
+        // Reset game state
         revealedTiles = 0;
-
+        tilescroll = 0;
+        ScrollGameGridToLeft(2000);
+        tileColors.Clear();
         gameStarted = true;
         gameOver = false;
-
-        Random random = new Random();
-        generatedNumber = random.Next(1, 10);
         
         StateHasChanged();
     }
 
-    private void Next()
+    private void Next1()
     {
-      for (int i = 0; i < 100; i++)
-      {
-          Random random = new Random();
-          generatedNumber = random.Next(1, 3);
+        if (gameOver || !gameStarted)
+            return;
 
-          if (generatedNumber == 1)
-          {
-              revealedTiles++;
-              StateHasChanged();
-          }
-          else if (generatedNumber == 2)
-          {
-              revealedTiles = 0;
-          }
-      }
+        Random random = new Random();
+        generatedNumber = random.Next(1, 3);
+
+        if (generatedNumber == 1 || generatedNumber == 2)
+        {
+            // User continues - green tile
+            revealedTiles++;
+            tilescroll++;
+            tileColors.Add("green");
+
+            StateHasChanged();
+            
+            // Optional: You can add a win condition here
+            // For example, if player reaches 9 tiles, they win automatically
+            if (revealedTiles >= 9)
+            {
+                // Player wins - maximum tiles reached
+                Money += (int)(betAmount * GetMultiplier());
+                gameOver = true;
+                gameStarted = false;
+                Thread.Sleep(200);
+                //JSRuntime.InvokeVoidAsync("alert", $"You won! Maximum tiles reached! You earned ${(int)(betAmount * GetMultiplier())}");
+                repository.SetCasinoMoney(Money);
+                CreateCookie("acm", Money.ToString(), 2592000);
+            }
+        }
+        @* else if (generatedNumber == 2)
+        {
+            // Game ends - red tile
+            tileColors.Add("red");
+            gameOver = true;
+            gameStarted = false;
+        } *@
+
+        if (tilescroll > 2 || tilescroll > 4 || tilescroll > 7)
+        {
+            ScrollGameGridToRight(155);
+        }
+
+        StateHasChanged();
+    }
+    
+    private async Task CashOut()
+    {
+        if (revealedTiles >= 0 && !gameOver)
+        {
+            int winAmount = (int)(betAmount * GetMultiplier());
+            Money += winAmount;
+            
+            repository.SetCasinoMoney(Money);
+            CreateCookie("acm", Money.ToString(), 2592000);
+            
+            gameStarted = false;
+            gameOver = true;
+            
+            StateHasChanged();
+        }
+    }
+    
+    private void ResetGame()
+    {
+        revealedTiles = 0;
+        tileColors.Clear();
+        gameStarted = false;
+        gameOver = false;
+        StateHasChanged();
     }
 
     private async Task ReveiledTiles(int tiles)
-{
-    if (tiles == 0)
     {
-        revealedTiles = 0;
-        StateHasChanged();
-    }
-    else if (tiles == 1)
-    {
-    }
-    else if (tiles == 2)
-    {
-    }
-    else if (tiles == 3)
-    {
-    }
-    else if (tiles == 4)
-    {
-    }
+        if (tiles == 0)
+        {
+            revealedTiles = 0;
+            tileColors.Clear();
+            StateHasChanged();
+        }
+        else if (tiles == 1)
+        {
+            // Add logic for cashing out after 1 tile
+            Money += betAmount * 2; // Example payout
+        }
+        else if (tiles == 2)
+        {
+            // Add logic for cashing out after 2 tiles
+            Money += betAmount * 3; // Example payout
+        }
+        else if (tiles == 3)
+        {
+            // Add logic for cashing out after 3 tiles
+            Money += betAmount * 4; // Example payout
+        }
+        else if (tiles == 4)
+        {
+            // Add logic for cashing out after 4 tiles
+            Money += betAmount * 5; // Example payout
+        }
+        else if (tiles == 5)
+        {
+            // Add logic for cashing out after 4 tiles
+            Money += betAmount * 6; // Example payout
+        }
+        else if (tiles == 6)
+        {
+            // Add logic for cashing out after 4 tiles
+            Money += betAmount * 7; // Example payout
+        }
+        else if (tiles == 7)
+        {
+            // Add logic for cashing out after 4 tiles
+            Money += betAmount * 8; // Example payout
+        }
+        else if (tiles == 8)
+        {
+            // Add logic for cashing out after 4 tiles
+            Money += betAmount * 9; // Example payout
+        }
+        else if (tiles == 9)
+        {
+            // Add logic for cashing out after 4 tiles
+            Money += betAmount * 10; // Example payout
+        }
 
-    repository.SetCasinoMoney(Money);
-
+        repository.SetCasinoMoney(Money);
         CreateCookie("acm", Money.ToString(), 2592000);
 
         gameStarted = false;
         gameOver = false;
+        revealedTiles = 0;
+        tileColors.Clear();
         
         StateHasChanged();
-}
+    }
 
     private async void CreateCookie(string name, string value, int days)
     {
