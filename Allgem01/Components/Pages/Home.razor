@@ -141,7 +141,7 @@ function topFunction() {
 
 <section class="gamessection">
     <div class="cards">
-        <button class="card" id="card1" @onclick="Graph">
+        <button class="card" id="card1">
             <p class="tip">Upcoming Game</p>
             <p class="second-text"></p>
         </button>
@@ -158,8 +158,8 @@ function topFunction() {
 
 <section class="secondgamessection">
     <div class="cards">
-        <button class="card" id="card4">
-            <p class="tip">Upcoming Game</p>
+        <button class="card" id="card4" @onclick="Node2Ff">
+            <p class="tip">Node 2</p>
             <p class="second-text"></p>
         </button>
         <button class="card" id="card5">
@@ -1195,6 +1195,10 @@ body {
     private void casinoFf()
     {
         NavigationManager.NavigateTo("/casino");
+    }
+    private void Node2Ff()
+    {
+        NavigationManager.NavigateTo("/game/node2");
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)

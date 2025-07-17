@@ -39,7 +39,7 @@
       <img class="profileimg" src="/profile.png" alt="profile">
       </button>
     <nav>
-    <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
+    <li><button class="home" type="button" @onclick="homeFf">Casino</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 @if (repository.IsLoggedIn)
@@ -1591,7 +1591,7 @@ body {
     }
     private void homeFf()
     {
-        NavigationManager.NavigateTo("/");
+        NavigationManager.NavigateTo("/casino");
     }
     private void aboutusFf()
     {
@@ -1777,7 +1777,7 @@ private async Task RankosAsync()
         Random random = new Random();
         generatedNumber = random.Next(1, 3);
 
-        if (generatedNumber == 1 || generatedNumber == 2)
+        if (generatedNumber == 1)
         {
             // User continues - green tile
             revealedTiles++;
@@ -1800,13 +1800,13 @@ private async Task RankosAsync()
                 CreateCookie("acm", Money.ToString(), 2592000);
             }
         }
-        @* else if (generatedNumber == 2)
+        else if (generatedNumber == 2)
         {
             // Game ends - red tile
             tileColors.Add("red");
             gameOver = true;
             gameStarted = false;
-        } *@
+        }
 
         if (tilescroll > 2 || tilescroll > 4 || tilescroll > 7)
         {

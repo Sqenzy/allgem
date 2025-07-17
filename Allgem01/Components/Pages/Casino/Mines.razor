@@ -39,7 +39,7 @@
       <img class="profileimg" src="/profile.png" alt="profile">
       </button>
     <nav>
-    <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
+    <li><button class="home" type="button" @onclick="homeFf">Casino</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 @if (repository.IsLoggedIn)
@@ -1537,7 +1537,7 @@ body {
     }
     private void homeFf()
     {
-        NavigationManager.NavigateTo("/");
+        NavigationManager.NavigateTo("/casino");
     }
     private void aboutusFf()
     {
