@@ -115,7 +115,7 @@
 @* <div class="mines-game"></div> *@
 <iframe src="https://node-sim-2--filiptheflop.on.websim.com/" frameborder="0" allowfullscreen class="@(isExpanded ? "iframe-expanded" : "")"></iframe>
 <button class="expand" @onclick="Expand"></button>
-<section class="titlesection"><span class="title">Node 2</span></section>
+<section class="titlesection"><div class="titlebar"><span class="title">Node 2</span></div></section>
 </section>
 
 
@@ -128,22 +128,28 @@
         width: 300px;
         color: white;
         font-weight: bold;
-        margin-top: 100px;
         text-align: center;
         background-color: rgb(39, 39, 39);
         outline: rgb(129, 129, 129) solid 1px;
         border-radius: 12px;
+    }
+    .titlebar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 55%;
+        background-color: white;
     }
     .titlesection{
         display: flex;
         justify-content: center;
         align-items: center;
         height: 30px;
-        background: white;
-        color: white;
-        font-size: 24px;
+        background: linear-right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
         font-weight: bold;
         margin-top: 900px;
+        width: 100%;
     }
 
     .expand{
