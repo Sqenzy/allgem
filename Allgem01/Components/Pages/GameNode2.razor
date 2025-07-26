@@ -18,7 +18,6 @@
 
 <div class="loading-container" id="loadingContainer">
   <img src="/allgemtext.png" alt="ALLGEM" class="logo">
-        <div class="loading-spinner"></div>
         <div class="loading-text">Loading...</div>
 </div>
 
@@ -112,198 +111,189 @@
 <section class="downheader"></section>
 
 <section class="lowersection">
-@* <div class="mines-game"></div> *@
-<iframe src="https://node-sim-2--filiptheflop.on.websim.com/" frameborder="0" allowfullscreen class="@(isExpanded ? "iframe-expanded" : "")"></iframe>
-<button class="expand" @onclick="Expand"></button>
-<section class="titlesection"><div class="titlebar"><span class="title">Node 2</span></div></section>
+    <div class="game-container">
+        <div class="iframe-container">
+            <iframe src="https://node-sim-2--filiptheflop.on.websim.com/" 
+                    frameborder="0" 
+                    allowfullscreen 
+                    class="@(isExpanded ? "iframe-expanded" : "")">
+            </iframe>
+        </div>
+        <section class="titlesection">
+            <div class="titlebar">
+                <span class="title">Node 2</span>
+                <button class="expand" @onclick="Expand"></button>
+            </div>
+        </section>
+    </div>
 </section>
 
 
 
 <style>
-
-    .title{
-        font-size: 24px;
-        height: 40px;
-        width: 300px;
-        color: white;
-        font-weight: bold;
-        text-align: center;
-        background-color: rgb(39, 39, 39);
-        outline: rgb(129, 129, 129) solid 1px;
-        border-radius: 12px;
-    }
-    .titlebar{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50px;
-        width: 55%;
-        background-color: white;
-    }
-    .titlesection{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 30px;
-        background: linear-right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
-        font-weight: bold;
-        margin-top: 900px;
-        width: 100%;
-    }
-
-    .expand{
-        width: 30px;
-        height: 30px;
-        margin-top: 740px;
-        margin-left: -35px;
-        background: url('/expand.png') no-repeat center center;
-        background-size: contain;
-        border: none;
-        cursor: pointer;
-        z-index: 1000;
-    }
-    iframe{
-        width: 55%;
-        height: 75%;
-        border: none;
-        border-radius: 20px;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        margin-top: 80px;
-    }
-    .iframe-expanded {
-        width: 100vw !important;
-        height: 100vh !important;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 2000;
-        border-radius: 0;
-        margin: 0;
-        box-shadow: none;
-    }
-  @* .mines-game {
+  .lowersection {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
-    background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
-    border-radius: 20px;
-    color: white;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    margin: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    width: 35vw;
-    height: 80vh;
-  } *@
-  .game-grid {
-    display: flex;
-    background: rgba(0, 0, 0, 0.3);
+    justify-content: flex-start;
+    min-height: 95vh;
+    width: 100%;
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
     padding: 20px;
-    height: 500px;
-    width: 500px;
-    border-radius: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
-    justify-content: center;
+    box-sizing: border-box;
+}
+
+.game-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-  }
-  .grid-row {
-    display: contents;
-  }
-  .grid-tile {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+    margin-top: -20px;
+    width: 60%;
+    max-width: 1000px;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 12px;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    position: relative;
     overflow: hidden;
-  }
-  .grid-tile::before {
+    z-index: 1;
+}
+
+.iframe-container::before {
     content: '';
     position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0 -20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid #fff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.iframe-container::after {
+    content: 'Loading...';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 40px));
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background: transparent;
+    z-index: 10;
+}
+
+.iframe-expanded {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  .grid-tile:hover::before {
-    opacity: 1;
-  }
-  .grid-tile:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    border-color: rgba(255, 255, 255, 0.2);
-  }
-  .grid-tile:active {
-    transform: translateY(0);
-  }
-  .grid-tile.revealed {
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-    border-color: rgba(255, 255, 255, 0.2);
-    cursor: default;
-    transform: none;
-  }
-  .grid-tile.revealed:hover {
-    transform: none;
+    z-index: 2000;
+    border-radius: 0;
+    margin: 0;
     box-shadow: none;
-  }
-  .grid-tile.revealed.mine {
-    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
-    border-color: #fca5a5;
-    animation: explode 0.3s ease-out;
-  }
-  .grid-tile.revealed.diamond {
-    background: linear-gradient(135deg, #059669 0%, #047857 100%);
-    border-color: #6ee7b7;
-    animation: sparkle 0.5s ease-out;
-  }
-  .mine {
-    font-size: 32px;
-    animation: bounce 0.5s ease-in-out;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
-  }
-  .diamond {
-    font-size: 32px;
-    animation: shine 0.5s ease-in-out;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
-  }
-  .grid-tile.revealed.mine .mine {
-    text-shadow: 0 0 10px #ff4444, 0 0 20px #ff4444, 0 0 30px #ff4444;
-  }
-  .grid-tile.revealed.diamond .diamond {
-    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 30px #00ff88;
-  }
-  /* Responsive design */
-  @@media (max-width: 768px) {
-    .game-grid {
-      grid-template-columns: repeat(5, 60px);
-      grid-template-rows: repeat(5, 60px);
-      gap: 6px;
-      padding: 15px;
+}
+
+.expand {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    background: url('/expand.png') no-repeat center center;
+    background-size: 20px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.expand:hover {
+    background-color: rgb(204, 204, 204);
+    box-shadow: 0 4px 12px rgba(0, 84, 153, 0.2);
+}
+
+.titlesection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.titlebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.title {
+    font-size: 24px;
+    height: 40px;
+    width: 300px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgb(39, 39, 39);
+    border: rgb(129, 129, 129) solid 1px;
+    border-radius: 12px;
+}
+
+@@media (max-width: 768px) {
+    .game-container {
+        width: 95%;
+        margin-top: 20px;
+        padding: 15px;
     }
-    .grid-tile {
-      width: 60px;
-      height: 60px;
-      border-radius: 8px;
+    
+    iframe {
+        height: 400px;
     }
-    .mine, .diamond {
-      font-size: 24px;
+    
+    .title {
+        font-size: 20px;
+        width: 250px;
     }
-    .mines-game {
-      padding: 20px;
-      margin: 10px;
+    
+    .titlebar {
+        width: 250px;
     }
-  }
+}
+
+
   header {
     background: rgb(10, 13, 20);
     min-width: 97vw;

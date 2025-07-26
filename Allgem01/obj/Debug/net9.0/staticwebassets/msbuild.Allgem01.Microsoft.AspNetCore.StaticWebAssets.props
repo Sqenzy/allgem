@@ -192,8 +192,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0w71aleh9u</Fingerprint>
-      <Integrity>MLxWjftrG30+sClq7oiSH2TuynsbU9xIzM42TixvVbc=</Integrity>
+      <Fingerprint>zvf3pkswuz</Fingerprint>
+      <Integrity>0UMgPG8uZc6a2lXiOpA0HxgxIG1wKVPi8XW6AKUKpu8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\expand.png'))</OriginalItemSpec>
