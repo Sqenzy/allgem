@@ -220,10 +220,16 @@ public class Repository
         }
     }
 
-    public void SetCasinoMoney(int amount)
-    {
-        CasinoMoney = amount;
-    }
 
+    
+public void SetCasinoMoney(int amount)
+{
+    CasinoMoney = amount;
+}
+
+public void ResetPassword(string email)
+{
+
+}
 
 }
