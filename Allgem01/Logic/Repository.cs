@@ -227,9 +227,27 @@ public void SetCasinoMoney(int amount)
     CasinoMoney = amount;
 }
 
-public void ResetPassword(string email)
+public void ResetPassword(string email, string newPassword)
 {
+    string hashedPassword = HashPassword(newPassword);
+    
+    string sql = """
+                 UPDATE users
+                 SET password = @Password
+                 WHERE email = @Email;
+                 """;
 
+    using (var connection = new SQLiteConnection(_connectionString))
+    {
+        connection.Open();
+
+        using (var command = new SQLiteCommand(sql, connection))
+        {
+            command.Parameters.AddWithValue("@Email", email);
+            command.Parameters.AddWithValue("@Password", hashedPassword);
+            command.ExecuteNonQuery();
+        }
+    }
 }
 
 }
