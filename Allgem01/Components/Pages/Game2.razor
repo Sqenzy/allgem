@@ -1308,6 +1308,10 @@ private async Task RankosAsync()
     {
         repository.rankCount = 40;
     }
+    else if (CookieValueRank == "Dev")
+    {
+        repository.rankCount = 1000;
+    }
     else
     {
         repository.rankCount = 0;

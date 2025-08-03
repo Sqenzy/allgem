@@ -41,8 +41,8 @@
 <header>
   @if (repository.IsLoggedIn)
     {
-      @if (repository.rank == "Dev")
-      {
+      @* @if (repository.rank == "Dev")
+      { *@
         <input id="1" placeholder="Enter email" type="email" @bind="email">
         <button @onclick="buyPremium">Buy Premium</button>
         <button @onclick="rmPremium">Remove Premium</button>
@@ -58,8 +58,9 @@
           <option value="Nigger">Nigger</option>
         </select>
         <button @onclick="kkFF">Set Rank</button>
-        <button @onclick="ResP">Send Reset Password Email</button>
-      }
+        <input @bind="newpassword" type="text" placeholder="password">
+        <button @onclick="ResP">Reset Password</button>
+      @* } *@
     }
     else
     {
@@ -72,6 +73,7 @@
     private string? CookieValue1;
     private string? CookieValueEmail;
     private string? CookieValueRank;
+    private string newpassword;
     public string email { get; set; } = string.Empty;
     private bool profile = false;
 
@@ -172,7 +174,7 @@
 
     private void ResP()
     {
-        repository.ResetPassword(email);
+        repository.ResetPassword(email, newpassword);
     }
 
    protected override async Task OnAfterRenderAsync(bool firstRender)
