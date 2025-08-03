@@ -48,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XFJhbmsucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Account/ResetPassword.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XFJlc2V0UGFzc3dvcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Account/Signup.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XFNpZ251cC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
