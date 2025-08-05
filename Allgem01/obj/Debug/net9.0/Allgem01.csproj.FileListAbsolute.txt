@@ -307,6 +307,8 @@ C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\zghthfpb1x-u
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\nzjm09pqky-h1s4sie4z3.gz
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\sar8wyfpc9-4d85u1mtcx.gz
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\w5zxvj4dkm-0j3bgjxly4.gz
+C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\dcv5rhwwkr-6hn6fjcbl6.gz
+C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\b7hoc9c5e0-v3obddwn4u.gz
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\kucaebxc1a-s25sga0nut.gz
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\ydx0d74kao-58d2ehzx87.gz
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\cfrcn2prdi-58d2ehzx87.gz

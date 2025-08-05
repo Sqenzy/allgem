@@ -79,7 +79,7 @@
       <img class="profileimg" src="/profile.png" alt="profile">
       </button>
     <nav>
-    <li><button class="home" type="button" @onclick="casinoFf">Casino</button></li>
+    <li><button class="home" type="button" @onclick="add">Casino</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 @if (repository.IsLoggedIn)
@@ -1158,6 +1158,11 @@ body {
     private void Graph()
     {
        //NavigationManager.NavigateTo("/graph");
+    }
+
+    private void add()
+    {
+      NavigationManager.NavigateTo("/manifest.json");
     }
 
     private void playGameShooting()

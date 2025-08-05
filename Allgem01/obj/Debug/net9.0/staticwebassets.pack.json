@@ -305,6 +305,18 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\js\\service-worker.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\service-worker.js"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\line.png",
+      "PackagePath": "staticwebassets\\line.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\manifest.json",
+      "PackagePath": "staticwebassets\\manifest.json"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\mines.gif",
       "PackagePath": "staticwebassets\\mines.gif"
     },

@@ -501,39 +501,6 @@ iframe {
     margin-left: 13px;
     margin-top: 7px;
   }
-    /* Add some glow effects for mines and diamonds */
-.grid-tile.revealed.mine .mine {
-    text-shadow: 0 0 10px #ff4444, 0 0 20px #ff4444, 0 0 30px #ff4444;
-}
-
-.grid-tile.revealed.diamond .diamond {
-    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 30px #00ff88;
-}
-
-/* Responsive design */
-@@media (max-width: 768px) {
-    .game-grid {
-        grid-template-columns: repeat(5, 60px);
-        grid-template-rows: repeat(5, 60px);
-        gap: 6px;
-        padding: 15px;
-    }
-    
-    .grid-tile {
-        width: 60px;
-        height: 60px;
-        border-radius: 8px;
-    }
-    
-    .mine, .diamond {
-        font-size: 24px;
-    }
-    
-    .mines-game {
-        padding: 20px;
-        margin: 10px;
-    }
-}
     header {
         background: rgb(10, 13, 20);
         min-width: 97vw;

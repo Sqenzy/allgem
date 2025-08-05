@@ -160,7 +160,7 @@ function topFunction() {
             <p class="second-text"></p>
         </button>
         <button class="card" id="card4" @onclick="playPlinko">
-            <p class="tip">Plinko</p>
+            <p class="tip"></p>
             <p class="second-text"></p>
         </button>
         <button class="card" id="card5" @onclick="playGameShooting">
@@ -514,6 +514,12 @@ body {
 }
 #card3{
   background-image: url('/tower.png');
+  background-size: cover;
+  background-position: top center;
+  background-position: no-repeat;
+}
+#card4{
+  background-image: url('/line.png');
   background-size: cover;
   background-position: top center;
   background-position: no-repeat;
