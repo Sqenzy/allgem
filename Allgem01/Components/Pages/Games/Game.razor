@@ -1,0 +1,1301 @@
+@page "/game"
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+@using Allgem01.Logic
+@inject Repository repository
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@GameName</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1918445686655465"
+     crossorigin="anonymous"></script>
+</head>
+</html>
+
+<div class="loading-container" id="loadingContainer">
+  <img src="/allgemtext.png" alt="ALLGEM" class="logo">
+        <div class="loading-text">Loading...</div>
+</div>
+
+<style>
+  .loading-container {
+    background: rgb(10, 13, 20);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            width: 100vw;
+        height: 1000vh;
+        z-index: -1;
+        background-size: cover;
+        background-position: center;
+        }
+        
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-top: 200px;
+        }
+        
+        .loading-text {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            margin-top: 200px;
+            opacity: 0.8;
+        }
+</style>
+
+<header>
+  @if (repository.IsLoggedIn)
+    {
+      
+      @if (repository.hasPremium)
+      {
+        <img @onclick="homeFf" class="logopremium" src="/allgempremium.png" alt="ALLGEM PREMIUM">
+        <img class="lpu">
+      }
+      else
+      {
+        <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">   
+      }
+    }
+    else
+    {
+      <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">
+    }
+    <button class="mobileprofile" @onclick="MobileProfile" type="button">
+      <img class="profileimg" src="/profile.png" alt="profile">
+      </button>
+    <nav>
+    <li><button class="home" type="button" @onclick="homeFf">Casino</button></li>
+    <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
+    <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
+@if (repository.IsLoggedIn)
+    {
+      <button class="profile"  @onclick="accountFf" type="button">
+          <img class="profileimg" src="/profile.png" alt="profile">
+      </button>
+      @if (profile == true)
+      {
+        <div class="profilemenu">
+          <button class="logout" @onclick="Logout">Log Out</button>
+        </div>
+      }
+      else{
+
+      }
+      @if (repository.hasPremium)
+      {
+      }
+      else
+      {
+          
+      }
+    }
+    else
+    {
+        <button class="login" @onclick="loginFf">
+          <p class="lgtxt">LogIn</p>
+          </button>
+    }
+    </nav>
+</header>
+
+<section class="downheader"></section>
+
+<section class="lowersection">
+    <div class="game-container">
+        <div class="iframe-container">
+            <iframe src="@iframeUrl" 
+                    frameborder="0" 
+                    allowfullscreen 
+                    class="@(isExpanded ? "iframe-expanded" : "")">
+            </iframe>
+        </div>
+        <section class="titlesection">
+    <div class="titlebar">
+        <span class="title">@GameName</span>
+        @if (!isExpanded)
+        {
+            <button class="expand" @onclick="Expand"></button>
+        }
+    </div>
+</section>
+    </div>
+</section>
+
+<style>
+  .loading-container {
+    background: rgb(10, 13, 20);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 0vw;
+    height: 0vh;
+    z-index: 0;
+  }
+  
+  .loading-text {
+    font-size: 0px;
+    font-weight: bold;
+    color: white;
+    margin-top: 200px;
+    opacity: 0.8;
+  }
+
+  header {
+        background: rgb(10, 13, 20);
+        min-width: 97vw;
+        min-height: 9vh;
+        display: flex;
+        color: white;
+        font-size: 16px;
+        padding: 20px 40px 10px 50px;
+        border: none;
+        border-radius: none;
+        position: sticky;
+        top: 0px;
+        flex-direction: column;
+        z-index: 1000;
+        opacity: 0.98;
+        position: relative;
+        position: sticky;
+    }
+    .downheader {
+        background: rgb(31, 33, 48);
+        height: 2px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    footer{
+        background: rgb(10, 13, 20);
+        color:  white;
+        padding: 10px 20px;
+        height: 90px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    li{
+        display: inline-block;
+        list-style-type: none;
+        padding-right: 40px;
+
+    }
+    nav{
+        margin-left: clamp(20px, 62vw, 80vw);
+        flex-direction: column;
+        margin-top: -40px;
+        gap: 10px;
+    }
+    .home{
+        background: none;
+        background-size: 300% 300%;
+        color: white;
+        font-size: 16px;
+        padding: none;
+        border: none;
+        border-radius: 8px;
+        width: 70px;
+        height: 35px;
+        transition: all 0.1s ease-out;
+        font-weight: bold;
+        display: flex;
+    }
+    .home:hover{
+        transform: translateY(-4px);
+    }
+    .aboutus{
+        background: none;
+        background-size: 300% 300%;
+        color: white;
+        font-size: 16px;
+        padding: none;
+        border: none;
+        border-radius: 8px;
+        width: 90px;
+        height: 35px;
+        transition: all 0.1s ease-out;
+        font-weight: bold;
+    }
+    .aboutus:hover{
+        transform: translateY(-4px);
+    }
+    .contactus{
+        background: none;
+        background-size: 300% 300%;
+        color: white;
+        font-size: 16px;
+        padding: none;
+        border: none;
+        border-radius: 8px;
+        width: 103px;
+        height: 35px;
+        transition: all 0.1s ease-out;
+        font-weight: bold;
+    }
+    .contactus:hover{
+        transform: translateY(-4px);
+    }
+    .mobileprofile{
+      display: none;
+      background: none;
+      border: none;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo{ 
+     width: 130px; 
+     height: 25px;
+     margin-top: 11px; 
+     background-size: contain; 
+     background-repeat: no-repeat;
+     background-position: center;
+    }
+    .logopremium{
+     width: 142px; 
+     height: 45px; 
+     background-size: contain; 
+     background-repeat: no-repeat;
+     background-position: center;
+    }
+    .lpu{
+      margin-top: 5px;
+      margin-left: -4px;
+      background: rgb(13, 134, 255);
+      height: 2px;
+      width: 150px;
+    }
+    .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 50px;
+    }
+    .profileimg{
+      width: 38px;
+      height: 38px;
+      transition: all 0.2s ease-out;
+    }
+    .profile:hover .profileimg{
+      transform: scale(1.2, 1.2);
+    }
+.premium {
+  width: fit-content;
+  height: 40px;
+  width: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 514px;
+  margin-top: -42px;
+  border: none;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+  background: linear-gradient(
+      15deg,
+      #000088,
+      #0022aa,
+      #0044cc,
+      #0066de,
+      #0088f0,
+      #0066de,
+      #0044cc,
+      #0022aa,
+      #000088
+    )
+    no-repeat;
+  background-size: 300%;
+  background-position: left center;
+  transition: background 0.3s ease;
+  color: #fff;
+}
+
+.premium:hover {
+  background-size: 320%;
+  background-position: right center;
+}
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.login {
+  background: rgb(28, 75, 185);
+  border: 0;
+  margin-left: 420px;
+  margin-top: -42px;
+  border-radius: 18px;
+  transition: 0.01s outline;
+  color: white;
+  height: 40px;
+  width: 100px;
+  display: flex;
+  font-weight: bold;
+}
+.login:hover{
+  outline: 2px rgb(202, 203, 206) solid;
+}
+.txt{
+  margin-left: 13px;
+  margin-top: 7px;
+  transition: 0.25s all;
+}
+.login:hover .txt{
+  margin-left: 20px;
+}
+.lgtxt {
+  margin-left: 22px;
+  margin-top: 7px;
+}
+
+
+
+@@media (max-width: 1499px) {
+        nav {
+            margin-left: clamp(20px, 60vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1437px) {
+        nav {
+            margin-left: clamp(20px, 57vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1356px) {
+        nav {
+            margin-left: clamp(20px, 49vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 9px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1139px) {
+        nav {
+            margin-left: clamp(20px, 38vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 8px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 976px) {
+        nav {
+            margin-left: clamp(20px, 32vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 7px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 818px) {
+        nav {
+            margin-left: clamp(20px, 3vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 7px;
+        }
+        .logo{
+          width: 135px; 
+          height: 27px;
+          margin-top: 11px; 
+          background-size: contain; 
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .login{
+          display: none;
+        }
+        .home{
+          display: none;
+        }
+        .aboutus{
+          display: none;
+        }
+        .contactus{
+          display: none;
+        }
+        .profile{
+          display: none;
+        }
+        .mobileprofile{
+          display: flex;
+          margin-left: 500px;
+          margin-top: -34px;
+          min-height: 48px;
+          min-width: 48px;
+        }
+    }
+
+    @@media (max-width: 610px) {
+        nav {
+            margin-left: clamp(20px, 3vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 7px;
+        }
+        .logo{
+          width: 135px; 
+          height: 27px;
+          margin-top: 11px;
+          background-size: contain; 
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .login{
+          display: none;
+        }
+        .home{
+          display: none;
+        }
+        .aboutus{
+          display: none;
+        }
+        .contactus{
+          display: none;
+        }
+        .profile{
+          display: none;
+        }
+        .mobileprofile{
+          display: flex;
+          margin-left: 400px;
+          margin-top: -34px;
+          min-height: 48px;
+          min-width: 48px;
+        }
+    }
+    @@media (max-width: 551px) {
+        nav {
+            margin-left: clamp(20px, 3vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 7px;
+        }
+        .logo{
+          width: 135px; 
+          height: 27px;
+          margin-top: 11px;
+          background-size: contain; 
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .login{
+          display: none;
+        }
+        .home{
+          display: none;
+        }
+        .aboutus{
+          display: none;
+        }
+        .contactus{
+          display: none;
+        }
+        .profile{
+          display: none;
+        }
+        .mobileprofile{
+          display: flex;
+          margin-left: 00px;
+          margin-top: -34px;
+          min-height: 48px;
+          min-width: 48px;
+        }
+    }
+
+     @if (!repository.IsLoggedIn) {
+        <style>nav {
+            margin-left: clamp(20px, 58vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 10px;
+        }
+
+
+
+        @@media (max-width: 1499px) {
+        nav {
+            margin-left: clamp(20px, 55vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1437px) {
+        nav {
+            margin-left: clamp(20px, 53vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1356px) {
+        nav {
+            margin-left: clamp(20px, 48vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 9px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1139px) {
+        nav {
+            margin-left: clamp(20px, 40vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 8px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 976px) {
+        nav {
+            margin-left: clamp(20px, 35vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 7px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 5px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    }
+
+    @@media (max-width: 918px) {
+        nav {
+            margin-left: clamp(20px, 30vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 7px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 5px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    }
+
+     @@media (max-width: 840px) {
+        nav {
+            margin-left: clamp(20px, 28vw, 80vw);
+            flex-direction: column;
+            margin-top: -24px;
+            gap: 7px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    .gamessection,.secondgamessection {
+    display: flex; /* Align buttons in a row */
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    flex-direction: row;
+    justify-content: center; /* Center align */
+    gap: 5px; /* Add space between buttons */
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    }
+    }
+        </style>
+    }
+    @if (repository.IsLoggedIn) {
+        @if (!repository.hasPremium) {
+        <style>
+          nav{
+            margin-left: clamp(20px, 58vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 10px;
+          }
+          .profile{
+            border: none;
+            background: none;
+            height: 38px;
+            width: 38px;
+            transition: all 0.2s ease-out;
+            margin-left: 10px;
+          }
+          .premium{
+            width: fit-content;
+            position: absolute;
+            height: 40px;
+            width: 105px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 110px;
+            margin-top: -25px;
+            border: none;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+            text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+            background: linear-gradient(
+                15deg,
+                #000088,
+                #0022aa,
+                #0044cc,
+                #0066de,
+                #0088f0,
+                #0066de,
+                #0044cc,
+                #0022aa,
+                #000088
+              )
+              no-repeat;
+            background-size: 300%;
+            background-position: left center;
+            transition: background 0.3s ease;
+            color: #fff;
+          }
+
+          .rankal{
+            margin-top: -47px;
+            margin-left: 195px;
+          }
+
+@@media (max-width: 1774px) {
+    .premium{
+            width: fit-content;
+            position: absolute;
+            height: 40px;
+            width: 105px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 50px;
+            margin-top: -25px;
+            border: none;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+            text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+            background: linear-gradient(
+                15deg,
+                #000088,
+                #0022aa,
+                #0044cc,
+                #0066de,
+                #0088f0,
+                #0066de,
+                #0044cc,
+                #0022aa,
+                #000088
+              )
+              no-repeat;
+            background-size: 300%;
+            background-position: left center;
+            transition: background 0.3s ease;
+            color: #fff;
+          }
+    }
+
+@@media (max-width: 1543px) {
+    .premium{
+            width: fit-content;
+            position: absolute;
+            height: 0px;
+            width: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 30px;
+            margin-top: -200px;
+            border: none;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+            text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+            background: linear-gradient(
+                15deg,
+                #000088,
+                #0022aa,
+                #0044cc,
+                #0066de,
+                #0088f0,
+                #0066de,
+                #0044cc,
+                #0022aa,
+                #000088
+              )
+              no-repeat;
+            background-size: 300%;
+            background-position: left center;
+            transition: background 0.3s ease;
+            color: #fff;
+          }
+    }
+
+
+          @@media (max-width: 1499px) {
+        nav {
+            margin-left: clamp(20px, 60vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1437px) {
+        nav {
+            margin-left: clamp(20px, 58vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 10px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1356px) {
+        nav {
+            margin-left: clamp(20px, 50vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 9px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 1139px) {
+        nav {
+            margin-left: clamp(20px, 40vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 8px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+    }
+    @@media (max-width: 950px) {
+        nav {
+            margin-left: clamp(20px, 37vw, 80vw);
+            flex-direction: column;
+            margin-top: -40px;
+            gap: 7px;
+        }
+        .profile{
+      border: none;
+      background: none;
+      height: 38px;
+      width: 38px;
+      transition: all 0.2s ease-out;
+      margin-left: 10px;
+    }
+        </style>
+        }
+      }
+
+      .loading-container {
+        width: 0vw;
+        height: 0vh;
+        z-index: 0;
+        background-size: null;
+        background-position: null;
+    }
+    .loading-text {
+            font-size: 0px;
+        }
+
+  .lowersection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 95vh;
+    width: 100%;
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .game-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 60%;
+    max-width: 1000px;
+  }
+
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .iframe-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0 -20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid #fff;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .iframe-container::after {
+    content: 'Loading...';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 40px));
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 1;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background: transparent;
+    z-index: 10;
+  }
+
+  .iframe-expanded {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .expand {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    background: url('/expand.png') no-repeat center center;
+    background-size: 20px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .expand:hover {
+    background-color: rgb(204, 204, 204);
+    box-shadow: 0 4px 12px rgba(0, 84, 153, 0.2);
+  }
+
+  .titlesection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .titlebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+  }
+
+  .title {
+    font-size: 24px;
+    height: 40px;
+    width: 300px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgb(39, 39, 39);
+    border: rgb(129, 129, 129) solid 1px;
+    border-radius: 12px;
+  }
+
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  @@media (max-width: 768px) {
+    .game-container {
+      width: 95%;
+      margin-top: 20px;
+      padding: 15px;
+    }
+    
+    iframe {
+      height: 400px;
+    }
+    
+    .title {
+      font-size: 20px;
+      width: 250px;
+    }
+    
+    .titlebar {
+      width: 250px;
+    }
+  }
+
+  .loading-container {
+        width: 0vw;
+        height: 0vh;
+        z-index: 0;
+        background-size: null;
+        background-position: null;
+    }
+    .loading-text {
+            font-size: 0px;
+        }
+</style>
+
+@code {
+    private string? CookieValue;
+    private string? CookieValue1;
+    private string? CookieValueEmail;
+    private string? CookieValueRank;
+    private bool dik = true;
+    private string iframeUrl;
+    private string GameName;
+
+    [Parameter]
+    [SupplyParameterFromQuery(Name = "g")]
+    public string? GameParameter { get; set; }
+
+
+
+    protected override void OnInitialized()
+    {
+        if (GameParameter == "1")
+        {
+            iframeUrl = "https://node-sim-2--filiptheflop.on.websim.com/";
+            GameName = "Node 2";
+        }
+        else if (GameParameter == "2")
+        {
+            iframeUrl = "https://www.worldguessr.com/";
+            GameName = "World Guessr";
+        }
+        else if (GameParameter == "3")
+        {
+            iframeUrl = "https://node-sim-1--filiptheflop.on.websim.com/";
+            GameName = "Node 1";
+        }
+        else if (GameParameter == "4")
+        {
+            iframeUrl = "https://files.vitalitygames.com/games/webgl/2018/12/11/off-road-cargo-drive-simulator/";
+            GameName = "Off Road Cargo Drive Sim";
+        }
+        base.OnInitialized();
+    }
+
+    private bool profile = false;
+
+    private void MobileProfile()
+    {
+        if (repository.IsLoggedIn)
+        {
+          NavigationManager.NavigateTo("/account");
+        }
+        else
+        {
+          NavigationManager.NavigateTo("/login");
+        }
+    }
+
+    private void accountFf()
+    {
+        NavigationManager.NavigateTo("/account");
+    }
+
+    private void loginFf()
+    {
+      NavigationManager.NavigateTo("/login");
+    }
+
+    private void homeFf()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+
+    private void aboutusFf()
+    {
+        NavigationManager.NavigateTo("/about-us");
+    }
+
+    private void contactusFf()
+    {
+        NavigationManager.NavigateTo("/contact-us");
+    }
+
+    private bool isExpanded = false;
+
+    private void Expand()
+    {
+        isExpanded = !isExpanded;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Read the cookie values
+            CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
+            CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
+            CookieValueEmail = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_email");
+            CookieValueRank = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_rank");
+
+            // Update the authentication state based on the cookie value
+            if (CookieValue == "isli")
+            {
+                repository.SetLoggedIn(true);
+            }
+            else
+            {
+                repository.SetLoggedIn(false);
+            }
+
+            if (CookieValue1 == "hsp")
+            {
+                repository.SetHasPremium(true);
+            }
+            else
+            {
+                repository.SetHasPremium(false);
+            }
+
+            StateHasChanged();
+
+            if (repository.IsLoggedIn)
+            {
+                dik = true;
+                _ = RankosAsync();
+            }
+            else
+            {
+                dik = false;
+            }
+        }
+    }
+
+    private async Task Logout()
+    {
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_auth");
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_premium");
+        repository.SetLoggedIn(false);
+        NavigationManager.NavigateTo("/");
+    }
+
+    private async Task RankosAsync()
+    {
+        if (CookieValueRank == "Silver")
+        {
+            repository.rankCount = 10;
+        }
+        else if (CookieValueRank == "Gold")
+        {
+            repository.rankCount = 20;
+        }
+        else if (CookieValueRank == "Platinum")
+        {
+            repository.rankCount = 30;
+        }
+        else if (CookieValueRank == "Diamond")
+        {
+            repository.rankCount = 40;
+        }
+        else if (CookieValueRank == "Dev")
+        {
+        repository.rankCount = 1000;
+        }
+        else
+        {
+            repository.rankCount = 0;
+        }
+
+        while (dik)
+        {
+            await Task.Delay(10000);
+            repository.rankCount++;
+
+            if (repository.rankCount == 10)
+            {
+                repository.AddRankToUser(CookieValueEmail, "Silver");
+            }
+            else if (repository.rankCount == 20)
+            {
+                repository.AddRankToUser(CookieValueEmail, "Gold");
+            }
+            else if (repository.rankCount == 30)
+            {
+                repository.AddRankToUser(CookieValueEmail, "Platinum");
+            }
+            else if (repository.rankCount == 40)
+            {
+                repository.AddRankToUser(CookieValueEmail, "Diamond");
+            }
+        }
+    }
+}
