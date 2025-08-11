@@ -1190,6 +1190,8 @@ body {
         await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_premium");
         await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_rank");
         await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_email");
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "acm");
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "casino_disclaimer_acknowledged");
 
         repository.SetLoggedIn(false);
         NavigationManager.NavigateTo("/");

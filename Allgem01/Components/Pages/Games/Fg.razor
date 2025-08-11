@@ -1,11 +1,17 @@
-@page "/casino/loading"
-@inject NavigationManager NavigationManager
-@inject IJSRuntime JSRuntime
+@page "/yh"
 
-<div class="loading-container" id="loadingContainer">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="loading-container" id="loadingContainer">
   <img src="/allgemtext.png" alt="ALLGEM" class="logo">
         <div class="loading-spinner"></div>
-        <div class="loading-text">Casino</div>
+        <div class="loading-text">Loading...</div>
 </div>
 
 <style>
@@ -37,16 +43,5 @@
             opacity: 0.8;
         }
 </style>
-
-@code {
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        Kk();
-    }
-
-    private void Kk()
-    {
-        Thread.Sleep(2000);
-        NavigationManager.NavigateTo("/casino", forceLoad: true);  
-    }
-}
+</body>
+</html>

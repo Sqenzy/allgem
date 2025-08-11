@@ -361,7 +361,9 @@ private void putintodb()
     {
         repository.SignUp(email, password);
         repository.AddRankToUser(email, "Bronze");
-        NavigationManager.NavigateTo("/login");
+        CreateCookie("allgem_email", email, 2592000);
+        CreateCookie("allgem_auth", "isli", 2592000);
+        NavigationManager.NavigateTo("/");
     }
     else if (genNumber != code)
     {
@@ -397,4 +399,9 @@ var emailBody = new
 request.AddJsonBody(emailBody);
 var response = client.Post(request);
 }
+
+private async void CreateCookie ( string name, string value, int days ) 
+    { 
+        var test = await JSRuntime.InvokeAsync<string>("methods.CreateCookie", name, value, days); 
+    }
 }

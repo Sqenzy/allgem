@@ -51,6 +51,79 @@
             opacity: 0.8;
         }
 </style>
+
+@if (!isAcknowledged)
+    {
+        <div class="disclaimer-modal">
+            <div class="disclaimer-content">
+                <h3>Important Disclaimer</h3>
+                <p>This website offers games with virtual currency for entertainment purposes only. No real money is used or can be won. Gambling with real money can be highly addictive and may lead to serious financial and personal harm. We strongly advise against participating in real-money gambling. Play responsibly and for fun only.</p>
+                <button class="acknowledge-button" @onclick="AcknowledgeDisclaimer">I Understand</button>
+            </div>
+        </div>
+    }
+
+    <style>
+        h1 {
+            font-size: 50px;
+            color: white;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        h2 {
+            font-size: 30px;
+            color: white;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .disclaimer-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .disclaimer-content {
+            background: rgb(18, 19, 32);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .disclaimer-content h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .disclaimer-content p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .acknowledge-button {
+            background: #1a73e8;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .acknowledge-button:hover {
+            background: #1557b0;
+        }
+    </style>
 <!--test-->
 <header>
   @if (repository.IsLoggedIn)
@@ -1226,9 +1299,20 @@ body {
     private string? CookieValue1;
     private string? CookieValueRank;
     private string? CookieValueEmail;
+    private string? CookieValueCas;
     private bool profile = false;
     private string rankimg = "/bronze.png";
     public int Money;
+
+
+    private bool isAcknowledged = false;
+
+    private void AcknowledgeDisclaimer()
+    {
+        isAcknowledged = true;
+        CreateCookie("casino_disclaimer_acknowledged", "true", 999999);
+        NavigationManager.NavigateTo("/casino");
+    }
 
     private void Profile()
     {
@@ -1314,6 +1398,16 @@ body {
             CookieValueEmail = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_email");
             var moneyString = await JSRuntime.InvokeAsync<string>("getCookie", "acm");
             int.TryParse(moneyString, out Money);
+            CookieValueCas = await JSRuntime.InvokeAsync<string>("getCookie", "casino_disclaimer_acknowledged");
+
+            if (string.IsNullOrEmpty(CookieValueCas))
+            {
+                CookieValueCas = "false";
+            }
+            else if (CookieValueCas == "true")
+            {
+                isAcknowledged = true;
+            }
 
 
             // Update the authentication state based on the cookie value

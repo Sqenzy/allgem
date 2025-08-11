@@ -97,6 +97,7 @@
     private async Task ProcessSuccessfulPayment(string sessionId)
     {
         repository.AddPremiumToUser(CookieValueEmail);
+        CreateCookie("allgem_premium", "hsp", 2592000);
     }
 
     private void NavigateToGraph()
@@ -107,5 +108,10 @@
     private void NavigateHome()
     {
         NavigationManager.NavigateTo("/");
+    }
+
+    private async void CreateCookie ( string name, string value, int days ) 
+    { 
+        var test = await JSRuntime.InvokeAsync<string>("methods.CreateCookie", name, value, days); 
     }
 }

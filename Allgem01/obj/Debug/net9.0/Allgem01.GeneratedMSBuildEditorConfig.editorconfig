@@ -64,12 +64,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Casino/CasinoHome.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXNpbm9cQ2FzaW5vSG9tZS5yYXpvcg==
+[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Casino/Casinod.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXNpbm9cQ2FzaW5vZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Casino/CasinoScreen.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXNpbm9cQ2FzaW5vU2NyZWVuLnJhem9y
+[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Casino/CasinoHome.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXNpbm9cQ2FzaW5vSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Casino/Flip.razor]
@@ -92,16 +92,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250YWN0VXNFbWFpbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Developerpanel.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZXZlbG9wZXJwYW5lbC5yYXpvcg==
+[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Developer/Developerpanel.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZXZlbG9wZXJcRGV2ZWxvcGVycGFuZWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Game1.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHYW1lMS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Game2.razor]
@@ -112,12 +108,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHYW1lMy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Games/Game.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHYW1lc1xHYW1lLnJhem9y
+[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Games/Fg.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHYW1lc1xGZy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Games/Gsad.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHYW1lc1xHc2FkLnJhem9y
+[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Games/Game.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHYW1lc1xHYW1lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Home.razor]

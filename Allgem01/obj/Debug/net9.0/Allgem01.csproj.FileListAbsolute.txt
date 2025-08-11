@@ -199,6 +199,7 @@ C:\Users\janlu\allgem\Allgem01\obj\Debug\net9.0\ref\Allgem01.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\publish\web.config
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\appsettings.json
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Components\Pages\Games\games.json
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\publish\Allgem01.deps.json
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\publish\Allgem01.runtimeconfig.json
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\publish\Allgem01.staticwebassets.endpoints.json
