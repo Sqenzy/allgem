@@ -221,33 +221,114 @@ public class Repository
     }
 
 
-    
-public void SetCasinoMoney(int amount)
-{
-    CasinoMoney = amount;
-}
 
-public void ResetPassword(string email, string newPassword)
-{
-    string hashedPassword = HashPassword(newPassword);
-    
-    string sql = """
+    public void SetCasinoMoney(int amount)
+    {
+        CasinoMoney = amount;
+    }
+
+    public void ResetPassword(string email, string newPassword)
+    {
+        string hashedPassword = HashPassword(newPassword);
+
+        string sql = """
                  UPDATE users
                  SET password = @Password
                  WHERE email = @Email;
                  """;
 
-    using (var connection = new SQLiteConnection(_connectionString))
-    {
-        connection.Open();
-
-        using (var command = new SQLiteCommand(sql, connection))
+        using (var connection = new SQLiteConnection(_connectionString))
         {
-            command.Parameters.AddWithValue("@Email", email);
-            command.Parameters.AddWithValue("@Password", hashedPassword);
-            command.ExecuteNonQuery();
+            connection.Open();
+
+            using (var command = new SQLiteCommand(sql, connection))
+            {
+                command.Parameters.AddWithValue("@Email", email);
+                command.Parameters.AddWithValue("@Password", hashedPassword);
+                command.ExecuteNonQuery();
+            }
         }
     }
-}
+
+
+    public void addGameName(string email, string gamename)
+    {
+        string sql = """
+                 UPDATE users
+                 SET gamename = @gamename
+                 WHERE email = @Email;
+                 """;
+
+        using (var connection = new SQLiteConnection(_connectionString))
+        {
+            connection.Open();
+
+            using (var command = new SQLiteCommand(sql, connection))
+            {
+                command.Parameters.AddWithValue("@Email", email);
+                command.Parameters.AddWithValue("@gamename", gamename);
+                command.ExecuteNonQuery();
+                hasPremium = true;
+            }
+        }
+    }
+     public void addGameDescription(string email, string gamedescription)
+    {
+        string sql = """
+                 UPDATE users
+                 SET gamedescription = @gamedescription
+                 WHERE email = @Email;
+                 """;
+
+        using (var connection = new SQLiteConnection(_connectionString))
+        {
+            connection.Open();
+
+            using (var command = new SQLiteCommand(sql, connection))
+            {
+                command.Parameters.AddWithValue("@Email", email);
+                command.Parameters.AddWithValue("@gamedescription", gamedescription);
+                command.ExecuteNonQuery();
+                hasPremium = true;
+            }
+        }
+    }
+
+
+// public void AddColumnToUsersTable(string defaultValue = null)
+    // {
+    //     string sql = "ALTER TABLE users ADD COLUMN gamedescription TEXT";
+
+    //     if (!string.IsNullOrEmpty(defaultValue))
+    //     {
+    //         // Properly escape the default value for SQL
+    //         sql += $" DEFAULT '{defaultValue.Replace("'", "''")}'";
+    //     }
+
+    //     try
+    //     {
+    //         using (var connection = new SQLiteConnection(_connectionString))
+    //         {
+    //             connection.Open();
+    //             using (var command = new SQLiteCommand(sql, connection))
+    //             {
+    //                 command.ExecuteNonQuery();
+    //             }
+    //         }
+    //     }
+    //     catch (SQLiteException ex)
+    //     {
+    //         // Handle cases where column might already exist
+    //         if (ex.Message.Contains("duplicate column name"))
+    //         {
+    //             // Column already exists, you might want to log this or handle it differently
+    //             Console.WriteLine("Column 'gamename' already exists in users table.");
+    //         }
+    //         else
+    //         {
+    //             throw; // Re-throw other SQLite exceptions
+    //         }
+    //     }
+    // }
 
 }

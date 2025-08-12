@@ -60,6 +60,7 @@
         <button @onclick="kkFF">Set Rank</button>
         <input @bind="newpassword" type="text" placeholder="password">
         <button @onclick="ResP">Reset Password</button>
+        <button @onclick="AddC">Add Column</button>
       @* } *@
     }
     else
@@ -128,6 +129,10 @@
         {
           NavigationManager.NavigateTo("/login");
         }
+    }
+
+    private void AddC()
+    {
     }
 
     private void Graph()

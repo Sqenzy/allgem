@@ -1,0 +1,436 @@
+@page "/submit-a-game"
+@using Allgem01.Logic
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+@inject Repository repository
+@inject IJSRuntime JSRuntime
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Premium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="premium-section">
+        <div class="premium-content">
+            <h1>Submit a Game</h1>
+            <input type="text" placeholder="Game Name" @bind="gameName" />
+            <button @onclick="Next">Next</button>
+        </div>
+    </section>
+</body>
+</html>
+
+<style>
+    button{
+        display: flex;
+       flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(28, 75, 185);
+    border: 0;
+    margin-top: 20px;
+    border-radius: 18px;
+    transition: 0.01s outline;
+    color: white;
+    height: 45px;
+    width: 180px;
+    display: flex;
+    font-weight: bold;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(to right, #0c1238, #111222, #121320, #0f0f18, #121320, #121320, #0b1247);
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        background: #0a0d14;
+        width: 100%;
+        padding: 20px 40px;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        opacity: 0.98;
+    }
+
+    .logo {
+        width: 130px;
+        height: 25px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    nav {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+
+    .home, .aboutus, .contactus {
+        background: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        cursor: pointer;
+        transition: transform 0.1s ease-out, color 0.2s ease;
+    }
+
+    .home:hover, .aboutus:hover, .contactus:hover {
+        transform: translateY(-4px);
+        color: #0088f0;
+    }
+
+    .login {
+        background: #1c4bb9;
+        border: none;
+        border-radius: 18px;
+        color: #fff;
+        font-weight: 600;
+        padding: 8px 20px;
+        margin-left: 20px;
+        transition: outline 0.2s ease;
+    }
+
+    .login:hover {
+        outline: 2px solid #cacbce;
+    }
+
+    .login .txt {
+        margin: 0;
+        transition: margin-left 0.25s ease;
+    }
+
+    .login:hover .txt {
+        margin-left: 7px;
+    }
+
+    .premium {
+        background: linear-gradient(
+            15deg,
+            #000088,
+            #0022aa,
+            #0044cc,
+            #0066de,
+            #0088f0,
+            #0066de,
+            #0044cc,
+            #0022aa,
+            #000088
+        );
+        background-size: 300%;
+        background-position: left center;
+        color: #fff;
+        font-weight: 600;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin-left: 20px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .premium:hover {
+        background-size: 320%;
+        background-position: right center;
+    }
+
+    .profile {
+        background: none;
+        border: none;
+        margin-left: 20px;
+    }
+
+    .profileimg {
+        width: 38px;
+        height: 38px;
+        transition: transform 0.2s ease-out;
+    }
+
+    .profile:hover .profileimg {
+        transform: scale(1.2);
+    }
+
+    .mobileprofile {
+        display: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        top: 60px;
+        right: 40px;
+        background: #1c4bb9;
+        border-radius: 8px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dropdown button {
+        background: none;
+        border: none;
+        color: #fff;
+        font-weight: 600;
+        padding: 8px 16px;
+        cursor: pointer;
+    }
+
+    .downheader {
+        background: #1f2130;
+        height: 2px;
+        width: 100%;
+    }
+
+    .premium-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+        flex: 1;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .premium-content {
+        background: #0066de;
+        border-radius: 24px;
+        padding: 40px;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .premium-content h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .premium-description {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        color: #e6e6e6;
+    }
+
+    .stripe-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        background: #0a0d14;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    @@media (max-width: 976px) {
+        nav ul {
+            gap: 10px;
+        }
+
+        .premium-section {
+            padding: 20px;
+        }
+
+        .premium-content {
+            padding: 20px;
+        }
+
+        .premium-content h1 {
+            font-size: 2rem;
+        }
+
+        .premium-description {
+            font-size: 1rem;
+        }
+    }
+
+    @@media (max-width: 818px) {
+        nav ul, .login, .premium, .profile {
+            display: none;
+        }
+
+        .mobileprofile {
+            display: flex;
+            margin-left: auto;
+            margin-top: 0;
+            min-height: 48px;
+            min-width: 48px;
+        }
+
+        .logo {
+            width: 135px;
+            height: 27px;
+        }
+    }
+
+    @if (!repository.IsLoggedIn) {
+        <style>
+            nav {
+                margin-left: auto;
+            }
+
+            @@media (max-width: 976px) {
+                nav {
+                    margin-left: auto;
+                }
+            }
+        </style>
+    }
+
+    @if (repository.IsLoggedIn && !repository.hasPremium) {
+        <style>
+            .premium {
+                margin-left: 20px;
+            }
+        </style>
+    }
+</style>
+
+@code {
+    private string? email;
+    private string? gameName;
+
+    private async void CreateCookie(string name, string value, int days)
+    {
+        var test = await JSRuntime.InvokeAsync<string>("methods.CreateCookie", name, value, days);
+    }
+
+    private void Next()
+    {
+        CreateCookie("gn", gameName, 999999999);
+    }
+
+    private string? CookieValue;
+    private string? CookieValue1;
+    private bool profile = false;
+
+    private void Profile()
+    {
+        profile = !profile;
+    }
+
+    private void Graph()
+    {
+        NavigationManager.NavigateTo("/graph");
+    }
+
+    private void MobileProfile()
+    {
+        if (repository.IsLoggedIn)
+        {
+            NavigationManager.NavigateTo("/account");
+        }
+        else
+        {
+            NavigationManager.NavigateTo("/login");
+        }
+    }
+
+    private void playGameShooting()
+    {
+        NavigationManager.NavigateTo("/shooting/play");
+    }
+
+    private void accountFf()
+    {
+        NavigationManager.NavigateTo("/account");
+    }
+
+    private void playGameSecurityIDM()
+    {
+        NavigationManager.NavigateTo("/parkour/play");
+    }
+
+    private void loginFf()
+    {
+        NavigationManager.NavigateTo("/login");
+    }
+
+    private void homeFf()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+
+    private void aboutusFf()
+    {
+        NavigationManager.NavigateTo("/about-us");
+    }
+
+    private void contactusFf()
+    {
+        NavigationManager.NavigateTo("/contact-us");
+    }
+
+    private void premiumFf()
+    {
+        NavigationManager.NavigateTo("/premium");
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
+            CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
+
+            if (CookieValue == "isli")
+            {
+                repository.SetLoggedIn(true);
+            }
+            else
+            {
+                repository.SetLoggedIn(false);
+            }
+
+            if (CookieValue1 == "hsp")
+            {
+                repository.SetHasPremium(true);
+            }
+            else
+            {
+                repository.SetHasPremium(false);
+            }
+
+            StateHasChanged();
+        }
+    }
+
+    private async Task Logout()
+    {
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_auth");
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_premium");
+        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_rank");
+        repository.SetLoggedIn(false);
+        NavigationManager.NavigateTo("/");
+    }
+}
