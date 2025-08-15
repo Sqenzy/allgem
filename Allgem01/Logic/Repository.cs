@@ -16,6 +16,7 @@ public class Repository
     public string rank { get; set; } = string.Empty;
     public int rankCount { get; set; }
     public int CasinoMoney { get; set; } = 100;
+    public string devGameName { get; set; } = "";
 
 
     public Repository()
@@ -272,7 +273,7 @@ public class Repository
             }
         }
     }
-     public void addGameDescription(string email, string gamedescription)
+    public void addGameDescription(string email, string gamedescription)
     {
         string sql = """
                  UPDATE users
@@ -290,6 +291,34 @@ public class Repository
                 command.Parameters.AddWithValue("@gamedescription", gamedescription);
                 command.ExecuteNonQuery();
                 hasPremium = true;
+            }
+        }
+    }
+    
+
+    public void CheckGameName(string email)
+    {
+        string sql = "SELECT gamename FROM users WHERE email = @Email";
+
+        using (var connection = new SQLiteConnection(_connectionString))
+        {
+            connection.Open();
+
+            using (var command = new SQLiteCommand(sql, connection))
+            {
+                command.Parameters.AddWithValue("@Email", email);
+
+                using (SQLiteDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        devGameName = reader.IsDBNull(0) ? null : reader.GetString(0);
+                    }
+                    else
+                    {
+                        devGameName = null;
+                    }
+                }
             }
         }
     }

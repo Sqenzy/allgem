@@ -141,11 +141,11 @@ function topFunction() {
 
 <section class="gamessection">
     <div class="cards">
-        <button class="card" id="card1">
+        <button class="card" id="card1" @onclick="PlayGameKourio">
             <p class="tip">Kour.io</p>
             <p class="second-text"></p>
         </button>
-        <button class="card" id="card2" @onclick="() => playGameSecurityIDM()">
+        <button class="card" id="card2" @onclick="PlayGameGShoot">
             <p class="tip"></p>
             <p class="second-text">GShoot</p>
         </button>
@@ -158,15 +158,15 @@ function topFunction() {
 
 <section class="secondgamessection">
     <div class="cards">
-        <button class="card" id="card4" @onclick="Node2Ff">
+        <button class="card" id="card4" @onclick="PlayGameNode2">
             <p class="tip">Node 2</p>
             <p class="second-text"></p>
         </button>
-        <button class="card" id="card5">
+        <button class="card" id="card5" @onclick="PlayGameWorldGuesser">
             <p class="tip">World Guesser</p>
             <p class="second-text"></p>
         </button>
-        <button class="card" id="card6">
+        <button class="card" id="card6" @onclick="PlayGameOffRoadCargo">
             <p class="tip">Off Road Cargo</p>
             <p class="second-text"></p>
         </button>
@@ -425,11 +425,21 @@ body {
 }
 
 #card1{
-  
+  background-image: url('/kourio.png');
+  background-size: cover;
+  background-position: center;
 }
+#card1:hover{
+  background-image: url('/kourio.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
 #card2{
   background-image: url('/gshoot.png');
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 #card2:hover {
   background-image: url('/video.gif');
@@ -444,6 +454,17 @@ body {
   font-size: 1em;
   margin-bottom: 40px;
 }
+
+
+#card3{
+  background-image: url('/casinobanner.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
 
 .cards {
   display: flex;
@@ -1141,6 +1162,34 @@ body {
        }
     }
 
+
+    private void casinoFf()
+    {
+        NavigationManager.NavigateTo("/casino");
+    }
+    private void PlayGameKourio()
+    {
+        NavigationManager.NavigateTo("/game?g=3");
+    }
+    private void PlayGameGShoot()
+    {
+        NavigationManager.NavigateTo("/play/gshoot");
+    }
+    private void PlayGameNode2()
+    {
+        NavigationManager.NavigateTo("/game?g=1");
+    }
+    private void PlayGameWorldGuesser()
+    {
+        NavigationManager.NavigateTo("/game?g=2");
+    }
+    private void PlayGameOffRoadCargo()
+    {
+        NavigationManager.NavigateTo("/game?g=4");
+    }
+
+
+
     private void devFf()
     {
         NavigationManager.NavigateTo("/developer-panel");
@@ -1155,28 +1204,13 @@ body {
     {
         NavigationManager.NavigateTo("/terms-and-conditions");
     }
-
-    private void Graph()
-    {
-       //NavigationManager.NavigateTo("/graph");
-    }
-
     private void add()
     {
       NavigationManager.NavigateTo("/manifest.json");
     }
-
-    private void playGameShooting()
-    {
-        //NavigationManager.NavigateTo("/shooting/play");
-    }
     private void accountFf()
     {
         NavigationManager.NavigateTo("/account");
-    }
-    private async Task playGameSecurityIDM()
-    {
-      NavigationManager.NavigateTo("/play/gshoot");
     }
     private void loginFf()
     {
@@ -1197,14 +1231,6 @@ body {
     private void premiumFf()
     {
         NavigationManager.NavigateTo("/premium");
-    }
-    private void casinoFf()
-    {
-        NavigationManager.NavigateTo("/casino");
-    }
-    private void Node2Ff()
-    {
-        NavigationManager.NavigateTo("/game/node2");
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)

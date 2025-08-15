@@ -96,6 +96,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZXZlbG9wZXJcU3VibWl0QUdhbWUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Developer/SubmitAGame2.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZXZlbG9wZXJcU3VibWl0QUdhbWUyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

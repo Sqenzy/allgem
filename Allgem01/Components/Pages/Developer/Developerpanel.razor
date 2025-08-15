@@ -83,7 +83,7 @@
     <p class="und">______________________</p>
     <button class="submit" @onclick="SubmitAGame">Submit a game</button>
     <section class="mygames">
-      <button class="game1"></button>
+      <button class="game1" @onclick="Game1">@gameName</button>
     </section>
     </section>
   </section>
@@ -1082,7 +1082,9 @@ body {
     private string? CookieValue1;
     private string? CookieValueEmail;
     private string? CookieValueRank;
+    private string? CookieValueGameName;
     private bool profile = false;
+    private string gameName = "";
 
 
     private void AdminFf()
@@ -1132,6 +1134,10 @@ body {
     {
       NavigationManager.NavigateTo("/submit-a-game");
     }
+    private void Game1()
+    {
+        NavigationManager.NavigateTo("developer-panel/game/" + gameName);
+    }
 
    protected override async Task OnAfterRenderAsync(bool firstRender)
 {
@@ -1142,6 +1148,12 @@ body {
         CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
         CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
         CookieValueRank = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_rank");
+        CookieValueGameName = await JSRuntime.InvokeAsync<string>("getCookie", "dev_gn");
+
+        if (CookieValueGameName != null)
+        {
+            gameName = CookieValueGameName;
+        }
 
         // Update the authentication state based on the cookie value
         if (CookieValue == "isli")

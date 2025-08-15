@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dhJ5hbKHxJtqYhRPiJnvJsBhiBDHcCsND6GVIkn/ssI=",
+  "Hash": "WkHgb8DAm4kq4NrrlHOX+h7Ev1S/AjVhLghQCMmhmKE=",
   "Source": "Allgem01",
   "BasePath": "_content/Allgem01",
   "Mode": "Default",
@@ -351,6 +351,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\fpsgame\\fpsgame.html"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\afey2btk4m-285b9qtztj.gz",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "lib/bootstrap/dist/js/dropzone#[.{fingerprint=285b9qtztj}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\js\\dropzone.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "oi5yp2a3fp",
+      "Integrity": "cLFCCZU8ziR8UgqR3iaoVwZri8/G00F0W8kDGrP7sCo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\js\\dropzone.js"
     },
     {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\aqvfz4l7un-8vyfqsqgz1.gz",
@@ -1359,6 +1380,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bronze.png"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\casinobanner.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "casinobanner#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nlru8o06s1",
+      "Integrity": "O8+XJIAbUCpVNwAjPgg9ZX9nZU9BFQpXVoa2LLHTjp8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\casinobanner.png"
     },
     {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\crserver.png",
@@ -2810,6 +2852,27 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\js\\dropzone.js",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "lib/bootstrap/dist/js/dropzone#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "285b9qtztj",
+      "Integrity": "zi9ckeBLyt6OXW/eQwnz25WFU1VpOCnnJdn0ezWHxdI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\dropzone.js"
+    },
+    {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\line.png",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
@@ -3294,7 +3357,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Aug 2025 20:11:00 GMT"
+          "Value": "Fri, 15 Aug 2025 18:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3355,7 +3418,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Aug 2025 20:11:00 GMT"
+          "Value": "Fri, 15 Aug 2025 18:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3400,7 +3463,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Aug 2025 20:11:00 GMT"
+          "Value": "Fri, 15 Aug 2025 18:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3455,7 +3518,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Aug 2025 20:11:00 GMT"
+          "Value": "Fri, 15 Aug 2025 18:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3516,7 +3579,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Aug 2025 20:11:00 GMT"
+          "Value": "Fri, 15 Aug 2025 18:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3561,7 +3624,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Aug 2025 20:11:00 GMT"
+          "Value": "Fri, 15 Aug 2025 18:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3616,7 +3679,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Aug 2025 20:11:00 GMT"
+          "Value": "Fri, 15 Aug 2025 18:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3669,7 +3732,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Aug 2025 20:11:00 GMT"
+          "Value": "Fri, 15 Aug 2025 18:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3706,7 +3769,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Aug 2025 20:11:00 GMT"
+          "Value": "Fri, 15 Aug 2025 18:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3753,7 +3816,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Aug 2025 20:11:00 GMT"
+          "Value": "Fri, 15 Aug 2025 18:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3806,7 +3869,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Aug 2025 20:11:00 GMT"
+          "Value": "Fri, 15 Aug 2025 18:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3843,7 +3906,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Aug 2025 20:11:00 GMT"
+          "Value": "Fri, 15 Aug 2025 18:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4406,6 +4469,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-7PUQ6E9vF0qicjPpuL7n0kc5XZEGr0y/ihHY+Hblka0="
+        }
+      ]
+    },
+    {
+      "Route": "casinobanner.nlru8o06s1.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\casinobanner.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2524232"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O8+XJIAbUCpVNwAjPgg9ZX9nZU9BFQpXVoa2LLHTjp8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 15 Aug 2025 16:14:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nlru8o06s1"
+        },
+        {
+          "Name": "label",
+          "Value": "casinobanner.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-O8+XJIAbUCpVNwAjPgg9ZX9nZU9BFQpXVoa2LLHTjp8="
+        }
+      ]
+    },
+    {
+      "Route": "casinobanner.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\casinobanner.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2524232"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O8+XJIAbUCpVNwAjPgg9ZX9nZU9BFQpXVoa2LLHTjp8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 15 Aug 2025 16:14:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-O8+XJIAbUCpVNwAjPgg9ZX9nZU9BFQpXVoa2LLHTjp8="
         }
       ]
     },
@@ -21296,6 +21441,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-pf2AOjAOccWBEl9ORfBaaHo0t3lQUfisiqfIeMW9tqI="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/dropzone.285b9qtztj.js",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\afey2btk4m-285b9qtztj.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003184713376"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "313"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cLFCCZU8ziR8UgqR3iaoVwZri8/G00F0W8kDGrP7sCo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Aug 2025 21:14:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"zi9ckeBLyt6OXW/eQwnz25WFU1VpOCnnJdn0ezWHxdI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "285b9qtztj"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/js/dropzone.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zi9ckeBLyt6OXW/eQwnz25WFU1VpOCnnJdn0ezWHxdI="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/dropzone.285b9qtztj.js",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\js\\dropzone.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "672"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zi9ckeBLyt6OXW/eQwnz25WFU1VpOCnnJdn0ezWHxdI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Aug 2025 21:14:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "285b9qtztj"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/js/dropzone.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zi9ckeBLyt6OXW/eQwnz25WFU1VpOCnnJdn0ezWHxdI="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/dropzone.285b9qtztj.js.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\afey2btk4m-285b9qtztj.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cLFCCZU8ziR8UgqR3iaoVwZri8/G00F0W8kDGrP7sCo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Aug 2025 21:14:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "285b9qtztj"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/js/dropzone.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cLFCCZU8ziR8UgqR3iaoVwZri8/G00F0W8kDGrP7sCo="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/dropzone.js",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\afey2btk4m-285b9qtztj.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003184713376"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "313"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cLFCCZU8ziR8UgqR3iaoVwZri8/G00F0W8kDGrP7sCo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Aug 2025 21:14:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"zi9ckeBLyt6OXW/eQwnz25WFU1VpOCnnJdn0ezWHxdI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zi9ckeBLyt6OXW/eQwnz25WFU1VpOCnnJdn0ezWHxdI="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/dropzone.js",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\js\\dropzone.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "672"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zi9ckeBLyt6OXW/eQwnz25WFU1VpOCnnJdn0ezWHxdI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Aug 2025 21:14:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zi9ckeBLyt6OXW/eQwnz25WFU1VpOCnnJdn0ezWHxdI="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/js/dropzone.js.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\afey2btk4m-285b9qtztj.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cLFCCZU8ziR8UgqR3iaoVwZri8/G00F0W8kDGrP7sCo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 13 Aug 2025 21:14:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cLFCCZU8ziR8UgqR3iaoVwZri8/G00F0W8kDGrP7sCo="
         }
       ]
     },
