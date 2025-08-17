@@ -129,6 +129,10 @@
       "PackagePath": "staticwebassets\\imaginase.png"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\kourio.png",
+      "PackagePath": "staticwebassets\\kourio.png"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
@@ -325,6 +329,14 @@
       "PackagePath": "staticwebassets\\mines.png"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\node2.png",
+      "PackagePath": "staticwebassets\\node2.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\offroadcargo.png",
+      "PackagePath": "staticwebassets\\offroadcargo.png"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\platinum.png",
       "PackagePath": "staticwebassets\\platinum.png"
     },
@@ -367,6 +379,10 @@
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\video.gif",
       "PackagePath": "staticwebassets\\video.gif"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\worldguessr.png",
+      "PackagePath": "staticwebassets\\worldguessr.png"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Allgem01.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
