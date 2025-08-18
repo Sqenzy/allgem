@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\casinobanner.png"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\close.png",
+      "PackagePath": "staticwebassets\\close.png"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\crserver.png",
       "PackagePath": "staticwebassets\\crserver.png"
     },

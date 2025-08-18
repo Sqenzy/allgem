@@ -15,16 +15,15 @@
      crossorigin="anonymous"></script>
 </head>
 </html>
-<iframe src="http://localhost:5173/loading" style="width: 100%; height: 100vh; border: none;"></iframe>
-
 
 <div class="loading-container" id="loadingContainer">
   <img src="/allgemtext.png" alt="ALLGEM" class="logo">
+        <div class="loading-spinner"></div>
         <div class="loading-text">Loading...</div>
 </div>
 
 <style>
-  .lc {
+  .loading-container {
     background: rgb(10, 13, 20);
             text-align: center;
             display: flex;
@@ -33,7 +32,7 @@
             gap: 30px;
             width: 100vw;
         height: 1000vh;
-        z-index: -1;
+        z-index: 100;
         background-size: cover;
         background-position: center;
         }
@@ -44,7 +43,7 @@
             margin-top: 200px;
         }
         
-        .lt {
+        .loading-text {
             font-size: 18px;
             font-weight: bold;
             color: white;
@@ -52,6 +51,8 @@
             opacity: 0.8;
         }
 </style>
+
+
 
 <header class="@(isExpanded ? "hide-header" : "")">
   @if (repository.IsLoggedIn)
@@ -119,6 +120,10 @@
                     allowfullscreen 
                     class="@(isExpanded ? "iframe-expanded" : "")">
             </iframe>
+            @if (isExpanded)
+            {
+                <button class="closeexpand" @onclick="closeexpand"></button>
+            }
         </div>
         <section class="titlesection">
     <div class="titlebar">
@@ -131,54 +136,17 @@
 </section>
     </div>
 </section>
+<section class="description">
+  <div class="des">
+  <h3>Description</h3>
+  <p>@Description</p>
+  </div>
+</section>
+
+<footer><p>© 2025 Allgem</p><button class="tc" @onclick="termFf">Terms & conditions</button><button class="dd" @onclick="devFf">Developer Panel</button>
+</footer>
 
 <style>
-   .loading-container {
-    background: rgb(10, 13, 20);
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
-            width: 100vw;
-        height: 1000vh;
-        z-index: -1;
-        background-size: cover;
-        background-position: center;
-        }
-        
-        .logo {
-            width: 200px;
-            height: auto;
-            margin-top: 200px;
-        }
-        
-        .loading-text {
-            font-size: 18px;
-            font-weight: bold;
-            color: white;
-            margin-top: 200px;
-            opacity: 0.8;
-        }
-  .loading-container {
-    background: rgb(10, 13, 20);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    width: 0vw;
-    height: 0vh;
-    z-index: 0;
-  }
-  
-  .loading-text {
-    font-size: 0px;
-    font-weight: bold;
-    color: white;
-    margin-top: 200px;
-    opacity: 0.8;
-  }
 
   header {
         background: rgb(10, 13, 20);
@@ -389,6 +357,65 @@ body {
   margin-left: 22px;
   margin-top: 7px;
 }
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 95vw;
+    padding-bottom: 30px;
+    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    color: white;
+    }
+.des {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    padding: 20px;
+    height: 250px;
+    background-color: rgb(0, 73, 184);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    }
+
+    .tc{
+        background: none;
+        background-size: 300% 300%;
+        color: white;
+        font-size: 14px;
+        padding: none;
+        border: none;
+        border-radius: 8px;
+        width: 150px;
+        height: 35px;
+        display: flex;
+        margin-left: 20px;
+  }
+  .dd{
+        background: none;
+        background-size: 300% 300%;
+        color: white;
+        font-size: 14px;
+        padding: none;
+        border: none;
+        border-radius: 8px;
+        width: 150px;
+        height: 35px;
+        display: flex;
+  }
+    footer{
+        background: rgb(10, 13, 20);
+        color:  white;
+        padding: 10px 20px;
+        height: 90px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
 
 
 
@@ -950,17 +977,6 @@ body {
         }
       }
 
-      .lc {
-        width: 0vw;
-        height: 0vh;
-        z-index: 0;
-        background-size: null;
-        background-position: null;
-    }
-    .lt {
-            font-size: 0px;
-        }
-
   .lowersection {
     display: flex;
     flex-direction: column;
@@ -1067,6 +1083,26 @@ body {
     background-color: rgb(204, 204, 204);
     box-shadow: 0 4px 12px rgba(0, 84, 153, 0.2);
   }
+  .closeexpand {
+    display: block;
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 3000;
+    width: 40px;
+    height: 40px;
+    background: url('/close.png') no-repeat center center;
+    background-size: 24px 24px;
+    background-color: rgba(255,255,255,0.95);
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: background 0.2s;
+  }
+  .closeexpand:hover {
+    background-color: #eee;
+  }
 
   .hide-header {
   display: none !important;
@@ -1131,7 +1167,8 @@ body {
       width: 250px;
     }
   }
-
+</style>
+<style>
   .loading-container {
         width: 0vw;
         height: 0vh;
@@ -1217,11 +1254,26 @@ body {
         NavigationManager.NavigateTo("/contact-us");
     }
 
+    private void devFf()
+    {
+        NavigationManager.NavigateTo("/developer-panel");
+    }
+
+    private void termFf()
+    {
+        NavigationManager.NavigateTo("/terms-and-conditions");
+    }
+
     private bool isExpanded = false;
 
     private void Expand()
     {
         isExpanded = !isExpanded;
+    }
+    private void closeexpand()
+    {
+        isExpanded = false;
+        StateHasChanged();
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
