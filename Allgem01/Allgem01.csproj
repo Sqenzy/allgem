@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth" Version="1.70.0" />
+    <PackageReference Include="Google.Apis.Drive.v3" Version="1.70.0.3856" />
     <PackageReference Include="Mailkit" Version="4.11.0" />
     <PackageReference Include="RestSharp" Version="112.1.0" />
     <PackageReference Include="SQLite" Version="3.13.0" />

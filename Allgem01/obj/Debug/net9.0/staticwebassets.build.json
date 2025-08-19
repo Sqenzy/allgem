@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aYzGVj7GD3+CgmSlQCwLBjhoekJBsRSByrcYtoSw2a0=",
+  "Hash": "cngN0p5hE3QtL+nv2LuB8v7PcNmuRdGFgjb/XyfdSwY=",
   "Source": "Allgem01",
   "BasePath": "_content/Allgem01",
   "Mode": "Default",
@@ -1907,6 +1907,27 @@
       "OriginalItemSpec": "wwwroot\\gshootimg.png"
     },
     {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\holedigger.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "holedigger#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5t44b2cwhs",
+      "Integrity": "pxvQtxagiCbw55uTnWfc+Kir06nJr/GPTP/uQ9Qfquk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\holedigger.png"
+    },
+    {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\imaginase.png",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
@@ -2936,6 +2957,27 @@
       "OriginalItemSpec": "wwwroot\\line.png"
     },
     {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\mathrunner.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "mathrunner#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u56ovkxbjm",
+      "Integrity": "MlSJmbkHVGV1pJWwwyzrdxYGD6co3LSGOpN0YsmPfSk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\mathrunner.png"
+    },
+    {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\mines.gif",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
@@ -3018,6 +3060,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\offroadcargo.png"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\paperio2.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "paperio2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a98587ff57",
+      "Integrity": "8hJsRWg1x2OnKmNzSafnkkncb1x5aIYlRM3zaROop6o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\paperio2.png"
     },
     {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\platinum.png",
@@ -3167,6 +3230,69 @@
       "OriginalItemSpec": "wwwroot\\silver.png"
     },
     {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\sortmyparkingarea.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "sortmyparkingarea#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1aq3ok214t",
+      "Integrity": "NxCt5LER7FulIBgofo+tkNIyaR7fuXCf33f0/cJpdsw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sortmyparkingarea.png"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\stoneminer.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "stoneminer#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "20k3km2516",
+      "Integrity": "/ms0wzy2mmHagb22FJ62boeCVQIxxtI3DuypHviT2Zc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\stoneminer.png"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\thesurvey.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "thesurvey#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bcx5fyk735",
+      "Integrity": "C2+WI6rxQR4mHxvEdhYOCUG1Bo6tY6y9Kjxgedq2F3w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\thesurvey.png"
+    },
+    {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\tower.png",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
@@ -3249,6 +3375,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\video.gif"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\waterparksort.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "waterparksort#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0tbrxrupb1",
+      "Integrity": "hKEXjRh0oHpd+rgTJ+qqGeYsLGO7kBT2GYsULy6sivY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\waterparksort.png"
     },
     {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\worldguessr.png",
@@ -3462,7 +3609,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 10:52:28 GMT"
+          "Value": "Tue, 19 Aug 2025 21:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3523,7 +3670,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 10:52:28 GMT"
+          "Value": "Tue, 19 Aug 2025 21:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3568,7 +3715,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 10:52:28 GMT"
+          "Value": "Tue, 19 Aug 2025 21:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3623,7 +3770,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 10:52:28 GMT"
+          "Value": "Tue, 19 Aug 2025 21:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3684,7 +3831,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 10:52:28 GMT"
+          "Value": "Tue, 19 Aug 2025 21:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3729,7 +3876,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 10:52:28 GMT"
+          "Value": "Tue, 19 Aug 2025 21:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3784,7 +3931,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 10:52:28 GMT"
+          "Value": "Tue, 19 Aug 2025 21:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3837,7 +3984,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 10:52:28 GMT"
+          "Value": "Tue, 19 Aug 2025 21:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3874,7 +4021,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 10:52:28 GMT"
+          "Value": "Tue, 19 Aug 2025 21:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3921,7 +4068,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 10:52:28 GMT"
+          "Value": "Tue, 19 Aug 2025 21:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3974,7 +4121,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 10:52:28 GMT"
+          "Value": "Tue, 19 Aug 2025 21:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4011,7 +4158,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 18 Aug 2025 10:52:28 GMT"
+          "Value": "Tue, 19 Aug 2025 21:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8136,6 +8283,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-6tyT5H2vts0STBbQXGTzgaGibjHuRJD3K285W8ZtZ/E="
+        }
+      ]
+    },
+    {
+      "Route": "holedigger.5t44b2cwhs.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\holedigger.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pxvQtxagiCbw55uTnWfc+Kir06nJr/GPTP/uQ9Qfquk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 09:25:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5t44b2cwhs"
+        },
+        {
+          "Name": "label",
+          "Value": "holedigger.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pxvQtxagiCbw55uTnWfc+Kir06nJr/GPTP/uQ9Qfquk="
+        }
+      ]
+    },
+    {
+      "Route": "holedigger.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\holedigger.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pxvQtxagiCbw55uTnWfc+Kir06nJr/GPTP/uQ9Qfquk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 09:25:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pxvQtxagiCbw55uTnWfc+Kir06nJr/GPTP/uQ9Qfquk="
         }
       ]
     },
@@ -22094,6 +22323,88 @@
       ]
     },
     {
+      "Route": "mathrunner.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\mathrunner.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41226"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MlSJmbkHVGV1pJWwwyzrdxYGD6co3LSGOpN0YsmPfSk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 09:23:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MlSJmbkHVGV1pJWwwyzrdxYGD6co3LSGOpN0YsmPfSk="
+        }
+      ]
+    },
+    {
+      "Route": "mathrunner.u56ovkxbjm.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\mathrunner.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41226"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MlSJmbkHVGV1pJWwwyzrdxYGD6co3LSGOpN0YsmPfSk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 09:23:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u56ovkxbjm"
+        },
+        {
+          "Name": "label",
+          "Value": "mathrunner.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MlSJmbkHVGV1pJWwwyzrdxYGD6co3LSGOpN0YsmPfSk="
+        }
+      ]
+    },
+    {
       "Route": "mines.fbnvscu23w.gif",
       "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\mines.gif",
       "Selectors": [],
@@ -22418,6 +22729,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-pFXKURISVyr0VTExdiE5PT0eFanU+Lrz8MbZBf3386c="
+        }
+      ]
+    },
+    {
+      "Route": "paperio2.a98587ff57.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\paperio2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "99441"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8hJsRWg1x2OnKmNzSafnkkncb1x5aIYlRM3zaROop6o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 09:18:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a98587ff57"
+        },
+        {
+          "Name": "label",
+          "Value": "paperio2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8hJsRWg1x2OnKmNzSafnkkncb1x5aIYlRM3zaROop6o="
+        }
+      ]
+    },
+    {
+      "Route": "paperio2.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\paperio2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "99441"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8hJsRWg1x2OnKmNzSafnkkncb1x5aIYlRM3zaROop6o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 09:18:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8hJsRWg1x2OnKmNzSafnkkncb1x5aIYlRM3zaROop6o="
         }
       ]
     },
@@ -22996,6 +23389,252 @@
       ]
     },
     {
+      "Route": "sortmyparkingarea.1aq3ok214t.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\sortmyparkingarea.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NxCt5LER7FulIBgofo+tkNIyaR7fuXCf33f0/cJpdsw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 09:20:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1aq3ok214t"
+        },
+        {
+          "Name": "label",
+          "Value": "sortmyparkingarea.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NxCt5LER7FulIBgofo+tkNIyaR7fuXCf33f0/cJpdsw="
+        }
+      ]
+    },
+    {
+      "Route": "sortmyparkingarea.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\sortmyparkingarea.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NxCt5LER7FulIBgofo+tkNIyaR7fuXCf33f0/cJpdsw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 09:20:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NxCt5LER7FulIBgofo+tkNIyaR7fuXCf33f0/cJpdsw="
+        }
+      ]
+    },
+    {
+      "Route": "stoneminer.20k3km2516.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\stoneminer.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182939"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/ms0wzy2mmHagb22FJ62boeCVQIxxtI3DuypHviT2Zc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 09:24:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "20k3km2516"
+        },
+        {
+          "Name": "label",
+          "Value": "stoneminer.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/ms0wzy2mmHagb22FJ62boeCVQIxxtI3DuypHviT2Zc="
+        }
+      ]
+    },
+    {
+      "Route": "stoneminer.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\stoneminer.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182939"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/ms0wzy2mmHagb22FJ62boeCVQIxxtI3DuypHviT2Zc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 09:24:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/ms0wzy2mmHagb22FJ62boeCVQIxxtI3DuypHviT2Zc="
+        }
+      ]
+    },
+    {
+      "Route": "thesurvey.bcx5fyk735.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\thesurvey.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "112731"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C2+WI6rxQR4mHxvEdhYOCUG1Bo6tY6y9Kjxgedq2F3w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 09:22:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bcx5fyk735"
+        },
+        {
+          "Name": "label",
+          "Value": "thesurvey.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-C2+WI6rxQR4mHxvEdhYOCUG1Bo6tY6y9Kjxgedq2F3w="
+        }
+      ]
+    },
+    {
+      "Route": "thesurvey.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\thesurvey.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "112731"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C2+WI6rxQR4mHxvEdhYOCUG1Bo6tY6y9Kjxgedq2F3w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 09:22:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-C2+WI6rxQR4mHxvEdhYOCUG1Bo6tY6y9Kjxgedq2F3w="
+        }
+      ]
+    },
+    {
       "Route": "tower.3el6eqw5zk.png",
       "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\tower.png",
       "Selectors": [],
@@ -23536,6 +24175,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-c9/E2+X8KPh2fEHkhBIMLqgIqjw3dgf767l3mcR4jWk="
+        }
+      ]
+    },
+    {
+      "Route": "waterparksort.0tbrxrupb1.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\waterparksort.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36861"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hKEXjRh0oHpd+rgTJ+qqGeYsLGO7kBT2GYsULy6sivY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 09:19:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0tbrxrupb1"
+        },
+        {
+          "Name": "label",
+          "Value": "waterparksort.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hKEXjRh0oHpd+rgTJ+qqGeYsLGO7kBT2GYsULy6sivY="
+        }
+      ]
+    },
+    {
+      "Route": "waterparksort.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\waterparksort.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36861"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hKEXjRh0oHpd+rgTJ+qqGeYsLGO7kBT2GYsULy6sivY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 09:19:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hKEXjRh0oHpd+rgTJ+qqGeYsLGO7kBT2GYsULy6sivY="
         }
       ]
     },

@@ -10,7 +10,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allgem</title>
+    <title>Free Games - Earn Ranks By Playing - Allgem Games</title>
+    <meta name="description" content="Free online games, earn ranks by playing, try various types of games, Allgem Games!" >
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1918445686655465"
      crossorigin="anonymous"></script>
 </head>
@@ -158,7 +159,7 @@ function topFunction() {
 
 <section class="secondgamessection">
     <div class="cards">
-        <button class="card" id="card4" @onclick="PlayGameNode2">
+        <button class="card" id="card4" @onclick="PlayGamePaperio2">
             <p class="tip"></p>
             <p class="second-text"></p>
         </button>
@@ -167,6 +168,40 @@ function topFunction() {
             <p class="second-text"></p>
         </button>
         <button class="card" id="card6" @onclick="PlayGameOffRoadCargo">
+            <p class="tip"></p>
+            <p class="second-text"></p>
+        </button>
+    </div>
+</section>
+
+<section class="thirdgamessection">
+    <div class="cards">
+        <button class="card" id="card7" @onclick="PlayGameMyParkingArea">
+            <p class="tip"></p>
+            <p class="second-text"></p>
+        </button>
+        <button class="card" id="card8" @onclick="PlayGameMathRunner">
+            <p class="tip"></p>
+            <p class="second-text"></p>
+        </button>
+        <button class="card" id="card9" @onclick="PlayGameStoneMiner">
+            <p class="tip"></p>
+            <p class="second-text"></p>
+        </button>
+    </div>
+</section>
+
+<section class="fourthgamessection">
+    <div class="cards">
+        <button class="card" id="card10" @onclick="PlayGameMyParkingArea">
+            <p class="tip"></p>
+            <p class="second-text"></p>
+        </button>
+        <button class="card" id="card11" @onclick="PlayGameMathRunner">
+            <p class="tip"></p>
+            <p class="second-text"></p>
+        </button>
+        <button class="card" id="card12" @onclick="PlayGameStoneMiner">
             <p class="tip"></p>
             <p class="second-text"></p>
         </button>
@@ -403,7 +438,7 @@ function topFunction() {
   font-size: 12px;
   margin-left: 8.5px;
 }
-    .gamessection,.secondgamessection {
+    .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
     display: flex; /* Align buttons in a row */
     flex-wrap: wrap; /* Wrap if screen is too small */
     flex-direction: row;
@@ -416,9 +451,18 @@ function topFunction() {
     padding-top: 100px;
     }
     .secondgamessection {
-    padding-top: 150px;
-    min-height: 800px;
-}  
+    padding-top: 100px;
+    min-height: 100px;
+    } 
+    .thirdgamessection {
+    padding-top: 100px;
+    min-height: 100px;
+    }
+    .fourthgamessection {
+    padding-top: 100px;
+    min-height: 100px;
+    padding-bottom: 40px;
+    }
 body {
     margin: 0 !important;
     padding: 0 !important;
@@ -428,11 +472,13 @@ body {
   background-image: url('/kourio.png');
   background-size: cover;
   background-position: center;
+  background-position: no-repeat;
 }
 #card1:hover{
   background-image: url('/kourio.png');
   background-size: cover;
   background-position: center;
+  background-position: no-repeat;
 }
 
 
@@ -440,11 +486,13 @@ body {
   background-image: url('/gshoot.png');
   background-size: cover;
   background-position: center;
+  background-position: no-repeat;
 }
 #card2:hover {
   background-image: url('/video.gif');
   background-size: cover;
   background-position: center;
+  background-position: no-repeat;
 }
 #card2 p.second-text {
   font-size: 0em;
@@ -460,10 +508,11 @@ body {
   background-image: url('/casinobanner.png');
   background-size: cover;
   background-position: center;
+  background-position: no-repeat;
 }
 
 #card4{
-  background-image: url('/node2.png');
+  background-image: url('/paperio2.png');
   background-size: cover;
   background-position: center;
 }
@@ -471,11 +520,49 @@ body {
   background-image: url('/worldguessr.png');
   background-size: cover;
   background-position: center;
+  background-position: no-repeat;
 }
 #card6{
   background-image: url('/offroadcargo.png');
   background-size: cover;
   background-position: center;
+  background-position: no-repeat;
+}
+#card7{
+  background-image: url('/sortmyparkingarea.png');
+  background-size: cover;
+  background-position: center;
+  background-position: no-repeat;
+}
+#card8{
+  background-image: url('/mathrunner.png');
+  background-size: cover;
+  background-position: center;
+  background-position: no-repeat;
+}
+#card9{
+  background-image: url('/stoneminer.png');
+  background-size: cover;
+  background-position: center;
+  background-position: no-repeat;
+}
+#card10{
+  background-image: url('/holedigger.png');
+  background-size: cover;
+  background-position: center;
+  background-position: no-repeat;
+}
+#card11{
+  background-image: url('/node2.png');
+  background-size: cover;
+  background-position: center;
+  background-position: no-repeat;
+}
+#card12{
+  background-image: url('/thesurvey.png');
+  background-size: cover;
+  background-position: center;
+  background-position: no-repeat;
 }
 
 
@@ -625,7 +712,7 @@ body {
       transition: all 0.2s ease-out;
       margin-left: 10px;
     }
-    .gamessection,.secondgamessection {
+    .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
     display: flex; /* Align buttons in a row */
     flex-wrap: wrap; /* Wrap if screen is too small */
     flex-direction: row;
@@ -671,7 +758,7 @@ body {
           min-height: 48px;
           min-width: 48px;
         }
-    .gamessection,.secondgamessection {
+    .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
     display: flex; /* Align buttons in a row */
     flex-wrap: wrap; /* Wrap if screen is too small */
     flex-direction: row;
@@ -718,7 +805,7 @@ body {
           min-height: 48px;
           min-width: 48px;
         }
-    .gamessection,.secondgamessection {
+    .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
     display: flex; /* Align buttons in a row */
     flex-wrap: wrap; /* Wrap if screen is too small */
     flex-direction: row;
@@ -764,7 +851,7 @@ body {
           min-height: 48px;
           min-width: 48px;
         }
-    .gamessection,.secondgamessection {
+    .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
     display: flex; /* Align buttons in a row */
     flex-wrap: wrap; /* Wrap if screen is too small */
     flex-direction: row;
@@ -863,7 +950,7 @@ body {
       transition: all 0.2s ease-out;
       margin-left: 10px;
     }
-    .gamessection,.secondgamessection {
+    .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
     display: flex; /* Align buttons in a row */
     flex-wrap: wrap; /* Wrap if screen is too small */
     flex-direction: row;
@@ -888,7 +975,7 @@ body {
       transition: all 0.2s ease-out;
       margin-left: 10px;
     }
-    .gamessection,.secondgamessection {
+    .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
     display: flex; /* Align buttons in a row */
     flex-wrap: wrap; /* Wrap if screen is too small */
     flex-direction: row;
@@ -913,7 +1000,7 @@ body {
       transition: all 0.2s ease-out;
       margin-left: 10px;
     }
-    .gamessection,.secondgamessection {
+    .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
     display: flex; /* Align buttons in a row */
     flex-wrap: wrap; /* Wrap if screen is too small */
     flex-direction: row;
@@ -1132,7 +1219,7 @@ body {
       transition: all 0.2s ease-out;
       margin-left: 10px;
     }
-    .gamessection,.secondgamessection {
+    .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
     display: flex; /* Align buttons in a row */
     flex-wrap: wrap; /* Wrap if screen is too small */
     flex-direction: row;
@@ -1202,6 +1289,34 @@ body {
     private void PlayGameOffRoadCargo()
     {
         NavigationManager.NavigateTo("/game?g=4");
+    }
+    private void PlayGamePaperio2()
+    {
+        NavigationManager.NavigateTo("/game?g=5");
+    }
+    private void PlayGameWaterParkSort()
+    {
+        NavigationManager.NavigateTo("/game?g=6");
+    }
+    private void PlayGameMyParkingArea()
+    {
+        NavigationManager.NavigateTo("/game?g=7");
+    }
+    private void PlayGameTheSurvey()
+    {
+        NavigationManager.NavigateTo("/game?g=8");
+    }
+    private void PlayGameMathRunner()
+    {
+        NavigationManager.NavigateTo("/game?g=9");
+    }
+    private void PlayGameStoneMiner()
+    {
+        NavigationManager.NavigateTo("/game?g=10");
+    }
+    private void PlayGameHoleDigger()
+    {
+        NavigationManager.NavigateTo("/game?g=11");
     }
 
 

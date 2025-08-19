@@ -1,0 +1,42 @@
+@page "/test"
+@inject GoogleDriveService DriveService
+
+<h3>Nahrát soubor na Google Drive</h3>
+
+<InputFile OnChange="HandleFileSelected" />
+<br />
+<button @onclick="UploadFile" disabled="@(!canUpload)">Nahrát</button>
+
+@if (!string.IsNullOrEmpty(uploadResult))
+{
+    <p>✅ Soubor nahrán: <a href="@uploadResult" target="_blank">Otevřít na Google Drive</a></p>
+}
+
+@code {
+    private IBrowserFile? selectedFile;
+    private bool canUpload = false;
+    private string? uploadResult;
+
+    private void HandleFileSelected(InputFileChangeEventArgs e)
+    {
+        selectedFile = e.File;
+        canUpload = selectedFile != null;
+    }
+
+    private async Task UploadFile()
+    {
+        if (selectedFile == null) return;
+
+        try
+        {
+            using var fileStream = selectedFile.OpenReadStream(20_000_000); // max 20 MB
+            var fileId = await DriveService.UploadFileAsync(fileStream, selectedFile.Name, selectedFile.ContentType);
+
+            uploadResult = $"https://drive.google.com/file/d/{fileId}/view";
+        }
+        catch (Exception ex)
+        {
+            uploadResult = $"❌ Chyba: {ex.Message}";
+        }
+    }
+}

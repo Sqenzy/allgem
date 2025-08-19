@@ -11,8 +11,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Panel</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1918445686655465"
-     crossorigin="anonymous"></script>
 </head>
 </html>
 
@@ -83,7 +81,14 @@
     <p class="und">______________________</p>
     <button class="submit" @onclick="SubmitAGame">Submit a game</button>
     <section class="mygames">
-      <button class="game1" @onclick="Game1">@gameName</button>
+      @if (gameName == "null")
+      {
+        <p class="und">No games submitted yet.</p>
+      }
+      else
+      {
+        <button class="game1" @onclick="Game1">@gameName</button>
+      }
     </section>
     </section>
   </section>

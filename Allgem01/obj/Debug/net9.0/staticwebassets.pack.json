@@ -129,6 +129,10 @@
       "PackagePath": "staticwebassets\\gshootimg.png"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\holedigger.png",
+      "PackagePath": "staticwebassets\\holedigger.png"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\imaginase.png",
       "PackagePath": "staticwebassets\\imaginase.png"
     },
@@ -325,6 +329,10 @@
       "PackagePath": "staticwebassets\\line.png"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\mathrunner.png",
+      "PackagePath": "staticwebassets\\mathrunner.png"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\mines.gif",
       "PackagePath": "staticwebassets\\mines.gif"
     },
@@ -339,6 +347,10 @@
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\offroadcargo.png",
       "PackagePath": "staticwebassets\\offroadcargo.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\paperio2.png",
+      "PackagePath": "staticwebassets\\paperio2.png"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\platinum.png",
@@ -369,6 +381,18 @@
       "PackagePath": "staticwebassets\\silver.png"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\sortmyparkingarea.png",
+      "PackagePath": "staticwebassets\\sortmyparkingarea.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\stoneminer.png",
+      "PackagePath": "staticwebassets\\stoneminer.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\thesurvey.png",
+      "PackagePath": "staticwebassets\\thesurvey.png"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\tower.png",
       "PackagePath": "staticwebassets\\tower.png"
     },
@@ -383,6 +407,10 @@
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\video.gif",
       "PackagePath": "staticwebassets\\video.gif"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\waterparksort.png",
+      "PackagePath": "staticwebassets\\waterparksort.png"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\worldguessr.png",

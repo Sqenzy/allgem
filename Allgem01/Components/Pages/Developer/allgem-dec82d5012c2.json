@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "allgem",
+  "private_key_id": "dec82d5012c242e6a5b7d91878d107d9791d5cde",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDm6uQdtlL71AzQ\nBKW7SClSuxmUFb7T/cV2MioYMvD3g6/2cxEhdHZDdZ/TCWhGmVanMd17wI+hu7hv\nMlMMTXZvmHcYHSizuHElPAMpHRB3fx21i2XT3Q/KKpzdbSoZIyP60ewKKK1HDSRK\nk0zKeanaN6zCYU1u8j+Uth2ed+Tp2LNUfEjGL7345d8J5dCOv8f0hxzAghEhb3uo\nFQyvWkO9BgC39N5bME6anBqpo8aWfyDhYKgLtuF/bdsbYMJK65DgPdfpxD97rfPb\nLGHV5ce/k30oFxOpZuJbjqdrD+yn9ffTi7aCfgaOsdq+RKYwhggB0J23+mpjl9n9\nR0FUyaaTAgMBAAECggEAGlFlyQfL/Wz1k4p0DnGdrr1+9M8QU2j2Ow+3QdAh1pPp\nAisAe3z33Z28/CMeV1gyoBZMKpvlGDHPm3IeNPtp0Yjhn0XzgEg33Qkx8wWfqCmS\nC+w59s5DIRoqNrJdEfBcsWwrfXJADXuvSdtFQpkLMBZtrNnE0YLv7CsKxSeKV3xm\nbNSrT8Orm5XQ57Q/LCe0G5p4avf3wbMklPPaYBeyKniCIjJga6mNPVWqybOF5aqp\ntYTn9w40E0ixMzHLkJh1ygnUZ7Af4vjamPQFat0nHZaNKexQ6yIVCTVdx3Z5I3+a\n6rvafev9m3X762t9FoM66ZOXMwj6b8Jou4DZC6waQQKBgQD6LqOV/mkphzLz/9TH\nY4F1shoRZxKjzbpGIAABh6QYIpkoCBaLBs+xuUWkYk1ZhDYngQArYwY/8WB9p5vi\n44vMIyW6MhSXG7sK/CNhikKRznt2MvWG9P6Nrsk/H2P+aWx/V3RsQjwnWgOuhNqC\neVwmvg8rhDyt3DC3D+xsErkn9wKBgQDsSZFQMevYYHe48qznhX1gITThfISg//sv\nlmqc+qx/EJmQZDiI9G96vH84bN4pq/5qnBscvX/msM1TW1rlWp+eREgm/OaChauF\ndkBZ/jp+mVeixXaKtn+KHsA7h2Pj2VYRrPBEhgte0DRc+0kg0Elc2ZrZtZvS5UiA\nfysmuD7nRQKBgDLaEgQl7ygyw+eWo6BXmHPc3LGW2tISuf8Q+A9Xi8IgHjNl2Xcu\nzj6YoxAzrvc4CW3kKa2n9hg/Lta7n9LxX3QB3ORI06iXSWCFOYfU+4z5hFzVJNTm\nrWsNEPjUn5WRxizoENEEcYeqIz9w351Pn6x8S0cUHOVV8Uz0XqDk+V+nAoGAWY0Q\nO7qPzfPRrBCdIyneeH5dUlAk2/foNQLm6RPAKHAcIzM4kf9B+NxTwwjPsi9zPuhn\nBh9zx/Sd/MeUzXPpJsxuJAiZPEJ43R4SCYlmlfB73D7GTJAaCjjZVjZbz1DhY9WN\nQgsjaA20qsC52GvYQg5et8AyjF1Fex23NveBL5kCgYBuRm5cxeKhmzgbJgtorHSi\n1DO/ETMdh4dVakqBm+pLGQ+ynFU1MAMNkI24yXHdga5jSXE5n+W26ZynbUk4N338\n3TW20J+6qcgC93wFqz3CkM1vRlfSSPG3SvetdigkklOeESrpwgmotF02Po9NqUer\n8dosnL5vjs40tYXSghkV+Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "allgem-games-developer@allgem.iam.gserviceaccount.com",
+  "client_id": "114046388766686761221",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/allgem-games-developer%40allgem.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

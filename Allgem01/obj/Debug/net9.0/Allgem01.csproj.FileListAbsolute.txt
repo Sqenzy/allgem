@@ -199,6 +199,7 @@ C:\Users\janlu\allgem\Allgem01\obj\Debug\net9.0\ref\Allgem01.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\publish\web.config
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\appsettings.json
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Components\Pages\Developer\allgem-dec82d5012c2.json
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Components\Pages\Games\games.json
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\publish\Allgem01.deps.json
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\publish\Allgem01.runtimeconfig.json
@@ -216,6 +217,10 @@ C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Allgem01.pdb
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\EntityFramework.SqlServer.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\EntityFramework.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Google.Apis.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Google.Apis.Auth.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Google.Apis.Core.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Google.Apis.Drive.v3.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\MailKit.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\Microsoft.OpenApi.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\MimeKit.dll
@@ -230,6 +235,7 @@ C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\System.CodeDom.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\System.Data.SqlClient.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\System.Data.SQLite.EF6.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\System.Management.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\runtimes\win-arm64\native\sni.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\runtimes\win-x64\native\sni.dll
@@ -244,6 +250,7 @@ C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\runtimes\win-x64\native
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\runtimes\win-x86\native\SQLite.Interop.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\sqenz\Projects\allgem\Allgem01\bin\Debug\net9.0\runtimes\win\lib\net7.0\System.Management.dll
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\Allgem01.csproj.AssemblyReference.cache
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\Allgem01.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\Allgem01.AssemblyInfoInputs.cache
