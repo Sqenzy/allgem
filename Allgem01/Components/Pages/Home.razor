@@ -80,7 +80,7 @@
       <img class="profileimg" src="/profile.png" alt="profile">
       </button>
     <nav>
-    <li><button class="home" type="button" @onclick="add">Casino</button></li>
+    <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 @if (repository.IsLoggedIn)
@@ -146,7 +146,7 @@ function topFunction() {
             <p class="tip"></p>
             <p class="second-text"></p>
         </button>
-        <button class="card" id="card2" @onclick="PlayGameGShoot">
+        <button class="card" id="card2">
             <p class="tip"></p>
             <p class="second-text"></p>
         </button>
@@ -484,12 +484,6 @@ body {
 
 #card2{
   background-image: url('/gshoot.png');
-  background-size: cover;
-  background-position: center;
-  background-position: no-repeat;
-}
-#card2:hover {
-  background-image: url('/video.gif');
   background-size: cover;
   background-position: center;
   background-position: no-repeat;

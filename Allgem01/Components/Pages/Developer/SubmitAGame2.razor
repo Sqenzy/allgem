@@ -19,11 +19,7 @@
         <div class="premium-content">
             <h1>Submit a Game</h1>
             <input class="text" type="text" placeholder="Game Description" @bind="gameDescription" />
-            <div class="drop-zone" @ondrop="HandleDrop" @ondragover="HandleDragOver" @ondragenter="HandleDragEnter" @ondragleave="HandleDragLeave">
-                <input type="file" id="fileInput" @ref="fileInput" @onchange="HandleFileSelect" accept=".zip,.rar,.7z" style="display: none;" />
-                <p>Drag and drop your game files here or click to select</p>
-                <span class="file-info">@(selectedFileName ?? "No file selected")</span>
-            </div>
+            <button @onclick="open">Upload Game</button>
             <button class="next" @onclick="Next">Next</button>
         </div>
     </section>
@@ -441,6 +437,14 @@
     private void premiumFf()
     {
         NavigationManager.NavigateTo("/premium");
+    }
+    private void open()
+    {
+        var url = "https://drive.google.com/drive/folders/1mppRN8CAyRncCAKhYwAxURczOxp5ZrxT?usp=drive_link";
+        if (JSRuntime != null)
+        {
+            JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
+        }
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)

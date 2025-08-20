@@ -1,4 +1,4 @@
-@page "/developer-panel"
+@page "/developer-panel/earnings"
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
 @inject IJSRuntime JSRuntime
@@ -62,11 +62,11 @@
 @if (repository.IsLoggedIn)
 {
   <section class="navsection">
-  <p class="settings">Beta Developer Panel</p>
+  <p class="settings">Panel</p>
   
   <section class="buttons">
-  <ul><button class="btgs">My Games</button></ul>
-  <ul><button class="btgs" @onclick="earningsFf">Earnings</button></ul>
+  <ul><button class="btgs" @onclick="gamesFf">My Games</button></ul>
+  <ul><button class="btgs">Earnings</button></ul>
   <ul><button class="btgs">Guidelines</button></ul>
   </section>
 
@@ -76,20 +76,9 @@
 
   <section class="displaysection">
     <section class="accsection">
-      <h1>My Games</h1>
-    <p class="mail">0</p>
+      <h1>Earnings</h1>
+    <p class="mail">0$</p>
     <p class="und">______________________</p>
-    <button class="submit" @onclick="SubmitAGame">Submit a game</button>
-    <section class="mygames">
-      @if (gameName == "null")
-      {
-        <p class="und">No games submitted yet.</p>
-      }
-      else
-      {
-        <button class="game1" @onclick="Game1">@gameName</button>
-      }
-    </section>
     </section>
   </section>
 }
@@ -1143,9 +1132,9 @@ body {
     {
         NavigationManager.NavigateTo("developer-panel/game/" + gameName);
     }
-    private void earningsFf(){
-
-        NavigationManager.NavigateTo("/developer-panel/earnings");
+    private void gamesFf()
+    {
+        NavigationManager.NavigateTo("/developer-panel");
     }
 
    protected override async Task OnAfterRenderAsync(bool firstRender)

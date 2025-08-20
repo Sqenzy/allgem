@@ -88,6 +88,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZXZlbG9wZXJcRGV2ZWxvcGVycGFuZWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Developer/Earnings.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZXZlbG9wZXJcRWFybmluZ3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Developer/SubmitAGame.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZXZlbG9wZXJcU3VibWl0QUdhbWUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
