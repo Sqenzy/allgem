@@ -1,8 +1,10 @@
 ﻿@page "/"
 @rendermode InteractiveServer
+@using Microsoft.JSInterop
+@using Microsoft.AspNetCore.Components
+@using Allgem01.Logic
 @inject NavigationManager NavigationManager
 @inject IJSRuntime JSRuntime
-@using Allgem01.Logic
 @inject Repository repository
 
 <!DOCTYPE html>
@@ -193,15 +195,15 @@ function topFunction() {
 
 <section class="fourthgamessection">
     <div class="cards">
-        <button class="card" id="card10" @onclick="PlayGameMyParkingArea">
+        <button class="card" id="card10" @onclick="PlayGameHoleDigger">
             <p class="tip"></p>
             <p class="second-text"></p>
         </button>
-        <button class="card" id="card11" @onclick="PlayGameMathRunner">
+        <button class="card" id="card11" @onclick="PlayGameNode2">
             <p class="tip"></p>
             <p class="second-text"></p>
         </button>
-        <button class="card" id="card12" @onclick="PlayGameStoneMiner">
+        <button class="card" id="card12" @onclick="PlayGameTheSurvey">
             <p class="tip"></p>
             <p class="second-text"></p>
         </button>
