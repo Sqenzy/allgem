@@ -11,6 +11,7 @@ namespace Allgem01.Components.Pages.Games
         public string name { get; set; }
         public string url { get; set; }
         public string description { get; set; }
+        public string gameid { get; set; }
 
         public static GameLoad LoadById(string gameId)
         {

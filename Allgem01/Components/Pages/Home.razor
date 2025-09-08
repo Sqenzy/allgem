@@ -16,6 +16,19 @@
     <meta name="description" content="Free online games, earn ranks by playing, try various types of games, Allgem Games!" >
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1918445686655465"
      crossorigin="anonymous"></script>
+     <link rel="preload" as="image" href="/ulteros.jpg">
+
+     <meta property="og:title" content="Free Games - Earn Ranks By Playing - Allgem Games">
+  <meta property="og:description" content="Free online games, earn ranks by playing, try various types of games, Allgem Games!">
+  <meta property="og:image" content="https://allgemgames.com/imaginase.png">
+  <meta property="og:url" content="https://allgemgames.com/">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Games - Earn Ranks By Playing - Allgem Games">
+<meta name="twitter:description" content="Free online games, earn ranks by playing, try various types of games, Allgem Games!">
+<meta name="twitter:image" content="https://allgemgames.com/imaginase.png">
+
 </head>
 </html>
 
@@ -82,7 +95,7 @@
       <img class="profileimg" src="/profile.png" alt="profile">
       </button>
     <nav>
-    <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
+    <li><button class="home" type="button" @onclick="homeFf">Changes</button></li>
     <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
     <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
 @if (repository.IsLoggedIn)
@@ -145,16 +158,22 @@ function topFunction() {
 <section class="gamessection">
     <div class="cards">
         <button class="card" id="card1" @onclick="PlayGameKourio">
-            <p class="tip"></p>
-            <p class="second-text"></p>
+            <div class="card-info">
+              <p class="tip">Kour.io</p>
+              <p class="second-text">Kour.io is a multiplayer IO FPS game that immerses you in intense battles across different maps with a variety of weapons and modes!</p>
+            </div>
         </button>
         <button class="card" id="card2">
-            <p class="tip"></p>
-            <p class="second-text"></p>
+            <div class="card-info">
+              <p class="tip">GSHOOT</p>
+              <p class="second-text">Multiplayer FPS game made by Allgem</p>
+            </div>
         </button>
         <button class="card" id="card3" @onclick="casinoFf">
-            <p class="tip"></p>
-            <p class="second-text"></p>
+            <div class="card-info">
+              <p class="tip">Casino</p>
+              <p class="second-text">Try gambling with fake money</p>
+            </div>
         </button>
     </div>
 </section>
@@ -471,94 +490,49 @@ body {
 }
 
 #card1{
-  background-image: url('/kourio.png');
-  background-size: cover;
-  background-position: center;
-  background-position: no-repeat;
+    background-image: url('/kourio.png');
 }
+
 #card1:hover{
-  background-image: url('/kourio.png');
-  background-size: cover;
-  background-position: center;
-  background-position: no-repeat;
+    background-image: url('/kourio.gif');
 }
 
 
 #card2{
   background-image: url('/gshoot.png');
-  background-size: cover;
-  background-position: center;
-  background-position: no-repeat;
-}
-#card2 p.second-text {
-  font-size: 0em;
-  margin-bottom: 40px;
-}
-#card2 :hover p.second-text {
-  font-size: 1em;
-  margin-bottom: 40px;
 }
 
 
 #card3{
   background-image: url('/casinobanner.png');
-  background-size: cover;
-  background-position: center;
-  background-position: no-repeat;
 }
 
 #card4{
   background-image: url('/paperio2.png');
-  background-size: cover;
-  background-position: center;
 }
 #card5{
   background-image: url('/worldguessr.png');
-  background-size: cover;
-  background-position: center;
-  background-position: no-repeat;
 }
 #card6{
   background-image: url('/offroadcargo.png');
-  background-size: cover;
-  background-position: center;
-  background-position: no-repeat;
 }
 #card7{
   background-image: url('/sortmyparkingarea.png');
-  background-size: cover;
-  background-position: center;
-  background-position: no-repeat;
 }
 #card8{
   background-image: url('/mathrunner.png');
-  background-size: cover;
-  background-position: center;
-  background-position: no-repeat;
 }
 #card9{
   background-image: url('/stoneminer.png');
-  background-size: cover;
-  background-position: center;
-  background-position: no-repeat;
 }
 #card10{
   background-image: url('/holedigger.png');
-  background-size: cover;
-  background-position: center;
-  background-position: no-repeat;
 }
 #card11{
   background-image: url('/node2.png');
-  background-size: cover;
-  background-position: center;
-  background-position: no-repeat;
 }
 #card12{
   background-image: url('/thesurvey.png');
-  background-size: cover;
-  background-position: center;
-  background-position: no-repeat;
 }
 
 
@@ -583,16 +557,39 @@ body {
   background-color: rgb(55, 56, 82);
   transition: 250ms;
   border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-info {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: 250ms;
+  max-width: 250px;
+  max-height: 130px;
 }
 
-.cards .card p.tip {
+.card-info .tip {
   font-size: 1em;
   font-weight: 700;
+  margin: 0 0 8px 0;
 }
 
-.cards .card p.second-text {
-  font-size: 0em;
-  margin-bottom: 40px;
+.card-info .second-text {
+  font-size: 0.7em;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.cards .card:hover .card-info {
+  opacity: 1;
 }
 
 .cards .card:hover {
@@ -1345,7 +1342,7 @@ body {
     }
     private void homeFf()
     {
-        NavigationManager.NavigateTo("/");
+        NavigationManager.NavigateTo("/changelog");
     }
     private void aboutusFf()
     {

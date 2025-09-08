@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\casinobanner.png"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\changelogimg.png",
+      "PackagePath": "staticwebassets\\changelogimg.png"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\close.png",
       "PackagePath": "staticwebassets\\close.png"
     },
@@ -135,6 +139,10 @@
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\imaginase.png",
       "PackagePath": "staticwebassets\\imaginase.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\kourio.gif",
+      "PackagePath": "staticwebassets\\kourio.gif"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\kourio.png",
@@ -379,6 +387,10 @@
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\silver.png",
       "PackagePath": "staticwebassets\\silver.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\sitemap.xml",
+      "PackagePath": "staticwebassets\\sitemap.xml"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\sortmyparkingarea.png",

@@ -14,6 +14,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1918445686655465"
      crossorigin="anonymous"></script>
     <meta name="description" content="@Description">
+    <link rel="preload" as="image" href="/ulteros.jpg">
 </head>
 </html>
 
@@ -1193,6 +1194,7 @@ body {
     private string iframeUrl;
     private string GameName;
     private string Description;
+    private string GameId;
     private bool isLoading = true;
 
     [Parameter]
@@ -1213,6 +1215,7 @@ body {
             iframeUrl = Load.url;
             GameName = Load.name;
             Description = Load.description;
+            GameId = Load.gameid;
         }
     }
         base.OnInitialized();
