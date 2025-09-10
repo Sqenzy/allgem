@@ -160,6 +160,28 @@
 <footer><p>© 2025 Allgem</p><button class="tc" @onclick="termFf">Terms & conditions</button><button class="dd" @onclick="devFf">Developer Panel</button>
 </footer>
 
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
 <style>
 
   header {
@@ -1312,6 +1334,7 @@ body {
             }
 
             StateHasChanged();
+            await JSRuntime.InvokeVoidAsync("topFunction");
 
             if (repository.IsLoggedIn)
             {
@@ -1337,19 +1360,19 @@ body {
     {
         if (CookieValueRank == "Silver")
         {
-            repository.rankCount = 10;
+            repository.rankCount = 5;
         }
         else if (CookieValueRank == "Gold")
         {
-            repository.rankCount = 20;
+            repository.rankCount = 15;
         }
         else if (CookieValueRank == "Platinum")
         {
-            repository.rankCount = 30;
+            repository.rankCount = 60;
         }
         else if (CookieValueRank == "Diamond")
         {
-            repository.rankCount = 40;
+            repository.rankCount = 180;
         }
         else if (CookieValueRank == "Dev")
         {
@@ -1362,22 +1385,22 @@ body {
 
         while (dik)
         {
-            await Task.Delay(10000);
+            await Task.Delay(60000);
             repository.rankCount++;
 
-            if (repository.rankCount == 10)
+            if (repository.rankCount == 5)
             {
                 repository.AddRankToUser(CookieValueEmail, "Silver");
             }
-            else if (repository.rankCount == 20)
+            else if (repository.rankCount == 15)
             {
                 repository.AddRankToUser(CookieValueEmail, "Gold");
             }
-            else if (repository.rankCount == 30)
+            else if (repository.rankCount == 60)
             {
                 repository.AddRankToUser(CookieValueEmail, "Platinum");
             }
-            else if (repository.rankCount == 40)
+            else if (repository.rankCount == 180)
             {
                 repository.AddRankToUser(CookieValueEmail, "Diamond");
             }
