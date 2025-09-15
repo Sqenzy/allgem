@@ -193,16 +193,22 @@ function topFunction() {
 <section class="secondgamessection">
     <div class="cards">
         <button class="card" id="card4" @onclick="PlayGamePaperio2">
-            <p class="tip"></p>
-            <p class="second-text"></p>
+            <div class="card-info">
+              <p class="tip">Paper.io 2</p>
+              <p class="second-text">Conquer as much territory as possible and beat the competition.</p>
+            </div>
         </button>
         <button class="card" id="card5" @onclick="PlayGameWorldGuesser">
-            <p class="tip"></p>
-            <p class="second-text"></p>
+            <div class="card-info">
+              <p class="tip">World Guesser</p>
+              <p class="second-text">World Guessr is a geography-based game where players guess locations on a map</p>
+            </div>
         </button>
         <button class="card" id="card6" @onclick="PlayGameOffRoadCargo">
-            <p class="tip"></p>
-            <p class="second-text"></p>
+            <div class="card-info">
+              <p class="tip">Off Road Cargo Drive Simulator</p>
+              <p class="second-text"></p>
+            </div>
         </button>
     </div>
 </section>
@@ -210,16 +216,22 @@ function topFunction() {
 <section class="thirdgamessection">
     <div class="cards">
         <button class="card" id="card7" @onclick="PlayGameMyParkingArea">
-            <p class="tip"></p>
-            <p class="second-text"></p>
+        <div class="card-info">
+            <p class="tip">My Parking Area</p>
+            <p class="second-text">It's time to leave the parking lot, but other cars are blocking your way!</p>
+        </div>
         </button>
         <button class="card" id="card8" @onclick="PlayGameMathRunner">
-            <p class="tip"></p>
-            <p class="second-text"></p>
+        <div class="card-info">
+            <p class="tip">Math Runner</p>
+            <p class="second-text">Challenge your mind and reflexes in this fast-paced arithmetic adventure!</p>
+        </div>
         </button>
         <button class="card" id="card9" @onclick="PlayGameStoneMiner">
-            <p class="tip"></p>
-            <p class="second-text"></p>
+        <div class="card-info">
+            <p class="tip">Stone Miner</p>
+            <p class="second-text">Become the ultimate mining tycoon in The Stone Miner!</p>
+        </div>
         </button>
     </div>
 </section>
@@ -227,16 +239,22 @@ function topFunction() {
 <section class="fourthgamessection">
     <div class="cards">
         <button class="card" id="card10" @onclick="PlayGameHoleDigger">
-            <p class="tip"></p>
-            <p class="second-text"></p>
+            <div class="card-info">
+            <p class="tip">Hole Digger</p>
+            <p class="second-text">Grab your shovel and start your journey deep into the earth.</p>
+        </div>
         </button>
         <button class="card" id="card11" @onclick="PlayGameNode2">
-            <p class="tip"></p>
-            <p class="second-text"></p>
+            <div class="card-info">
+            <p class="tip">Node 2</p>
+            <p class="second-text">Node 2 is a simulation game that allows players to explore and interact</p>
+        </div>
         </button>
         <button class="card" id="card12" @onclick="PlayGameTheSurvey">
-            <p class="tip"></p>
-            <p class="second-text"></p>
+            <div class="card-info">
+            <p class="tip">The Survey</p>
+            <p class="second-text">After a long work time when you ready to play games in your computer and start a survey.</p>
+        </div>
         </button>
     </div>
 </section>
@@ -342,6 +360,7 @@ function topFunction() {
         transition: all 0.1s ease-out;
         font-weight: bold;
         display: flex;
+        text-decoration: none;
     }
     .home:hover{
         transform: translateY(-4px);
@@ -358,6 +377,7 @@ function topFunction() {
         height: 35px;
         transition: all 0.1s ease-out;
         font-weight: bold;
+        text-decoration: none;
     }
     .aboutus:hover{
         transform: translateY(-4px);
@@ -374,6 +394,7 @@ function topFunction() {
         height: 35px;
         transition: all 0.1s ease-out;
         font-weight: bold;
+        text-decoration: none;
     }
     .contactus:hover{
         transform: translateY(-4px);
@@ -388,7 +409,8 @@ function topFunction() {
     .logo{ 
      width: 130px; 
      height: 25px;
-     margin-top: 11px; 
+     margin-top: 6px; 
+     margin-left: 30px;
      background-size: contain; 
      background-repeat: no-repeat;
      background-position: center;
@@ -509,7 +531,7 @@ body {
 }
 
 #card1:hover{
-    background-image: url('gameimages/kourio.gif');
+    background-image: url('/kourio.gif');
 }
 
 
@@ -519,7 +541,7 @@ body {
 
 
 #card3{
-  background-image: url('gameimages/casinobanner.png');
+  background-image: url('/casinobanner.png');
 }
 
 #card4{
