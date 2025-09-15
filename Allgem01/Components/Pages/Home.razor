@@ -10,6 +10,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KZB6Z4SP');</script>
+<!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Games - Earn Ranks By Playing - Allgem Games</title>
@@ -31,6 +38,10 @@
 
 </head>
 </html>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZB6Z4SP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <div class="loading-container" id="loadingContainer">
   <img src="/allgemtext.png" alt="ALLGEM" class="logo">
@@ -69,6 +80,7 @@
 </style>
 <!--test-->
 <header>
+<h1 class="main-title">Free Online Games, Earn Ranks By Playing, Allgem Games</h1>
   @if (repository.IsLoggedIn)
     {
       
@@ -95,9 +107,9 @@
       <img class="profileimg" src="/profile.png" alt="profile">
       </button>
     <nav>
-    <li><button class="home" type="button" @onclick="homeFf">Changes</button></li>
-    <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
-    <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
+    <li><a href="/changelog" class="home">Changes</a></li>
+    <li><a href="/about-us" class="aboutus">About Us</a></li>
+    <li><a href="/contact-us" class="contactus">Contact Us</a></li>
 @if (repository.IsLoggedIn)
     {
       <button class="profile"  @onclick="accountFf" type="button">
@@ -235,6 +247,9 @@ function topFunction() {
 <footer><p>© 2025 Allgem</p><button class="tc" @onclick="termFf">Terms & conditions</button><button class="dd" @onclick="devFf">Developer Panel</button>
 </footer>
 <style>
+  h1{
+    font-size: 0px;
+  }
   .tc{
         background: none;
         background-size: 300% 300%;
@@ -490,11 +505,11 @@ body {
 }
 
 #card1{
-    background-image: url('/kourio.png');
+    background-image: url('gameimages/kourio.png');
 }
 
 #card1:hover{
-    background-image: url('/kourio.gif');
+    background-image: url('gameimages/kourio.gif');
 }
 
 
@@ -504,35 +519,35 @@ body {
 
 
 #card3{
-  background-image: url('/casinobanner.png');
+  background-image: url('gameimages/casinobanner.png');
 }
 
 #card4{
-  background-image: url('/paperio2.png');
+  background-image: url('gameimages/paperio2.png');
 }
 #card5{
-  background-image: url('/worldguessr.png');
+  background-image: url('gameimages/worldguessr.png');
 }
 #card6{
-  background-image: url('/offroadcargo.png');
+  background-image: url('gameimages/offroadcargo.png');
 }
 #card7{
-  background-image: url('/sortmyparkingarea.png');
+  background-image: url('gameimages/sortmyparkingarea.png');
 }
 #card8{
-  background-image: url('/mathrunner.png');
+  background-image: url('gameimages/mathrunner.png');
 }
 #card9{
-  background-image: url('/stoneminer.png');
+  background-image: url('gameimages/stoneminer.png');
 }
 #card10{
-  background-image: url('/holedigger.png');
+  background-image: url('gameimages/holedigger.png');
 }
 #card11{
-  background-image: url('/node2.png');
+  background-image: url('gameimages/node2.png');
 }
 #card12{
-  background-image: url('/thesurvey.png');
+  background-image: url('gameimages/thesurvey.png');
 }
 
 

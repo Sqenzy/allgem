@@ -3,67 +3,77 @@
         "id": "1",
         "name": "Node 2",
         "url" : "https://node-sim-2--filiptheflop.on.websim.com/",
-        "description": "Node 2 is a simulation game that allows players to explore and interact"
+        "description": "Node 2 is a simulation game that allows players to explore and interact",
+        "imageUrl" : "gameimages/node2.png"
     },
     {
         "id": "2",
         "name": "World Guessr",
         "url" : "https://www.worldguessr.com/",
-        "description": "World Guessr is a geography-based game where players guess locations on a map"
+        "description": "World Guessr is a geography-based game where players guess locations on a map",
+        "imageUrl" : "gameimages/worldguessr.png"
     },
     {
         "id": "3",
         "name": "Kour.io",
         "url" : "https://kour.io/",
-        "description": "Kour.io is a multiplayer IO FPS game that immerses you in intense battles across different maps with a variety of weapons and modes! It's one of the most accessible first-person shooters, available on both web browsers and mobile devices. This game offers numerous game modes, including free-for-all, team deathmatch, gun-game, and Hardpoint. Choose from different classes, each featuring unique weapons to suit your play style, and strive to become the #1 Kour!"
+        "description": "Kour.io is a multiplayer IO FPS game that immerses you in intense battles across different maps with a variety of weapons and modes! It's one of the most accessible first-person shooters, available on both web browsers and mobile devices. This game offers numerous game modes, including free-for-all, team deathmatch, gun-game, and Hardpoint. Choose from different classes, each featuring unique weapons to suit your play style, and strive to become the #1 Kour!",
+        "imageUrl" : "gameimages/kourio.png"
     },
     {
         "id": "4",
         "name": "Off Road Cargo Drive Sim",
         "url" : "https://files.vitalitygames.com/games/webgl/2018/12/11/off-road-cargo-drive-simulator/",
-        "description": ""
+        "description": "",
+        "imageUrl" : "gameimages/offroadcargo.png"
     },
     {
         "id": "5",
         "name": "Paper.io 2",
         "url" : "https://html5.gamedistribution.com/5f0b3c36e5204917a1d23e8685a7015e/",
         "description": "Conquer as much territory as possible and beat the competition. A smooth drawing experience! Use your paper block to steal the area from your online opponents in this game. Capture as much space as possible and try to get the highest score in the lobby. If you move outside your own color, your tail becomes exposed. You will be eliminated when someone manages to catch your tail. So you need to take risks to expand your colored area.",
-        "gameid" : "5f0b3c36e5204917a1d23e8685a7015e"
+        "imageUrl" : "gameimages/paperio2.png"
     },
     {
         "id": "6",
         "name": "Waterpark Sort",
-        "url" : "https://html5.gamedistribution.com/27a166c242f44caf90ac7292d23e9dd4/?gd_sdk_referrer_url=https%3A%2F%2Fallgemgames.com%2game%",
-        "description": "In Waterpark Sort, your mission is to organize people or floats at the top of the water slide into matching groups. Drag and drop them into the right lanes, ensuring that each slide contains only one type. Sounds easy? Think again! With increasing complexity, you’ll need to plan ahead and use smart moves to win. Easy to play but challenging to master Dozens of creative levels with escalating difficulty Solve puzzles by matching characters/colors correctly"
+        "url" : "https://html5.gamedistribution.com/27a166c242f44caf90ac7292d23e9dd4/",
+        "description": "In Waterpark Sort, your mission is to organize people or floats at the top of the water slide into matching groups. Drag and drop them into the right lanes, ensuring that each slide contains only one type. Sounds easy? Think again! With increasing complexity, you’ll need to plan ahead and use smart moves to win. Easy to play but challenging to master Dozens of creative levels with escalating difficulty Solve puzzles by matching characters/colors correctly",
+        "imageUrl" : "gameimages/waterparksort.png"
     },
     {
         "id": "7",
         "name": "My Parking Area",
-        "url" : "https://html5.gamedistribution.com/4ff5b5355c42484da4fc9e90a970cbe8/?gd_sdk_referrer_url=https%3A%2F%2Fallgemgames.com%2game%",
-        "description": "It's time to leave the parking lot, but other cars are blocking your way! Move them in the right order to clear the path! Tight parking spaces, challenging obstacles, and unexpected challenges await you in this exciting and engaging game."
+        "url" : "https://html5.gamedistribution.com/4ff5b5355c42484da4fc9e90a970cbe8/",
+        "description": "It's time to leave the parking lot, but other cars are blocking your way! Move them in the right order to clear the path! Tight parking spaces, challenging obstacles, and unexpected challenges await you in this exciting and engaging game.",
+        "imageUrl" : "gameimages/sortmyparkingarea.png"
     },
     {
         "id": "8",
         "name": "The Survey",
-        "url" : "https://html5.gamedistribution.com/585e28f239534ba2901bd2cbe03f146b/?gd_sdk_referrer_url=https%3A%2F%2Fallgemgames.com%2game%",
-        "description": "After a long work time when you ready to play games in your computer and start a survey and it's shows you the things that you don't want to watch and know! - 5-10 min Gameplay - Atmospheric Enveronment - Intrective Gameplay"
+        "url" : "https://html5.gamedistribution.com/585e28f239534ba2901bd2cbe03f146b/",
+        "description": "After a long work time when you ready to play games in your computer and start a survey and it's shows you the things that you don't want to watch and know! - 5-10 min Gameplay - Atmospheric Enveronment - Intrective Gameplay",
+        "imageUrl" : "gameimages/thesurvey.png"
     },
     {
         "id": "9",
         "name": "Math Runner",
-        "url" : "https://html5.gamedistribution.com/a8870b5a6a76492db5cb8ca599f64843/?gd_sdk_referrer_url=https%3A%2F%2Fallgemgames.com%2game%",
-        "description": "Challenge your mind and reflexes in this fast-paced arithmetic adventure! Solve math problems on the run, dodge obstacles, and race against time to achieve the highest score. Perfect for players of all ages looking to sharpen their math skills while enjoying thrilling gameplay."
+        "url" : "https://html5.gamedistribution.com/a8870b5a6a76492db5cb8ca599f64843/",
+        "description": "Challenge your mind and reflexes in this fast-paced arithmetic adventure! Solve math problems on the run, dodge obstacles, and race against time to achieve the highest score. Perfect for players of all ages looking to sharpen their math skills while enjoying thrilling gameplay.",
+        "imageUrl" : "gameimages/mathrunner.png"
     },
     {
         "id": "10",
         "name": "The Stone Miner",
         "url" : "https://html5.gamedistribution.com/88b06ccedba844769676f840cbb47a4a/",
-        "description": "Become the ultimate mining tycoon in The Stone Miner! Drive your powerful mining machine through various fantasy terrains. Crush, collect and smash stones like never before! Steer your mine cart through rocks of different colors and materials and enjoy the exhilarating experience of stone mining. Sell collected stones for gold, and unlock new areas full of rare materials and surprises! Upgrade your vehicle to mine faster and deeper, turning your gear into a true beast!"
+        "description": "Become the ultimate mining tycoon in The Stone Miner! Drive your powerful mining machine through various fantasy terrains. Crush, collect and smash stones like never before! Steer your mine cart through rocks of different colors and materials and enjoy the exhilarating experience of stone mining. Sell collected stones for gold, and unlock new areas full of rare materials and surprises! Upgrade your vehicle to mine faster and deeper, turning your gear into a true beast!",
+        "imageUrl" : "gameimages/stoneminer.png"
     },
     {
         "id": "11",
         "name": "Hole Digger",
         "url" : "https://html5.gamedistribution.com/ddcd71fc39e745e28274a32671c254d3/",
-        "description": "Grab your shovel and start your journey deep into the earth. Mine valuable resources, upgrade your tools, level up your skills, and unlock new opportunities for even faster digging. The deeper you dig, the richer the treasures. Can you reach the very bottom?"
+        "description": "Grab your shovel and start your journey deep into the earth. Mine valuable resources, upgrade your tools, level up your skills, and unlock new opportunities for even faster digging. The deeper you dig, the richer the treasures. Can you reach the very bottom?",
+        "imageUrl" : "gameimages/holedigger.png"
     }
 ]
