@@ -9,7 +9,7 @@ public class Repository
 {
     // package name: System.Data.SQLite
 
-    private string _connectionString = "Data Source=database.sqlite";
+    private string _connectionString = "Data Source=/root/database.sqlite";
     public bool IsLoggedIn { get; set; }
     public bool IsEmailVerified { get; set; } = false;
     public bool hasPremium { get; set; }
@@ -23,6 +23,8 @@ public class Repository
     {
         InitDb();
     }
+
+    
 
 
 
