@@ -43,7 +43,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 15 Sep 2025 19:37:36 GMT"
+          "Value": "Wed, 17 Sep 2025 19:39:34 GMT"
         },
         {
           "Name": "Vary",
@@ -92,7 +92,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 15 Sep 2025 19:37:36 GMT"
+          "Value": "Wed, 17 Sep 2025 19:39:34 GMT"
         }
       ],
       "EndpointProperties": [
@@ -141,7 +141,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 15 Sep 2025 19:37:36 GMT"
+          "Value": "Wed, 17 Sep 2025 19:39:34 GMT"
         },
         {
           "Name": "Vary",
@@ -204,7 +204,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 15 Sep 2025 19:37:36 GMT"
+          "Value": "Wed, 17 Sep 2025 19:39:34 GMT"
         },
         {
           "Name": "Vary",
@@ -245,7 +245,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 15 Sep 2025 19:37:36 GMT"
+          "Value": "Wed, 17 Sep 2025 19:39:34 GMT"
         }
       ],
       "EndpointProperties": [
@@ -286,7 +286,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 15 Sep 2025 19:37:36 GMT"
+          "Value": "Wed, 17 Sep 2025 19:39:34 GMT"
         },
         {
           "Name": "Vary",
@@ -379,6 +379,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-fqGUReuNWLYFzbSrfrUzjwPJPKPXzSm8E4mvQgM5Jj4="
+        }
+      ]
+    },
+    {
+      "Route": "ads.5qn5epiwag.txt",
+      "AssetFile": "ads.txt.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.012658227848"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tDAkVnJoflubUomxxbYyd2Hf9ogfQtyHUJce6+dwirE=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"owY6uarx8uneaW2uIZ2BMDfvl42d99f85kB20jRwE54=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Sep 2025 14:39:37 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5qn5epiwag"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-owY6uarx8uneaW2uIZ2BMDfvl42d99f85kB20jRwE54="
+        },
+        {
+          "Name": "label",
+          "Value": "ads.txt"
+        }
+      ]
+    },
+    {
+      "Route": "ads.5qn5epiwag.txt",
+      "AssetFile": "ads.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "58"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"owY6uarx8uneaW2uIZ2BMDfvl42d99f85kB20jRwE54=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Sep 2025 14:39:37 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5qn5epiwag"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-owY6uarx8uneaW2uIZ2BMDfvl42d99f85kB20jRwE54="
+        },
+        {
+          "Name": "label",
+          "Value": "ads.txt"
+        }
+      ]
+    },
+    {
+      "Route": "ads.5qn5epiwag.txt.gz",
+      "AssetFile": "ads.txt.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tDAkVnJoflubUomxxbYyd2Hf9ogfQtyHUJce6+dwirE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Sep 2025 14:39:37 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5qn5epiwag"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tDAkVnJoflubUomxxbYyd2Hf9ogfQtyHUJce6+dwirE="
+        },
+        {
+          "Name": "label",
+          "Value": "ads.txt.gz"
+        }
+      ]
+    },
+    {
+      "Route": "ads.txt",
+      "AssetFile": "ads.txt.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.012658227848"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tDAkVnJoflubUomxxbYyd2Hf9ogfQtyHUJce6+dwirE=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"owY6uarx8uneaW2uIZ2BMDfvl42d99f85kB20jRwE54=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Sep 2025 14:39:37 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-owY6uarx8uneaW2uIZ2BMDfvl42d99f85kB20jRwE54="
+        }
+      ]
+    },
+    {
+      "Route": "ads.txt",
+      "AssetFile": "ads.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "58"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"owY6uarx8uneaW2uIZ2BMDfvl42d99f85kB20jRwE54=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Sep 2025 14:39:37 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-owY6uarx8uneaW2uIZ2BMDfvl42d99f85kB20jRwE54="
+        }
+      ]
+    },
+    {
+      "Route": "ads.txt.gz",
+      "AssetFile": "ads.txt.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tDAkVnJoflubUomxxbYyd2Hf9ogfQtyHUJce6+dwirE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 16 Sep 2025 14:39:37 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tDAkVnJoflubUomxxbYyd2Hf9ogfQtyHUJce6+dwirE="
         }
       ]
     },

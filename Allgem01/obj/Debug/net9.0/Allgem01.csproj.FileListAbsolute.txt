@@ -262,6 +262,7 @@ C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\Allgem01.sourcelink.jso
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\scopedcss\bundle\Allgem01.styles.css
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\scopedcss\projectbundle\Allgem01.bundle.scp.css
+C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\r2uw9grf2v-5qn5epiwag.gz
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\ffw1vtxivu-oanwjjojd9.gz
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\4tw345e77c-qq8dz680mq.gz
 C:\Users\sqenz\Projects\allgem\Allgem01\obj\Debug\net9.0\compressed\z30ocuy1z9-y2lra6d6kf.gz
