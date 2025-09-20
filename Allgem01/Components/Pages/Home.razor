@@ -36,6 +36,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:description" content="Free online games, earn ranks by playing, try various types of games, Allgem Games!">
 <meta name="twitter:image" content="https://allgemgames.com/imaginase.png">
 
+<link rel="stylesheet" href="header.css">
 </head>
 </html>
 <!-- Google Tag Manager (noscript) -->
@@ -44,7 +45,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <div class="loading-container" id="loadingContainer">
-  <img src="/allgemtext.png" alt="ALLGEM" class="logo">
+  <img src="/allgemtext.png" alt="ALLGEM" class="logov">
         <div class="loading-spinner"></div>
         <div class="loading-text">Loading...</div>
 </div>
@@ -64,7 +65,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         background-position: center;
         }
         
-        .logo {
+        .logov {
             width: 200px;
             height: auto;
             margin-top: 200px;
@@ -80,65 +81,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </style>
 <!--test-->
 <header>
-<h1 class="main-title">Free Online Games, Earn Ranks By Playing, Allgem Games</h1>
-  @if (repository.IsLoggedIn)
-    {
-      
-      @if (repository.hasPremium)
+     <section class="logosection">
+       @if (!repository.hasPremium)
+        {
+          <img class="logo" src="/allgemtext.webp" alt="logo" href="/">
+        }
+        else if (CookieValueRank == "Dev")
+        {
+          <img class="logodev" src="/allgemdeveloper.webp" alt="devlogo" href="/">
+          <img class="lpudev">
+        }
+        else
+        {
+          <img class="logopremium" src="/allgempremium.webp" alt="premiumlogo" href="/">
+          <img class="lpu">
+        }
+        @if (CookieValue == "isli")
+        {
+          <div class="rank-div" href="/account">
+            <a class="rank-text">Rank</a>
+            <img class="rank-image" src="@rankimg" alt="Rank Image">
+          </div>
+        }
+        else
+        {
+        }
+      </section>
+      <nav>
+      <a class="changelog" href="/changelog">Changelog</a>
+      <a class="aboutus" href="/about-us">About Us</a>
+      <a class="support" href="https://allgemgames.featurebase.app/help">Support</a>
+      @if (CookieValue == "isli")
+        {
+          <img class="account" src="profile.webp" href="/account"/>
+        }
+        else
+        {
+          <a class="login" href="/login"><p class="lgtxt">Login</p></a>
+        }
+      </nav>
+      @if (!repository.hasPremium && CookieValue == "isli")
       {
-        <img @onclick="homeFf" class="logopremium" src="/allgempremium.png" alt="ALLGEM PREMIUM">
-        <img class="lpu">
+        <a class="premium" href="/premium">Premium</a>
       }
-      else
-      {
-        <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">   
-      }
-
-            <div class="rankal">
-      <p class="ranktx">Rank</p>
-      <img class="rankim" src="@rankimg" alt="rank">
-      </div>
-    }
-    else
-    {
-      <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">
-    }
-    <button class="mobileprofile" @onclick="MobileProfile" type="button">
-      <img class="profileimg" src="/profile.png" alt="profile">
-      </button>
-    <nav>
-    <li><a href="/changelog" class="home">Changes</a></li>
-    <li><a href="/about-us" class="aboutus">About Us</a></li>
-    <li><a href="/contact-us" class="contactus">Contact Us</a></li>
-@if (repository.IsLoggedIn)
-    {
-      <button class="profile"  @onclick="accountFf" type="button">
-          <img class="profileimg" src="/profile.png" alt="profile">
-      </button>
-      @if (profile == true)
-      {
-        <div class="profilemenu">
-          <button class="logout" @onclick="Logout">Log Out</button>
-        </div>
-      }
-      else{
-
-      }
-      @if (repository.hasPremium)
-      {
-      }
-      else
-      {
-          <li><button class="premium" type="button" @onclick="premiumFf">Premium</button></li>
-      }
-    }
-    else
-    {
-        <button class="login" @onclick="loginFf">
-          <p class="lgtxt">Log In</p><p class="txt"> ›</p>
-          </button>
-    }
-    </nav>
 </header>
 
 <section class="downheader"></section>
@@ -166,7 +151,7 @@ function topFunction() {
 }
 </script>
 
-
+<section class="gf"></section>
 <section class="gamessection">
     <div class="cards">
         <button class="card" id="card1" @onclick="PlayGameKourio">
@@ -265,6 +250,15 @@ function topFunction() {
 <footer><p>© 2025 Allgem</p><button class="tc" @onclick="termFf">Terms & conditions</button><button class="dd" @onclick="devFf">Developer Panel</button>
 </footer>
 <style>
+
+.gf{
+    background: rgba(10, 13, 20, 0.95);
+    height: 140px;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
   h1{
     font-size: 0px;
   }
@@ -301,31 +295,6 @@ function topFunction() {
         background-size: cover;
         background-position: center;
     }
-    header {
-        background: rgb(10, 13, 20);
-        min-width: 97vw;
-        min-height: 9vh;
-        display: flex;
-        color: white;
-        font-size: 16px;
-        padding: 20px 40px 10px 50px;
-        border: none;
-        border-radius: none;
-        position: sticky;
-        top: 0px;
-        flex-direction: column;
-        z-index: 1000;
-        opacity: 0.98;
-        position: relative;
-        position: sticky;
-    }
-    .downheader {
-        background: rgb(31, 33, 48);
-        height: 2px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
     footer{
         background: rgb(10, 13, 20);
         color:  white;
@@ -335,174 +304,13 @@ function topFunction() {
         display: flex;
         align-items: center;
     }
-    li{
-        display: inline-block;
-        list-style-type: none;
-        padding-right: 40px;
-
-    }
-    nav{
-        margin-left: clamp(20px, 62vw, 80vw);
-        flex-direction: column;
-        margin-top: -40px;
-        gap: 10px;
-    }
-    .home{
-        background: none;
-        background-size: 300% 300%;
-        color: white;
-        font-size: 16px;
-        padding: none;
-        border: none;
-        border-radius: 8px;
-        width: 70px;
-        height: 35px;
-        transition: all 0.1s ease-out;
-        font-weight: bold;
-        display: flex;
-        text-decoration: none;
-    }
-    .home:hover{
-        transform: translateY(-4px);
-    }
-    .aboutus{
-        background: none;
-        background-size: 300% 300%;
-        color: white;
-        font-size: 16px;
-        padding: none;
-        border: none;
-        border-radius: 8px;
-        width: 90px;
-        height: 35px;
-        transition: all 0.1s ease-out;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    .aboutus:hover{
-        transform: translateY(-4px);
-    }
-    .contactus{
-        background: none;
-        background-size: 300% 300%;
-        color: white;
-        font-size: 16px;
-        padding: none;
-        border: none;
-        border-radius: 8px;
-        width: 103px;
-        height: 35px;
-        transition: all 0.1s ease-out;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    .contactus:hover{
-        transform: translateY(-4px);
-    }
-    .mobileprofile{
-      display: none;
-      background: none;
-      border: none;
-      justify-content: center;
-      align-items: center;
-    }
-    .logo{ 
-     width: 130px; 
-     height: 25px;
-     margin-top: 6px; 
-     margin-left: 30px;
-     background-size: contain; 
-     background-repeat: no-repeat;
-     background-position: center;
-    }
-    .logopremium{
-     width: 142px; 
-     height: 45px; 
-     background-size: contain; 
-     background-repeat: no-repeat;
-     background-position: center;
-    }
-    .lpu{
-      margin-top: 5px;
-      margin-left: -4px;
-      background: rgb(13, 134, 255);
-      height: 2px;
-      width: 150px;
-    }
-    .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: 50px;
-    }
-    .profileimg{
-      width: 38px;
-      height: 38px;
-      transition: all 0.2s ease-out;
-    }
-    .profile:hover .profileimg{
-      transform: scale(1.2, 1.2);
-    }
-.premium {
-  width: fit-content;
-  height: 40px;
-  width: 105px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 514px;
-  margin-top: -42px;
-  border: none;
-  font-weight: bold;
-  border-radius: 20px;
-  cursor: pointer;
-  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
-  background: linear-gradient(
-      15deg,
-      #000088,
-      #0022aa,
-      #0044cc,
-      #0066de,
-      #0088f0,
-      #0066de,
-      #0044cc,
-      #0022aa,
-      #000088
-    )
-    no-repeat;
-  background-size: 300%;
-  background-position: left center;
-  transition: background 0.3s ease;
-  color: #fff;
-}
-
-.premium:hover {
-  background-size: 320%;
-  background-position: right center;
-}
-
-.rankim{
-  width: 45px;
-  height: 45px;
-  margin-top: -16px;
-}
-.rankal{
-  margin-top: -60px;
-  margin-left: 195px;
-}
-.ranktx{
-  font-size: 12px;
-  margin-left: 8.5px;
-}
     .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
     display: flex; /* Align buttons in a row */
     flex-wrap: wrap; /* Wrap if screen is too small */
     flex-direction: row;
     justify-content: center; /* Center align */
     gap: 30px; /* Add space between buttons */
-    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+    background: rgba(10, 13, 20, 0.95);
     }
     .gamessection {
     min-height: 100px;
@@ -599,6 +407,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  box-shadow: 0 4px 15px rgb(53, 53, 53);
 }
 .card-info {
   position: absolute;
@@ -632,636 +441,10 @@ body {
 .cards .card:hover {
   transform: scale(1.1, 1.1);
 }
-.login {
-  background: rgb(28, 75, 185);
-  border: 0;
-  margin-left: 420px;
-  margin-top: -42px;
-  border-radius: 18px;
-  transition: 0.01s outline;
-  color: white;
-  height: 40px;
-  width: 100px;
-  display: flex;
-  font-weight: bold;
-}
-.login:hover{
-  outline: 2px rgb(202, 203, 206) solid;
-}
-.txt{
-  margin-left: 13px;
-  margin-top: 7px;
-  transition: 0.25s all;
-}
-.login:hover .txt{
-  margin-left: 20px;
-}
-.lgtxt {
-  margin-left: 13px;
-  margin-top: 7px;
-}
 
 
-
-@@media (max-width: 1499px) {
-        nav {
-            margin-left: clamp(20px, 60vw, 80vw);
-            flex-direction: column;
-            margin-top: -40px;
-            gap: 10px;
-        }
-        .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: 10px;
-    }
-    }
-    @@media (max-width: 1437px) {
-        nav {
-            margin-left: clamp(20px, 57vw, 80vw);
-            flex-direction: column;
-            margin-top: -40px;
-            gap: 10px;
-        }
-        .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: 10px;
-    }
-    }
-    @@media (max-width: 1356px) {
-        nav {
-            margin-left: clamp(20px, 49vw, 80vw);
-            flex-direction: column;
-            margin-top: -40px;
-            gap: 9px;
-        }
-        .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: 10px;
-    }
-    }
-    @@media (max-width: 1139px) {
-        nav {
-            margin-left: clamp(20px, 38vw, 80vw);
-            flex-direction: column;
-            margin-top: -40px;
-            gap: 8px;
-        }
-        .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: 10px;
-    }
-    }
-    @@media (max-width: 976px) {
-        nav {
-            margin-left: clamp(20px, 32vw, 80vw);
-            flex-direction: column;
-            margin-top: -40px;
-            gap: 7px;
-        }
-        .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: 10px;
-    }
-    .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
-    display: flex; /* Align buttons in a row */
-    flex-wrap: wrap; /* Wrap if screen is too small */
-    flex-direction: row;
-    justify-content: center; /* Center align */
-    gap: 5px; /* Add space between buttons */
-    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
-    }
-    }
-    @@media (max-width: 818px) {
-        nav {
-            margin-left: clamp(20px, 3vw, 80vw);
-            flex-direction: column;
-            margin-top: -40px;
-            gap: 7px;
-        }
-        .logo{
-          width: 135px; 
-          height: 27px;
-          margin-top: 11px; 
-          background-size: contain; 
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-        .login{
-          display: none;
-        }
-        .home{
-          display: none;
-        }
-        .aboutus{
-          display: none;
-        }
-        .contactus{
-          display: none;
-        }
-        .profile{
-          display: none;
-        }
-        .mobileprofile{
-          display: flex;
-          margin-left: 500px;
-          margin-top: -34px;
-          min-height: 48px;
-          min-width: 48px;
-        }
-    .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
-    display: flex; /* Align buttons in a row */
-    flex-wrap: wrap; /* Wrap if screen is too small */
-    flex-direction: row;
-    justify-content: center; /* Center align */
-    gap: 5px; /* Add space between buttons */
-    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
-    }
-    }
-
-    @@media (max-width: 610px) {
-        nav {
-            margin-left: clamp(20px, 3vw, 80vw);
-            flex-direction: column;
-            margin-top: -40px;
-            gap: 7px;
-        }
-        .logo{
-          width: 135px; 
-          height: 27px;
-          margin-top: 11px;
-          background-size: contain; 
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-        .login{
-          display: none;
-        }
-        .home{
-          display: none;
-        }
-        .aboutus{
-          display: none;
-        }
-        .contactus{
-          display: none;
-        }
-        .profile{
-          display: none;
-        }
-        .mobileprofile{
-          display: flex;
-          margin-left: 400px;
-          margin-top: -34px;
-          min-height: 48px;
-          min-width: 48px;
-        }
-    .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
-    display: flex; /* Align buttons in a row */
-    flex-wrap: wrap; /* Wrap if screen is too small */
-    flex-direction: row;
-    justify-content: center; /* Center align */
-    gap: 5px; /* Add space between buttons */
-    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
-    }
-    }
-    @@media (max-width: 551px) {
-        nav {
-            margin-left: clamp(20px, 3vw, 80vw);
-            flex-direction: column;
-            margin-top: -40px;
-            gap: 7px;
-        }
-        .logo{
-          width: 135px; 
-          height: 27px;
-          margin-top: 11px;
-          background-size: contain; 
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-        .login{
-          display: none;
-        }
-        .home{
-          display: none;
-        }
-        .aboutus{
-          display: none;
-        }
-        .contactus{
-          display: none;
-        }
-        .profile{
-          display: none;
-        }
-        .mobileprofile{
-          display: flex;
-          margin-left: 00px;
-          margin-top: -34px;
-          min-height: 48px;
-          min-width: 48px;
-        }
-    .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
-    display: flex; /* Align buttons in a row */
-    flex-wrap: wrap; /* Wrap if screen is too small */
-    flex-direction: row;
-    justify-content: center; /* Center align */
-    gap: 5px; /* Add space between buttons */
-    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
-    }
-    }
-
-     @if (!repository.IsLoggedIn) {
-        <style>nav {
-            margin-left: clamp(20px, 58vw, 80vw);
-            flex-direction: column;
-            margin-top: -24px;
-            gap: 10px;
-        }
-
-
-
-        @@media (max-width: 1499px) {
-        nav {
-            margin-left: clamp(20px, 55vw, 80vw);
-            flex-direction: column;
-            margin-top: -24px;
-            gap: 10px;
-        }
-        .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: 10px;
-    }
-    }
-    @@media (max-width: 1437px) {
-        nav {
-            margin-left: clamp(20px, 53vw, 80vw);
-            flex-direction: column;
-            margin-top: -24px;
-            gap: 10px;
-        }
-        .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: 10px;
-    }
-    }
-    @@media (max-width: 1356px) {
-        nav {
-            margin-left: clamp(20px, 48vw, 80vw);
-            flex-direction: column;
-            margin-top: -24px;
-            gap: 9px;
-        }
-        .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: 10px;
-    }
-    }
-    @@media (max-width: 1139px) {
-        nav {
-            margin-left: clamp(20px, 40vw, 80vw);
-            flex-direction: column;
-            margin-top: -24px;
-            gap: 8px;
-        }
-        .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: 10px;
-    }
-    }
-    @@media (max-width: 976px) {
-        nav {
-            margin-left: clamp(20px, 35vw, 80vw);
-            flex-direction: column;
-            margin-top: -24px;
-            gap: 7px;
-        }
-        .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: 10px;
-    }
-    .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
-    display: flex; /* Align buttons in a row */
-    flex-wrap: wrap; /* Wrap if screen is too small */
-    flex-direction: row;
-    justify-content: center; /* Center align */
-    gap: 5px; /* Add space between buttons */
-    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
-    }
-    }
-
-    @@media (max-width: 918px) {
-        nav {
-            margin-left: clamp(20px, 30vw, 80vw);
-            flex-direction: column;
-            margin-top: -24px;
-            gap: 7px;
-        }
-        .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: 10px;
-    }
-    .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
-    display: flex; /* Align buttons in a row */
-    flex-wrap: wrap; /* Wrap if screen is too small */
-    flex-direction: row;
-    justify-content: center; /* Center align */
-    gap: 5px; /* Add space between buttons */
-    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
-    }
-    }
-
-     @@media (max-width: 840px) {
-        nav {
-            margin-left: clamp(20px, 28vw, 80vw);
-            flex-direction: column;
-            margin-top: -24px;
-            gap: 7px;
-        }
-        .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: 10px;
-    }
-    .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
-    display: flex; /* Align buttons in a row */
-    flex-wrap: wrap; /* Wrap if screen is too small */
-    flex-direction: row;
-    justify-content: center; /* Center align */
-    gap: 5px; /* Add space between buttons */
-    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
-    }
-    }
-        </style>
-    }
-    @if (repository.IsLoggedIn) {
-        @if (!repository.hasPremium) {
+</style>
         <style>
-          nav{
-            margin-left: clamp(20px, 58vw, 80vw);
-            flex-direction: column;
-            margin-top: -40px;
-            gap: 10px;
-          }
-          .profile{
-            border: none;
-            background: none;
-            height: 38px;
-            width: 38px;
-            transition: all 0.2s ease-out;
-            margin-left: 10px;
-          }
-          .premium{
-            width: fit-content;
-            position: absolute;
-            height: 40px;
-            width: 105px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 110px;
-            margin-top: -25px;
-            border: none;
-            font-weight: bold;
-            border-radius: 20px;
-            cursor: pointer;
-            text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
-            background: linear-gradient(
-                15deg,
-                #000088,
-                #0022aa,
-                #0044cc,
-                #0066de,
-                #0088f0,
-                #0066de,
-                #0044cc,
-                #0022aa,
-                #000088
-              )
-              no-repeat;
-            background-size: 300%;
-            background-position: left center;
-            transition: background 0.3s ease;
-            color: #fff;
-          }
-
-          .rankal{
-            margin-top: -47px;
-            margin-left: 195px;
-          }
-
-@@media (max-width: 1774px) {
-    .premium{
-            width: fit-content;
-            position: absolute;
-            height: 40px;
-            width: 105px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 50px;
-            margin-top: -25px;
-            border: none;
-            font-weight: bold;
-            border-radius: 20px;
-            cursor: pointer;
-            text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
-            background: linear-gradient(
-                15deg,
-                #000088,
-                #0022aa,
-                #0044cc,
-                #0066de,
-                #0088f0,
-                #0066de,
-                #0044cc,
-                #0022aa,
-                #000088
-              )
-              no-repeat;
-            background-size: 300%;
-            background-position: left center;
-            transition: background 0.3s ease;
-            color: #fff;
-          }
-    }
-
-@@media (max-width: 1543px) {
-    .premium{
-            width: fit-content;
-            position: absolute;
-            height: 0px;
-            width: 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 30px;
-            margin-top: -200px;
-            border: none;
-            font-weight: bold;
-            border-radius: 20px;
-            cursor: pointer;
-            text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
-            background: linear-gradient(
-                15deg,
-                #000088,
-                #0022aa,
-                #0044cc,
-                #0066de,
-                #0088f0,
-                #0066de,
-                #0044cc,
-                #0022aa,
-                #000088
-              )
-              no-repeat;
-            background-size: 300%;
-            background-position: left center;
-            transition: background 0.3s ease;
-            color: #fff;
-          }
-    }
-
-
-          @@media (max-width: 1499px) {
-        nav {
-            margin-left: clamp(20px, 60vw, 80vw);
-            flex-direction: column;
-            margin-top: -40px;
-            gap: 10px;
-        }
-        .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: 10px;
-    }
-    }
-    @@media (max-width: 1437px) {
-        nav {
-            margin-left: clamp(20px, 58vw, 80vw);
-            flex-direction: column;
-            margin-top: -40px;
-            gap: 10px;
-        }
-        .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: 10px;
-    }
-    }
-    @@media (max-width: 1356px) {
-        nav {
-            margin-left: clamp(20px, 50vw, 80vw);
-            flex-direction: column;
-            margin-top: -40px;
-            gap: 9px;
-        }
-        .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: 10px;
-    }
-    }
-    @@media (max-width: 1139px) {
-        nav {
-            margin-left: clamp(20px, 40vw, 80vw);
-            flex-direction: column;
-            margin-top: -40px;
-            gap: 8px;
-        }
-        .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: 10px;
-    }
-    }
-    @@media (max-width: 950px) {
-        nav {
-            margin-left: clamp(20px, 37vw, 80vw);
-            flex-direction: column;
-            margin-top: -40px;
-            gap: 7px;
-        }
-        .profile{
-      border: none;
-      background: none;
-      height: 38px;
-      width: 38px;
-      transition: all 0.2s ease-out;
-      margin-left: 10px;
-    }
-    .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
-    display: flex; /* Align buttons in a row */
-    flex-wrap: wrap; /* Wrap if screen is too small */
-    flex-direction: row;
-    justify-content: center; /* Center align */
-    gap: 5px; /* Add space between buttons */
-    background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
-    }
-    }
-        </style>
-        }
-      }
-
       .loading-container {
         width: 0vw;
         height: 0vh;
@@ -1485,4 +668,6 @@ body {
     {
         await JSRuntime.InvokeVoidAsync("methods.CreateCookie", name, value, days);
     }
+
+
 }

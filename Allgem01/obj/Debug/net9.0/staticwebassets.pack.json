@@ -17,12 +17,16 @@
       "PackagePath": "staticwebassets\\all_icon.png"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\allgempremium.png",
-      "PackagePath": "staticwebassets\\allgempremium.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\allgemdeveloper.webp",
+      "PackagePath": "staticwebassets\\allgemdeveloper.webp"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\allgemtext.png",
-      "PackagePath": "staticwebassets\\allgemtext.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\allgempremium.webp",
+      "PackagePath": "staticwebassets\\allgempremium.webp"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\allgemtext.webp",
+      "PackagePath": "staticwebassets\\allgemtext.webp"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\app.css",
@@ -179,6 +183,10 @@
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gshootimg.png",
       "PackagePath": "staticwebassets\\gshootimg.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\header.css",
+      "PackagePath": "staticwebassets\\header.css"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\imaginase.png",
@@ -397,8 +405,8 @@
       "PackagePath": "staticwebassets\\premiumtag.png"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\profile.png",
-      "PackagePath": "staticwebassets\\profile.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\profile.webp",
+      "PackagePath": "staticwebassets\\profile.webp"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\quickplay.png",

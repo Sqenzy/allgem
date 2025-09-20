@@ -24,7 +24,7 @@
         <div class="premium-content">
             <h1>Upgrade to Premium</h1>
             <p class="premium-description">
-                Unlock an ad-free experience with our Premium subscription! Enjoy seamless browsing across our website without interruptions from advertisements.
+                Unlock an ad-free experience with our Premium subscription! Enjoy seamless browsing across our website without interruptions from advertisements. <p style="color: blue;" @onclick="sidebar">(this applies only to side banners)</p>
             </p>
             <div class="stripe-container">
                 <script async src="https://js.stripe.com/v3/buy-button.js"></script>
@@ -325,6 +325,15 @@
     public async Task buyPremium()
     {
         var url = "https://buy.stripe.com/aFacN4dNy2Ju2Usg9TcAo00";
+        if (JSRuntime != null)
+        {
+            JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
+        }
+    }
+
+    private void sidebar()
+    {
+        var url = "https://allgemgames.featurebase.app/help/articles/1400492-benefits-of-allgem-premium";
         if (JSRuntime != null)
         {
             JSRuntime.InvokeVoidAsync("window.open", url, "_blank");

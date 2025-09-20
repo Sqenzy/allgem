@@ -1,0 +1,215 @@
+header {
+    background-color: rgb(19, 22, 27);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    padding: 0 2rem;
+    height: 100px;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.logosection {
+    display: flex;
+    align-items: center;
+    left: 80px;
+    max-height: 300px;
+    max-width: 500px;
+    position: relative;
+}
+.logo{
+    width: 150px; 
+    height: 29px;
+    margin-top: 6px; 
+    margin-left: 30px;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+.logopremium {
+    height: 80px;
+    cursor: pointer;
+    max-width: 142px; 
+    max-height: 45px; 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    cursor: pointer;
+}
+.lpu{
+    margin-top: 55px;
+    margin-left: -4px;
+    background: rgb(13, 134, 255);
+    height: 2px;
+    width: 150px;
+    position: absolute;
+}
+
+.logodev {
+    height: 80px;
+    cursor: pointer;
+    max-width: 250px; 
+    max-height: 141px;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    cursor: pointer;
+}
+.lpudev{
+    margin-top: 55px;
+    margin-left: -4px;
+    background: rgb(255, 129, 11);
+    height: 2px;
+    width: 150px;
+    position: absolute;
+}
+
+
+.rank-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 2px solid rgba(255, 255, 255, 0.1);
+    left: 300px;
+    border-radius: 20px;
+    height: 50px;
+    width: 130px;
+    cursor: pointer;
+    position: relative;
+    transition: outline 0.3s ease;
+}
+.rank-div:hover {
+    outline: 2px solid rgba(219, 219, 219, 0.603);
+}
+.rank-text {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 2px;
+    margin-left: -50px;
+    position: absolute;
+    cursor: default;
+    cursor: pointer;
+}
+.rank-image {
+    height: 42px;
+    width: 42px;
+    margin-left: 55px;
+    position: absolute;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 750px;
+    gap: 50px;
+    margin-left: 950px;
+}
+.changelog, .aboutus, .support {
+    height: 45px;
+    width: 130px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    outline: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    transition: background-color, outline 0.3s ease;
+    font-weight: bold;
+}
+.changelog:hover, .aboutus:hover, .support:hover {
+    background-color: #292929;
+    outline: 2px solid rgba(219, 219, 219, 0.603);
+
+}
+.account {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-left: 50px;
+    outline: 2px solid rgb(19, 22, 27);
+    outline-offset: 4px;
+    cursor: pointer;
+    transition: background-color, outline 0.2s ease;
+}
+.account:hover {
+    background-color: #292929;
+    outline: 2px solid rgba(219, 219, 219, 0.603);
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 45px;
+    width: 130px;
+    margin-left: 100px;
+    cursor: pointer;
+    outline: 2px solid rgb(19, 22, 27);
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: rgb(21, 86, 236);
+    transition: background-color, outline 0.2s ease;
+}
+.login:hover {
+    background: rgb(0, 47, 158);
+    outline: 2px solid rgba(219, 219, 219, 0.603);
+}
+.lgtxt{
+    margin-top: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.premium {
+  width: 105px;
+  height: 40px;
+  width: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 514px;
+  margin-top: -42px;
+  border: none;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+  background: linear-gradient(
+      15deg,
+      #000088,
+      #0022aa,
+      #0044cc,
+      #0066de,
+      #0088f0,
+      #0066de,
+      #0044cc,
+      #0022aa,
+      #000088
+    )
+    no-repeat;
+  background-size: 300%;
+  background-position: left center;
+  transition: background 0.3s ease;
+  color: #fff;
+}
+
+.premium:hover {
+  background-size: 320%;
+  background-position: right center;
+}
