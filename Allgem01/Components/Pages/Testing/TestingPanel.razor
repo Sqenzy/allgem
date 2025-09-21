@@ -1,0 +1,425 @@
+@page "/testing"
+@inject IJSRuntime JSRuntime
+@using System.Net;
+@using System.Net.Mail;
+@using Microsoft.JSInterop;
+@using RestSharp;
+@using Allgem01.Components.Pages.Testing;
+@rendermode InteractiveServer
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta Testing Portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #1a1d29;
+            min-height: 100vh;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #00bcd4, #0097a7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .beta-badge {
+            display: inline-block;
+            background: #00bcd4;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-left: 10px;
+            animation: pulse 2s infinite;
+        }
+
+        @@keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00bcd4, transparent);
+            transition: left 0.5s ease;
+        }
+
+        .card:hover::before {
+            left: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .card h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #00bcd4;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            background: #00bcd4;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1a1d29;
+            font-weight: bold;
+        }
+
+        .next-update {
+            background: linear-gradient(135deg, rgba(0, 188, 212, 0.1), rgba(0, 151, 167, 0.1));
+        }
+
+        .patch-notes {
+            background: linear-gradient(135deg, rgba(0, 188, 212, 0.1), rgba(69, 90, 100, 0.1));
+        }
+
+        .testing-server {
+            background: linear-gradient(135deg, rgba(96, 125, 139, 0.1), rgba(55, 71, 79, 0.1));
+        }
+
+        .timeline {
+            background: linear-gradient(135deg, rgba(255, 152, 0, 0.1), rgba(245, 124, 0, 0.1));
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .feature-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .feature-list li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: #00bcd4;
+            font-size: 0.8em;
+        }
+
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        .version-tag {
+            background: #00bcd4;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .status {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .status-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            animation: blink 2s infinite;
+        }
+
+        .online { background: #2ecc71; }
+        .maintenance { background: #f39c12; }
+        .offline { background: #e74c3c; }
+
+        @@keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.3; }
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #00bcd4, #0097a7);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
+            background: linear-gradient(45deg, #0097a7, #00bcd4);
+        }
+
+        .btn.secondary {
+            background: linear-gradient(45deg, #607d8b, #455a64);
+            box-shadow: 0 4px 15px rgba(96, 125, 139, 0.3);
+        }
+
+        .btn.secondary:hover {
+            background: linear-gradient(45deg, #455a64, #607d8b);
+            box-shadow: 0 6px 20px rgba(96, 125, 139, 0.4);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 15px 0;
+            border-left: 2px solid #00bcd4;
+            padding-left: 30px;
+            margin-left: 15px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 20px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #00bcd4;
+        }
+
+        .timeline-date {
+            color: #00bcd4;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .timeline-content {
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        .coming-soon {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(0, 188, 212, 0.1), rgba(96, 125, 139, 0.1));
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+
+        .coming-soon h3 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #00bcd4;
+        }
+
+        .coming-soon p {
+            font-size: 1.1em;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00bcd4, #0097a7);
+            width: 75%;
+            transition: width 0.3s ease;
+        }
+
+        @@media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Beta Testing Portal <span class="beta-badge">BETA</span></h1>
+            <p>Get exclusive access to upcoming features and help shape the future of our game</p>
+        </header>
+
+        <div class="grid">
+            <!-- Next Update Card -->
+            <div class="card next-update">
+                <h2><span class="icon">🚀</span>Next Update</h2>
+                <div class="version-tag">Version 2.4.0</div>
+                <ul class="feature-list">
+                    <li>New multiplayer arena system</li>
+                    <li>Enhanced character customization</li>
+                    <li>Dynamic weather effects</li>
+                    <li>Voice chat integration</li>
+                    <li>Performance optimizations</li>
+                </ul>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p>Progress: 75% Complete</p>
+            </div>
+
+            <!-- Patch Notes Card -->
+            <div class="card patch-notes">
+                <h2><span class="icon">📝</span>Latest Patch Notes</h2>
+                <div class="version-tag">Version 2.3.2 - Live</div>
+                <ul class="feature-list">
+                    <li>Fixed rendering issues on mobile devices</li>
+                    <li>Improved matchmaking algorithm</li>
+                    <li>Added new achievement system</li>
+                    <li>Balance changes to weapon damage</li>
+                    <li>UI/UX improvements</li>
+                </ul>
+                <a href="#" class="btn secondary">View Full Patch Notes</a>
+            </div>
+
+            <!-- Testing Server Card -->
+            <div class="card testing-server">
+                <h2><span class="icon">🖥️</span>Testing Server</h2>
+                <div class="status">
+                    <span class="status-dot online"></span>
+                    <span>Server Status: Online</span>
+                </div>
+                <p>Access the latest builds and experimental features. Your feedback helps us improve the game!</p>
+                <br>
+                <p><strong>Server Info:</strong></p>
+                <ul class="feature-list">
+                    <li>Region: US-East</li>
+                    <li>Build: v2.4.0-beta.3</li>
+                    <li>Players Online: 1,247</li>
+                </ul>
+                <a href="https://test.yourgame.com" class="btn">Access Testing Server</a>
+            </div>
+
+            <!-- Timeline Card -->
+            <div class="card timeline">
+                <h2><span class="icon">📅</span>Development Timeline</h2>
+                <div class="timeline-item">
+                    <div class="timeline-date">Q1 2025</div>
+                    <div class="timeline-content">Major graphics overhaul and new engine integration</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">December 2024</div>
+                    <div class="timeline-content">Holiday event and seasonal content</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">November 2024</div>
+                    <div class="timeline-content">Multiplayer arena system (v2.4.0)</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">October 2024</div>
+                    <div class="timeline-content">Performance optimization update</div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="coming-soon">
+            <form action="https://formsubmit.co/allgemgames@gmail.com" method="POST">
+     <input type="text" name="name" required>
+     <input type="email" name="email" required value="allgemgames@gmail.com">
+     <button type="submit">Send</button>
+</form>
+        </div>
+    </div>
+</body>
+</html>
+
+@code {
+    private string message;
+    private string email;
+
+    private async Task Send()
+{
+}
+
+}

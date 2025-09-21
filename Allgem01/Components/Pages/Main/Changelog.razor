@@ -1,0 +1,331 @@
+@page "/changelog"
+@rendermode InteractiveServer
+@using Microsoft.JSInterop
+@using Microsoft.AspNetCore.Components
+@using Allgem01.Logic
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+@inject Repository repository
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Changelog</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: rgba(10, 13, 20, 0.95);
+    }
+    .news-container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .news-article {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .news-article:hover {
+      transform: translateY(-6px);
+    }
+
+    .news-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .news-meta {
+      font-size: 12px;
+      color: #bebebe;
+      margin-bottom: 15px;
+    }
+
+    .news-content {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #ffffff;
+    }
+
+    footer{
+        background: rgb(10, 13, 20);
+        color:  white;
+        padding: 10px 20px;
+        height: 90px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+    }
+  </style>
+  <link rel="stylesheet" href="header.css">
+</head>
+<body>
+<div class="loading-container" id="loadingContainer">
+  @* <img src="/allgemtext.png" alt="ALLGEM" class="logov"> *@
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Loading...</div>
+</div>
+
+<style>
+  .loading-container {
+    background: rgb(10, 13, 20);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            width: 100vw;
+        height: 1000vh;
+        z-index: -1;
+        background-size: cover;
+        background-position: center;
+        }
+        
+        .logov {
+            width: 200px;
+            height: auto;
+            margin-top: 200px;
+        }
+        
+        .loading-text {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            margin-top: 200px;
+            opacity: 0.8;
+        }
+</style>
+<header>
+     <section class="logosection">
+       @if (!repository.hasPremium)
+        {
+          <img class="logo" src="/allgemtext.webp" alt="logo" href="/" @onclick="homeFf">
+        }
+        else if (CookieValueRank == "Dev")
+        {
+          <img class="logodev" src="/allgemdeveloper.webp" alt="devlogo" href="/" @onclick="adminFf">
+          <img class="lpudev">
+        }
+        else
+        {
+          <img class="logopremium" src="/allgempremium.webp" alt="premiumlogo" href="/" @onclick="homeFf">
+          <img class="lpu">
+        }
+        @if (CookieValue == "isli")
+        {
+          <div class="nlrank-div" href="/account">
+            @* <a class="rank-text">Rank</a>
+            <img class="rank-image" src="@rankimg" alt="Rank Image"> *@
+          </div>
+        }
+        else
+        {
+          <div class="nlrank-div" href="/account"></div>
+        }
+      </section>
+      <nav>
+      <a class="changelog" href="/"><img class="backarrow" src="/backarrow.webp">Home</a>
+      <a class="aboutus" href="/about-us">About Us</a>
+      <a class="support" href="https://allgemgames.featurebase.app/en/help/articles/1547414-how-to-contact-support">Support</a>
+      @if (CookieValue == "isli")
+        {
+          <img class="account" src="profile.webp" href="/account"/>
+        }
+        else
+        {
+          <a class="login" href="/login"><p class="lgtxt">Login</p></a>
+        }
+      </nav>
+</header>
+<section class="gf"></section>
+
+<section class="downheader"></section>
+<!--<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>--test-->
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  <main class="news-container">
+
+    <div class="news-article">
+      <div class="news-title">Recent Changes</div>
+      <div class="news-meta">Published on Sept 6, 2025 | Author: Dev Team</div>
+      <div class="news-content">
+        Auto scrool to top when clicking on a game. Rank system fixed.
+      </div>
+    </div>
+
+
+    <div class="news-article">
+      <div class="news-title">Recent Changes</div>
+      <div class="news-meta">Published on Sept 8, 2025 | Author: Dev Team</div>
+      <div class="news-content">
+        Game description on hover. Casino (try playing with fake money). 3 new games added. Better site performance and speed. Fixed minor bugs.
+        <div style="text-align: center; margin-top: 1em;">
+    <img src="changelogimg.png" style="max-width: 100%; height: auto;">
+  </div>
+      </div>
+    </div>
+
+    @* <div class="news-article">
+      <div class="news-title">Upcoming Update Sneak Peek</div>
+      <div class="news-meta">Published on Sept 3, 2025 | Author: Dev Team</div>
+      <div class="news-content">
+        The development team has shared details about the upcoming platform update, 
+        which will bring performance improvements, a refined interface, and new 
+        integration features. Stay tuned for the full release notes.
+      </div>
+    </div> *@
+  </main>
+
+@* <footer><p>© 2025 Allgem</p><button class="tc" @onclick="termFf">Terms & conditions</button><button class="dd" @onclick="devFf">Developer Panel</button></footer> *@
+
+</body>
+</html>
+
+<style>
+.gf{
+    background: rgba(10, 13, 20, 0.95);
+    height: 140px;
+    width: 100%;
+}
+    .tc{
+        background: none;
+        background-size: 300% 300%;
+        color: white;
+        font-size: 14px;
+        padding: none;
+        border: none;
+        border-radius: 8px;
+        width: 150px;
+        height: 35px;
+        display: flex;
+        margin-left: 20px;
+  }
+  .dd{
+        background: none;
+        background-size: 300% 300%;
+        color: white;
+        font-size: 14px;
+        padding: none;
+        border: none;
+        border-radius: 8px;
+        width: 150px;
+        height: 35px;
+        display: flex;
+  }
+
+   #kk {
+        width: 100vw;
+        height: 1000vh;
+        z-index: -1;
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+
+<style>
+    .loading-container {
+        width: 0vw;
+        height: 0vh;
+        z-index: 0;
+        background-size: null;
+        background-position: null;
+    }
+    .loading-text {
+            font-size: 0px;
+        }
+</style>
+
+@code {
+
+    private string? CookieValue;
+    private string? CookieValueRank;
+    protected override async Task OnAfterRenderAsync(bool firstRender){
+            CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
+
+            // Update the authentication state based on the cookie value
+            if (CookieValue == "isli")
+            {
+                repository.SetLoggedIn(true);
+            }
+            else
+            {
+                repository.SetLoggedIn(false);
+            }
+
+            CookieValueRank = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_rank");
+            StateHasChanged();
+            await JSRuntime.InvokeVoidAsync("topFunction");
+        }
+    private void MobileProfile()
+    {
+      NavigationManager.NavigateTo("/account");
+    }
+
+    private void termFf()
+    {
+        NavigationManager.NavigateTo("/terms-and-conditions");
+    }
+    private void adminFf()
+    {
+        NavigationManager.NavigateTo("/adminpanel");
+    }
+    private void accountFf()
+    {
+        NavigationManager.NavigateTo("/account");
+    }
+    private void loginFf()
+    {
+      NavigationManager.NavigateTo("/login");
+    }
+    private void homeFf()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+    private void aboutusFf()
+    {
+        NavigationManager.NavigateTo("/about-us");
+    }
+    private void contactusFf()
+    {
+        NavigationManager.NavigateTo("/contact-us");
+    }
+    private void premiumFf()
+    {
+        NavigationManager.NavigateTo("/premium");
+    }
+    private void devFf()
+    {
+        NavigationManager.NavigateTo("/developer-panel");
+    }
+}

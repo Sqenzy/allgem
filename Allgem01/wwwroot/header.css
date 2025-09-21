@@ -89,6 +89,18 @@ header {
 .rank-div:hover {
     outline: 2px solid rgba(219, 219, 219, 0.603);
 }
+
+.nlrank-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 300px;
+    border-radius: 20px;
+    height: 50px;
+    width: 130px;
+    cursor: pointer;
+    position: relative;
+}
 .rank-text {
     color: white;
     text-decoration: none;
@@ -98,6 +110,7 @@ header {
     position: absolute;
     cursor: default;
     cursor: pointer;
+    font-weight: bold;
 }
 .rank-image {
     height: 42px;
@@ -157,7 +170,7 @@ nav {
     text-decoration: none;
     height: 45px;
     width: 130px;
-    margin-left: 100px;
+    margin-left: 50px;
     cursor: pointer;
     outline: 2px solid rgb(19, 22, 27);
     border-radius: 20px;
@@ -176,40 +189,44 @@ nav {
     font-weight: bold;
 }
 
-.premium {
-  width: 105px;
-  height: 40px;
-  width: 105px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 514px;
-  margin-top: -42px;
-  border: none;
-  font-weight: bold;
-  border-radius: 20px;
-  cursor: pointer;
-  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
-  background: linear-gradient(
-      15deg,
-      #000088,
-      #0022aa,
-      #0044cc,
-      #0066de,
-      #0088f0,
-      #0066de,
-      #0044cc,
-      #0022aa,
-      #000088
-    )
-    no-repeat;
-  background-size: 300%;
-  background-position: left center;
-  transition: background 0.3s ease;
-  color: #fff;
+.premium-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #008cff2c;
+    outline: 3px solid rgb(0, 195, 255);
+    left: 1680px;
+    top: 140px;
+    border-radius: 20px;
+    height: 50px;
+    width: 155px;
+    cursor: pointer;
+    position: relative;
+    transition: outline 0.3s ease;
+}
+.prem-text {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 2px;
+    margin-left: -32px;
+    position: absolute;
+    cursor: default;
+    cursor: pointer;
+    font-weight: bold;
+}
+.premium{
+    height: 28px;
+    width: 24px;
+    margin-left: 110px;
+    margin-top: -2px;
+    position: absolute;
+    cursor: pointer;
 }
 
-.premium:hover {
-  background-size: 320%;
-  background-position: right center;
+.backarrow{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-top: -3px;
 }

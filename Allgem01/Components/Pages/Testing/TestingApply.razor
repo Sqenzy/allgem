@@ -1,0 +1,107 @@
+@page "/testing/apply"
+
+
+<head>
+<title>Apply for Testing</title>
+</head>
+
+<section class="beta-section">
+    <div class="beta-container">
+        <h2>Join Allgem Testing Team</h2>
+        <p>Be the first to test new games and features. Enter your email to request access. You need to be manually accepted to gain acces to Allgem testing</p>
+
+        <form class="beta-form">
+            <input type="email" id="email" class="input-email" placeholder="Enter your email" required />
+            <button type="submit">Apply</button>
+        </form>
+    </div>
+</section>
+
+<style>
+    .beta-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #121212;
+        color: #fff;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .beta-container {
+        max-width: 600px;
+        margin-top: -150px;
+        background: #1e1e1e;
+        padding: 2rem;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        animation: fadeIn 1s ease-in;
+    }
+
+    .beta-container h2 {
+        font-size: 2rem;
+        margin-top: 20px;
+        color: #ffffff;
+    }
+
+    .beta-container p {
+        font-size: 1rem;
+        margin-top: 30px;
+        opacity: 0.85;
+        color: #cecece;
+    }
+
+    .beta-form {
+        display: flex;
+        margin-top: 80px;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .input-email {
+        flex: 1 1 280px;
+        padding: 0.75rem 1rem;
+        border-radius: 8px;
+        border: 1px solid #333;
+        background: #2a2a2a;
+        color: #fff;
+        font-size: 1rem;
+        outline: none;
+        transition: border 0.2s ease;
+    }
+
+    .input-email:focus {
+        border: 1px solid #00aaff;
+    }
+
+    .beta-form button {
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        background: #00aaff;
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .beta-form button:hover {
+        background: #0088cc;
+        transform: scale(1.05);
+    }
+
+    @@keyframes fadeIn {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @@media (max-width: 600px) {
+        .beta-container h2 { font-size: 1.5rem; }
+        .beta-form { flex-direction: column; }
+        .beta-form button { width: 100%; }
+    }
+</style>
+

@@ -84,16 +84,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      <section class="logosection">
        @if (!repository.hasPremium)
         {
-          <img class="logo" src="/allgemtext.webp" alt="logo" href="/">
+          <img class="logo" src="/allgemtext.webp" alt="logo" href="/" @onclick="homeFf">
         }
         else if (CookieValueRank == "Dev")
         {
-          <img class="logodev" src="/allgemdeveloper.webp" alt="devlogo" href="/">
+          <img class="logodev" src="/allgemdeveloper.webp" alt="devlogo" href="/" @onclick="adminFf">
           <img class="lpudev">
         }
         else
         {
-          <img class="logopremium" src="/allgempremium.webp" alt="premiumlogo" href="/">
+          <img class="logopremium" src="/allgempremium.webp" alt="premiumlogo" href="/" @onclick="homeFf">
           <img class="lpu">
         }
         @if (CookieValue == "isli")
@@ -105,12 +105,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
         else
         {
+          <div class="nlrank-div" href="/account"></div>
         }
       </section>
       <nav>
       <a class="changelog" href="/changelog">Changelog</a>
       <a class="aboutus" href="/about-us">About Us</a>
-      <a class="support" href="https://allgemgames.featurebase.app/help">Support</a>
+      <a class="support" href="https://allgemgames.featurebase.app/en/help/articles/1547414-how-to-contact-support">Support</a>
       @if (CookieValue == "isli")
         {
           <img class="account" src="profile.webp" href="/account"/>
@@ -120,10 +121,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a class="login" href="/login"><p class="lgtxt">Login</p></a>
         }
       </nav>
-      @if (!repository.hasPremium && CookieValue == "isli")
-      {
-        <a class="premium" href="/premium">Premium</a>
-      }
 </header>
 
 <section class="downheader"></section>
@@ -151,7 +148,14 @@ function topFunction() {
 }
 </script>
 
-<section class="gf"></section>
+<section class="gf">
+@if (!repository.hasPremium && CookieValue == "isli"){
+<div class="premium-div" href="/premium" @onclick="premiumFf">
+    <a class="prem-text" href="/premium">Buy Premium</a>
+    <img class="premium" src="premium.webp" href="/premium" @onclick="premiumFf"/>
+</div>
+}
+</section>
 <section class="gamessection">
     <div class="cards">
         <button class="card" id="card1" @onclick="PlayGameKourio">
@@ -305,11 +309,11 @@ function topFunction() {
         align-items: center;
     }
     .gamessection,.secondgamessection,.thirdgamessection,.fourthgamessection {
-    display: flex; /* Align buttons in a row */
-    flex-wrap: wrap; /* Wrap if screen is too small */
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center; /* Center align */
-    gap: 30px; /* Add space between buttons */
+    justify-content: center;
+    gap: 30px;
     background: rgba(10, 13, 20, 0.95);
     }
     .gamessection {
@@ -407,7 +411,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: 0 4px 15px rgb(53, 53, 53);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 .card-info {
   position: absolute;
@@ -537,6 +541,10 @@ body {
     private void devFf()
     {
         NavigationManager.NavigateTo("/developer-panel");
+    }
+    private void adminFf()
+    {
+        NavigationManager.NavigateTo("/adminpanel");
     }
 
     private void MobileProfile()

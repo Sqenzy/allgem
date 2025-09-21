@@ -24,10 +24,6 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/AboutUs.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBYm91dFVzLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Account/AccesDenied.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XEFjY2VzRGVuaWVkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -80,18 +76,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXNpbm9cVG93ZXJvNC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Changelog.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaGFuZ2Vsb2cucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Cn.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbi5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/ContactUsEmail.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250YWN0VXNFbWFpbC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Developer/Developerpanel.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZXZlbG9wZXJcRGV2ZWxvcGVycGFuZWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -124,8 +108,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHYW1lc1xHYW1lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Main/AboutUs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYWluXEFib3V0VXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Main/Changelog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYWluXENoYW5nZWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Main/ContactUsEmail.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYWluXENvbnRhY3RVc0VtYWlsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Main/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYWluXEhvbWUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Premium.razor]
@@ -138,6 +134,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/TermsConditions.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUZXJtc0NvbmRpdGlvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Testing/TestingApply.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUZXN0aW5nXFRlc3RpbmdBcHBseS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Testing/TestingPanel.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUZXN0aW5nXFRlc3RpbmdQYW5lbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Thanks.razor]

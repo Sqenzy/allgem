@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\app.css"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\backarrow.webp",
+      "PackagePath": "staticwebassets\\backarrow.webp"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\bronze.png",
       "PackagePath": "staticwebassets\\bronze.png"
     },
@@ -401,6 +405,10 @@
       "PackagePath": "staticwebassets\\play.png"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\premium.webp",
+      "PackagePath": "staticwebassets\\premium.webp"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\premiumtag.png",
       "PackagePath": "staticwebassets\\premiumtag.png"
     },
@@ -415,6 +423,10 @@
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rank.png",
       "PackagePath": "staticwebassets\\rank.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\robots.txt",
+      "PackagePath": "staticwebassets\\robots.txt"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\silver.png",

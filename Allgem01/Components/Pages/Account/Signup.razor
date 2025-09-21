@@ -308,7 +308,7 @@
 
 var client = new SmtpClient("live.smtp.mailtrap.io", 587)
 {
-    Credentials = new NetworkCredential("api", "14dec78b27698f43708d4ba0e60b4846"),
+    Credentials = new NetworkCredential("api", "f024fb6ad23cf1d915ffecacc3ac3829"),
     EnableSsl = true
 };
 client.Send("Allgem@allgemgames.com", email, "Email Verification", $"Here is your verification code: {generatedNumber.ToString()}");
@@ -374,7 +374,7 @@ private void putintodb()
 
 var client = new RestClient("https://send.api.mailtrap.io/api/send");
 var request = new RestRequest();
-request.AddHeader("Authorization", "Bearer 14dec78b27698f43708d4ba0e60b4846");
+request.AddHeader("Authorization", "Bearer f024fb6ad23cf1d915ffecacc3ac3829");
 request.AddHeader("Content-Type", "application/json");
 
 var emailBody = new
