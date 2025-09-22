@@ -1,11 +1,15 @@
 header {
     background-color: rgb(19, 22, 27);
-    backdrop-filter: blur(10px);
+    opacity: 0.95;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     position: fixed;
     padding: 0 2rem;
+    outline: 3px solid rgba(255, 255, 255, 0.1);
+    top: 30px;
+    left: 2%;
     height: 100px;
-    width: 100%;
+    width: 96%;
+    border-radius: 20px;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -169,8 +173,8 @@ nav {
     justify-content: center;
     text-decoration: none;
     height: 45px;
-    width: 130px;
-    margin-left: 50px;
+    width: 100px;
+    margin-left: 30px;
     cursor: pointer;
     outline: 2px solid rgb(19, 22, 27);
     border-radius: 20px;

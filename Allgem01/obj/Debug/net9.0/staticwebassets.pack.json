@@ -37,8 +37,8 @@
       "PackagePath": "staticwebassets\\backarrow.webp"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\bronze.png",
-      "PackagePath": "staticwebassets\\bronze.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\casinobackground.webp",
+      "PackagePath": "staticwebassets\\casinobackground.webp"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\casinobanner.png",
@@ -55,10 +55,6 @@
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\crserver.png",
       "PackagePath": "staticwebassets\\crserver.png"
-    },
-    {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\diamond.png",
-      "PackagePath": "staticwebassets\\diamond.png"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\discord-icon.png",
@@ -129,56 +125,52 @@
       "PackagePath": "staticwebassets\\fpsgame\\fpsgame.html"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\holedigger.png",
-      "PackagePath": "staticwebassets\\gameimages\\holedigger.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\holedigger.webp",
+      "PackagePath": "staticwebassets\\gameimages\\holedigger.webp"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\kourio.png",
-      "PackagePath": "staticwebassets\\gameimages\\kourio.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\kourio.webp",
+      "PackagePath": "staticwebassets\\gameimages\\kourio.webp"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\mathrunner.png",
-      "PackagePath": "staticwebassets\\gameimages\\mathrunner.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\mathrunner.webp",
+      "PackagePath": "staticwebassets\\gameimages\\mathrunner.webp"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\node2.png",
-      "PackagePath": "staticwebassets\\gameimages\\node2.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\node2.webp",
+      "PackagePath": "staticwebassets\\gameimages\\node2.webp"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\offroadcargo.png",
-      "PackagePath": "staticwebassets\\gameimages\\offroadcargo.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\offroadcargo.webp",
+      "PackagePath": "staticwebassets\\gameimages\\offroadcargo.webp"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\paperio2.png",
-      "PackagePath": "staticwebassets\\gameimages\\paperio2.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\paperio2.webp",
+      "PackagePath": "staticwebassets\\gameimages\\paperio2.webp"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\sortmyparkingarea.png",
-      "PackagePath": "staticwebassets\\gameimages\\sortmyparkingarea.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\sortmyparkingarea.webp",
+      "PackagePath": "staticwebassets\\gameimages\\sortmyparkingarea.webp"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\stoneminer.png",
-      "PackagePath": "staticwebassets\\gameimages\\stoneminer.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\stoneminer.webp",
+      "PackagePath": "staticwebassets\\gameimages\\stoneminer.webp"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\thesurvey.png",
-      "PackagePath": "staticwebassets\\gameimages\\thesurvey.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\thesurvey.webp",
+      "PackagePath": "staticwebassets\\gameimages\\thesurvey.webp"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\waterparksort.png",
-      "PackagePath": "staticwebassets\\gameimages\\waterparksort.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\waterparksort.webp",
+      "PackagePath": "staticwebassets\\gameimages\\waterparksort.webp"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\worldguessr.png",
-      "PackagePath": "staticwebassets\\gameimages\\worldguessr.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\worldguessr.webp",
+      "PackagePath": "staticwebassets\\gameimages\\worldguessr.webp"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gmail-icon.png",
       "PackagePath": "staticwebassets\\gmail-icon.png"
-    },
-    {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gold.png",
-      "PackagePath": "staticwebassets\\gold.png"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gshoot.png",
@@ -397,10 +389,6 @@
       "PackagePath": "staticwebassets\\mines.png"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\platinum.png",
-      "PackagePath": "staticwebassets\\platinum.png"
-    },
-    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\play.png",
       "PackagePath": "staticwebassets\\play.png"
     },
@@ -425,12 +413,28 @@
       "PackagePath": "staticwebassets\\rank.png"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\robots.txt",
-      "PackagePath": "staticwebassets\\robots.txt"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\bronze.png",
+      "PackagePath": "staticwebassets\\rankimages\\bronze.png"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\silver.png",
-      "PackagePath": "staticwebassets\\silver.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\diamond.png",
+      "PackagePath": "staticwebassets\\rankimages\\diamond.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\gold.png",
+      "PackagePath": "staticwebassets\\rankimages\\gold.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\platinum.png",
+      "PackagePath": "staticwebassets\\rankimages\\platinum.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\silver.png",
+      "PackagePath": "staticwebassets\\rankimages\\silver.png"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\robots.txt",
+      "PackagePath": "staticwebassets\\robots.txt"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\sitemap.xml",

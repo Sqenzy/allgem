@@ -88,7 +88,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
         else if (CookieValueRank == "Dev")
         {
-          <img class="logodev" src="/allgemdeveloper.webp" alt="devlogo" href="/" @onclick="adminFf">
+          <img class="logodev" src="/allgemdeveloper.webp" alt="devlogo" @onclick="adminFf">
           <img class="lpudev">
         }
         else
@@ -110,7 +110,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </section>
       <nav>
       <a class="changelog" href="/changelog">Changelog</a>
-      <a class="aboutus" href="/about-us">About Us</a>
+      <a class="aboutus" href="https://allgemgames.featurebase.app/en/help/articles/6890206-about-allgem">About Us</a>
       <a class="support" href="https://allgemgames.featurebase.app/en/help/articles/1547414-how-to-contact-support">Support</a>
       @if (CookieValue == "isli")
         {
@@ -158,7 +158,7 @@ function topFunction() {
 </section>
 <section class="gamessection">
     <div class="cards">
-        <button class="card" id="card1" @onclick="PlayGameKourio">
+        <button class="card" id="card1" href="/game?g=kourio">
             <div class="card-info">
               <p class="tip">Kour.io</p>
               <p class="second-text">Kour.io is a multiplayer IO FPS game that immerses you in intense battles across different maps with a variety of weapons and modes!</p>
@@ -181,19 +181,19 @@ function topFunction() {
 
 <section class="secondgamessection">
     <div class="cards">
-        <button class="card" id="card4" @onclick="PlayGamePaperio2">
+        <button class="card" id="card4" href="/game?g=peperio2">
             <div class="card-info">
               <p class="tip">Paper.io 2</p>
               <p class="second-text">Conquer as much territory as possible and beat the competition.</p>
             </div>
         </button>
-        <button class="card" id="card5" @onclick="PlayGameWorldGuesser">
+        <button class="card" id="card5" href="/game?g=worldguessr">
             <div class="card-info">
-              <p class="tip">World Guesser</p>
+              <p class="tip">World Guessr</p>
               <p class="second-text">World Guessr is a geography-based game where players guess locations on a map</p>
             </div>
         </button>
-        <button class="card" id="card6" @onclick="PlayGameOffRoadCargo">
+        <button class="card" id="card6" href="/game?g=offroadcargo">
             <div class="card-info">
               <p class="tip">Off Road Cargo Drive Simulator</p>
               <p class="second-text"></p>
@@ -204,19 +204,19 @@ function topFunction() {
 
 <section class="thirdgamessection">
     <div class="cards">
-        <button class="card" id="card7" @onclick="PlayGameMyParkingArea">
+        <button class="card" id="card7" href="/game?g=sortmyparkingarea">
         <div class="card-info">
             <p class="tip">My Parking Area</p>
             <p class="second-text">It's time to leave the parking lot, but other cars are blocking your way!</p>
         </div>
         </button>
-        <button class="card" id="card8" @onclick="PlayGameMathRunner">
+        <button class="card" id="card8" href="/game?g=mathrunner">
         <div class="card-info">
             <p class="tip">Math Runner</p>
             <p class="second-text">Challenge your mind and reflexes in this fast-paced arithmetic adventure!</p>
         </div>
         </button>
-        <button class="card" id="card9" @onclick="PlayGameStoneMiner">
+        <button class="card" id="card9" href="/game?g=stoneminer">
         <div class="card-info">
             <p class="tip">Stone Miner</p>
             <p class="second-text">Become the ultimate mining tycoon in The Stone Miner!</p>
@@ -227,19 +227,19 @@ function topFunction() {
 
 <section class="fourthgamessection">
     <div class="cards">
-        <button class="card" id="card10" @onclick="PlayGameHoleDigger">
+        <button class="card" id="card10" href="/game?g=holedigger">
             <div class="card-info">
             <p class="tip">Hole Digger</p>
             <p class="second-text">Grab your shovel and start your journey deep into the earth.</p>
         </div>
         </button>
-        <button class="card" id="card11" @onclick="PlayGameNode2">
+        <button class="card" id="card11" href="/game?g=node2">
             <div class="card-info">
             <p class="tip">Node 2</p>
             <p class="second-text">Node 2 is a simulation game that allows players to explore and interact</p>
         </div>
         </button>
-        <button class="card" id="card12" @onclick="PlayGameTheSurvey">
+        <button class="card" id="card12" href="/game?g=thesurvey">
             <div class="card-info">
             <p class="tip">The Survey</p>
             <p class="second-text">After a long work time when you ready to play games in your computer and start a survey.</p>
@@ -251,12 +251,12 @@ function topFunction() {
 <script src="main.js"></script>
 
 
-<footer><p>© 2025 Allgem</p><button class="tc" @onclick="termFf">Terms & conditions</button><button class="dd" @onclick="devFf">Developer Panel</button>
+<footer><p>© 2025 Allgem</p><button class="tc" @onclick="termFf">Terms & conditions</button><button class="dd" @onclick="devFf">Developer Panel</button><a href="/testing">Testing</a>
 </footer>
 <style>
 
 .gf{
-    background: rgba(10, 13, 20, 0.95);
+    background-color: rgb(10, 13, 20);
     height: 140px;
     width: 100%;
     z-index: -1;
@@ -314,7 +314,7 @@ function topFunction() {
     flex-direction: row;
     justify-content: center;
     gap: 30px;
-    background: rgba(10, 13, 20, 0.95);
+    background-color: rgb(10, 13, 20);
     }
     .gamessection {
     min-height: 100px;
@@ -339,49 +339,49 @@ body {
 }
 
 #card1{
-    background-image: url('gameimages/kourio.png');
+    background-image: url('gameimages/kourio.webp');
 }
 
 #card1:hover{
-    background-image: url('/kourio.gif');
+    background-image: url('/kourio.webp');
 }
 
 
 #card2{
-  background-image: url('/gshoot.png');
+  background-image: url('/gshoot.webp');
 }
 
 
 #card3{
-  background-image: url('/casinobanner.png');
+  background-image: url('/casinobanner.webp');
 }
 
 #card4{
-  background-image: url('gameimages/paperio2.png');
+  background-image: url('gameimages/paperio2.webp');
 }
 #card5{
-  background-image: url('gameimages/worldguessr.png');
+  background-image: url('gameimages/worldguessr.webp');
 }
 #card6{
-  background-image: url('gameimages/offroadcargo.png');
+  background-image: url('gameimages/offroadcargo.webp');
 }
 #card7{
-  background-image: url('gameimages/sortmyparkingarea.png');
+  background-image: url('gameimages/sortmyparkingarea.webp');
 }
 #card8{
-  background-image: url('gameimages/mathrunner.png');
+  background-image: url('gameimages/mathrunner.webp');
 }
 #card9{
-  background-image: url('gameimages/stoneminer.png');
+  background-image: url('gameimages/stoneminer.webp');
 }
 #card10{
-  background-image: url('gameimages/holedigger.png');
+  background-image: url('gameimages/holedigger.webp');
 }
 #card11{
-  background-image: url('gameimages/node2.png');
+  background-image: url('gameimages/node2.webp');
 }
 #card12{
-  background-image: url('gameimages/thesurvey.png');
+  background-image: url('gameimages/thesurvey.webp');
 }
 
 
@@ -411,7 +411,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  @* box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.3); *@
+  @* outline: 2px solid rgba(255, 255, 255, 0.493); *@
 }
 .card-info {
   position: absolute;
@@ -458,6 +459,11 @@ body {
     }
     .loading-text {
             font-size: 0px;
+        }
+        .logov {
+            width: 0px;
+            height: auto;
+            margin-top: 0px;
         }
 </style>
 
@@ -570,7 +576,7 @@ body {
     }
     private void homeFf()
     {
-        NavigationManager.NavigateTo("/changelog");
+        NavigationManager.NavigateTo("/");
     }
     private void aboutusFf()
     {

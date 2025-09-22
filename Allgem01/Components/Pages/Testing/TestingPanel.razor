@@ -32,6 +32,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            margin-top: 80px;
         }
 
         .header {
@@ -40,16 +41,13 @@
             padding: 40px 0;
             background: rgba(255, 255, 255, 0.05);
             border-radius: 20px;
-            backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .header h1 {
             font-size: 3em;
             margin-bottom: 10px;
-            background: linear-gradient(45deg, #00bcd4, #0097a7);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #ffffff;
             background-clip: text;
             text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
@@ -57,17 +55,6 @@
         .header p {
             font-size: 1.2em;
             opacity: 0.9;
-        }
-
-        .beta-badge {
-            display: inline-block;
-            background: #00bcd4;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            margin-left: 10px;
-            animation: pulse 2s infinite;
         }
 
         @@keyframes pulse {
@@ -161,7 +148,8 @@
             padding: 10px 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             position: relative;
-            padding-left: 30px;
+            padding-left: -10px;
+            color: #e0e0e0;
         }
 
         .feature-list li::before {
@@ -170,6 +158,10 @@
             left: 0;
             color: #00bcd4;
             font-size: 0.8em;
+        }
+
+        .next-update .feature-list li::before {
+            content: '';
         }
 
         .feature-list li:last-child {
@@ -326,15 +318,14 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1>Beta Testing Portal <span class="beta-badge">BETA</span></h1>
+            <h1>Beta Testing Portal</h1>
             <p>Get exclusive access to upcoming features and help shape the future of our game</p>
         </header>
 
         <div class="grid">
-            <!-- Next Update Card -->
             <div class="card next-update">
                 <h2><span class="icon">🚀</span>Next Update</h2>
-                <div class="version-tag">Version 2.4.0</div>
+                <div class="version-tag">Version 2.0</div>
                 <ul class="feature-list">
                     <li>New multiplayer arena system</li>
                     <li>Enhanced character customization</li>
@@ -377,7 +368,7 @@
                     <li>Build: v2.4.0-beta.3</li>
                     <li>Players Online: 1,247</li>
                 </ul>
-                <a href="https://test.yourgame.com" class="btn">Access Testing Server</a>
+                <a href="@link" class="btn" disabled>Access Testing Server</a>
             </div>
 
             <!-- Timeline Card -->
@@ -412,9 +403,13 @@
         </div>
     </div>
 </body>
+
+    
 </html>
 
 @code {
+
+    public string link;
     private string message;
     private string email;
 

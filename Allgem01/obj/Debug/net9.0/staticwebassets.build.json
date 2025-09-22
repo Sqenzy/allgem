@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "a+6Ztvuzce2+jOymzkx8ySLlH0p3TdxffjDv3qsgnwU=",
+  "Hash": "ZO00TE/znyYymAvsMID9PR9ubwfA99pBpAo1YSqgexU=",
   "Source": "Allgem01",
   "BasePath": "_content/Allgem01",
   "Mode": "Default",
@@ -164,12 +164,12 @@
       "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\4dwyu0zxko-67uztc0vcl.gz",
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\4dwyu0zxko-xgwy9by1d1.gz",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Allgem01",
-      "RelativePath": "header#[.{fingerprint=67uztc0vcl}]?.css.gz",
+      "RelativePath": "header#[.{fingerprint=xgwy9by1d1}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -178,8 +178,8 @@
       "RelatedAsset": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\header.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "9bww4pbiq1",
-      "Integrity": "a9xz2IAv0DPHX41dZ7HB4gb0q1VczojoPUjH/P1e5cw=",
+      "Fingerprint": "arva51wluk",
+      "Integrity": "ujcCxLJJONuUTO4IS8VMRsQEtwkPLKcmqMRo+7uZDT4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\header.css"
@@ -1508,12 +1508,12 @@
       "OriginalItemSpec": "wwwroot\\backarrow.webp"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\bronze.png",
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\casinobackground.webp",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
       "BasePath": "_content/Allgem01",
-      "RelativePath": "bronze#[.{fingerprint}]?.png",
+      "RelativePath": "casinobackground#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1522,11 +1522,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "8nhvfskg5e",
-      "Integrity": "7PUQ6E9vF0qicjPpuL7n0kc5XZEGr0y/ihHY+Hblka0=",
+      "Fingerprint": "mr3mq22890",
+      "Integrity": "kn7oR04dWq1/g59sRgU/9ILlO3v7r77bb6CBIN+Vr+c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\bronze.png"
+      "OriginalItemSpec": "wwwroot\\casinobackground.webp"
     },
     {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\casinobanner.png",
@@ -1590,27 +1590,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\crserver.png"
-    },
-    {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\diamond.png",
-      "SourceId": "Allgem01",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
-      "BasePath": "_content/Allgem01",
-      "RelativePath": "diamond#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "lxeub2oyu8",
-      "Integrity": "5yVvsAm/bpyWHqSKZ+HCOvZokewBcrBueZhkaxlq0V4=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\diamond.png"
     },
     {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\discord-icon.png",
@@ -1970,12 +1949,12 @@
       "OriginalItemSpec": "wwwroot\\fpsgame\\TemplateData\\webmemd-icon.png"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\holedigger.png",
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\holedigger.webp",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
       "BasePath": "_content/Allgem01",
-      "RelativePath": "gameimages/holedigger#[.{fingerprint}]?.png",
+      "RelativePath": "gameimages/holedigger#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1988,15 +1967,15 @@
       "Integrity": "pxvQtxagiCbw55uTnWfc+Kir06nJr/GPTP/uQ9Qfquk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\gameimages\\holedigger.png"
+      "OriginalItemSpec": "wwwroot\\gameimages\\holedigger.webp"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\kourio.png",
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\kourio.webp",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
       "BasePath": "_content/Allgem01",
-      "RelativePath": "gameimages/kourio#[.{fingerprint}]?.png",
+      "RelativePath": "gameimages/kourio#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2009,15 +1988,15 @@
       "Integrity": "816QAKfypsbExve9cF337FN+ieJ08j9MvG/HZfdI3hc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\gameimages\\kourio.png"
+      "OriginalItemSpec": "wwwroot\\gameimages\\kourio.webp"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\mathrunner.png",
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\mathrunner.webp",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
       "BasePath": "_content/Allgem01",
-      "RelativePath": "gameimages/mathrunner#[.{fingerprint}]?.png",
+      "RelativePath": "gameimages/mathrunner#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2030,15 +2009,15 @@
       "Integrity": "MlSJmbkHVGV1pJWwwyzrdxYGD6co3LSGOpN0YsmPfSk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\gameimages\\mathrunner.png"
+      "OriginalItemSpec": "wwwroot\\gameimages\\mathrunner.webp"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\node2.png",
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\node2.webp",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
       "BasePath": "_content/Allgem01",
-      "RelativePath": "gameimages/node2#[.{fingerprint}]?.png",
+      "RelativePath": "gameimages/node2#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2051,15 +2030,15 @@
       "Integrity": "NfJFD9ePGltxTOspX2dgyKV5XVLYe2UVFMfFg24hAKw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\gameimages\\node2.png"
+      "OriginalItemSpec": "wwwroot\\gameimages\\node2.webp"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\offroadcargo.png",
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\offroadcargo.webp",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
       "BasePath": "_content/Allgem01",
-      "RelativePath": "gameimages/offroadcargo#[.{fingerprint}]?.png",
+      "RelativePath": "gameimages/offroadcargo#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2072,15 +2051,15 @@
       "Integrity": "pFXKURISVyr0VTExdiE5PT0eFanU+Lrz8MbZBf3386c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\gameimages\\offroadcargo.png"
+      "OriginalItemSpec": "wwwroot\\gameimages\\offroadcargo.webp"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\paperio2.png",
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\paperio2.webp",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
       "BasePath": "_content/Allgem01",
-      "RelativePath": "gameimages/paperio2#[.{fingerprint}]?.png",
+      "RelativePath": "gameimages/paperio2#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2093,15 +2072,15 @@
       "Integrity": "8hJsRWg1x2OnKmNzSafnkkncb1x5aIYlRM3zaROop6o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\gameimages\\paperio2.png"
+      "OriginalItemSpec": "wwwroot\\gameimages\\paperio2.webp"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\sortmyparkingarea.png",
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\sortmyparkingarea.webp",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
       "BasePath": "_content/Allgem01",
-      "RelativePath": "gameimages/sortmyparkingarea#[.{fingerprint}]?.png",
+      "RelativePath": "gameimages/sortmyparkingarea#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2114,15 +2093,15 @@
       "Integrity": "NxCt5LER7FulIBgofo+tkNIyaR7fuXCf33f0/cJpdsw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\gameimages\\sortmyparkingarea.png"
+      "OriginalItemSpec": "wwwroot\\gameimages\\sortmyparkingarea.webp"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\stoneminer.png",
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\stoneminer.webp",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
       "BasePath": "_content/Allgem01",
-      "RelativePath": "gameimages/stoneminer#[.{fingerprint}]?.png",
+      "RelativePath": "gameimages/stoneminer#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2135,15 +2114,15 @@
       "Integrity": "/ms0wzy2mmHagb22FJ62boeCVQIxxtI3DuypHviT2Zc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\gameimages\\stoneminer.png"
+      "OriginalItemSpec": "wwwroot\\gameimages\\stoneminer.webp"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\thesurvey.png",
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\thesurvey.webp",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
       "BasePath": "_content/Allgem01",
-      "RelativePath": "gameimages/thesurvey#[.{fingerprint}]?.png",
+      "RelativePath": "gameimages/thesurvey#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2156,15 +2135,15 @@
       "Integrity": "C2+WI6rxQR4mHxvEdhYOCUG1Bo6tY6y9Kjxgedq2F3w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\gameimages\\thesurvey.png"
+      "OriginalItemSpec": "wwwroot\\gameimages\\thesurvey.webp"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\waterparksort.png",
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\waterparksort.webp",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
       "BasePath": "_content/Allgem01",
-      "RelativePath": "gameimages/waterparksort#[.{fingerprint}]?.png",
+      "RelativePath": "gameimages/waterparksort#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2177,15 +2156,15 @@
       "Integrity": "hKEXjRh0oHpd+rgTJ+qqGeYsLGO7kBT2GYsULy6sivY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\gameimages\\waterparksort.png"
+      "OriginalItemSpec": "wwwroot\\gameimages\\waterparksort.webp"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\worldguessr.png",
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\worldguessr.webp",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
       "BasePath": "_content/Allgem01",
-      "RelativePath": "gameimages/worldguessr#[.{fingerprint}]?.png",
+      "RelativePath": "gameimages/worldguessr#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2198,7 +2177,7 @@
       "Integrity": "pyT2shuNa3URxGeCWt4d+VfQ1TY4WUc1AV34brenOGc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\gameimages\\worldguessr.png"
+      "OriginalItemSpec": "wwwroot\\gameimages\\worldguessr.webp"
     },
     {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gmail-icon.png",
@@ -2220,27 +2199,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\gmail-icon.png"
-    },
-    {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gold.png",
-      "SourceId": "Allgem01",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
-      "BasePath": "_content/Allgem01",
-      "RelativePath": "gold#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "zxri7gnfox",
-      "Integrity": "CcuIke0fzy/rHByo5hdHgO7rIojYu3846KPtkdqLhkQ=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\gold.png"
     },
     {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gshoot.png",
@@ -2299,8 +2257,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "67uztc0vcl",
-      "Integrity": "ojBKR14LXA4o+WUuRUMhP6xhqe6uRr159x3qQzqnlnk=",
+      "Fingerprint": "xgwy9by1d1",
+      "Integrity": "4e0jivoqMHRnO24Y9jH2hlHOe7SGn6fDCuGDsGK+h8o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\header.css"
@@ -3398,27 +3356,6 @@
       "OriginalItemSpec": "wwwroot\\mines.png"
     },
     {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\platinum.png",
-      "SourceId": "Allgem01",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
-      "BasePath": "_content/Allgem01",
-      "RelativePath": "platinum#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "f3ealj8zyc",
-      "Integrity": "Jfl2jDy5MX+wb5obvevzkAFRaEazwJoFaFkzLsirARw=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\platinum.png"
-    },
-    {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\play.png",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
@@ -3545,6 +3482,111 @@
       "OriginalItemSpec": "wwwroot\\rank.png"
     },
     {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\bronze.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "rankimages/bronze#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8nhvfskg5e",
+      "Integrity": "7PUQ6E9vF0qicjPpuL7n0kc5XZEGr0y/ihHY+Hblka0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\rankimages\\bronze.png"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\diamond.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "rankimages/diamond#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lxeub2oyu8",
+      "Integrity": "5yVvsAm/bpyWHqSKZ+HCOvZokewBcrBueZhkaxlq0V4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\rankimages\\diamond.png"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\gold.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "rankimages/gold#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zxri7gnfox",
+      "Integrity": "CcuIke0fzy/rHByo5hdHgO7rIojYu3846KPtkdqLhkQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\rankimages\\gold.png"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\platinum.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "rankimages/platinum#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f3ealj8zyc",
+      "Integrity": "Jfl2jDy5MX+wb5obvevzkAFRaEazwJoFaFkzLsirARw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\rankimages\\platinum.png"
+    },
+    {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\silver.png",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "rankimages/silver#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7t8kld214t",
+      "Integrity": "m1K3h490014uHa23V1o0GEzKgMnph31OqzgQmsryWRY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\rankimages\\silver.png"
+    },
+    {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\robots.txt",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
@@ -3564,27 +3606,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\robots.txt"
-    },
-    {
-      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\silver.png",
-      "SourceId": "Allgem01",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
-      "BasePath": "_content/Allgem01",
-      "RelativePath": "silver#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "7t8kld214t",
-      "Integrity": "m1K3h490014uHa23V1o0GEzKgMnph31OqzgQmsryWRY=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\silver.png"
     },
     {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\sitemap.xml",
@@ -4180,7 +4201,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 21 Sep 2025 20:25:07 GMT"
+          "Value": "Mon, 22 Sep 2025 18:22:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4241,7 +4262,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 21 Sep 2025 20:25:07 GMT"
+          "Value": "Mon, 22 Sep 2025 18:22:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4286,7 +4307,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 21 Sep 2025 20:25:07 GMT"
+          "Value": "Mon, 22 Sep 2025 18:22:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4341,7 +4362,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 21 Sep 2025 20:25:07 GMT"
+          "Value": "Mon, 22 Sep 2025 18:22:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4402,7 +4423,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 21 Sep 2025 20:25:07 GMT"
+          "Value": "Mon, 22 Sep 2025 18:22:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4447,7 +4468,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 21 Sep 2025 20:25:07 GMT"
+          "Value": "Mon, 22 Sep 2025 18:22:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4502,7 +4523,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 21 Sep 2025 20:25:07 GMT"
+          "Value": "Mon, 22 Sep 2025 18:22:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4555,7 +4576,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 21 Sep 2025 20:25:07 GMT"
+          "Value": "Mon, 22 Sep 2025 18:22:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4592,7 +4613,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 21 Sep 2025 20:25:07 GMT"
+          "Value": "Mon, 22 Sep 2025 18:22:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4639,7 +4660,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 21 Sep 2025 20:25:07 GMT"
+          "Value": "Mon, 22 Sep 2025 18:22:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4692,7 +4713,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 21 Sep 2025 20:25:07 GMT"
+          "Value": "Mon, 22 Sep 2025 18:22:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4729,7 +4750,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 21 Sep 2025 20:25:07 GMT"
+          "Value": "Mon, 22 Sep 2025 18:22:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5378,8 +5399,8 @@
       ]
     },
     {
-      "Route": "bronze.8nhvfskg5e.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\bronze.png",
+      "Route": "casinobackground.mr3mq22890.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\casinobackground.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5388,19 +5409,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "176850"
+          "Value": "11235"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
-          "Value": "\"7PUQ6E9vF0qicjPpuL7n0kc5XZEGr0y/ihHY+Hblka0=\""
+          "Value": "\"kn7oR04dWq1/g59sRgU/9ILlO3v7r77bb6CBIN+Vr+c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 19:13:03 GMT"
+          "Value": "Mon, 22 Sep 2025 16:39:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5410,21 +5431,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "8nhvfskg5e"
+          "Value": "mr3mq22890"
         },
         {
           "Name": "label",
-          "Value": "bronze.png"
+          "Value": "casinobackground.webp"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-7PUQ6E9vF0qicjPpuL7n0kc5XZEGr0y/ihHY+Hblka0="
+          "Value": "sha256-kn7oR04dWq1/g59sRgU/9ILlO3v7r77bb6CBIN+Vr+c="
         }
       ]
     },
     {
-      "Route": "bronze.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\bronze.png",
+      "Route": "casinobackground.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\casinobackground.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5433,19 +5454,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "176850"
+          "Value": "11235"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
-          "Value": "\"7PUQ6E9vF0qicjPpuL7n0kc5XZEGr0y/ihHY+Hblka0=\""
+          "Value": "\"kn7oR04dWq1/g59sRgU/9ILlO3v7r77bb6CBIN+Vr+c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 19:13:03 GMT"
+          "Value": "Mon, 22 Sep 2025 16:39:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5455,7 +5476,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-7PUQ6E9vF0qicjPpuL7n0kc5XZEGr0y/ihHY+Hblka0="
+          "Value": "sha256-kn7oR04dWq1/g59sRgU/9ILlO3v7r77bb6CBIN+Vr+c="
         }
       ]
     },
@@ -5702,88 +5723,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-D+QeqJVe1KiZSVhRw9FdKXLcygsYrk5wX+m/LVrKpRI="
-        }
-      ]
-    },
-    {
-      "Route": "diamond.lxeub2oyu8.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\diamond.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "290932"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"5yVvsAm/bpyWHqSKZ+HCOvZokewBcrBueZhkaxlq0V4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 19:33:11 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "lxeub2oyu8"
-        },
-        {
-          "Name": "label",
-          "Value": "diamond.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-5yVvsAm/bpyWHqSKZ+HCOvZokewBcrBueZhkaxlq0V4="
-        }
-      ]
-    },
-    {
-      "Route": "diamond.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\diamond.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "290932"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"5yVvsAm/bpyWHqSKZ+HCOvZokewBcrBueZhkaxlq0V4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 19:33:11 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-5yVvsAm/bpyWHqSKZ+HCOvZokewBcrBueZhkaxlq0V4="
         }
       ]
     },
@@ -8694,8 +8633,8 @@
       ]
     },
     {
-      "Route": "gameimages/holedigger.5t44b2cwhs.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\holedigger.png",
+      "Route": "gameimages/holedigger.5t44b2cwhs.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\holedigger.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8708,7 +8647,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -8730,7 +8669,7 @@
         },
         {
           "Name": "label",
-          "Value": "gameimages/holedigger.png"
+          "Value": "gameimages/holedigger.webp"
         },
         {
           "Name": "integrity",
@@ -8739,8 +8678,8 @@
       ]
     },
     {
-      "Route": "gameimages/holedigger.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\holedigger.png",
+      "Route": "gameimages/holedigger.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\holedigger.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8753,7 +8692,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -8776,8 +8715,8 @@
       ]
     },
     {
-      "Route": "gameimages/kourio.994m6jv4g8.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\kourio.png",
+      "Route": "gameimages/kourio.994m6jv4g8.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\kourio.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8790,7 +8729,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -8812,7 +8751,7 @@
         },
         {
           "Name": "label",
-          "Value": "gameimages/kourio.png"
+          "Value": "gameimages/kourio.webp"
         },
         {
           "Name": "integrity",
@@ -8821,8 +8760,8 @@
       ]
     },
     {
-      "Route": "gameimages/kourio.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\kourio.png",
+      "Route": "gameimages/kourio.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\kourio.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8835,7 +8774,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -8858,8 +8797,8 @@
       ]
     },
     {
-      "Route": "gameimages/mathrunner.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\mathrunner.png",
+      "Route": "gameimages/mathrunner.u56ovkxbjm.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\mathrunner.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8872,44 +8811,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MlSJmbkHVGV1pJWwwyzrdxYGD6co3LSGOpN0YsmPfSk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 19 Aug 2025 09:23:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-MlSJmbkHVGV1pJWwwyzrdxYGD6co3LSGOpN0YsmPfSk="
-        }
-      ]
-    },
-    {
-      "Route": "gameimages/mathrunner.u56ovkxbjm.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\mathrunner.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "41226"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -8931,7 +8833,7 @@
         },
         {
           "Name": "label",
-          "Value": "gameimages/mathrunner.png"
+          "Value": "gameimages/mathrunner.webp"
         },
         {
           "Name": "integrity",
@@ -8940,8 +8842,8 @@
       ]
     },
     {
-      "Route": "gameimages/node2.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\node2.png",
+      "Route": "gameimages/mathrunner.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\mathrunner.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8950,19 +8852,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "100276"
+          "Value": "41226"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
-          "Value": "\"NfJFD9ePGltxTOspX2dgyKV5XVLYe2UVFMfFg24hAKw=\""
+          "Value": "\"MlSJmbkHVGV1pJWwwyzrdxYGD6co3LSGOpN0YsmPfSk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Aug 2025 19:57:48 GMT"
+          "Value": "Tue, 19 Aug 2025 09:23:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8972,13 +8874,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-NfJFD9ePGltxTOspX2dgyKV5XVLYe2UVFMfFg24hAKw="
+          "Value": "sha256-MlSJmbkHVGV1pJWwwyzrdxYGD6co3LSGOpN0YsmPfSk="
         }
       ]
     },
     {
-      "Route": "gameimages/node2.pvodb6jh2k.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\node2.png",
+      "Route": "gameimages/node2.pvodb6jh2k.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\node2.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8991,7 +8893,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -9013,7 +8915,7 @@
         },
         {
           "Name": "label",
-          "Value": "gameimages/node2.png"
+          "Value": "gameimages/node2.webp"
         },
         {
           "Name": "integrity",
@@ -9022,8 +8924,45 @@
       ]
     },
     {
-      "Route": "gameimages/offroadcargo.8hnmasxxo7.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\offroadcargo.png",
+      "Route": "gameimages/node2.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\node2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "100276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NfJFD9ePGltxTOspX2dgyKV5XVLYe2UVFMfFg24hAKw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 17 Aug 2025 19:57:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NfJFD9ePGltxTOspX2dgyKV5XVLYe2UVFMfFg24hAKw="
+        }
+      ]
+    },
+    {
+      "Route": "gameimages/offroadcargo.8hnmasxxo7.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\offroadcargo.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9036,7 +8975,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -9058,7 +8997,7 @@
         },
         {
           "Name": "label",
-          "Value": "gameimages/offroadcargo.png"
+          "Value": "gameimages/offroadcargo.webp"
         },
         {
           "Name": "integrity",
@@ -9067,8 +9006,8 @@
       ]
     },
     {
-      "Route": "gameimages/offroadcargo.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\offroadcargo.png",
+      "Route": "gameimages/offroadcargo.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\offroadcargo.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9081,7 +9020,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -9104,8 +9043,8 @@
       ]
     },
     {
-      "Route": "gameimages/paperio2.a98587ff57.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\paperio2.png",
+      "Route": "gameimages/paperio2.a98587ff57.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\paperio2.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9118,7 +9057,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -9140,7 +9079,7 @@
         },
         {
           "Name": "label",
-          "Value": "gameimages/paperio2.png"
+          "Value": "gameimages/paperio2.webp"
         },
         {
           "Name": "integrity",
@@ -9149,8 +9088,8 @@
       ]
     },
     {
-      "Route": "gameimages/paperio2.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\paperio2.png",
+      "Route": "gameimages/paperio2.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\paperio2.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9163,7 +9102,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -9186,8 +9125,8 @@
       ]
     },
     {
-      "Route": "gameimages/sortmyparkingarea.1aq3ok214t.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\sortmyparkingarea.png",
+      "Route": "gameimages/sortmyparkingarea.1aq3ok214t.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\sortmyparkingarea.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9200,7 +9139,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -9222,7 +9161,7 @@
         },
         {
           "Name": "label",
-          "Value": "gameimages/sortmyparkingarea.png"
+          "Value": "gameimages/sortmyparkingarea.webp"
         },
         {
           "Name": "integrity",
@@ -9231,8 +9170,8 @@
       ]
     },
     {
-      "Route": "gameimages/sortmyparkingarea.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\sortmyparkingarea.png",
+      "Route": "gameimages/sortmyparkingarea.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\sortmyparkingarea.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9245,7 +9184,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -9268,8 +9207,8 @@
       ]
     },
     {
-      "Route": "gameimages/stoneminer.20k3km2516.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\stoneminer.png",
+      "Route": "gameimages/stoneminer.20k3km2516.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\stoneminer.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9282,7 +9221,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -9304,7 +9243,7 @@
         },
         {
           "Name": "label",
-          "Value": "gameimages/stoneminer.png"
+          "Value": "gameimages/stoneminer.webp"
         },
         {
           "Name": "integrity",
@@ -9313,8 +9252,8 @@
       ]
     },
     {
-      "Route": "gameimages/stoneminer.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\stoneminer.png",
+      "Route": "gameimages/stoneminer.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\stoneminer.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9327,7 +9266,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -9350,8 +9289,8 @@
       ]
     },
     {
-      "Route": "gameimages/thesurvey.bcx5fyk735.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\thesurvey.png",
+      "Route": "gameimages/thesurvey.bcx5fyk735.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\thesurvey.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9364,7 +9303,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -9386,7 +9325,7 @@
         },
         {
           "Name": "label",
-          "Value": "gameimages/thesurvey.png"
+          "Value": "gameimages/thesurvey.webp"
         },
         {
           "Name": "integrity",
@@ -9395,8 +9334,8 @@
       ]
     },
     {
-      "Route": "gameimages/thesurvey.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\thesurvey.png",
+      "Route": "gameimages/thesurvey.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\thesurvey.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9409,7 +9348,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -9432,8 +9371,8 @@
       ]
     },
     {
-      "Route": "gameimages/waterparksort.0tbrxrupb1.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\waterparksort.png",
+      "Route": "gameimages/waterparksort.0tbrxrupb1.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\waterparksort.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9446,7 +9385,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -9468,7 +9407,7 @@
         },
         {
           "Name": "label",
-          "Value": "gameimages/waterparksort.png"
+          "Value": "gameimages/waterparksort.webp"
         },
         {
           "Name": "integrity",
@@ -9477,8 +9416,8 @@
       ]
     },
     {
-      "Route": "gameimages/waterparksort.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\waterparksort.png",
+      "Route": "gameimages/waterparksort.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\waterparksort.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9491,7 +9430,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -9514,8 +9453,8 @@
       ]
     },
     {
-      "Route": "gameimages/worldguessr.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\worldguessr.png",
+      "Route": "gameimages/worldguessr.v67p4s0rzs.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\worldguessr.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9528,44 +9467,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pyT2shuNa3URxGeCWt4d+VfQ1TY4WUc1AV34brenOGc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 17 Aug 2025 20:34:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-pyT2shuNa3URxGeCWt4d+VfQ1TY4WUc1AV34brenOGc="
-        }
-      ]
-    },
-    {
-      "Route": "gameimages/worldguessr.v67p4s0rzs.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\worldguessr.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "97170"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
@@ -9587,8 +9489,45 @@
         },
         {
           "Name": "label",
-          "Value": "gameimages/worldguessr.png"
+          "Value": "gameimages/worldguessr.webp"
         },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pyT2shuNa3URxGeCWt4d+VfQ1TY4WUc1AV34brenOGc="
+        }
+      ]
+    },
+    {
+      "Route": "gameimages/worldguessr.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\worldguessr.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "97170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pyT2shuNa3URxGeCWt4d+VfQ1TY4WUc1AV34brenOGc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 17 Aug 2025 20:34:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
         {
           "Name": "integrity",
           "Value": "sha256-pyT2shuNa3URxGeCWt4d+VfQ1TY4WUc1AV34brenOGc="
@@ -9674,88 +9613,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-FcRRHI0n3TDs3i7+C6dDVKhkPnlLekENjsoygevLRH4="
-        }
-      ]
-    },
-    {
-      "Route": "gold.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gold.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "34260"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"CcuIke0fzy/rHByo5hdHgO7rIojYu3846KPtkdqLhkQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 19:16:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-CcuIke0fzy/rHByo5hdHgO7rIojYu3846KPtkdqLhkQ="
-        }
-      ]
-    },
-    {
-      "Route": "gold.zxri7gnfox.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gold.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "34260"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"CcuIke0fzy/rHByo5hdHgO7rIojYu3846KPtkdqLhkQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 19:16:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "zxri7gnfox"
-        },
-        {
-          "Name": "label",
-          "Value": "gold.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-CcuIke0fzy/rHByo5hdHgO7rIojYu3846KPtkdqLhkQ="
         }
       ]
     },
@@ -9924,13 +9781,13 @@
       ]
     },
     {
-      "Route": "header.67uztc0vcl.css",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\4dwyu0zxko-67uztc0vcl.gz",
+      "Route": "header.css",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\4dwyu0zxko-xgwy9by1d1.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001039501040"
+          "Quality": "0.001027749229"
         }
       ],
       "ResponseHeaders": [
@@ -9940,19 +9797,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "961"
+          "Value": "972"
         },
         {
           "Name": "ETag",
-          "Value": "\"a9xz2IAv0DPHX41dZ7HB4gb0q1VczojoPUjH/P1e5cw=\""
+          "Value": "\"ujcCxLJJONuUTO4IS8VMRsQEtwkPLKcmqMRo+7uZDT4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 21 Sep 2025 18:40:36 GMT"
+          "Value": "Mon, 22 Sep 2025 16:07:55 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -9968,26 +9825,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ojBKR14LXA4o+WUuRUMhP6xhqe6uRr159x3qQzqnlnk=\""
+          "Value": "W/\"4e0jivoqMHRnO24Y9jH2hlHOe7SGn6fDCuGDsGK+h8o=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "67uztc0vcl"
-        },
-        {
-          "Name": "label",
-          "Value": "header.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-ojBKR14LXA4o+WUuRUMhP6xhqe6uRr159x3qQzqnlnk="
+          "Value": "sha256-4e0jivoqMHRnO24Y9jH2hlHOe7SGn6fDCuGDsGK+h8o="
         }
       ]
     },
     {
-      "Route": "header.67uztc0vcl.css",
+      "Route": "header.css",
       "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\header.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -9997,7 +9846,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4940"
+          "Value": "5032"
         },
         {
           "Name": "Content-Type",
@@ -10005,11 +9854,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ojBKR14LXA4o+WUuRUMhP6xhqe6uRr159x3qQzqnlnk=\""
+          "Value": "\"4e0jivoqMHRnO24Y9jH2hlHOe7SGn6fDCuGDsGK+h8o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 21 Sep 2025 18:40:36 GMT"
+          "Value": "Mon, 22 Sep 2025 16:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4e0jivoqMHRnO24Y9jH2hlHOe7SGn6fDCuGDsGK+h8o="
+        }
+      ]
+    },
+    {
+      "Route": "header.css.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\4dwyu0zxko-xgwy9by1d1.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "972"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ujcCxLJJONuUTO4IS8VMRsQEtwkPLKcmqMRo+7uZDT4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Sep 2025 16:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ujcCxLJJONuUTO4IS8VMRsQEtwkPLKcmqMRo+7uZDT4="
+        }
+      ]
+    },
+    {
+      "Route": "header.xgwy9by1d1.css",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\4dwyu0zxko-xgwy9by1d1.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001027749229"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "972"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ujcCxLJJONuUTO4IS8VMRsQEtwkPLKcmqMRo+7uZDT4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Sep 2025 16:07:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"4e0jivoqMHRnO24Y9jH2hlHOe7SGn6fDCuGDsGK+h8o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xgwy9by1d1"
+        },
+        {
+          "Name": "label",
+          "Value": "header.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4e0jivoqMHRnO24Y9jH2hlHOe7SGn6fDCuGDsGK+h8o="
+        }
+      ]
+    },
+    {
+      "Route": "header.xgwy9by1d1.css",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\header.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5032"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4e0jivoqMHRnO24Y9jH2hlHOe7SGn6fDCuGDsGK+h8o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Sep 2025 16:07:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10019,7 +10013,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "67uztc0vcl"
+          "Value": "xgwy9by1d1"
         },
         {
           "Name": "label",
@@ -10027,13 +10021,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ojBKR14LXA4o+WUuRUMhP6xhqe6uRr159x3qQzqnlnk="
+          "Value": "sha256-4e0jivoqMHRnO24Y9jH2hlHOe7SGn6fDCuGDsGK+h8o="
         }
       ]
     },
     {
-      "Route": "header.67uztc0vcl.css.gz",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\4dwyu0zxko-67uztc0vcl.gz",
+      "Route": "header.xgwy9by1d1.css.gz",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\4dwyu0zxko-xgwy9by1d1.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10042,7 +10036,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "961"
+          "Value": "972"
         },
         {
           "Name": "Content-Type",
@@ -10050,11 +10044,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"a9xz2IAv0DPHX41dZ7HB4gb0q1VczojoPUjH/P1e5cw=\""
+          "Value": "\"ujcCxLJJONuUTO4IS8VMRsQEtwkPLKcmqMRo+7uZDT4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 21 Sep 2025 18:40:36 GMT"
+          "Value": "Mon, 22 Sep 2025 16:07:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10072,7 +10066,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "67uztc0vcl"
+          "Value": "xgwy9by1d1"
         },
         {
           "Name": "label",
@@ -10080,144 +10074,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-a9xz2IAv0DPHX41dZ7HB4gb0q1VczojoPUjH/P1e5cw="
-        }
-      ]
-    },
-    {
-      "Route": "header.css",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\4dwyu0zxko-67uztc0vcl.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001039501040"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "961"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"a9xz2IAv0DPHX41dZ7HB4gb0q1VczojoPUjH/P1e5cw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 21 Sep 2025 18:40:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"ojBKR14LXA4o+WUuRUMhP6xhqe6uRr159x3qQzqnlnk=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ojBKR14LXA4o+WUuRUMhP6xhqe6uRr159x3qQzqnlnk="
-        }
-      ]
-    },
-    {
-      "Route": "header.css",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\header.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4940"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ojBKR14LXA4o+WUuRUMhP6xhqe6uRr159x3qQzqnlnk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 21 Sep 2025 18:40:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ojBKR14LXA4o+WUuRUMhP6xhqe6uRr159x3qQzqnlnk="
-        }
-      ]
-    },
-    {
-      "Route": "header.css.gz",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\4dwyu0zxko-67uztc0vcl.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "961"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"a9xz2IAv0DPHX41dZ7HB4gb0q1VczojoPUjH/P1e5cw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 21 Sep 2025 18:40:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-a9xz2IAv0DPHX41dZ7HB4gb0q1VczojoPUjH/P1e5cw="
+          "Value": "sha256-ujcCxLJJONuUTO4IS8VMRsQEtwkPLKcmqMRo+7uZDT4="
         }
       ]
     },
@@ -24422,88 +24279,6 @@
       ]
     },
     {
-      "Route": "platinum.f3ealj8zyc.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\platinum.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "24311"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Jfl2jDy5MX+wb5obvevzkAFRaEazwJoFaFkzLsirARw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 19:22:07 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "f3ealj8zyc"
-        },
-        {
-          "Name": "label",
-          "Value": "platinum.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Jfl2jDy5MX+wb5obvevzkAFRaEazwJoFaFkzLsirARw="
-        }
-      ]
-    },
-    {
-      "Route": "platinum.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\platinum.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "24311"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Jfl2jDy5MX+wb5obvevzkAFRaEazwJoFaFkzLsirARw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 19:22:07 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Jfl2jDy5MX+wb5obvevzkAFRaEazwJoFaFkzLsirARw="
-        }
-      ]
-    },
-    {
       "Route": "play.png",
       "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\play.png",
       "Selectors": [],
@@ -24996,6 +24771,416 @@
       ]
     },
     {
+      "Route": "rankimages/bronze.8nhvfskg5e.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\bronze.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176850"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7PUQ6E9vF0qicjPpuL7n0kc5XZEGr0y/ihHY+Hblka0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 19:13:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8nhvfskg5e"
+        },
+        {
+          "Name": "label",
+          "Value": "rankimages/bronze.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7PUQ6E9vF0qicjPpuL7n0kc5XZEGr0y/ihHY+Hblka0="
+        }
+      ]
+    },
+    {
+      "Route": "rankimages/bronze.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\bronze.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176850"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7PUQ6E9vF0qicjPpuL7n0kc5XZEGr0y/ihHY+Hblka0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 19:13:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7PUQ6E9vF0qicjPpuL7n0kc5XZEGr0y/ihHY+Hblka0="
+        }
+      ]
+    },
+    {
+      "Route": "rankimages/diamond.lxeub2oyu8.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\diamond.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "290932"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5yVvsAm/bpyWHqSKZ+HCOvZokewBcrBueZhkaxlq0V4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 19:33:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lxeub2oyu8"
+        },
+        {
+          "Name": "label",
+          "Value": "rankimages/diamond.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5yVvsAm/bpyWHqSKZ+HCOvZokewBcrBueZhkaxlq0V4="
+        }
+      ]
+    },
+    {
+      "Route": "rankimages/diamond.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\diamond.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "290932"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5yVvsAm/bpyWHqSKZ+HCOvZokewBcrBueZhkaxlq0V4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 19:33:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5yVvsAm/bpyWHqSKZ+HCOvZokewBcrBueZhkaxlq0V4="
+        }
+      ]
+    },
+    {
+      "Route": "rankimages/gold.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\gold.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34260"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcuIke0fzy/rHByo5hdHgO7rIojYu3846KPtkdqLhkQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 19:16:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcuIke0fzy/rHByo5hdHgO7rIojYu3846KPtkdqLhkQ="
+        }
+      ]
+    },
+    {
+      "Route": "rankimages/gold.zxri7gnfox.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\gold.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34260"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcuIke0fzy/rHByo5hdHgO7rIojYu3846KPtkdqLhkQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 19:16:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zxri7gnfox"
+        },
+        {
+          "Name": "label",
+          "Value": "rankimages/gold.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcuIke0fzy/rHByo5hdHgO7rIojYu3846KPtkdqLhkQ="
+        }
+      ]
+    },
+    {
+      "Route": "rankimages/platinum.f3ealj8zyc.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\platinum.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24311"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jfl2jDy5MX+wb5obvevzkAFRaEazwJoFaFkzLsirARw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 19:22:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f3ealj8zyc"
+        },
+        {
+          "Name": "label",
+          "Value": "rankimages/platinum.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jfl2jDy5MX+wb5obvevzkAFRaEazwJoFaFkzLsirARw="
+        }
+      ]
+    },
+    {
+      "Route": "rankimages/platinum.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\platinum.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24311"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jfl2jDy5MX+wb5obvevzkAFRaEazwJoFaFkzLsirARw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 19:22:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jfl2jDy5MX+wb5obvevzkAFRaEazwJoFaFkzLsirARw="
+        }
+      ]
+    },
+    {
+      "Route": "rankimages/silver.7t8kld214t.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\silver.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19278"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m1K3h490014uHa23V1o0GEzKgMnph31OqzgQmsryWRY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 19:13:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7t8kld214t"
+        },
+        {
+          "Name": "label",
+          "Value": "rankimages/silver.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-m1K3h490014uHa23V1o0GEzKgMnph31OqzgQmsryWRY="
+        }
+      ]
+    },
+    {
+      "Route": "rankimages/silver.png",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\silver.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19278"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m1K3h490014uHa23V1o0GEzKgMnph31OqzgQmsryWRY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 19:13:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-m1K3h490014uHa23V1o0GEzKgMnph31OqzgQmsryWRY="
+        }
+      ]
+    },
+    {
       "Route": "robots.6fueli49lx.txt",
       "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\obj\\Debug\\net9.0\\compressed\\hen8d0w1k2-6fueli49lx.gz",
       "Selectors": [
@@ -25290,88 +25475,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-W7yxOR37okIQiHN4OnCc7EuWBHPgpCvKDwxynBGwBJI="
-        }
-      ]
-    },
-    {
-      "Route": "silver.7t8kld214t.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\silver.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "19278"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"m1K3h490014uHa23V1o0GEzKgMnph31OqzgQmsryWRY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 19:13:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7t8kld214t"
-        },
-        {
-          "Name": "label",
-          "Value": "silver.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-m1K3h490014uHa23V1o0GEzKgMnph31OqzgQmsryWRY="
-        }
-      ]
-    },
-    {
-      "Route": "silver.png",
-      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\silver.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "19278"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"m1K3h490014uHa23V1o0GEzKgMnph31OqzgQmsryWRY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 19:13:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-m1K3h490014uHa23V1o0GEzKgMnph31OqzgQmsryWRY="
         }
       ]
     },

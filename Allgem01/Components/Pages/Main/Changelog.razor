@@ -114,7 +114,7 @@
         }
         else if (CookieValueRank == "Dev")
         {
-          <img class="logodev" src="/allgemdeveloper.webp" alt="devlogo" href="/" @onclick="adminFf">
+          <img class="logodev" src="/allgemdeveloper.webp" alt="devlogo" @onclick="adminFf">
           <img class="lpudev">
         }
         else
@@ -125,8 +125,8 @@
         @if (CookieValue == "isli")
         {
           <div class="nlrank-div" href="/account">
-            @* <a class="rank-text">Rank</a>
-            <img class="rank-image" src="@rankimg" alt="Rank Image"> *@
+            <a class="rank-text">Rank</a>
+            <img class="rank-image"alt="Rank Image">
           </div>
         }
         else
@@ -136,7 +136,7 @@
       </section>
       <nav>
       <a class="changelog" href="/"><img class="backarrow" src="/backarrow.webp">Home</a>
-      <a class="aboutus" href="/about-us">About Us</a>
+      <a class="aboutus" href="https://allgemgames.featurebase.app/en/help/articles/6890206-about-allgem">About Us</a>
       <a class="support" href="https://allgemgames.featurebase.app/en/help/articles/1547414-how-to-contact-support">Support</a>
       @if (CookieValue == "isli")
         {
