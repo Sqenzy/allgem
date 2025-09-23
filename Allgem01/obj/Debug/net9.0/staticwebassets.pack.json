@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\acc.png"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\adminpanel.webp",
+      "PackagePath": "staticwebassets\\adminpanel.webp"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\ads.txt",
       "PackagePath": "staticwebassets\\ads.txt"
     },
@@ -41,8 +45,8 @@
       "PackagePath": "staticwebassets\\casinobackground.webp"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\casinobanner.png",
-      "PackagePath": "staticwebassets\\casinobanner.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\casinobanner.webp",
+      "PackagePath": "staticwebassets\\casinobanner.webp"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\changelogimg.png",
@@ -173,8 +177,8 @@
       "PackagePath": "staticwebassets\\gmail-icon.png"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gshoot.png",
-      "PackagePath": "staticwebassets\\gshoot.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gshoot.webp",
+      "PackagePath": "staticwebassets\\gshoot.webp"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gshootimg.png",
@@ -189,8 +193,8 @@
       "PackagePath": "staticwebassets\\imaginase.png"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\kourio.gif",
-      "PackagePath": "staticwebassets\\kourio.gif"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\kourio.webp",
+      "PackagePath": "staticwebassets\\kourio.webp"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
@@ -413,24 +417,24 @@
       "PackagePath": "staticwebassets\\rank.png"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\bronze.png",
-      "PackagePath": "staticwebassets\\rankimages\\bronze.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\bronze.webp",
+      "PackagePath": "staticwebassets\\rankimages\\bronze.webp"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\diamond.png",
-      "PackagePath": "staticwebassets\\rankimages\\diamond.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\diamond.webp",
+      "PackagePath": "staticwebassets\\rankimages\\diamond.webp"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\gold.png",
-      "PackagePath": "staticwebassets\\rankimages\\gold.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\gold.webp",
+      "PackagePath": "staticwebassets\\rankimages\\gold.webp"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\platinum.png",
-      "PackagePath": "staticwebassets\\rankimages\\platinum.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\platinum.webp",
+      "PackagePath": "staticwebassets\\rankimages\\platinum.webp"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\silver.png",
-      "PackagePath": "staticwebassets\\rankimages\\silver.png"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\silver.webp",
+      "PackagePath": "staticwebassets\\rankimages\\silver.webp"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\robots.txt",
@@ -453,8 +457,8 @@
       "PackagePath": "staticwebassets\\vercel.json"
     },
     {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\video.gif",
-      "PackagePath": "staticwebassets\\video.gif"
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\video.webp",
+      "PackagePath": "staticwebassets\\video.webp"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Allgem01.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
