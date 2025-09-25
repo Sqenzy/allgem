@@ -210,10 +210,31 @@
 @code {
     private string? email;
     private string? password;
+    private string? CookieValue;
 
     private void signupFf()
     {
       NavigationManager.NavigateTo("/signup");
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+
+            CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
+
+            if (CookieValue != "isli")
+            {
+                repository.SetLoggedIn(false);
+            }
+            else
+            {
+                NavigationManager.NavigateTo("/");
+            }
+
+            StateHasChanged();
+        }
     }
 
     private void logIn()

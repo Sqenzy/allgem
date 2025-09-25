@@ -16,6 +16,7 @@ header {
     z-index: 1000;
     display: flex;
     align-items: center;
+    visibility: visible;
 }
 
 .logosection {
@@ -36,6 +37,7 @@ header {
     background-position: center;
     position: absolute;
     cursor: pointer;
+    visibility: visible;
 }
 
 

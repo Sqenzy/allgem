@@ -385,6 +385,10 @@
       "PackagePath": "staticwebassets\\line.png"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\loading.css",
+      "PackagePath": "staticwebassets\\loading.css"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\mines.gif",
       "PackagePath": "staticwebassets\\mines.gif"
     },

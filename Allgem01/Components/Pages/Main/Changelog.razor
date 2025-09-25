@@ -271,8 +271,11 @@ function topFunction() {
 
     private string? CookieValue;
     private string? CookieValueRank;
+    private string? CookieValueEmail;
+    private string rankimg = "/rankimages/bronze.webp";
     protected override async Task OnAfterRenderAsync(bool firstRender){
             CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
+            CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_email");
 
             // Update the authentication state based on the cookie value
             if (CookieValue == "isli")
@@ -284,7 +287,52 @@ function topFunction() {
                 repository.SetLoggedIn(false);
             }
 
-            CookieValueRank = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_rank");
+
+            repository.CheckRank(CookieValueEmail);
+
+            if (!string.IsNullOrEmpty(repository.rank))
+            {
+                // Update the rank cookie if it doesn't match the current rank
+                CookieValueRank = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_rank");
+                if (CookieValueRank != repository.rank)
+                {
+                    CreateCookie("allgem_rank", repository.rank, 2592000); // 30 days in seconds
+                }
+            }
+
+
+            if (CookieValueRank == "Bronze")
+            {
+              rankimg = "/rankimages/bronze.webp";
+            }
+            else if (CookieValueRank == "Silver")
+            {
+              rankimg = "/rankimages/silver.webp";
+            }
+            else if (CookieValueRank == "Gold")
+            {
+              rankimg = "/rankimages/gold.webp";
+            }
+            else if (CookieValueRank == "Platinum")
+            {
+              rankimg = "/rankimages/platinum.webp";
+            }
+            else if (CookieValueRank == "Diamond")
+            {
+              rankimg = "/rankimages/diamond.webp";
+            }
+            else if (CookieValueRank == "Contributor")
+            {
+              rankimg = "/rankimages/diamond.webp";
+            }
+            else if (CookieValueRank == "Dev")
+            {
+              rankimg = "/rankimages/diamond.webp";
+            }
+            else if (CookieValueRank == "Nigger")
+            {
+              rankimg = "/rankimages/diamond.webp";
+            }
             StateHasChanged();
             await JSRuntime.InvokeVoidAsync("topFunction");
         }
@@ -328,5 +376,11 @@ function topFunction() {
     private void devFf()
     {
         NavigationManager.NavigateTo("/developer-panel");
+    }
+
+
+    private async void CreateCookie(string name, string value, int days)
+    {
+        await JSRuntime.InvokeVoidAsync("methods.CreateCookie", name, value, days);
     }
 }
