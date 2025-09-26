@@ -7,6 +7,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+  header{
+    visibility: hidden;
+}
+.logo{
+    visibility: hidden;
+}
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTG06EXPPB"></script>
 <script>
@@ -24,56 +32,36 @@
     <meta name="description" content="@Description">
     <link rel="preload" as="image" href="/ulteros.jpg">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="loading.css">
+<style>
+
+@@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+@@keyframes spinReverse {
+    0% { transform: rotate(360deg);}
+    100% { transform: rotate(0deg);}
+}
+
+@@keyframes dots {
+    0%   { content: ""; }
+    33%  { content: "."; }
+    66%  { content: ".."; }
+    100% { content: "..."; }
+}
+</style>
 </head>
 </html>
 
 @if (isLoading)
 {
-    <div class="loading-container" id="loadingContainer">
-        <img src="/allgemtext.png" alt="ALLGEM" class="logov">
+    <div class="loading-overlay">
         <div class="loading-spinner"></div>
-        <div class="loading-text">Loading...</div>
+        <span style="color:white;">Loading...</span>
     </div>
 }
-<style>
-  .loading-container {
-    background: rgb(10, 13, 20);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    width: 100vw;
-    height: 100vh;
-    z-index: 10000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-position: center;
-  }
-  .loading-spinner {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #3498db;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    animation: spin 1s linear infinite;
-    margin: 0 auto;
-  }
-  .logov {
-    width: 200px;
-    height: auto;
-    margin-top: 200px;
-  }
-  .loading-text {
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    margin-top: 20px;
-    opacity: 0.8;
-  }
-</style>
 
 
 
@@ -199,11 +187,6 @@ window.waitForImageLoad = function(imageUrl) {
 </script>
 
 <style>
-.gf{
-    background: rgba(10, 13, 20, 0.95);
-    height: 160px;
-    width: 100%;
-}
     .downheader {
         background: rgb(31, 33, 48);
         height: 2px;
@@ -226,8 +209,14 @@ window.waitForImageLoad = function(imageUrl) {
     align-items: center;
     justify-content: flex-start;
     min-width: 95vw;
-    padding-bottom: 30px;
-    background: rgba(10, 13, 20, 0.95);
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background: linear-gradient(
+        90deg,
+        #0066cc 0%,
+        #1a4d80 50%,
+        #0066cc 100%
+    );
     color: white;
     }
 .des {
@@ -239,8 +228,8 @@ window.waitForImageLoad = function(imageUrl) {
     padding: 20px;
     height: 250px;
     background-color: rgb(19, 22, 27);
-    border: 2px solid rgb(83, 83, 83);
-    border-radius: 10px;
+    outline: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     color: white;
     }
@@ -335,7 +324,12 @@ window.waitForImageLoad = function(imageUrl) {
     justify-content: flex-start;
     min-height: 95vh;
     width: 100%;
-    background: rgba(10, 13, 20, 0.95);
+    background: linear-gradient(
+        90deg,
+        #0066cc 0%,
+        #1a4d80 50%,
+        #0066cc 100%
+    );
     padding: 20px;
     box-sizing: border-box;
   }
@@ -345,7 +339,7 @@ window.waitForImageLoad = function(imageUrl) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 170px;
     width: 60%;
     max-width: 1000px;
   }
@@ -519,6 +513,23 @@ window.waitForImageLoad = function(imageUrl) {
       width: 250px;
     }
   }
+
+
+
+body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background: linear-gradient(
+        90deg,
+        #0066cc 0%,
+        #1a4d80 50%,
+        #0066cc 100%
+    );
+            min-height: 100vh;
+        }
 </style>
 
 @code {
@@ -815,7 +826,8 @@ private async Task SetLastPlayedGameId(string gameId)
             {
               rankimg = "/rankimages/diamond.webp";
             }
-
+            await Task.Delay(100);
+            isLoading = false;
             StateHasChanged();
             await JSRuntime.InvokeVoidAsync("topFunction");
 
@@ -898,20 +910,4 @@ private async Task SetLastPlayedGameId(string gameId)
         background: transparent;
         z-index: 10;
       }
-      .loading-container {
-    background: rgb(10, 13, 20);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    width: 100vw;
-    height: 100vh;
-    z-index: -100000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-position: center;
-  }
     </style>

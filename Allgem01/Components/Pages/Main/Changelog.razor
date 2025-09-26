@@ -14,6 +14,12 @@
   <meta charset="UTF-8">
   <title>Changelog</title>
   <style>
+  header{
+    visibility: hidden;
+}
+.logo{
+    visibility: hidden;
+}
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -70,43 +76,45 @@
     }
   </style>
   <link rel="stylesheet" href="header.css">
-</head>
-<body>
-<div class="loading-container" id="loadingContainer">
-  @* <img src="/allgemtext.png" alt="ALLGEM" class="logov"> *@
-        <div class="loading-spinner"></div>
-        <div class="loading-text">Loading...</div>
-</div>
-
+  <link rel="stylesheet" href="loading.css">
 <style>
-  .loading-container {
-    background: rgb(10, 13, 20);
-            text-align: center;
+body {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
-            gap: 30px;
-            width: 100vw;
-        height: 1000vh;
-        z-index: -1;
-        background-size: cover;
-        background-position: center;
+            margin: 0;
+            background-color: rgb(10, 13, 20);
+            min-height: 100vh;
         }
-        
-        .logov {
-            width: 200px;
-            height: auto;
-            margin-top: 200px;
-        }
-        
-        .loading-text {
-            font-size: 18px;
-            font-weight: bold;
-            color: white;
-            margin-top: 200px;
-            opacity: 0.8;
-        }
+
+@@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+@@keyframes spinReverse {
+    0% { transform: rotate(360deg);}
+    100% { transform: rotate(0deg);}
+}
+
+@@keyframes dots {
+    0%   { content: ""; }
+    33%  { content: "."; }
+    66%  { content: ".."; }
+    100% { content: "..."; }
+}
 </style>
+</head>
+<body>
+@if (isLoading)
+{
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+        <span style="color:white;">Loading...</span>
+    </div>
+}
+
 <header>
      <section class="logosection">
        @if (!repository.hasPremium)
@@ -126,8 +134,6 @@
         @if (CookieValue == "isli")
         {
           <div class="nlrank-div" href="/account">
-            <a class="rank-text">Rank</a>
-            <img class="rank-image"alt="Rank Image">
           </div>
         }
         else
@@ -214,6 +220,22 @@ function topFunction() {
 </html>
 
 <style>
+header {
+    background-color: rgb(19, 22, 27);
+    opacity: 0.95;
+    position: fixed;
+    padding: 0 2rem;
+    outline: 2px solid rgba(255, 255, 255, 0.1);
+    top: 30px;
+    left: 3.6vw;
+    height: 80px;
+    width: 92.3%;
+    border-radius: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    visibility: visible;
+}
 .gf{
     background: rgba(10, 13, 20, 0.95);
     height: 140px;
@@ -254,28 +276,17 @@ function topFunction() {
     }
 </style>
 
-<style>
-    .loading-container {
-        width: 0vw;
-        height: 0vh;
-        z-index: 0;
-        background-size: null;
-        background-position: null;
-    }
-    .loading-text {
-            font-size: 0px;
-        }
-</style>
-
 @code {
 
     private string? CookieValue;
     private string? CookieValueRank;
     private string? CookieValueEmail;
+    private bool isLoading = true;
     private string rankimg = "/rankimages/bronze.webp";
-    protected override async Task OnAfterRenderAsync(bool firstRender){
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {if (firstRender){
             CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
-            CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_email");
+            CookieValueEmail = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_email");
 
             // Update the authentication state based on the cookie value
             if (CookieValue == "isli")
@@ -329,13 +340,12 @@ function topFunction() {
             {
               rankimg = "/rankimages/diamond.webp";
             }
-            else if (CookieValueRank == "Nigger")
-            {
-              rankimg = "/rankimages/diamond.webp";
-            }
+
+            await Task.Delay(100);
+            isLoading = false;
             StateHasChanged();
             await JSRuntime.InvokeVoidAsync("topFunction");
-        }
+        }}
     private void MobileProfile()
     {
       NavigationManager.NavigateTo("/account");
