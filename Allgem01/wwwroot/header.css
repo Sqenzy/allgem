@@ -1,6 +1,9 @@
 .logosection {
     left: -200px;
 }
+body {
+    overflow-x: hidden;
+}
 header {
     background-color: rgb(19, 22, 27);
     opacity: 0.95;
@@ -262,12 +265,31 @@ footer div{
     padding-top: 30px;
     border-radius: 20px;
     background-color: rgb(19, 22, 27);
+    outline: 2px solid rgba(255, 255, 255, 0.1);
+}
+.footernav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 0px;
+    margin-top: -35px;
+    height: 40px;
+    width: 500px;
+    outline: none;
 }
 footer a{
     font-size: 16px;
     text-decoration: none;
     color: white;
     height: 40px;
+    width: 150px;
+}
+footer p{
+    margin-left: 70px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    height: 40px;
     width: 200px;
-    border-radius: 20px;
 }
