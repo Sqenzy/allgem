@@ -48,12 +48,12 @@
         "imageUrl" : "gameimages/waterparksort.webp"
     },
     {
-        "id": "sortmyparkingarea",
+        "id": "myparkingarea",
         "idn" : "7",
         "name": "My Parking Area",
         "url" : "https://html5.gamedistribution.com/4ff5b5355c42484da4fc9e90a970cbe8/",
         "description": "It's time to leave the parking lot, but other cars are blocking your way! Move them in the right order to clear the path! Tight parking spaces, challenging obstacles, and unexpected challenges await you in this exciting and engaging game.",
-        "imageUrl" : "gameimages/sortmyparkingarea.webp"
+        "imageUrl" : "gameimages/myparkingarea.webp"
     },
     {
         "id": "thesurvey",

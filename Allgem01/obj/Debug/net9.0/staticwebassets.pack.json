@@ -141,6 +141,10 @@
       "PackagePath": "staticwebassets\\gameimages\\mathrunner.webp"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\myparkingarea.webp",
+      "PackagePath": "staticwebassets\\gameimages\\myparkingarea.webp"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\node2.webp",
       "PackagePath": "staticwebassets\\gameimages\\node2.webp"
     },
@@ -151,10 +155,6 @@
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\paperio2.webp",
       "PackagePath": "staticwebassets\\gameimages\\paperio2.webp"
-    },
-    {
-      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\sortmyparkingarea.webp",
-      "PackagePath": "staticwebassets\\gameimages\\sortmyparkingarea.webp"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\stoneminer.webp",

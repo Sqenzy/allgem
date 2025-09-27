@@ -28,12 +28,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XEFjY2VzRGVuaWVkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Account/AdminPanel.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XEFkbWluUGFuZWwucmF6b3I=
+[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Account/Account.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XEFjY291bnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Account/HomeAcc.Razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XEhvbWVBY2MuUmF6b3I=
+[C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Account/AdminPanel.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XEFkbWluUGFuZWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sqenz/Projects/allgem/Allgem01/Components/Pages/Account/Login.razor]

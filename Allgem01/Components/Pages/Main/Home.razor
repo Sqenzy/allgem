@@ -64,6 +64,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     66%  { content: ".."; }
     100% { content: "..."; }
 }
+
+.refresh-blocked-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.refresh-blocked-message {
+    background-color: rgba(255, 0, 0, 0.9);
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 </style>
 </head>
 </html>
@@ -77,6 +98,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="loading-overlay">
         <div class="loading-spinner"></div>
         <span style="color:white;">Loading...</span>
+    </div>
+}
+
+@if (isRefreshBlocked)
+{
+    <div class="refresh-blocked-overlay">
+        <div class="refresh-blocked-message">
+            <span style="color:white;">Please wait before refreshing again...</span>
+        </div>
     </div>
 }
 
@@ -115,7 +145,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a class="support" href="https://allgemgames.featurebase.app/en/help/articles/1547414-how-to-contact-support">Support</a>
       @if (CookieValue == "isli")
         {
-          <img class="account" src="profile.webp" href="/account"/>
+          <img class="account" src="profile.webp" @onclick="accountFf"/>
         }
         else
         {
@@ -347,7 +377,7 @@ body {
   background-image: url('gameimages/offroadcargo.webp');
 }
 #card7{
-  background-image: url('gameimages/sortmyparkingarea.webp');
+  background-image: url('gameimages/myparkingarea.webp');
 }
 #card8{
   background-image: url('gameimages/mathrunner.webp');
@@ -368,6 +398,96 @@ body {
 
 
 
+@@media (max-width: 1257px) {
+    nav {
+        margin-left: 300px;
+    }
+.rank-div {
+    left: 200px;
+}
+
+}
+@@media (max-width: 1083px) {
+    nav {
+        margin-left: 200px;
+    }
+.rank-div {
+    left: 200px;
+}
+.changelog, .aboutus, .support {
+    height: 0px;
+    width: 0px;
+    font-size: 0px;
+    outline: 0px solid;
+}
+.logosection {
+    left: 220px;
+    max-height: 300px;
+    max-width: 500px;
+}
+
+}
+@@media (max-width: 980px) {
+    nav {
+        margin-left: 200px;
+    }
+.rank-div {
+    left: 200px;
+    width: 0px;
+    height: 0px;
+    outline: 0px solid;
+}
+.logosection {
+    left: 100px;
+    max-height: 300px;
+    max-width: 500px;
+}
+@@media (max-width: 705px) {
+    nav {
+        margin-left: 200px;
+    }
+.logosection {
+    left: 0px;
+    max-height: 300px;
+    max-width: 500px;
+}
+
+}
+@@media (max-width: 609px) {
+    nav {
+        margin-left: 120px;
+    }
+.logosection {
+    left: 0px;
+    max-height: 300px;
+    max-width: 500px;
+}
+
+}
+@@media (max-width: 519px) {
+    nav {
+        margin-left: 120px;
+    }
+    .rank-div {
+    outline: 0px solid;
+    height: 0px;
+    width: 0px;
+    }
+}
+.logosection {
+    left: 0px;
+    max-height: 300px;
+    max-width: 500px;
+}
+.rank-text {
+    font-size: 0px;
+}
+.rank-image {
+    height: 0px;
+    width: 0px;
+}
+
+}  
 
 .cards {
   display: flex;
@@ -457,6 +577,31 @@ body {
     private bool isLoading = true;
     private bool profile = false;
     private string rankimg = "/gameimages/bronze.webp";
+    
+    // Refresh delay mechanism
+    private DateTime lastRefreshTime = DateTime.MinValue;
+    private readonly TimeSpan refreshDelay = TimeSpan.FromSeconds(1); // 1 second delay
+    private bool isRefreshBlocked = false;
+
+    private bool CanRefresh()
+    {
+        var now = DateTime.Now;
+        if (now - lastRefreshTime < refreshDelay)
+        {
+            isRefreshBlocked = true;
+            // Auto-hide the message after 1 second
+            _ = Task.Run(async () =>
+            {
+                await Task.Delay(1000);
+                isRefreshBlocked = false;
+                await InvokeAsync(StateHasChanged);
+            });
+            return false;
+        }
+        isRefreshBlocked = false;
+        lastRefreshTime = now;
+        return true;
+    }
 
     private void Profile()
     {
@@ -577,11 +722,36 @@ body {
     {
         if (firstRender)
         {
+            // Check if refresh is allowed (delay mechanism)
+            if (!CanRefresh())
+            {
+                // If refresh is blocked, show a brief message and return early
+                await Task.Delay(100);
+                return;
+            }
+            
             isLoading = true;
-            // Read the cookie value
-            CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
-            CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
-            CookieValueEmail = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_email");
+            // Read the cookie value with error handling
+            try
+            {
+                CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
+                CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
+                CookieValueEmail = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_email");
+            }
+            catch (JSDisconnectedException)
+            {
+                // Circuit disconnected, use default values
+                CookieValue = null;
+                CookieValue1 = null;
+                CookieValueEmail = null;
+            }
+            catch (Exception)
+            {
+                // Other JS errors, use default values
+                CookieValue = null;
+                CookieValue1 = null;
+                CookieValueEmail = null;
+            }
 
             // Update the authentication state based on the cookie value
             if (CookieValue == "isli")
@@ -607,10 +777,21 @@ body {
             if (!string.IsNullOrEmpty(repository.rank))
             {
                 // Update the rank cookie if it doesn't match the current rank
-                CookieValueRank = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_rank");
-                if (CookieValueRank != repository.rank)
+                try
                 {
-                    CreateCookie("allgem_rank", repository.rank, 2592000); // 30 days in seconds
+                    CookieValueRank = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_rank");
+                    if (CookieValueRank != repository.rank)
+                    {
+                        CreateCookie("allgem_rank", repository.rank, 2592000); // 30 days in seconds
+                    }
+                }
+                catch (JSDisconnectedException)
+                {
+                    // Circuit disconnected, skip cookie operations
+                }
+                catch (Exception)
+                {
+                    // Other JS errors, skip cookie operations
                 }
             }
 
@@ -651,14 +832,38 @@ body {
             isLoading = false;
 
             StateHasChanged();
-            await JSRuntime.InvokeVoidAsync("topFunction");
+            
+            // Safely call JavaScript function with error handling
+            try
+            {
+                await JSRuntime.InvokeVoidAsync("topFunction");
+            }
+            catch (JSDisconnectedException)
+            {
+                // Circuit disconnected, ignore the call
+            }
+            catch (Exception)
+            {
+                // Other JS errors, ignore to prevent crashes
+            }
         }
     }
     private async Task Logout()
     {
-        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_auth");
-        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_premium");
-        await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_rank");
+        try
+        {
+            await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_auth");
+            await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_premium");
+            await JSRuntime.InvokeVoidAsync("deleteCookie", "allgem_rank");
+        }
+        catch (JSDisconnectedException)
+        {
+            // Circuit disconnected, continue with logout
+        }
+        catch (Exception)
+        {
+            // Other JS errors, continue with logout
+        }
 
         repository.SetLoggedIn(false);
         NavigationManager.NavigateTo("/");
@@ -666,7 +871,18 @@ body {
 
     private async void CreateCookie(string name, string value, int days)
     {
-        await JSRuntime.InvokeVoidAsync("methods.CreateCookie", name, value, days);
+        try
+        {
+            await JSRuntime.InvokeVoidAsync("methods.CreateCookie", name, value, days);
+        }
+        catch (JSDisconnectedException)
+        {
+            // Circuit disconnected, skip cookie creation
+        }
+        catch (Exception)
+        {
+            // Other JS errors, skip cookie creation
+        }
     }
 
 
