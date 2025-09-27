@@ -98,8 +98,99 @@ body {
 </header>
 
 <section class="sidebar-left">
+<div class="sidebar-links">
+<a>Account</a>
+<a>Rank</a>
+<a>Premium</a>
+<p class="logout">Logout</p>
+</div>
+</section>
+
+<section class="content">
+<p>Account Settings</p>
 </section>
 <style>
+
+.sidebar-left {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 200px;
+    left: 30px;
+    width: 200px;
+    height: 60%;
+    background-color: rgb(19, 22, 27);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    z-index: 999;
+}
+.sidebar-links {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: -10px;
+}
+a {
+    height: 44px;
+    width: 115px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    cursor: pointer;
+    outline: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    transition: background-color, outline 0.3s ease;
+    font-weight: bold;
+}
+a:hover {
+    background-color: #292929;
+    outline: 2px solid rgba(219, 219, 219, 0.603);
+
+}
+.logout {
+    margin-top: 160px;
+    height: 44px;
+    width: 115px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color, outline 0.3s ease;
+    font-weight: bold;
+    background-color: rgb(255, 77, 73);
+    outline: 2px solid rgba(255, 255, 255, 0.1);
+}
+.logout:hover {
+    background-color: rgb(204, 61, 58);
+    outline: 2px solid rgba(255, 255, 255, 1);
+}
+
+
+.content {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    width: calc(100% - 350px);
+    height: 60%;
+    background-color: rgb(19, 22, 27);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+}
 header {
     background-color: rgb(19, 22, 27);
     opacity: 0.95;
