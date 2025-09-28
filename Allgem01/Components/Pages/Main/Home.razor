@@ -290,24 +290,13 @@ function topFunction() {
                 <div class="footernav">
                     <a class="footer-link" href="/terms-and-conditions">Terms & Conditions</a>
                     <a class="footer-link" href="/developer-panel">Developer Panel</a>
-                    <a class="footer-link" href="/testing">Testing</a>
+                    <a class="footer-link" @onclick="testing">Testing</a>
                 </div>
             </div>
             <p class="txtp">© 2025 Allgem</p>
         </div>
     </div>
 </div>
-
-<footer>
-     <div>
-        <p>© 2025 Allgem</p>
-        <div class="footernav">
-        <a href="/terms-and-conditions">Terms & Conditions</a>
-        <a href="/developer-panel">Developer Panel</a>
-        <a href="/testing">Testing</a>
-        </div>
-     </div>
-</footer>
 </body>
 <style>
 
@@ -796,6 +785,10 @@ body {
     private void casinoFf()
     {
         NavigationManager.NavigateTo("/casino");
+    }
+    private void testing()
+    {
+        NavigationManager.NavigateTo("/testing/apply");
     }
     private void PlayGameKourio()
     {

@@ -8,10 +8,14 @@
 <section class="beta-section">
     <div class="beta-container">
         <h2>Join Allgem Testing Team</h2>
-        <p>Be the first to test new games and features. Enter your email to request access. You need to be manually accepted to gain acces to Allgem testing</p>
+        <p>Be the first to test new games and features. Enter your email to request access. You need to be manually accepted to gain acces to Allgem testing. After review you will be notified on the email you entered below.</p>
 
-        <form class="beta-form">
-            <input type="email" id="email" class="input-email" placeholder="Enter your email" required />
+        <form class="beta-form" action="https://formsubmit.co/allgemgames@gmail.com" method="POST">
+            <input type="email" id="email" class="input-email" name="email" placeholder="Enter your email" required />
+            <input type="hidden" name="_next" value="https://allgemgames.com/thanks">
+            <input type="hidden" name="_subject" value="Testing Request">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_autoresponse" value="You have successfully requested to be an Allgem Tester.  We will notify you with more information.">
             <button type="submit">Apply</button>
         </form>
     </div>
