@@ -99,29 +99,94 @@ body {
 
 <section class="sidebar-left">
 <div class="sidebar-links">
-<a>Account</a>
-<a>Rank</a>
+<a href="/account">Account</a>
+<a href="/account/rank">Rank</a>
 <a>Premium</a>
 <p class="logout">Logout</p>
 </div>
 </section>
 
-<section class="content">
-<p>Account Settings</p>
-</section>
+<div class="kjl">
+<div class="cnm">
+<p class="email">@CookieValueEmail</p>
+<p class="line">_________________</p>
+<div class="info">
+<p class="moneyd">Casino Money <p class="money">@CookieValueCas</p></p>
+<p class="ranksr"><p class="ranktx">Rank</p> <img class="imgr" src="@rankimg"></p>
+</div>
+</div>
+</div>
 <style>
 
+.ranktx{
+    margin-top: -60;
+}
+.ranksr{
+    margin-top: -60px;
+}
+.moneyd{
+    margin-top: -80px;
+}
+.money{
+    margin-top: 40px;
+    color: rgba(0, 255, 85, 1);
+}
+.imgr{
+    margin-top: 0px;
+    width: 100px;
+    height: 100px;
+}
+.cnm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 500px;
+    flex-direction: column;
+}
+.email{
+    margin-top: 50px;
+}
+.line{
+    margin-top: -40px
+}
+.info{
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 100px;
+    flex-direction: row;
+    gap: 200px;
+}
+.kjl {
+    margin-left: 375px;
+    margin-top: 200px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    height: 545px;
+    width: 77vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    background-color: rgb(19, 22, 27);
+}
 .sidebar-left {
     position: fixed;
     justify-content: center;
     align-items: center;
     top: 200px;
-    left: 30px;
+    left: 70px;
     width: 200px;
     height: 60%;
     background-color: rgb(19, 22, 27);
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 20px;
     display: flex;
@@ -135,7 +200,7 @@ body {
     gap: 30px;
     margin-left: -10px;
 }
-a {
+.sidebar-links a {
     height: 44px;
     width: 115px;
     color: white;
@@ -150,13 +215,13 @@ a {
     transition: background-color, outline 0.3s ease;
     font-weight: bold;
 }
-a:hover {
+.sidebar-links a:hover {
     background-color: #292929;
     outline: 2px solid rgba(219, 219, 219, 0.603);
 
 }
 .logout {
-    margin-top: 160px;
+    margin-top: 140px;
     height: 44px;
     width: 115px;
     color: white;
@@ -176,38 +241,31 @@ a:hover {
     background-color: rgb(204, 61, 58);
     outline: 2px solid rgba(255, 255, 255, 1);
 }
-
-
-.content {
-    position: absolute;
-    top: 200px;
-    left: 300px;
-    width: calc(100% - 350px);
-    height: 60%;
-    background-color: rgb(19, 22, 27);
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-}
 header {
     background-color: rgb(19, 22, 27);
     opacity: 0.95;
     position: fixed;
-    right: 0;
+    padding: 0 2rem;
+    outline: 2px solid rgba(255, 255, 255, 0.1);
     top: 30px;
-    left: 0;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-    outline: 0px solid;
+    left: 3.6vw;
     height: 90px;
-    width: 100%;
-    border-radius: 0px;
+    width: 93%;
+    border-radius: 20px;
     z-index: 1000;
     display: flex;
     align-items: center;
     visibility: visible;
 }
+footer {
+    background-color: rgb(19, 22, 27);
+    margin-top: 570px;
+    position: absolute;
+}
+footer div{
+    width: min(82vw);
+}
+
 @@media (max-width: 1257px) {
     nav {
         margin-left: 300px;
@@ -337,6 +395,7 @@ header {
             CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
             CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
             CookieValueEmail = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_email");
+            CookieValueCas = await JSRuntime.InvokeAsync<string>("getCookie", "acm");
             if (CookieValue == "isli")
             {
                 repository.SetLoggedIn(true);

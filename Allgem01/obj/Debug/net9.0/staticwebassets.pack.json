@@ -445,6 +445,10 @@
       "PackagePath": "staticwebassets\\robots.txt"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\sidebox.webp",
+      "PackagePath": "staticwebassets\\sidebox.webp"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\sitemap.xml",
       "PackagePath": "staticwebassets\\sitemap.xml"
     },
