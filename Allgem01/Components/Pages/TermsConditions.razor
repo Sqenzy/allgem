@@ -11,6 +11,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allgem</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="loading.css">
 </head>
 </html>
 
@@ -33,62 +35,26 @@
 
     }
 </div>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
 
-<header>
-  @if (repository.IsLoggedIn)
-    {
-      @if (repository.hasPremium)
-      {
-        <img @onclick="homeFf" class="logopremium" src="/allgempremium.png" alt="ALLGEM PREMIUM">
-        <img class="lpu">
-      }
-      else
-      {
-        <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">   
-      }
-    }
-    else
-    {
-      <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">
-    }
-    <button class="mobileprofile" @onclick="MobileProfile" type="button">
-      <img class="profileimg" src="/profile.png" alt="profile">
-      </button>
-    <nav>
-    <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
-    <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
-    <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
-@if (repository.IsLoggedIn)
-    {
-      <button class="profile"  @onclick="accountFf" type="button">
-          <img class="profileimg" src="/profile.png" alt="profile">
-      </button>
-      @if (profile == true)
-      {
-        <div class="profilemenu">
-          <button class="logout" @onclick="Logout">Log Out</button>
-        </div>
-      }
-      else{
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-      }
-      @if (repository.hasPremium)
-      {
-      }
-      else
-      {
-          
-      }
-    }
-    else
-    {
-        <button class="login" @onclick="loginFf">
-          <p class="lgtxt">Log In</p><p class="txt"> ›</p>
-          </button>
-    }
-    </nav>
-</header>
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
 
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 <section class="downheader"></section>
 <section class="about-section">
     <div class="about-container">
@@ -156,7 +122,6 @@
 <p>If you have questions about these Terms, please contact us at <a href="mailto:allgemgames@gmail.com">allgemgames@gmail.com</a>.</p>
 
 
-<p class="muted"><small>Tip: Replace placeholders like <em>[insert your country/state]</em> and add links to your Cookie & Privacy Policies. This template is for general informational purposes and is not legal advice.</small></p>
 </div></div>
 </section>
 
@@ -1077,7 +1042,7 @@ body {
             {
                 repository.SetHasPremium(false);
             }
-
+            await JSRuntime.InvokeVoidAsync("topFunction");
             StateHasChanged();
         }
     }

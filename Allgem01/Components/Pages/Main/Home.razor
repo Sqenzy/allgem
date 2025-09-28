@@ -788,8 +788,18 @@ body {
     }
     private void testing()
     {
-        NavigationManager.NavigateTo("/testing/apply");
+        if (CookieValueRank != "Testing")
+        {
+            NavigationManager.NavigateTo("/testing/apply");
+        }
+        else if (CookieValueRank == "Testing")
+        {
+            NavigationManager.NavigateTo("/testing");
+        }
     }
+
+
+
     private void PlayGameKourio()
     {
         NavigationManager.NavigateTo("/game?g=kourio");

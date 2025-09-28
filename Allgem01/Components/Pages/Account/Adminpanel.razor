@@ -24,22 +24,24 @@
             <section class="panel">
                 <section class="asection">
                     <h1 class="Premium">Premium</h1>
-                    <button class="set" value="add" @bind="premiumstatus">Add</button>
-                    <button class="remove" value="remove" @bind="premiumstatus">Remove</button>
+                    <button class="set" value="add" @onclick="AddPremium">Add</button>
+                    <button class="remove" value="remove" @onclick="RemovePremium">Remove</button>
                     <div class="glass-radio-group">
-                        <input type="radio" name="plan" id="glass-bronze" @bind="newrank"/>
+                        <input type="radio" name="plan" id="glass-bronze" @onclick="Bronze"/>
                         <label for="glass-bronze">Bronze</label>
-                        <input type="radio" name="plan" id="glass-silver"@bind="newrank"/>
+                        <input type="radio" name="plan" id="glass-silver" @onclick="Silver"/>
                         <label for="glass-silver">Silver</label>
-                        <input type="radio" name="plan" id="glass-gold" @bind="newrank"/>
+                        <input type="radio" name="plan" id="glass-gold" @onclick="Gold"/>
                         <label for="glass-gold">Gold</label>
-                        <input type="radio" name="plan" id="glass-platinum" @bind="newrank"/>
+                        <input type="radio" name="plan" id="glass-platinum" @onclick="Platinum"/>
                         <label for="glass-platinum">Platinum</label>
-                        <input type="radio" name="plan" id="glass-diamond" @bind="newrank"/>
+                        <input type="radio" name="plan" id="glass-diamond" @onclick="Diamond"/>
                         <label for="glass-diamond">Diamond</label>
-                        <input type="radio" name="plan" id="glass-staff" @bind="newrank"/>
-                        <label for="glass-staff">Staff</label>
-                        <input type="radio" name="plan" id="glass-developer" @bind="newrank"/>
+                        <input type="radio" name="plan" id="glass-staff" @onclick="Admin"/>
+                        <label for="glass-staff">Admin</label>
+                        <input type="radio" name="plan" id="glass-testing" @onclick="Testing"/>
+                        <label for="glass-testing">Testing</label>
+                        <input type="radio" name="plan" id="glass-developer" @onclick="Developer"/>
                         <label for="glass-developer">Developer</label>
                     </div>
                 </section>
@@ -400,8 +402,8 @@ else
                 0 0 10px rgba(221, 160, 221, 0.4) inset;
         }
 
-        /* Admin - Position 8 (Bottom row, 4th) */
-        #glass-admin:checked ~ .glass-glider {
+        /* Testing - Position 8 (Bottom row, 4th) */
+        #glass-testing:checked ~ .glass-glider {
             transform: translate(210px, 35px);
             background: linear-gradient(135deg, #ff606055, #ff4500);
             box-shadow:
@@ -454,8 +456,8 @@ else
     border: 1px solid #da70d6;
 }
 
-/* Admin styling */
-#glass-admin:checked + label {
+/* Testing styling */
+#glass-testing:checked + label {
     background-color: #ff4500;
     border: 1px solid #ff6060;
 }
@@ -517,6 +519,56 @@ else
         }
     }
 
+
+    private void Bronze()
+    {
+        newrank = "Bronze";
+    }
+
+    private void Silver()
+    {
+        newrank = "Silver";
+    }
+
+    private void Gold()
+    {
+        newrank = "Gold";
+    }
+
+    private void Platinum()
+    {
+        newrank = "Platinum";
+    }
+
+    private void Diamond()
+    {
+        newrank = "Diamond";
+    }
+
+    private void Admin()
+    {
+        newrank = "Admin";
+    }
+
+    private void Testing()
+    {
+        newrank = "Testing";
+    }
+    
+    private void Developer()
+    {
+        newrank = "Developer";
+    }
+
+    private void AddPremium()
+    {
+        premiumstatus = "add";
+    }
+
+    private void RemovePremium()
+    {
+        premiumstatus = "remove";
+    }
     private void ApplyChanges()
     {
         
@@ -527,29 +579,6 @@ else
         repository.AddRankToUser(email, newrank);
     }
 
-    public async Task buyPremium()
-    {
-        if (!string.IsNullOrWhiteSpace(email))
-        {
-            repository.AddPremiumToUser(email);
-        }
-        else
-        {
-            await JSRuntime.InvokeVoidAsync("alert", "Please enter your email");
-        }
-    }
-
-    public async Task rmPremium()
-    {
-        if (!string.IsNullOrWhiteSpace(email))
-        {
-            repository.RemovePremiumFromUser(email);
-        }
-        else
-        {
-            await JSRuntime.InvokeVoidAsync("alert", "Please enter your email");
-        }   
-    }
     private void ResP()
     {
         repository.ResetPassword(email, newpassword);
