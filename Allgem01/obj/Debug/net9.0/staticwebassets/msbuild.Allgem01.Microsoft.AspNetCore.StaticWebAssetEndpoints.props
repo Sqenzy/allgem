@@ -40,13 +40,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Allgem01.58d2ehzx87.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"58d2ehzx87"},{"Name":"integrity","Value":"sha256-iy5pykRkWvKiUZHGEDm6\u002B2q9Oj9ifcGMY78yepfcKsI="},{"Name":"label","Value":"_content/Allgem01/Allgem01.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"588"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022iy5pykRkWvKiUZHGEDm6\u002B2q9Oj9ifcGMY78yepfcKsI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 28 Sep 2025 18:34:13 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"588"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022iy5pykRkWvKiUZHGEDm6\u002B2q9Oj9ifcGMY78yepfcKsI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 30 Sep 2025 16:44:16 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Allgem01/Allgem01.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Allgem01.58d2ehzx87.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-iy5pykRkWvKiUZHGEDm6\u002B2q9Oj9ifcGMY78yepfcKsI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"588"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022iy5pykRkWvKiUZHGEDm6\u002B2q9Oj9ifcGMY78yepfcKsI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 28 Sep 2025 18:34:13 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"588"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022iy5pykRkWvKiUZHGEDm6\u002B2q9Oj9ifcGMY78yepfcKsI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 30 Sep 2025 16:44:16 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Allgem01/allgemdeveloper.73ack327zb.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\allgemdeveloper.webp'))</AssetFile>
@@ -383,6 +383,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-xW9UlGQM7donOq041Y5qudpiXVs/TYdcD/ksYZKlacI="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1670"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022xW9UlGQM7donOq041Y5qudpiXVs/TYdcD/ksYZKlacI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Jun 2025 09:27:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Allgem01/gameimages/drawclimber.v6wp2sc24z.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\gameimages\drawclimber.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"v6wp2sc24z"},{"Name":"integrity","Value":"sha256-N\u002BFQxrWirS4Su8sv7Gx8CvAt2hdds6/xsHHk\u002B294PD8="},{"Name":"label","Value":"_content/Allgem01/gameimages/drawclimber.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"90759"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022N\u002BFQxrWirS4Su8sv7Gx8CvAt2hdds6/xsHHk\u002B294PD8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 30 Sep 2025 16:21:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Allgem01/gameimages/drawclimber.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\gameimages\drawclimber.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-N\u002BFQxrWirS4Su8sv7Gx8CvAt2hdds6/xsHHk\u002B294PD8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"90759"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022N\u002BFQxrWirS4Su8sv7Gx8CvAt2hdds6/xsHHk\u002B294PD8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 30 Sep 2025 16:21:08 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Allgem01/gameimages/holedigger.5t44b2cwhs.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\gameimages\holedigger.webp'))</AssetFile>
@@ -1307,6 +1319,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jfl2jDy5MX\u002Bwb5obvevzkAFRaEazwJoFaFkzLsirARw="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"24311"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022Jfl2jDy5MX\u002Bwb5obvevzkAFRaEazwJoFaFkzLsirARw=\u0022"},{"Name":"Last-Modified","Value":"Sat, 19 Apr 2025 19:22:07 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Allgem01/rankimages/rankguide.hlnfj3crsi.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\rankimages\rankguide.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hlnfj3crsi"},{"Name":"integrity","Value":"sha256-NYQLgSvxMk8RhTGoGP7vg/ajQK4WcrpDvee3HpR1Ayo="},{"Name":"label","Value":"_content/Allgem01/rankimages/rankguide.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"38164"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022NYQLgSvxMk8RhTGoGP7vg/ajQK4WcrpDvee3HpR1Ayo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 29 Sep 2025 15:59:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Allgem01/rankimages/rankguide.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\rankimages\rankguide.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NYQLgSvxMk8RhTGoGP7vg/ajQK4WcrpDvee3HpR1Ayo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"38164"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022NYQLgSvxMk8RhTGoGP7vg/ajQK4WcrpDvee3HpR1Ayo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 29 Sep 2025 15:59:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Allgem01/rankimages/silver.7t8kld214t.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\rankimages\silver.webp'))</AssetFile>

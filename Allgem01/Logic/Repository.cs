@@ -230,28 +230,33 @@ public class Repository
         CasinoMoney = amount;
     }
 
-    public void ResetPassword(string email, string newPassword)
+public bool ResetPassword(string email, string newPassword)
+{
+    if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(newPassword))
+        return false;
+
+    string hashedPassword = HashPassword(newPassword);
+
+    string sql = """
+             UPDATE users
+             SET password = @Password
+             WHERE email = @Email;
+             """;
+
+    using (var connection = new SQLiteConnection(_connectionString))
     {
-        string hashedPassword = HashPassword(newPassword);
+        connection.Open();
 
-        string sql = """
-                 UPDATE users
-                 SET password = @Password
-                 WHERE email = @Email;
-                 """;
-
-        using (var connection = new SQLiteConnection(_connectionString))
+        using (var command = new SQLiteCommand(sql, connection))
         {
-            connection.Open();
-
-            using (var command = new SQLiteCommand(sql, connection))
-            {
-                command.Parameters.AddWithValue("@Email", email);
-                command.Parameters.AddWithValue("@Password", hashedPassword);
-                command.ExecuteNonQuery();
-            }
+            command.Parameters.AddWithValue("@Email", email);
+            command.Parameters.AddWithValue("@Password", hashedPassword);
+            int rowsAffected = command.ExecuteNonQuery();
+            
+            return rowsAffected > 0; // Returns true only if a user was actually updated
         }
     }
+}
 
 
     public void addGameName(string email, string gamename)

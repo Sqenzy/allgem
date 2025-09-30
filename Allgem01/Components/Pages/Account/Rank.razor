@@ -102,22 +102,27 @@ body {
 <a href="/account">Account</a>
 <a href="/account/rank">Rank</a>
 <a>Premium</a>
-<p class="logout">Logout</p>
+<p class="logout" @onclick="Logout">Logout</p>
 </div>
 </section>
 
 <div class="kjl">
 <div class="cnm">
-<p class="email">@CookieValueEmail</p>
+<p class="email">@CookieValueRank</p>
 <p class="line">_________________</p>
 <div class="info">
-<p class="moneyd">Casino Money <p class="money">@CookieValueCas</p></p>
-<p class="ranksr"><p class="ranktx">Rank</p> <img class="imgr" src="@rankimg"></p>
+<img class="rankguide" src="/rankimages/rankguide.webp"/>
 </div>
 </div>
 </div>
 <style>
 
+.rankguide{
+    width: 750px;
+    height: 313px;
+    outline: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
 .ranktx{
     margin-top: -60;
 }
@@ -132,7 +137,7 @@ body {
     color: rgba(0, 255, 85, 1);
 }
 .imgr{
-    margin-top: 0px;
+    bottom: 130px;
     width: 100px;
     height: 100px;
 }
@@ -142,16 +147,18 @@ body {
     justify-content: center;
     width: 700px;
     height: 500px;
+    margin-top: -50px;
     flex-direction: column;
 }
 .email{
-    margin-top: 50px;
+    margin-top: 0px;
+    margin-bottom: -30px;
 }
 .line{
-    margin-top: -40px
+    margin-bottom: 60px;
 }
 .info{
-    margin-top: 140px;
+    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: center;

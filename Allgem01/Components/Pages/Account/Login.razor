@@ -9,6 +9,8 @@
 @using Microsoft.AspNetCore.Authentication;
 @using Microsoft.AspNetCore.Authentication.Cookies;
 @using System.Security.Claims;
+@using System.Net;
+@using System.Net.Mail;
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,206 +24,331 @@
 </body>
 </html>
 
-<section class="boxsection">
-        <p class="tg2">Welcome</p>
+@if (!isVerificationStep)
+{
+    <section class="boxsection">
+        <p class="tg2">Welcome Back</p>
         <input id="p1" placeholder="Enter your email" type="email" @bind="email">
-        <input id="p2" placeholder="Enter your password" type="password" @bind="password">
-        <p class="ptxt">Show password</p><input type="checkbox" class="pass" onclick="p2.type = p2.type === 'password' ? 'text' : 'password'">
+        <div class="password-container">
+            <input id="p2" placeholder="Enter your password" type="password" @bind="password">
+            <label class="show-password">
+                <input type="checkbox" class="pass" onclick="p2.type = p2.type === 'password' ? 'text' : 'password'">
+                <span class="ptxt">Show password</span>
+            </label>
+        </div>
         <button class="login" @onclick="logIn">
-            <p class="lgtxt">Log In</p><p class="txt"> ›</p>
-            </button>
+            <span class="lgtxt">Log In</span>
+            <span class="txt">›</span>
+        </button>
         <button class="signupnav" @onclick="signupFf">Create Account</button>
-</section>
-
-
+    </section>
+}
+else
+{
+    <section class="boxsection verification">
+        <p class="tg2">Verify Your Identity</p>
+        <p class="verify-message">We've sent a verification code to <strong>@email</strong></p>
+        <input id="p3" placeholder="Enter verification code" type="number" @bind="verificationCode">
+        <button class="login" @onclick="verifyCode">
+            <span class="lgtxt">Verify & Log In</span>
+            <span class="txt">›</span>
+        </button>
+        <button class="signupnav" @onclick="backToLogin">Back to Login</button>
+    </section>
+}
 
 <style>
-
-    .ptxt {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 250px;
-        margin-left: 145px;
-        color: white;
-        font-size: 12px;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-
-    .pass {
-    appearance: none;
-    -webkit-appearance: none;
-    outline: none;
-    background: rgb(37, 37, 37);
-    border: 2px solid #fff;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 250px;
-    margin-left: 210px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.pass:hover {
-    border-color: #4a90e2;
-    box-shadow: 0 4px 12px rgba(74,144,226,0.15);
-}
-
-.pass:checked {
-    background: linear-gradient(135deg, #4a90e2 60%, #357ab8 100%);
-    border-color: #4a90e2;
-}
-
-.pass:checked::after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 7px;
-    top: 3px;
-    width: 7px;
-    height: 12px;
-    border: solid #fff;
-    border-width: 0 3px 3px 0;
-    border-radius: 1px;
-    transform: rotate(45deg);
-}
 
     body {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
         margin: 0;
-        background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+        padding: 20px;
+        background: linear-gradient(90deg, #0066cc 0%, #1a4d80 50%, #0066cc 100%);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     }
-    .boxsection {
-        width: 550px; /* Set width */
-        height: 410px; /* Set height */
-        background-color: rgb(55, 56, 82);
-        position: absolute;
-        top: 245px;
-        border-radius: 48px;
-        left: 700px;
-    }
-    #p1{
-         border-radius: 12px;
-        width: 470px;
-        height: 50px;     
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 100px;
-        background-color: rgb(37, 37, 37);
-        color: white;
-        border: none;
-    }
-    #p1:hover{
-        outline: 1px rgb(255, 255, 255) solid;
-    }
-    #p1::placeholder{
-        color: rgb(216, 216, 216);
-        left: 5px;
-    }
-    #p2{
-        border-radius: 12px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 200px;
-        width: 470px;
-        height: 50px;
-        background-color: rgb(37, 37, 37);
-        color: white;
-        border: none;
-    }
-    #p2:hover{
-        outline: 1px rgb(255, 255, 255) solid;
-    }
-    #p2::placeholder{
-        color: rgb(216, 216, 216);
-        left: 5px;
-    }
-    .login {
-  background: rgb(28, 75, 185);
-  border: 0;
-  margin-left: 213px;
-  border-radius: 18px;
-  transition: 0.01s outline;
-  color: white;
-  height: 50px;
-  width: 120px;
-  display: flex;
-  margin-top: 300px;
-}
-.login:hover{
-  outline: 2px rgb(202, 203, 206) solid;
-}
-.txt{
-  margin-left: 9px;
-  margin-top: 13px;
-  transition: 0.25s all;
-}
-.login:hover .txt{
-  margin-left: 17px;
-  font-size: 150%;
-  margin-top: 5px;
-}
-.lgtxt {
-  margin-left: 27px;
-  margin-top: 13px;
-  font-weight: bold;
-}
-.signupnav {
-  background: none;
-  box-sizing: border-box;
-  border: 0;
-  border-radius: 20px;
-  display: flex;
-  transition: 0.2s all;
-  align-items: center;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-left: 198px;
-  color: white;
-  width: 150px;
-  height: 40px;
-  justify-content: center;
-  font-size: 15px; 
-  
-}
 
-.signupnav:hover {
-   background: rgb(15, 21, 36);
-   transform: translateY(-3px);
-}
-.tg2 {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 35px;
-    color: white;
-    font-size: 30px;
-}
+    .boxsection {
+        width: 100%;
+        max-width: 480px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 24px;
+        padding: 40px 30px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        position: relative;
+    }
+
+    .tg2 {
+        color: white;
+        font-size: clamp(24px, 5vw, 32px);
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .verify-message {
+        color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+
+    .verify-message strong {
+        color: white;
+        font-weight: 600;
+    }
+
+    #p1, #p2, #p3 {
+        width: 100%;
+        height: 54px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        padding: 0 18px;
+        font-size: 16px;
+        margin-bottom: 16px;
+        transition: all 0.3s ease;
+    }
+
+    #p3 {
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 4px;
+        font-weight: 600;
+    }
+
+    #p1::placeholder, #p2::placeholder, #p3::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    #p1:hover, #p2:hover, #p3:hover {
+        border-color: rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    #p1:focus, #p2:focus, #p3:focus {
+        outline: none;
+        border-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.15);
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+    }
+
+    .password-container {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .show-password {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .ptxt {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 13px;
+        margin-left: 8px;
+        user-select: none;
+    }
+
+    .pass {
+        appearance: none;
+        -webkit-appearance: none;
+        outline: none;
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        transition: all 0.2s ease;
+        flex-shrink: 0;
+    }
+
+    .pass:hover {
+        border-color: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    .pass:checked {
+        background: linear-gradient(135deg, #0052cc, #0066ff);
+        border-color: #0066ff;
+    }
+
+    .pass:checked::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 5px;
+        top: 2px;
+        width: 5px;
+        height: 9px;
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+        border-radius: 1px;
+        transform: rotate(45deg);
+    }
+
+    .login {
+        width: 100%;
+        height: 54px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        color: white;
+        background: linear-gradient(135deg, #0052cc, #0066ff);
+        border: none;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 102, 204, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .login:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 102, 204, 0.6);
+        background: linear-gradient(135deg, #0047b3, #0052cc);
+    }
+
+    .login:active {
+        transform: translateY(0);
+    }
+
+    .lgtxt {
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .txt {
+        font-size: 24px;
+        margin-left: 8px;
+        transition: all 0.3s ease;
+    }
+
+    .login:hover .txt {
+        margin-left: 15px;
+        font-size: 28px;
+    }
+
+    .signupnav {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        display: block;
+        width: 100%;
+        height: 48px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .signupnav:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: translateY(-2px);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    @@media (max-width: 600px) {
+        .boxsection {
+            padding: 30px 20px;
+            border-radius: 20px;
+        }
+
+        #p1, #p2, #p3, .login, .signupnav {
+            height: 50px;
+        }
+
+        .tg2 {
+            margin-bottom: 25px;
+        }
+
+        .ptxt {
+            font-size: 12px;
+        }
+
+        .verify-message {
+            font-size: 13px;
+        }
+
+        #p3 {
+            font-size: 18px;
+        }
+    }
+
+    @@media (max-width: 400px) {
+        body {
+            padding: 15px;
+        }
+
+        .boxsection {
+            padding: 25px 18px;
+        }
+
+        .login {
+            font-size: 15px;
+        }
+
+        .txt {
+            font-size: 20px;
+        }
+
+        .login:hover .txt {
+            font-size: 24px;
+        }
+
+        #p3 {
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+    }
 </style>
+
 @code {
     private string? email;
     private string? password;
     private string? CookieValue;
+    private bool isVerificationStep = false;
+    private int generatedCode;
+    private int? verificationCode = null;
 
     private void signupFf()
     {
-      NavigationManager.NavigateTo("/signup");
+        NavigationManager.NavigateTo("/signup");
+    }
+
+    private void backToLogin()
+    {
+        isVerificationStep = false;
+        verificationCode = null;
+        StateHasChanged();
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
-
             CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
 
             if (CookieValue != "isli")
@@ -237,46 +364,121 @@
         }
     }
 
-    private void logIn()
+    private async Task logIn()
     {
         if (string.IsNullOrEmpty(email))
         {
-            // Handle the case where email is null or empty
-            JSRuntime.InvokeVoidAsync("alert", "Please input an email.");
+            await JSRuntime.InvokeVoidAsync("alert", "Please enter your email.");
             return;
         }
 
         if (string.IsNullOrEmpty(password))
         {
-            // Handle the case where password is null or empty
-            JSRuntime.InvokeVoidAsync("alert", "Please input a password.");
+            await JSRuntime.InvokeVoidAsync("alert", "Please enter your password.");
             return;
         }
 
-        if (repository.Login(email, password))
+        if (!IsValidEmail(email))
         {
-            CreateCookie("allgem_email", email, 2592000);
-            CreateCookie("allgem_auth", "isli", 2592000);
-            CreateCookie("allgem_rank", repository.rank, 2592000);
-            CreateCookie("acm", repository.CasinoMoney.ToString(), 2592000);
-            CreateCookie("dev_gn", repository.devGameName, 2592000);
-            if (repository.hasPremium)
+            await JSRuntime.InvokeVoidAsync("alert", "Please enter a valid email address.");
+            return;
+        }
+
+        try
+        {
+            if (repository.Login(email, password))
             {
-                CreateCookie("allgem_premium", "hsp", 2592000);
-                NavigationManager.NavigateTo("/");
+                // Check if user has "dev" rank
+                if (repository.rank != null && repository.rank.ToLower() == "dev")
+                {
+                    // Generate and send verification code
+                    Random random = new Random();
+                    generatedCode = random.Next(100000, 999999);
+
+                    try
+                    {
+                        var client = new SmtpClient("live.smtp.mailtrap.io", 587)
+                        {
+                            Credentials = new NetworkCredential("api", "f024fb6ad23cf1d915ffecacc3ac3829"),
+                            EnableSsl = true
+                        };
+                        client.Send("Allgem@allgemgames.com", email, "Dev Login Verification", $"Your verification code is: {generatedCode}");
+                        
+                        // Switch to verification step
+                        isVerificationStep = true;
+                        StateHasChanged();
+                    }
+                    catch (Exception ex)
+                    {
+                        await JSRuntime.InvokeVoidAsync("alert", $"Failed to send verification email: {ex.Message}");
+                    }
+                }
+                else
+                {
+                    // Regular login without verification
+                    await CompletLogin();
+                }
             }
             else
             {
-                NavigationManager.NavigateTo("/");
+                await JSRuntime.InvokeVoidAsync("alert", "Invalid email or password.");
             }
+        }
+        catch (Exception ex)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", $"An error occurred: {ex.Message}");
+        }
+    }
+
+    private async Task verifyCode()
+    {
+        if (verificationCode == null)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", "Please enter the verification code.");
+            return;
+        }
+
+        if (verificationCode == generatedCode)
+        {
+            await CompletLogin();
         }
         else
         {
-            JSRuntime.InvokeVoidAsync("alert", "Invalid email or password.");
+            await JSRuntime.InvokeVoidAsync("alert", "Invalid verification code. Please try again.");
         }
     }
-    private async void CreateCookie ( string name, string value, int days ) 
-    { 
-        var test = await JSRuntime.InvokeAsync<string>("methods.CreateCookie", name, value, days); 
+
+    private async Task CompletLogin()
+    {
+        await CreateCookie("allgem_email", email, 2592000);
+        await CreateCookie("allgem_auth", "isli", 2592000);
+        await CreateCookie("allgem_rank", repository.rank, 2592000);
+        await CreateCookie("acm", repository.CasinoMoney.ToString(), 2592000);
+        await CreateCookie("dev_gn", repository.devGameName, 2592000);
+        
+        if (repository.hasPremium)
+        {
+            await CreateCookie("allgem_premium", "hsp", 2592000);
+        }
+        
+        NavigationManager.NavigateTo("/");
+    }
+
+    private bool IsValidEmail(string email)
+    {
+        try
+        {
+            var addr = new System.Net.Mail.MailAddress(email);
+            return addr.Address == email;
+        }
+        catch
+        {
+            return false;
+        }
+    }
+
+    private async Task CreateCookie(string name, string value, int days)
+    {
+        await JSRuntime.InvokeAsync<string>("methods.CreateCookie", name, value, days);
     }
 }

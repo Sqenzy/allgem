@@ -4,9 +4,6 @@
 @inject NavigationManager NavigationManager
 @inject Repository repository
 @inject IJSRuntime JSRuntime
-@using System.Net;
-@using System.Net.Mail;
-@using RestSharp;
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,256 +18,191 @@
 </html>
 
 <section class="boxsection">
-        <p class="tg">Create Account</p>
-        <input id="p1" placeholder="Enter your email" type="email" @bind="email">
-        <input id="p2" placeholder="Enter your password" type="password" @bind="password">
-        <input id="p3" placeholder="Enter your verification code" type="number" @bind="code">
-        <button class="verify"@onclick="async () => await signUp()">Verify Mail</button>
-        <p class="ptxt">By creating an account, you agree to the </p><button class="tc" @onclick="tcFf">Terms & conditions.</button>
-        @if (showInfo)
-{
-    <div class="info">! We have sent your a verification code to <strong>@email</strong> !</div>
-}
-<button class="signup"@onclick="putintodb">Create Account</button>
-<button class="loginnav" @onclick="loginFf">Already have an account?</button>
+    <p class="tg">Create Account</p>
+    <input id="p1" placeholder="Enter your nickname/email" type="text" @bind="email">
+    <input id="p2" placeholder="Enter your password" type="password" @bind="password">
+    <button class="signup" @onclick="putintodb">Create Account</button>
+    <p class="ptxt">By creating an account, you agree to the</p>
+    <button class="tc" @onclick="tcFf">Terms & conditions</button>
+    <button class="loginnav" @onclick="loginFf">Already have an account?</button>
 </section>
 
-
 <style>
-    
-    .tc{
-        background: none;
-        background-size: 300% 300%;
-        color: rgb(0, 162, 255);
-        font-size: 12px;
-        padding: none;
-        border: none;
-        border-radius: 8px;
-        position: absolute;
-        margin-top: -105px;
-        margin-left: 260px;
-        width: 120px;
-        height: 35px;
-        display: flex;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-
-    .ptxt {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: -95px;
-        margin-left: -120px;
-        color: white;
-        font-size: 12px;
-    }
-
-    .pass {
-    appearance: none;
-    -webkit-appearance: none;
-    outline: none;
-    background: rgb(37, 37, 37);
-    border: 2px solid #fff;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 250px;
-    margin-left: 210px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.pass:hover {
-    border-color: #4a90e2;
-    box-shadow: 0 4px 12px rgba(74,144,226,0.15);
-}
-
-.pass:checked {
-    background: linear-gradient(135deg, #4a90e2 60%, #357ab8 100%);
-    border-color: #4a90e2;
-}
-
-.pass:checked::after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 7px;
-    top: 3px;
-    width: 7px;
-    height: 12px;
-    border: solid #fff;
-    border-width: 0 3px 3px 0;
-    border-radius: 1px;
-    transform: rotate(45deg);
-}
 
     body {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
         margin: 0;
-        background: linear-gradient(to right,rgb(12, 18, 56),rgb(17, 18, 34),rgb(18, 19, 32),rgb(15, 15, 24),rgb(18, 19, 32),rgb(18, 19, 32),rgb(11, 18, 71));
+        padding: 20px;
+        background: linear-gradient(90deg, #0066cc 0%, #1a4d80 50%, #0066cc 100%);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     }
-    .boxsection {
-        width: 550px; /* Set width */
-        height: 500px; /* Set height */
-        background-color: rgb(55, 56, 82);
-        position: absolute;
-        top: 150px;
-        border-radius: 48px;
-        left: 700px;
-    }
-    #p1{
-        border-radius: 8px;
-        width: 470px;
-        height: 50px;     
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 120px;
-        background-color: rgb(37, 37, 37);
-        color: rgb(255, 255, 255);
-        border: none;
-    }
-    #p1::placeholder{
-        color: rgb(216, 216, 216);
-        left: 5px;
-    }
-    
-    #p1:hover{
-        outline: 1px rgb(255, 255, 255) solid;
-    }
-    #p2{
-        border-radius: 12px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 220px;
-        width: 470px;
-        height: 50px;
-        background-color: rgb(37, 37, 37);
-        color: white;
-        border: none;
-    }
-    #p2::placeholder{
-        color: rgb(216, 216, 216);
-        left: 5px;
-    }
-    #p2:hover{
-        outline: 1px rgb(255, 255, 255) solid;
-    }
-    #p3{
-        border-radius: 12px;
-        position: absolute;
-        left: 32%;
-        transform: translate(-50%, -50%);
-        margin-top: 320px;
-        width: 270px;
-        height: 60px;
-        background-color: rgb(37, 37, 37);
-        color: white;
-        border: none;
-    }
-    #p3:hover{
-        outline: 1px rgb(255, 255, 255) solid;
-    }
-    #p3::placeholder{
-        color: rgb(216, 216, 216);
-        left: 5px;
-    }
-    .verify{
-        position: relative;
-        left: 76%;
-        transform: translate(-50%, -50%);
-        margin-top: 420px;
-        color: white;
-        background-color: rgb(17, 185, 54);
-        border-radius: 12px;
-        border: 0;
-        top: -100px;
-        height: 48px;
-        width: 140px;
-    }
-    .verify:hover{
-        outline: 2px rgb(202, 203, 206) solid;
-        background-color: rgb(12, 133, 38);
-    }
-    .verify:active{
-        outline: 2px rgb(202, 203, 206) solid;
-        background-color: rgb(19, 87, 33);
-    }
-    .info{
-        position: absolute;
-        margin-left: 0px;
-        margin-top: -600px;
-        text-align: center;
-        color: white;
-        background-color: rgb(182, 49, 15);
-        border-radius: 12px;
-        border: 0;
-        height: 50px;
-        width: 540px;
-    }
-    .signup{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 420px;
-        color: white;
-        background-color: rgb(28, 75, 185);
-        border: 0;
-        border-radius: 12px;
-        top: 10px;
-        height: 48px;
-        width: 160px;
-    }
-    .signup:hover{
-        outline: 2px rgb(202, 203, 206) solid;
-    }
-    .tg{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 45px;
-        color: white;
-        font-size: 30px;
-    }
-    .loginnav {
-  background: none;
-  box-sizing: border-box;
-  border: 0;
-  border-radius: 20px;
-  display: flex;
-  transition: 0.2s all;
-  align-items: center;
-  font-weight: bold;
-  margin-top: -7px;
-  margin-left: 161px;
-  color: white;
-  width: 230px;
-  height: 35px;
-  justify-content: center;
-  font-size: 15px; 
-  
-}
 
-.loginnav:hover {
-   background: rgb(15, 21, 36);
-   transform: translateY(-3px);
-}
+    .boxsection {
+        width: 100%;
+        max-width: 480px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 24px;
+        padding: 40px 30px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        position: relative;
+    }
+
+    .tg {
+        color: white;
+        font-size: clamp(24px, 5vw, 32px);
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #p1, #p2 {
+        width: 100%;
+        height: 54px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        padding: 0 18px;
+        font-size: 16px;
+        margin-bottom: 16px;
+        transition: all 0.3s ease;
+    }
+
+    #p1::placeholder, #p2::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    #p1:hover, #p2:hover {
+        border-color: rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    #p1:focus, #p2:focus {
+        outline: none;
+        border-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.15);
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+    }
+
+    .signup {
+        width: 100%;
+        height: 54px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: white;
+        background: linear-gradient(135deg, #0052cc, #0066ff);
+        border: none;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 102, 204, 0.4);
+    }
+
+    .signup:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 102, 204, 0.6);
+        background: linear-gradient(135deg, #0047b3, #0052cc);
+    }
+
+    .signup:active {
+        transform: translateY(0);
+    }
+
+    .ptxt {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 13px;
+        text-align: center;
+        display: inline;
+    }
+
+    .tc {
+        background: none;
+        color: white;
+        font-size: 13px;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        display: inline;
+        text-decoration: underline;
+        margin-left: 4px;
+        transition: opacity 0.2s ease;
+    }
+
+    .tc:hover {
+        opacity: 0.8;
+    }
+
+    .terms-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .loginnav {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        display: block;
+        width: 100%;
+        height: 48px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .loginnav:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: translateY(-2px);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    @@media (max-width: 600px) {
+        .boxsection {
+            padding: 30px 20px;
+            border-radius: 20px;
+        }
+
+        #p1, #p2, .signup, .loginnav {
+            height: 50px;
+        }
+
+        .tg {
+            margin-bottom: 25px;
+        }
+    }
+
+    @@media (max-width: 400px) {
+        body {
+            padding: 15px;
+        }
+
+        .boxsection {
+            padding: 25px 18px;
+        }
+
+        .ptxt, .tc {
+            font-size: 12px;
+        }
+    }
 </style>
 
 @code {
     private string? email;
     private string? password;
-    private bool showInfo = false;
-
-    int genNumber;
-    int? code = null;
 
     private void loginFf()
     {
@@ -282,124 +214,49 @@
         NavigationManager.NavigateTo("/terms-and-conditions");
     }
 
-    private async Task signUp()
+    private async Task putintodb()
     {
-
         if (string.IsNullOrEmpty(email))
         {
-            // Handle the case where email is null or empty
-            await JSRuntime.InvokeVoidAsync("alert", "Please input an email.");
+            await JSRuntime.InvokeVoidAsync("alert", "Please enter your email.");
             return;
         }
 
         if (string.IsNullOrEmpty(password))
         {
-            // Handle the case where password is null or empty
-            await JSRuntime.InvokeVoidAsync("alert", "Please input a password.");
+            await JSRuntime.InvokeVoidAsync("alert", "Please enter your password.");
             return;
         }
-        showInfo = true;
 
-
-        Random random = new Random();
-        int generatedNumber = random.Next(100000, 999999);
-        genNumber = generatedNumber;
-
-
-var client = new SmtpClient("live.smtp.mailtrap.io", 587)
-{
-    Credentials = new NetworkCredential("api", "f024fb6ad23cf1d915ffecacc3ac3829"),
-    EnableSsl = true
-};
-client.Send("Allgem@allgemgames.com", email, "Email Verification", $"Here is your verification code: {generatedNumber.ToString()}");
-System.Console.WriteLine("Sent");
-
-
-
-@* var client = new RestClient("https://send.api.mailtrap.io/api/send");
-var request = new RestRequest();
-request.AddHeader("Authorization", "Bearer <14dec78b27698f43708d4ba0e60b4846>");
-request.AddHeader("Content-Type", "application/json");
-
-var emailBody = new
-{
-    from = new { email = "hello@allgemgames.com", name = "Allgem Games" },
-    to = new[] { new { email = email } },
-    template_uuid = "0705417e-dc41-4d50-85dd-4f44af001ebc",
-    template_variables = new
-    {
-        verification_code = genNumber.ToString(),
-        name = "User",
-        company_info_name = "Allgem Games",
-        company_info_address = "",
-        company_info_city = "",
-        company_info_zip_code = "",
-        company_info_country = ""
-    }
-};
-
-request.AddJsonBody(emailBody);
-var response = client.Post(request); *@
-
-
-}
-private void putintodb()
-{
-    if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
-    {
-        JSRuntime.InvokeVoidAsync("alert", "Email and password cannot be empty.");
-        return;
-    }
-    if (code == null)
-    {
-        JSRuntime.InvokeVoidAsync("alert", "You need to verify your email.");
-        return;
-    }
-    if (genNumber == code)
-    {
-        repository.SignUp(email, password);
-        repository.AddRankToUser(email, "Bronze");
-        CreateCookie("allgem_email", email, 2592000);
-        CreateCookie("allgem_auth", "isli", 2592000);
-        NavigationManager.NavigateTo("/");
-    }
-    else if (genNumber != code)
-    {
-        JSRuntime.InvokeVoidAsync("alert", "Verification code is incorrect.");
-    }
-    else
-    {
-        JSRuntime.InvokeVoidAsync("alert", "Verification code is incorrect.");
+        try
+        {
+            repository.SignUp(email, password);
+            repository.AddRankToUser(email, "Bronze");
+            await CreateCookie("allgem_email", email, 2592000);
+            await CreateCookie("allgem_auth", "isli", 2592000);
+            NavigationManager.NavigateTo("/");
+        }
+        catch (Exception ex)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", $"An error occurred: {ex.Message}");
+        }
     }
 
-var client = new RestClient("https://send.api.mailtrap.io/api/send");
-var request = new RestRequest();
-request.AddHeader("Authorization", "Bearer f024fb6ad23cf1d915ffecacc3ac3829");
-request.AddHeader("Content-Type", "application/json");
-
-var emailBody = new
-{
-    from = new { email = "Allgem@allgemgames.com", name = "Allgem Games" },
-    to = new[] { new { email = email } },
-    template_uuid = "0705417e-dc41-4d50-85dd-4f44af001ebc",
-    template_variables = new
+    private bool IsValidEmail(string email)
     {
-        verification_code = genNumber.ToString(),
-        name = "User",
-        company_info_name = "Allgem Games",
-        company_info_address = "",
-        company_info_city = "",
-        company_info_zip_code = "",
-        company_info_country = ""
+        try
+        {
+            var addr = new System.Net.Mail.MailAddress(email);
+            return addr.Address == email;
+        }
+        catch
+        {
+            return false;
+        }
     }
-};
 
-request.AddJsonBody(emailBody);
-var response = client.Post(request);
-}
-
-private async void CreateCookie ( string name, string value, int days ) 
-    { 
-        var test = await JSRuntime.InvokeAsync<string>("methods.CreateCookie", name, value, days); 
+    private async Task CreateCookie(string name, string value, int days)
+    {
+        await JSRuntime.InvokeAsync<string>("methods.CreateCookie", name, value, days);
     }
 }

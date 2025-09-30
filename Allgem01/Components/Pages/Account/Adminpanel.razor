@@ -557,7 +557,7 @@ else
     
     private void Developer()
     {
-        newrank = "Developer";
+        newrank = "Dev";
     }
 
     private void AddPremium()
@@ -571,7 +571,61 @@ else
     }
     private void ApplyChanges()
     {
-        
+
+        if (!string.IsNullOrWhiteSpace(newpassword))
+{
+    bool success = repository.ResetPassword(email, newpassword);
+    if (!success)
+    {
+        // Handle error - user not found or update failed
+    }
+}
+        if (premiumstatus == "add")
+        {
+            repository.AddPremiumToUser(email);
+        }
+        else if (premiumstatus == "remove")
+        {
+            repository.RemovePremiumFromUser(email);
+        }
+
+        if (newrank == "Bronze")
+        {
+            repository.AddRankToUser(email, "Bronze");
+        }
+        else if (newrank == "Silver")
+        {
+            repository.AddRankToUser(email, "Silver");
+        }
+        else if (newrank == "Gold")
+        {
+            repository.AddRankToUser(email, "Gold");
+        }
+        else if (newrank == "Platinum")
+        {
+            repository.AddRankToUser(email, "Platinum");
+        }
+        else if (newrank == "Diamond")
+        {
+            repository.AddRankToUser(email, "Diamond");
+        }
+        else if (newrank == "Admin")
+        {
+            repository.AddRankToUser(email, "Admin");
+        }
+        else if (newrank == "Testing")
+        {
+            repository.AddRankToUser(email, "Testing");
+        }
+        else if (newrank == "Dev")
+        {
+            repository.AddRankToUser(email, "Dev");
+        }
+
+        if (newpassword != "")
+        {
+            repository.ResetPassword(email, newpassword);
+        }
     }
 
     private void kkFF()

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WwrfpQq+Ud/+IcteZVe20MdOvNdoM3/pfFyAMRqZzM4=",
+  "Hash": "b+NTcEWDNNYAtXuRQCfrsZo7pcksOlRWJW+V6hWKDPs=",
   "Source": "Allgem01",
   "BasePath": "_content/Allgem01",
   "Mode": "Default",
@@ -1991,6 +1991,27 @@
       "OriginalItemSpec": "wwwroot\\fpsgame\\TemplateData\\webmemd-icon.png"
     },
     {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\drawclimber.webp",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "gameimages/drawclimber#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v6wp2sc24z",
+      "Integrity": "N+FQxrWirS4Su8sv7Gx8CvAt2hdds6/xsHHk+294PD8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\gameimages\\drawclimber.webp"
+    },
+    {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\holedigger.webp",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
@@ -3629,6 +3650,27 @@
       "OriginalItemSpec": "wwwroot\\rankimages\\platinum.webp"
     },
     {
+      "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\rankguide.webp",
+      "SourceId": "Allgem01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\",
+      "BasePath": "_content/Allgem01",
+      "RelativePath": "rankimages/rankguide#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hlnfj3crsi",
+      "Integrity": "NYQLgSvxMk8RhTGoGP7vg/ajQK4WcrpDvee3HpR1Ayo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\rankimages\\rankguide.webp"
+    },
+    {
       "Identity": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\silver.webp",
       "SourceId": "Allgem01",
       "SourceType": "Discovered",
@@ -4367,7 +4409,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 28 Sep 2025 18:34:13 GMT"
+          "Value": "Tue, 30 Sep 2025 16:44:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4428,7 +4470,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 28 Sep 2025 18:34:13 GMT"
+          "Value": "Tue, 30 Sep 2025 16:44:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4473,7 +4515,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 28 Sep 2025 18:34:13 GMT"
+          "Value": "Tue, 30 Sep 2025 16:44:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4528,7 +4570,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 28 Sep 2025 18:34:13 GMT"
+          "Value": "Tue, 30 Sep 2025 16:44:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4589,7 +4631,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 28 Sep 2025 18:34:13 GMT"
+          "Value": "Tue, 30 Sep 2025 16:44:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4634,7 +4676,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 28 Sep 2025 18:34:13 GMT"
+          "Value": "Tue, 30 Sep 2025 16:44:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4689,7 +4731,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 28 Sep 2025 18:34:13 GMT"
+          "Value": "Tue, 30 Sep 2025 16:44:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4742,7 +4784,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 28 Sep 2025 18:34:13 GMT"
+          "Value": "Tue, 30 Sep 2025 16:44:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4779,7 +4821,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 28 Sep 2025 18:34:13 GMT"
+          "Value": "Tue, 30 Sep 2025 16:44:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4826,7 +4868,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 28 Sep 2025 18:34:13 GMT"
+          "Value": "Tue, 30 Sep 2025 16:44:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4879,7 +4921,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 28 Sep 2025 18:34:13 GMT"
+          "Value": "Tue, 30 Sep 2025 16:44:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4916,7 +4958,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 28 Sep 2025 18:34:13 GMT"
+          "Value": "Tue, 30 Sep 2025 16:44:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8795,6 +8837,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-xW9UlGQM7donOq041Y5qudpiXVs/TYdcD/ksYZKlacI="
+        }
+      ]
+    },
+    {
+      "Route": "gameimages/drawclimber.v6wp2sc24z.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\drawclimber.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "90759"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N+FQxrWirS4Su8sv7Gx8CvAt2hdds6/xsHHk+294PD8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 30 Sep 2025 16:21:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v6wp2sc24z"
+        },
+        {
+          "Name": "label",
+          "Value": "gameimages/drawclimber.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-N+FQxrWirS4Su8sv7Gx8CvAt2hdds6/xsHHk+294PD8="
+        }
+      ]
+    },
+    {
+      "Route": "gameimages/drawclimber.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\drawclimber.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "90759"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N+FQxrWirS4Su8sv7Gx8CvAt2hdds6/xsHHk+294PD8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 30 Sep 2025 16:21:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-N+FQxrWirS4Su8sv7Gx8CvAt2hdds6/xsHHk+294PD8="
         }
       ]
     },
@@ -25559,6 +25683,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jfl2jDy5MX+wb5obvevzkAFRaEazwJoFaFkzLsirARw="
+        }
+      ]
+    },
+    {
+      "Route": "rankimages/rankguide.hlnfj3crsi.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\rankguide.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38164"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NYQLgSvxMk8RhTGoGP7vg/ajQK4WcrpDvee3HpR1Ayo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 29 Sep 2025 15:59:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hlnfj3crsi"
+        },
+        {
+          "Name": "label",
+          "Value": "rankimages/rankguide.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NYQLgSvxMk8RhTGoGP7vg/ajQK4WcrpDvee3HpR1Ayo="
+        }
+      ]
+    },
+    {
+      "Route": "rankimages/rankguide.webp",
+      "AssetFile": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\rankguide.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38164"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NYQLgSvxMk8RhTGoGP7vg/ajQK4WcrpDvee3HpR1Ayo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 29 Sep 2025 15:59:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NYQLgSvxMk8RhTGoGP7vg/ajQK4WcrpDvee3HpR1Ayo="
         }
       ]
     },

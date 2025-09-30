@@ -124,64 +124,44 @@
     </style>
 <!--test-->
 <header>
-  @if (repository.IsLoggedIn)
-    {
-      
-      @if (repository.hasPremium)
-      {
-        <img @onclick="homeFf" class="logopremium" src="/allgempremium.png" alt="ALLGEM PREMIUM">
-        <img class="lpu">
-      }
-      else
-      {
-        <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">   
-      }
-
-            <div class="rankal">
-      <p class="ranktx">Rank</p>
-      <img class="rankim" src="@rankimg" alt="rank">
-      </div>
-    }
-    else
-    {
-      <img @onclick="homeFf" class="logo" src="/allgemtext.png" alt="ALLGEM">
-    }
-    <button class="mobileprofile" @onclick="MobileProfile" type="button">
-      <img class="profileimg" src="/profile.png" alt="profile">
-      </button>
-    <nav>
-    <li><button class="home" type="button" @onclick="homeFf">Home</button></li>
-    <li><button class="aboutus" type="button" @onclick="aboutusFf">About Us</button></li>
-    <li><button class="contactus" type="button" @onclick="contactusFf">Contact Us</button></li>
-@if (repository.IsLoggedIn)
-    {
-      <button class="profile"  @onclick="accountFf" type="button">
-          <img class="profileimg" src="/profile.png" alt="profile">
-      </button>
-      @if (profile == true)
-      {
-        <div class="profilemenu">
-          <button class="logout" @onclick="Logout">Log Out</button>
-        </div>
-      }
-      else{
-
-      }
-      @if (repository.hasPremium)
-      {
-      }
-      else
-      {
-          <li><button class="premium" type="button" @onclick="premiumFf">Premium</button></li>
-      }
-    }
-    else
-    {
-        <button class="login" @onclick="loginFf">
-          <p class="lgtxt">Log In</p><p class="txt"> ›</p>
-          </button>
-    }
-    </nav>
+     <section class="logosection">
+       @if (!repository.hasPremium)
+        {
+          <img class="logo" src="/allgemtext.webp" alt="logo" href="/" @onclick="homeFf">
+        }
+        @* else if (CookieValueRank == "Dev")
+        {
+          <img class="logodev" src="/allgemdeveloper.webp" alt="devlogo" @onclick="adminFf">
+          <img class="lpudev">
+        } *@
+        else
+        {
+          <img class="logopremium" src="/allgempremium.webp" alt="premiumlogo" href="/" @onclick="homeFf">
+          <img class="lpu">
+        }
+        @if (CookieValue == "isli")
+        {
+          <div class="nlrank-div" href="/account">
+          </div>
+        }
+        else
+        {
+          <div class="nlrank-div" href="/account"></div>
+        }
+      </section>
+      <nav>
+      <a class="changelog" href="/"><img class="backarrow" src="/backarrow.webp">Home</a>
+      <a class="aboutus" href="https://allgemgames.featurebase.app/en/help/articles/6890206-about-allgem">About Us</a>
+      <a class="support" href="https://allgemgames.featurebase.app/en/help/articles/1547414-how-to-contact-support">Support</a>
+      @if (CookieValue == "isli")
+        {
+          <img class="account" src="profile.webp" href="/account"/>
+        }
+        else
+        {
+          <a class="login" href="/login"><p class="lgtxt">Login</p></a>
+        }
+      </nav>
 </header>
 
 <section class="downheader"></section>

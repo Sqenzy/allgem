@@ -129,6 +129,10 @@
       "PackagePath": "staticwebassets\\fpsgame\\fpsgame.html"
     },
     {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\drawclimber.webp",
+      "PackagePath": "staticwebassets\\gameimages\\drawclimber.webp"
+    },
+    {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\gameimages\\holedigger.webp",
       "PackagePath": "staticwebassets\\gameimages\\holedigger.webp"
     },
@@ -435,6 +439,10 @@
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\platinum.webp",
       "PackagePath": "staticwebassets\\rankimages\\platinum.webp"
+    },
+    {
+      "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\rankguide.webp",
+      "PackagePath": "staticwebassets\\rankimages\\rankguide.webp"
     },
     {
       "Id": "C:\\Users\\sqenz\\Projects\\allgem\\Allgem01\\wwwroot\\rankimages\\silver.webp",

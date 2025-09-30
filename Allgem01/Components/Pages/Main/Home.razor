@@ -283,17 +283,16 @@ function topFunction() {
 <div class="side-box @(isSideBoxExpanded ? "expanded" : "")" @onclick="ToggleSideBox">
     <div class="side-box-content">
         <div class="side-box-header">
-            <span class="side-box-title">Allgem</span>
+            <span class="side-box-title">© 2025   Allgem</span>
         </div>
         <div class="side-box-body">
             <div class="footer-content">
                 <div class="footernav">
                     <a class="footer-link" href="/terms-and-conditions">Terms & Conditions</a>
-                    <a class="footer-link" href="/developer-panel">Developer Panel</a>
+                    @* <a class="footer-link" href="/developer-panel">Developer Panel</a> *@
                     <a class="footer-link" @onclick="testing">Testing</a>
                 </div>
             </div>
-            <p class="txtp">© 2025 Allgem</p>
         </div>
     </div>
 </div>
@@ -643,8 +642,8 @@ body {
     color: white;
     text-align: center;
     position: absolute;
-    top: 460px;
-    left: 20px;
+    left: 100px;
+    top: 5px;
     right: 20px;
     opacity: 0;
     transition: opacity 1.2s;
@@ -851,10 +850,10 @@ body {
 
 
 
-    private void devFf()
+    @* private void devFf()
     {
         NavigationManager.NavigateTo("/developer-panel");
-    }
+    } *@
     private void adminFf()
     {
         NavigationManager.NavigateTo("/adminpanel");

@@ -112,7 +112,7 @@
 <section class="lowersection">
 <div class="sidebar sidebar-right">
 <div class="sidebarbuttons">
-    <button class="sidebar-btn" id="g1"></button>
+    <button class="sidebar-btn" id="g1" @onclick="stoneminer"></button>
     <button class="sidebar-btn" id="g2" @onclick="CasinoFf"></button>
     <button class="sidebar-btn" id="g3" @onclick="NavigateToLastGame" style="background: url('@lgpimg') no-repeat center center; background-size: cover; min-width: 180px; object-fit: cover;"></button>
     </div>
@@ -841,6 +841,11 @@ private async Task SetLastPlayedGameId(string gameId)
     private void contactusFf()
     {
         NavigationManager.NavigateTo("/contact-us");
+    }
+
+    private void stoneminer()
+    {
+        NavigationManager.NavigateTo("/game?g=stoneminer");
     }
 
     private void devFf()
