@@ -13,6 +13,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
     builder.Services.AddScoped<Repository>();
     builder.Services.AddSingleton<GoogleDriveService>();
+    builder.Services.AddScoped<GameService>();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {

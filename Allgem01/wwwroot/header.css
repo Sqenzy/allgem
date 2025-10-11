@@ -200,6 +200,12 @@ nav {
     outline: 2px solid rgba(219, 219, 219, 0.603);
 
 }
+.support{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    text-decoration: none;
+}
 .account {
     height: 40px;
     width: 40px;

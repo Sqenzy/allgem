@@ -59,6 +59,11 @@
                         <a>@premiumstatus</a>
                     </div>
                 </section>
+                <section class="dsection">
+                    <h1 class="GameManagement">Game Management</h1>
+                    <button class="addgame" @onclick="AddGame">Add New Game</button>
+                    <button class="viewgames" @onclick="ViewGames">View All Games</button>
+                </section>
             </section>
         </section>
     }
@@ -253,6 +258,41 @@ else
             margin-left: 150px;
             position: relative;  
            
+        }
+
+        .dsection {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 350px;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .GameManagement {
+            color: rgb(255, 255, 255);
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .addgame, .viewgames {
+            background: #1c4bb9;
+            border: none;
+            border-radius: 18px;
+            color: #fff;
+            font-weight: 600;
+            padding: 12px 24px;
+            margin: 5px;
+            cursor: pointer;
+            transition: outline 0.2s ease;
+            outline: 1px solid #cacbce;
+        }
+
+        .addgame:hover, .viewgames:hover {
+            outline: 3px solid #cacbce;
         }
         .savechanges {
            margin-bottom: 350px;
@@ -636,5 +676,15 @@ else
     private void ResP()
     {
         repository.ResetPassword(email, newpassword);
+    }
+
+    private void AddGame()
+    {
+        NavigationManager.NavigateTo("/add-game");
+    }
+
+    private void ViewGames()
+    {
+        NavigationManager.NavigateTo("/");
     }
 }
