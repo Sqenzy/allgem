@@ -25,6 +25,32 @@
 
   gtag('config', 'G-CTG06EXPPB');
 </script>
+
+<!-- Featurebase SDK -->
+<script>
+  !(function(e, t) {
+    var a = "featurebase-sdk";
+    function n() {
+      if (!t.getElementById(a)) {
+        var e = t.createElement("script");
+        (e.id = a),
+          (e.src = "https://do.featurebase.app/js/sdk.js"),
+          t.getElementsByTagName("script")[0].parentNode.insertBefore(
+            e,
+            t.getElementsByTagName("script")[0]
+          );
+      }
+    }
+    "function" != typeof e.Featurebase &&
+      (e.Featurebase = function() {
+        (e.Featurebase.q = e.Featurebase.q || []).push(arguments);
+      }),
+      "complete" === t.readyState || "interactive" === t.readyState
+        ? n()
+        : t.addEventListener("DOMContentLoaded", n);
+  })(window, document);
+</script>
+<!-- End Featurebase SDK -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@GameName - Play on Allgem Games</title>
@@ -51,6 +77,165 @@
     33%  { content: "."; }
     66%  { content: ".."; }
     100% { content: "..."; }
+}
+
+/* Featurebase Widget CSS Override */
+.featurebase-widget,
+.featurebase-messenger,
+[class*="featurebase"] {
+    z-index: 999999 !important;
+    visibility: visible !important;
+    display: block !important;
+}
+
+/* Ensure the widget button is visible */
+.featurebase-widget button,
+.featurebase-messenger button,
+[class*="featurebase"] button {
+    z-index: 999999 !important;
+    visibility: visible !important;
+    display: block !important;
+}
+
+/* Fix weird circles and styling issues in Game.razor */
+.featurebase-widget,
+.featurebase-messenger,
+[class*="featurebase"] {
+    /* Remove any background effects that might cause circles */
+    background: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+    
+    /* Ensure proper positioning */
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+}
+
+/* Remove any pseudo-elements that might cause circles */
+.featurebase-widget::before,
+.featurebase-widget::after,
+.featurebase-messenger::before,
+.featurebase-messenger::after,
+[class*="featurebase"]::before,
+[class*="featurebase"]::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* Target the actual button element more specifically */
+.featurebase-widget button,
+.featurebase-messenger button,
+[class*="featurebase"] button,
+div[class*="featurebase"] > div,
+div[class*="featurebase"] > div > button {
+    /* Remove background effects */
+    background: #0066cc !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+    
+    /* Ensure clean circular button */
+    border-radius: 50% !important;
+    width: 60px !important;
+    height: 60px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    
+    /* Remove any glow effects */
+    filter: none !important;
+    -webkit-filter: none !important;
+}
+
+/* Remove pseudo-elements from buttons */
+.featurebase-widget button::before,
+.featurebase-widget button::after,
+.featurebase-messenger button::before,
+.featurebase-messenger button::after,
+[class*="featurebase"] button::before,
+[class*="featurebase"] button::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* Remove any container effects */
+.featurebase-widget > div,
+.featurebase-messenger > div,
+[class*="featurebase"] > div {
+    background: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+
+/* Remove pseudo-elements from containers */
+.featurebase-widget > div::before,
+.featurebase-widget > div::after,
+.featurebase-messenger > div::before,
+.featurebase-messenger > div::after,
+[class*="featurebase"] > div::before,
+[class*="featurebase"] > div::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* Additional overrides for any nested elements */
+.featurebase-widget *,
+.featurebase-messenger *,
+[class*="featurebase"] * {
+    /* Remove any background effects from all child elements */
+    background: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+
+/* Remove pseudo-elements from all child elements */
+.featurebase-widget *::before,
+.featurebase-widget *::after,
+.featurebase-messenger *::before,
+.featurebase-messenger *::after,
+[class*="featurebase"] *::before,
+[class*="featurebase"] *::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* Target iframe elements specifically */
+.featurebase-widget iframe,
+.featurebase-messenger iframe,
+[class*="featurebase"] iframe {
+    background: none !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Ensure the main button has the correct styling */
+.featurebase-widget button:first-child,
+.featurebase-messenger button:first-child,
+[class*="featurebase"] button:first-child {
+    background: #0066cc !important;
+    border-radius: 50% !important;
+    width: 60px !important;
+    height: 60px !important;
+    position: relative !important;
+    z-index: 1000000 !important;
+}
+
+/* Remove any overlay or backdrop effects */
+.featurebase-widget .overlay,
+.featurebase-messenger .overlay,
+[class*="featurebase"] .overlay,
+.featurebase-widget .backdrop,
+.featurebase-messenger .backdrop,
+[class*="featurebase"] .backdrop {
+    display: none !important;
 }
 </style>
 </head>
@@ -97,7 +282,7 @@
       <nav>
       <a class="changelog" href="/"><img class="backarrow" src="/backarrow.webp">Home</a>
       <a class="aboutus" href="https://allgemgames.featurebase.app/en/help/articles/6890206-about-allgem">About Us</a>
-      <a class="support" href="https://allgemgames.featurebase.app/en/help/articles/1547414-how-to-contact-support">Support</a>
+      <a class="support" href="javascript:void(0)" @onclick="openSupportWidget">Support</a>
       @if (CookieValue == "isli")
         {
           <img class="account" src="profile.webp" href="/account"/>
@@ -178,6 +363,75 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+// Featurebase Messenger initialization
+function initializeFeaturebase() {
+    console.log('Game page: Attempting to initialize Featurebase...');
+    if (typeof Featurebase !== 'undefined') {
+        console.log('Game page: Featurebase SDK found, initializing...');
+        Featurebase("boot", {
+            appId: "68cc44908a80e8915d5e6268",  // Your Featurebase organization ID
+            theme: "dark",         // Match your site's dark theme
+            language: "en",        // English language
+            // You can add user information here when available
+            // email: userEmail,
+            // userId: userId,
+            // createdAt: userCreatedAt
+        });
+        console.log('Game page: Featurebase initialized successfully');
+        return true;
+    } else {
+        console.log('Game page: Featurebase SDK not found');
+        return false;
+    }
+}
+
+// Function to open Featurebase support widget
+window.openSupportWidget = function() {
+    console.log('Game page: Opening Featurebase support widget...');
+    if (typeof Featurebase !== 'undefined') {
+        // Try to open the widget
+        Featurebase('open');
+        console.log('Game page: Featurebase widget opened successfully');
+    } else {
+        console.log('Game page: Featurebase not available, initializing first...');
+        // If Featurebase is not available, try to initialize it first
+        if (typeof Featurebase !== 'undefined') {
+            Featurebase("boot", {
+                appId: "68cc44908a80e8915d5e6268",
+                theme: "dark",
+                language: "en"
+            });
+            // Wait a moment then try to open
+            setTimeout(function() {
+                Featurebase('open');
+            }, 500);
+        } else {
+            console.error('Game page: Featurebase SDK not available');
+        }
+    }
+};
+
+// Try to initialize immediately
+if (!initializeFeaturebase()) {
+    // If not available, try on DOM ready
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('Game page: DOM ready, trying Featurebase again...');
+        if (!initializeFeaturebase()) {
+            // If still not available, try on window load
+            window.addEventListener('load', function() {
+                console.log('Game page: Window loaded, trying Featurebase again...');
+                if (!initializeFeaturebase()) {
+                    // Final retry after a delay
+                    setTimeout(function() {
+                        console.log('Game page: Final retry for Featurebase...');
+                        initializeFeaturebase();
+                    }, 2000);
+                }
+            });
+        }
+    });
 }
 
 
@@ -867,6 +1121,22 @@ private async Task SetLastPlayedGameId(string gameId)
         NavigationManager.NavigateTo("/casino");
     }
 
+    private async void openSupportWidget()
+    {
+        try
+        {
+            await JSRuntime.InvokeVoidAsync("openSupportWidget");
+        }
+        catch (JSDisconnectedException)
+        {
+            // Circuit disconnected, ignore the call
+        }
+        catch (Exception)
+        {
+            // Other JS errors, ignore to prevent crashes
+        }
+    }
+
     private bool isExpanded = false;
 
     private void Expand()
@@ -965,6 +1235,22 @@ private async Task SetLastPlayedGameId(string gameId)
             else
             {
                 dik = false;
+            }
+        }
+        else
+        {
+            // On every re-render (navigation), ensure Featurebase widget is present
+            try
+            {
+                await JSRuntime.InvokeVoidAsync("ensureFeaturebaseWidget");
+            }
+            catch (JSDisconnectedException)
+            {
+                // Circuit disconnected, ignore
+            }
+            catch (Exception)
+            {
+                // Other JS errors, ignore
             }
         }
     }

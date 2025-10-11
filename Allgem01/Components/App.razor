@@ -17,6 +17,53 @@
     <link rel="stylesheet" href="Allgem01.styles.css" />
     <link rel="icon" type="image/png" href="all_icon.png" />
     <HeadOutlet />
+    
+    <!-- Featurebase Widget CSS Override -->
+    <style>
+        /* Ensure Featurebase widget is visible and not hidden */
+        .featurebase-widget,
+        .featurebase-messenger,
+        [class*="featurebase"] {
+            z-index: 999999 !important;
+            visibility: visible !important;
+            display: block !important;
+        }
+        
+        /* Ensure the widget button is visible */
+        .featurebase-widget button,
+        .featurebase-messenger button,
+        [class*="featurebase"] button {
+            z-index: 999999 !important;
+            visibility: visible !important;
+            display: block !important;
+        }
+    </style>
+    
+    <!-- Featurebase SDK -->
+    <script>
+      !(function(e, t) {
+        var a = "featurebase-sdk";
+        function n() {
+          if (!t.getElementById(a)) {
+            var e = t.createElement("script");
+            (e.id = a),
+              (e.src = "https://do.featurebase.app/js/sdk.js"),
+              t.getElementsByTagName("script")[0].parentNode.insertBefore(
+                e,
+                t.getElementsByTagName("script")[0]
+              );
+          }
+        }
+        "function" != typeof e.Featurebase &&
+          (e.Featurebase = function() {
+            (e.Featurebase.q = e.Featurebase.q || []).push(arguments);
+          }),
+          "complete" === t.readyState || "interactive" === t.readyState
+            ? n()
+            : t.addEventListener("DOMContentLoaded", n);
+      })(window, document);
+    </script>
+    <!-- End Featurebase SDK -->
 </head>
 
 <body>
@@ -55,6 +102,147 @@
             document.cookie = encodeURIComponent(name) + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
         }
     </script>
+    
+    <!-- Featurebase Messenger initialization -->
+    <script>
+        function initializeFeaturebase() {
+            console.log('Attempting to initialize Featurebase...');
+            if (typeof Featurebase !== 'undefined') {
+                console.log('Featurebase SDK found, initializing...');
+                Featurebase("boot", {
+                    appId: "68cc44908a80e8915d5e6268",  // Your Featurebase organization ID
+                    theme: "dark",         // Match your site's dark theme
+                    language: "en",        // English language
+                    // You can add user information here when available
+                    // email: userEmail,
+                    // userId: userId,
+                    // createdAt: userCreatedAt
+                });
+                console.log('Featurebase initialized successfully');
+                return true;
+            } else {
+                console.log('Featurebase SDK not found');
+                return false;
+            }
+        }
+
+        // Try to initialize immediately
+        if (!initializeFeaturebase()) {
+            // If not available, try on DOM ready
+            document.addEventListener('DOMContentLoaded', function() {
+                console.log('DOM ready, trying Featurebase again...');
+                if (!initializeFeaturebase()) {
+                    // If still not available, try on window load
+                    window.addEventListener('load', function() {
+                        console.log('Window loaded, trying Featurebase again...');
+                        if (!initializeFeaturebase()) {
+                            // Final retry after a delay
+                            setTimeout(function() {
+                                console.log('Final retry for Featurebase...');
+                                initializeFeaturebase();
+                            }, 2000);
+                        }
+                    });
+                }
+            });
+        }
+
+        // Function to open Featurebase support widget (global)
+        window.openSupportWidget = function() {
+            console.log('Global: Opening Featurebase support widget...');
+            if (typeof Featurebase !== 'undefined') {
+                // Try to open the widget
+                Featurebase('open');
+                console.log('Global: Featurebase widget opened successfully');
+            } else {
+                console.log('Global: Featurebase not available, initializing first...');
+                // If Featurebase is not available, try to initialize it first
+                if (typeof Featurebase !== 'undefined') {
+                    Featurebase("boot", {
+                        appId: "68cc44908a80e8915d5e6268",
+                        theme: "dark",
+                        language: "en"
+                    });
+                    // Wait a moment then try to open
+                    setTimeout(function() {
+                        Featurebase('open');
+                    }, 500);
+                } else {
+                    console.error('Global: Featurebase SDK not available');
+                }
+            }
+        };
+
+        // Function to ensure Featurebase widget is visible after navigation
+        window.ensureFeaturebaseWidget = function() {
+            console.log('Ensuring Featurebase widget is visible...');
+            if (typeof Featurebase !== 'undefined') {
+                // Check if widget is already initialized
+                if (document.querySelector('[class*="featurebase"]') || document.querySelector('.featurebase-widget')) {
+                    console.log('Featurebase widget already present');
+                    return;
+                }
+                
+                // Reinitialize if needed
+                console.log('Reinitializing Featurebase widget...');
+                Featurebase("boot", {
+                    appId: "68cc44908a80e8915d5e6268",
+                    theme: "dark",
+                    language: "en"
+                });
+            } else {
+                console.log('Featurebase SDK not available, waiting...');
+                // Wait for SDK to load
+                setTimeout(function() {
+                    if (typeof Featurebase !== 'undefined') {
+                        Featurebase("boot", {
+                            appId: "68cc44908a80e8915d5e6268",
+                            theme: "dark",
+                            language: "en"
+                        });
+                    }
+                }, 1000);
+            }
+        };
+
+        // Listen for Blazor navigation events
+        window.addEventListener('popstate', function() {
+            console.log('Navigation detected (popstate), ensuring Featurebase widget...');
+            setTimeout(window.ensureFeaturebaseWidget, 100);
+        });
+
+        // Listen for hash changes (some navigation)
+        window.addEventListener('hashchange', function() {
+            console.log('Hash change detected, ensuring Featurebase widget...');
+            setTimeout(window.ensureFeaturebaseWidget, 100);
+        });
+
+        // Periodic check to ensure widget is present
+        setInterval(function() {
+            if (!document.querySelector('[class*="featurebase"]') && !document.querySelector('.featurebase-widget')) {
+                console.log('Featurebase widget missing, reinitializing...');
+                window.ensureFeaturebaseWidget();
+            }
+        }, 5000); // Check every 5 seconds
+
+        // Blazor-specific navigation handling
+        window.addEventListener('beforeunload', function() {
+            console.log('Page unloading, will reinitialize on next load');
+        });
+
+        // Override Blazor's navigation to ensure widget persistence
+        if (window.Blazor) {
+            const originalNavigateTo = window.Blazor.navigateTo;
+            if (originalNavigateTo) {
+                window.Blazor.navigateTo = function(url, forceLoad) {
+                    console.log('Blazor navigation detected, ensuring widget after navigation...');
+                    const result = originalNavigateTo.call(this, url, forceLoad);
+                    setTimeout(window.ensureFeaturebaseWidget, 200);
+                    return result;
+                };
+            }
+        }
+    </script>
 </body>
 </html>
 
@@ -62,7 +250,7 @@
     public bool SignedIn => repository.IsLoggedIn;
     public bool Premium => repository.hasPremium;
 
-
+    [Inject] private IJSRuntime JSRuntime { get; set; } = default!;
 
     public void SetSignedIn(bool trueOrFalse)
     {
@@ -71,5 +259,25 @@
     public void SetPremium(bool tof)
     {
         repository.SetHasPremium(tof);
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender)
+        {
+            // On every re-render (navigation), ensure Featurebase widget is present
+            try
+            {
+                await JSRuntime.InvokeVoidAsync("ensureFeaturebaseWidget");
+            }
+            catch (JSDisconnectedException)
+            {
+                // Circuit disconnected, ignore
+            }
+            catch (Exception)
+            {
+                // Other JS errors, ignore
+            }
+        }
     }
 }

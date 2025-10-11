@@ -1,0 +1,205 @@
+@page "/privacy-policy"
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+@using Allgem01.Logic
+@inject Repository repository
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allgem</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="loading.css">
+</head>
+</html>
+
+<div>
+    @if (repository.IsLoggedIn)
+    {
+
+    }
+    else
+    {
+
+    }
+    @if (repository.hasPremium)
+    {
+
+    }
+    else
+    {
+
+    }
+</div>
+
+<script>
+// Scroll to top button
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<section class="downheader"></section>
+<section class="about-section">
+    <div class="about-container">
+        <h1>Privacy Policy</h1>
+        <div class="subtitle">Last updated: October 11, 2025</div>
+
+        <p>Welcome to <strong>Allgem Games</strong> (<a href="https://allgemgames.com" target="_blank" rel="noopener">allgemgames.com</a>). This Privacy Policy explains how we collect, use, and protect your personal information when you use our website and services.</p>
+
+        <div class="hr"></div>
+
+        <div class="allgem-terms" role="region" aria-label="AllGem Games Privacy Policy">
+
+            <h2>1) Information We Collect</h2>
+            <p>We collect the following types of information:</p>
+            <ul>
+                <li><strong>Personal Data:</strong> Email address, account credentials, and payment details (via Stripe or PayPal).</li>
+                <li><strong>Usage Data:</strong> Pages visited, device information, IP address, browser type, and session duration (via Google Analytics).</li>
+            </ul>
+
+            <h2>2) How We Use Your Information</h2>
+            <p>We use the collected information to:</p>
+            <ul>
+                <li>Process payments and manage transactions</li>
+                <li>Register and manage user accounts</li>
+                <li>Analyze site performance and user activity</li>
+                <li>Provide support and respond to inquiries</li>
+                <li>Serve relevant advertisements</li>
+            </ul>
+
+            <h2>3) Third-Party Services</h2>
+            <p>We use trusted third-party services for various operations:</p>
+            <ul>
+                <li>Google Analytics – site analytics</li>
+                <li>Google AdSense – advertising</li>
+                <li>Stripe & PayPal – payment processing</li>
+                <li>Featurebase – form submissions and feedback</li>
+                <li>GameDistribution – game hosting and analytics</li>
+                <li>Cloudflare – security and performance</li>
+            </ul>
+            <p>Each of these services has its own privacy policy which governs how they handle your data.</p>
+
+            <h2>4) Cookies</h2>
+            <p>We use cookies to store user preferences, manage sessions, and improve performance. You can disable cookies in your browser settings, though some parts of the site may not work properly.</p>
+
+            <h2>5) Data Retention</h2>
+            <p>We retain personal information only as long as necessary to provide our services, comply with legal obligations, or resolve disputes.</p>
+
+            <h2>6) Data Sharing</h2>
+            <p>We do not sell or rent personal data. We share information only with trusted third parties listed above for legitimate purposes such as payments, analytics, and advertising.</p>
+
+            <h2>7) Your Rights</h2>
+            <p>Depending on your jurisdiction (e.g., GDPR, CCPA), you may have the right to:</p>
+            <ul>
+                <li>Access your personal data</li>
+                <li>Request correction or deletion</li>
+                <li>Withdraw consent to processing</li>
+                <li>Object to certain uses of your data</li>
+            </ul>
+            <p>To exercise your rights, contact us at <a href="mailto:allgemgames@gmail.com">allgemgames@gmail.com</a>.</p>
+
+            <h2>8) Data Security</h2>
+            <p>We use industry-standard encryption, firewalls, and services like Cloudflare to protect user data from unauthorized access or misuse.</p>
+
+            <h2>9) Children’s Privacy</h2>
+            <p>Allgem Games is not directed toward children under 13 (or under 16 in the EU). We do not knowingly collect data from minors.</p>
+
+            <h2>10) Data Deletion Requests</h2>
+            <p>You may request account or data deletion by emailing us at <a href="mailto:allgemgames@gmail.com">allgemgames@gmail.com</a>. We will confirm deletion within a reasonable timeframe.</p>
+
+            <h2>11) Updates to This Policy</h2>
+            <p>We may update this Privacy Policy periodically. Updates will be posted on this page with a revised date.</p>
+
+            <h2>12) Contact Us</h2>
+            <p>If you have questions or concerns about privacy, please contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:allgemgames@gmail.com">allgemgames@gmail.com</a></p>
+            <p><strong>Website:</strong> <a href="https://allgemgames.com" target="_blank">allgemgames.com</a></p>
+        </div>
+    </div>
+</section>
+
+<style>
+.allgem-terms {
+    --bg: #f0f6ff;
+    --border: #1e62d0;
+    --heading: #0b3a99;
+    --text: #0a1f44;
+    --link: #0b5fff;
+    background: var(--bg);
+    border: 2px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    color: var(--text);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    box-shadow: 0 8px 24px rgba(30, 98, 208, 0.12);
+    max-width: 960px;
+    margin: 24px auto;
+    line-height: 1.6;
+}
+.allgem-terms h1 { color: var(--heading); font-size: 1.5rem; margin: 0 0 12px; }
+.allgem-terms .subtitle { margin-top: -4px; margin-bottom: 18px; color: #25406f; font-size: 0.95rem; }
+.allgem-terms h2 { color: var(--heading); font-size: 1.1rem; margin: 20px 0 8px; }
+.allgem-terms p { margin: 8px 0; }
+.allgem-terms ul { margin: 8px 0 8px 18px; }
+.allgem-terms a { color: var(--link); text-decoration: underline; }
+.allgem-terms .hr { height: 1px; background: rgba(30,98,208,.25); border: 0; margin: 16px 0; }
+
+.about-section {
+    padding: 50px;
+    background: linear-gradient(to right, rgb(18, 22, 53), rgb(7, 40, 77), rgb(16, 43, 102), rgb(0, 57, 180));
+    color: white;
+    text-align: center;
+    height: 360vh;
+}
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.about-container h1 { font-size: 2.5em; margin-bottom: 20px; }
+.about-container p { font-size: 1.2em; line-height: 1.8; margin-bottom: 20px; }
+.about-container h2 { font-size: 1.8em; margin-top: 30px; margin-bottom: 15px; }
+.about-container ul {
+    list-style-type: disc;
+    margin: 20px 0;
+    padding-left: 40px;
+    text-align: left;
+}
+.about-container ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+</style>
+
+@code {
+    private string? CookieValue;
+    private string? CookieValue1;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            CookieValue = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_auth");
+            CookieValue1 = await JSRuntime.InvokeAsync<string>("getCookie", "allgem_premium");
+
+            repository.SetLoggedIn(CookieValue == "isli");
+            repository.SetHasPremium(CookieValue1 == "hsp");
+
+            await JSRuntime.InvokeVoidAsync("topFunction");
+            StateHasChanged();
+        }
+    }
+}

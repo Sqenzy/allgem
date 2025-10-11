@@ -25,6 +25,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KZB6Z4SP');</script>
 <!-- End Google Tag Manager -->
+
+<!-- Featurebase SDK -->
+<script>
+  !(function(e, t) {
+    var a = "featurebase-sdk";
+    function n() {
+      if (!t.getElementById(a)) {
+        var e = t.createElement("script");
+        (e.id = a),
+          (e.src = "https://do.featurebase.app/js/sdk.js"),
+          t.getElementsByTagName("script")[0].parentNode.insertBefore(
+            e,
+            t.getElementsByTagName("script")[0]
+          );
+      }
+    }
+    "function" != typeof e.Featurebase &&
+      (e.Featurebase = function() {
+        (e.Featurebase.q = e.Featurebase.q || []).push(arguments);
+      }),
+      "complete" === t.readyState || "interactive" === t.readyState
+        ? n()
+        : t.addEventListener("DOMContentLoaded", n);
+  })(window, document);
+</script>
+<!-- End Featurebase SDK -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Games - Earn Ranks By Playing - Allgem Games</title>
@@ -143,7 +169,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <nav>
       <a class="changelog" href="/changelog">Changelog</a>
       <a class="aboutus" href="https://allgemgames.featurebase.app/en/help/articles/6890206-about-allgem">About Us</a>
-      <a class="support" href="https://allgemgames.featurebase.app/en/help/articles/1547414-how-to-contact-support">Support</a>
+      <a class="support" href="javascript:void(0)" @onclick="openSupportWidget">Support</a>
       @if (CookieValue == "isli")
         {
           <img class="account" src="profile.webp" @onclick="accountFf"/>
@@ -177,6 +203,65 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// Featurebase Messenger initialization
+window.addEventListener('load', function() {
+  console.log('Home page loaded, checking for Featurebase...');
+  if (typeof Featurebase !== 'undefined') {
+    console.log('Featurebase SDK found on home page, initializing...');
+    Featurebase("boot", {
+      appId: "68cc44908a80e8915d5e6268",  // Your Featurebase organization ID
+      theme: "dark",         // Match your site's dark theme
+      language: "en",        // English language
+      // You can add user information here when available
+      // email: userEmail,
+      // userId: userId,
+      // createdAt: userCreatedAt
+    });
+    console.log('Featurebase initialized successfully on home page');
+  } else {
+    console.log('Featurebase SDK not found on home page, retrying in 1 second...');
+    setTimeout(function() {
+      if (typeof Featurebase !== 'undefined') {
+        console.log('Featurebase SDK found on home page retry, initializing...');
+        Featurebase("boot", {
+          appId: "68cc44908a80e8915d5e6268",
+          theme: "dark",
+          language: "en"
+        });
+        console.log('Featurebase initialized successfully on home page retry');
+      } else {
+        console.error('Featurebase SDK still not available on home page');
+      }
+    }, 1000);
+  }
+});
+
+// Function to open Featurebase support widget
+window.openSupportWidget = function() {
+  console.log('Opening Featurebase support widget...');
+  if (typeof Featurebase !== 'undefined') {
+    // Try to open the widget
+    Featurebase('open');
+    console.log('Featurebase widget opened successfully');
+  } else {
+    console.log('Featurebase not available, initializing first...');
+    // If Featurebase is not available, try to initialize it first
+    if (typeof Featurebase !== 'undefined') {
+      Featurebase("boot", {
+        appId: "68cc44908a80e8915d5e6268",
+        theme: "dark",
+        language: "en"
+      });
+      // Wait a moment then try to open
+      setTimeout(function() {
+        Featurebase('open');
+      }, 500);
+    } else {
+      console.error('Featurebase SDK not available');
+    }
+  }
+};
 </script>
 
 <section class="gf">
@@ -898,6 +983,22 @@ body {
         NavigationManager.NavigateTo("/premium");
     }
 
+    private async void openSupportWidget()
+    {
+        try
+        {
+            await JSRuntime.InvokeVoidAsync("openSupportWidget");
+        }
+        catch (JSDisconnectedException)
+        {
+            // Circuit disconnected, ignore the call
+        }
+        catch (Exception)
+        {
+            // Other JS errors, ignore to prevent crashes
+        }
+    }
+
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
@@ -1025,6 +1126,22 @@ body {
             catch (Exception)
             {
                 // Other JS errors, ignore to prevent crashes
+            }
+        }
+        else
+        {
+            // On every re-render (navigation), ensure Featurebase widget is present
+            try
+            {
+                await JSRuntime.InvokeVoidAsync("ensureFeaturebaseWidget");
+            }
+            catch (JSDisconnectedException)
+            {
+                // Circuit disconnected, ignore
+            }
+            catch (Exception)
+            {
+                // Other JS errors, ignore
             }
         }
     }
