@@ -94,5 +94,13 @@
         "url" : "https://html5.gamedistribution.com/f3471828433f4cafab9b5d64aa4ef6ae/?gd_sdk_referrer_url=https://allgemgames.com/game/",
         "description": "Funniest race you ever played ! Draw your legs to win the race! Any drawing will make you run ! When you are stuck you can draw another shape to pass!",
         "imageUrl" : "gameimages/holedigger.webp"
+    },
+    {
+        "id": "marblerun",
+        "idn" : "13",
+        "name": "Marble Run",
+        "url" : "https://html5.gamedistribution.com/ae42ea5c4e0b4ff4b9eddf47fbd2cc5/?gd_sdk_referrer_url=https://allgemgames.com/game/",
+        "description": "Race, roll, and clash in Marble Run, the ultimate marble racing game! Guide your marble through physics-based tracks, dodge obstacles, knock rivals off the edge, and aim for the finish line. With fast-paced races, competitive knockout rounds, and fun marble skins, it’s the most addictive 3D marble runner you’ll play!",
+        "imageUrl" : "gameimages/marblerun.webp"
     }
 ]
